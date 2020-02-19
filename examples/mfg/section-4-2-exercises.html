@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:50-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 4.2</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="summary-4-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Exponential-Functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Logarithms.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="summary-4-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Exponential-Functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Logarithms.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="section-4-2-exercises"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.6</span> <span class="title">Homework 4.2</span>
+</h2>
+<a href="section-4-2-exercises.html" class="permalink">¶</a><div class="exercisegroup" id="exercisegroup-213">
+<div class="introduction" id="introduction-222"><p id="p-7405">Find the \(y\)-intercept of each exponential function and decide whether the graph is increasing or decreasing.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1533"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<ol id="p-7406" class="lower-alpha cols2">
+<li id="li-4592"><p id="p-7407">\(f (x) = 26(1.4)^x\)</p></li>
+<li id="li-4593"><p id="p-7408">\(g(x) = 1.2(0.84)^x\)</p></li>
+<li id="li-4594"><p id="p-7409">\(h(x)=75\left(\dfrac{4}{5} \right)^x \)</p></li>
+<li id="li-4595"><p id="p-7410">\(k(x)=\dfrac{2}{3}\left(\dfrac{9}{8} \right)^x \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-829" id="answer-829"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-829"><div class="solution"><ol id="p-7411" class="lower-alpha cols2">
+<li id="li-4596"><p id="p-7412">\(26\text{;}\) increasing</p></li>
+<li id="li-4597"><p id="p-7413">\(1.2\text{;}\) decreasing</p></li>
+<li id="li-4598"><p id="p-7414">\(75\text{;}\) decreasing</p></li>
+<li id="li-4599"><p id="p-7415">\(\frac{2}{3} \text{;}\) increasing</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1534"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<ol id="p-7416" class="lower-alpha cols2">
+<li id="li-4600"><p id="p-7417">\(M(x) = 1.5(0.05)^x\)</p></li>
+<li id="li-4601"><p id="p-7418">\(N(x) = 0.05(1.05)^x\)</p></li>
+<li id="li-4602"><p id="p-7419">\(P(x)=\left(\dfrac{5}{8} \right)^x \)</p></li>
+<li id="li-4603"><p id="p-7420">\(Q(x)=\left(\dfrac{4}{3} \right)^x \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-214">
+<div class="introduction" id="introduction-223"><p id="p-7421">Make a table of values and graph each pair of functions by hand on the domain \([-3, 3]\text{.}\) Describe the similarities and differences between the two graphs.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1535"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<ol id="p-7422" class="lower-alpha cols2">
+<li id="li-4604"><p id="p-7423">\(f(x)=3^x \)</p></li>
+<li id="li-4605"><p id="p-7424">\(g(x)=\left(\dfrac{1}{3} \right)^x \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-830" id="answer-830"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-830"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(f(x)=3^x \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{27} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{9} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{3} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(g(x)=\left(\frac{1}{3} \right)^x \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{3} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{9} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{27} \)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-3.svg" style="width: 100%; height: auto;" alt="exponential growth and decay"></div></div></div>
+<p id="p-7425">The two graphs are reflections of each other across the \(y\)-axis. \(f\) is increasing, \(g\) is decreasing. \(f\) has the negative \(x\)-axis as an asymptote, and \(g\) has the positive \(x\)-axis as its asymptote.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-1536"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<ol id="p-7426" class="lower-alpha cols2">
+<li id="li-4606"><p id="p-7427">\(F(x)=\left(\dfrac{1}{10} \right)^x \)</p></li>
+<li id="li-4607"><p id="p-7428">\(G(x)=10^x \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1537"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<ol id="p-7429" class="lower-alpha cols2">
+<li id="li-4608"><p id="p-7430">\(h(t)=4^{-t} \)</p></li>
+<li id="li-4609"><p id="p-7431">\(q(t)=-4^t \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-831" id="answer-831"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-831"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(h(t)=4^{-t} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(64\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{16} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{64} \)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(q(t)=-4^t \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{-1}{64} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{-1}{16} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{-1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-64\)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-5.svg" style="width: 100%; height: auto;" alt="exponential decay and negative of growth"></div></div></div>
+<p id="p-7432">The graphs are reflections of each other across the origin. Both are decreasing, but \(h\) has the negative \(t\)-axis as an asymptote, and \(q\) has the positive t-axis as its asymptote.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-1538"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<ol id="p-7433" class="lower-alpha cols2">
+<li id="li-4610"><p id="p-7434">\(P(t)=-5^t \)</p></li>
+<li id="li-4611"><p id="p-7435">\(R(t)=5^{-t} \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-215">
+<div class="introduction" id="introduction-224"><p id="p-7436">Match each function with its graph.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1539"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-7.svg" style="width: 100%; height: auto;" alt="four exponentials"></div></div></div>
+<ol id="p-7437" class="lower-alpha cols2">
+<li id="li-4612"><p id="p-7438">\(f(x)=3(2^x) \)</p></li>
+<li id="li-4613"><p id="p-7439">\(f(x)=3\left(\dfrac{1}{2} \right)^x \)</p></li>
+<li id="li-4614"><p id="p-7440">\(f(x)=3\left(\dfrac{1}{3} \right)^x  \)</p></li>
+<li id="li-4615"><p id="p-7441">\(f(x)=3(3^x)\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-832" id="answer-832"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-832"><div class="solution"><ol id="p-7442" class="lower-alpha cols4">
+<li id="li-4616"><p id="p-7443">I</p></li>
+<li id="li-4617"><p id="p-7444">IV</p></li>
+<li id="li-4618"><p id="p-7445">III</p></li>
+<li id="li-4619"><p id="p-7446">II</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1540"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-8.svg" style="width: 100%; height: auto;" alt="four exponentials"></div></div></div>
+<ol id="p-7447" class="lower-alpha cols2">
+<li id="li-4620"><p id="p-7448">\(g(x)=2(1.5^x) \)</p></li>
+<li id="li-4621"><p id="p-7449">\(g(x)=2\left(1.25 \right)^x \)</p></li>
+<li id="li-4622"><p id="p-7450">\(g(x)=2\left(0.75 \right)^x  \)</p></li>
+<li id="li-4623"><p id="p-7451">\(g(x)=2(0.25)^x\)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-216">
+<div class="introduction" id="introduction-225">
+<p id="p-7452">For Problems 9–12,</p>
+<ol class="lower-alpha">
+<li id="li-4624"><p id="p-7453">Use a graphing calculator to graph the functions on the domain \([-5, 5]\text{.}\)</p></li>
+<li id="li-4625"><p id="p-7454">Give the range of the function on that domain, accurate to hundredths.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1541"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<p id="p-7455">\(g(t) = 4(1.3^t )\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-833" id="answer-833"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-833"><div class="solution"><ol id="p-7456" class="lower-alpha">
+<li id="li-4626"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-9.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div></li>
+<li id="li-4627"><p id="p-7457">\([1.08, 14.85] \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1542"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<p id="p-7458">\(h(t) = 3(2.4^t )\)</p></article><article class="exercise-like" id="exercise-1543"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<p id="p-7459">\(N(x) = 50(0.8^x)\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-834" id="answer-834"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-834"><div class="solution"><ol id="p-7460" class="lower-alpha">
+<li id="li-4628"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-11.jpg" style="width: 100%; height: auto;" alt="decay"></div></div></div></li>
+<li id="li-4629"><p id="p-7461">\([16.38, 152.59]\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1544"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<p id="p-7462">\(P(x) = 80(0.7^x)\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-217">
+<div class="introduction" id="introduction-226"><p id="p-7463">In each group of functions, which have identical graphs? Explain why.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1545"><h6 class="heading"><span class="codenumber">13.</span></h6>
+<ol id="p-7464" class="lower-alpha cols2">
+<li id="li-4630"><p id="p-7465">\(h(x) = 6^x \)</p></li>
+<li id="li-4631"><p id="p-7466">\(k(x)=\left(\dfrac{1}{6} \right)^x \)</p></li>
+<li id="li-4632"><p id="p-7467">\(m(x)=6^{-x} \)</p></li>
+<li id="li-4633"><p id="p-7468">\(n(x)=\dfrac{1}{6^x} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-835" id="answer-835"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-835"><div class="solution"><p id="p-7469">Because they are defined by equivalent expressions, (b), (c), and (d) have identical graphs</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1546"><h6 class="heading"><span class="codenumber">14.</span></h6>
+<ol id="p-7470" class="lower-alpha cols2">
+<li id="li-4634"><p id="p-7471">\(Q(t)=5^t \)</p></li>
+<li id="li-4635"><p id="p-7472">\(R(t)=\left(\dfrac{1}{5} \right)^t \)</p></li>
+<li id="li-4636"><p id="p-7473">\(F(t)=\left(\dfrac{1}{5} \right)^{-t} \)</p></li>
+<li id="li-4637"><p id="p-7474">\(G(t)=\dfrac{1}{5^{-t}} \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-218">
+<div class="introduction" id="introduction-227">
+<p id="p-7475">For Problems 15–18,</p>
+<ol class="lower-alpha">
+<li id="li-4638"><p id="p-7476">Use the order of operations to explain why the two functions are different.</p></li>
+<li id="li-4639"><p id="p-7477">Complete the table of values and graph both functions in the same window.</p></li>
+<li id="li-4640"><p id="p-7478">Describe each as a transformation of \(y = 2^x\) or \(y = 3^x\text{.}\)</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1547"><h6 class="heading"><span class="codenumber">15.</span></h6>
+<p id="p-7479">\(f (x) = 2^{x-1}\text{,}\) \(~g(x) = 2^x - 1\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=2^x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-836" id="answer-836"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-836"><div class="solution"><ol id="p-7480" class="lower-alpha">
+<li id="li-4641"><p id="p-7481">To evaluate \(f\) we subtract \(1\) from the input before evaluating the exponential function; to evaluate \(g\) we subtract \(1\) from the output of the exponential function.</p></li>
+<li id="li-4642">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=2^x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{8} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{-3}{4} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{-1}{2} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3 \)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-15.svg" style="width: 100%; height: auto;" alt="two shifts of growth"></div></div></div>
+</li>
+<li id="li-4643"><p id="p-7482">The graph of \(f\) is translated \(1\) unit to the right; the graph of \(g\) is shifted \(1\) unit down.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1548"><h6 class="heading"><span class="codenumber">16.</span></h6>
+<p id="p-7483">\(f (x) = 3^x+2\text{,}\) \(~g(x) = 3^{x+2}\)</p>
+<p id="p-7484"></p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=3^x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div></article><article class="exercise-like" id="exercise-1549"><h6 class="heading"><span class="codenumber">17.</span></h6>
+<p id="p-7485">\(f (x) = -3^{x}\text{,}\) \(~g(x) = 3^{-x}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=3^x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-837" id="answer-837"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-837"><div class="solution"><ol id="p-7486" class="lower-alpha">
+<li id="li-4644"><p id="p-7487">To evaluate \(f\) we take the negative of the output of the exponential function; to evaluate \(g\) we take the negative of the input.</p></li>
+<li id="li-4645">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=3^x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{9} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{-1}{9} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{3} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{-1}{3} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-3 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{3} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-9 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\dfrac{1}{9} \)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-17.jpg" style="width: 100%; height: auto;" alt="two shifts of growth"></div></div></div>
+</li>
+<li id="li-4646"><p id="p-7488">The graph of \(f\) is reflected about the \(x\)-axis; the graph of \(g\) is reflected about the \(y\)-axis.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1550"><h6 class="heading"><span class="codenumber">18.</span></h6>
+<p id="p-7489">\(f (x) = 2^{-x}\text{,}\) \(~g(x) = -2^{x}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=2^x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-219">
+<div class="introduction" id="introduction-228"><p id="p-7490">For the given function, evaluate each pair of expressions. Are they equivalent?</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1551"><h6 class="heading"><span class="codenumber">19.</span></h6>
+<p id="p-7491">\(f (x) = 3(5^x )\)</p>
+<ol class="lower-alpha">
+<li id="li-4647"><p id="p-7492">\(f (a + 2)\) and \(9f (a)\)</p></li>
+<li id="li-4648"><p id="p-7493">\(f (2a)\) and \(2 f (a)\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-838" id="answer-838"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-838"><div class="solution"><ol id="p-7494" class="lower-alpha">
+<li id="li-4649"><p id="p-7495">\(3(5^{a+2})\) is not equivalent to \(9\cdot 3(5^a)\text{.}\)</p></li>
+<li id="li-4650"><p id="p-7496">\(3(5^{2a})\) is not equivalent to \(2\cdot 3 (5^a)\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1552"><h6 class="heading"><span class="codenumber">20.</span></h6>
+<p id="p-7497">\(g(x) = 1.8^x\)</p>
+<ol class="lower-alpha">
+<li id="li-4651"><p id="p-7498">\(g(h + 3)\) and \(g(h) g(3)\)</p></li>
+<li id="li-4652"><p id="p-7499">\(g(2h)\) and \([g(h)]^2 \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1553"><h6 class="heading"><span class="codenumber">21.</span></h6>
+<p id="p-7500">\(P(t) = 8^t\)</p>
+<ol class="lower-alpha">
+<li id="li-4653"><p id="p-7501">\(P(w)-P(z) \) and \(P(w-z) \)</p></li>
+<li id="li-4654"><p id="p-7502">\(P(-x) \) and \(\dfrac{1}{P(x)} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-839" id="answer-839"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-839"><div class="solution"><ol id="p-7503" class="lower-alpha">
+<li id="li-4655"><p id="p-7504">\(8^w - 8^z\) is not equivalent to \(8^{w-z}\text{.}\)</p></li>
+<li id="li-4656"><p id="p-7505">\(8^{-x}\) is equivalent to \(\dfrac{1}{8^x}\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1554"><h6 class="heading"><span class="codenumber">22.</span></h6>
+<p id="p-7506">\(Q(t)=5(0.2)^t \)</p>
+<ol class="lower-alpha">
+<li id="li-4657"><p id="p-7507">\(Q(b-1)\) and \(5Q(b) \)</p></li>
+<li id="li-4658"><p id="p-7508">\(Q(a)Q(b) \) and \(5Q(a+b) \)</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1555"><h6 class="heading"><span class="codenumber">23.</span></h6>
+<p id="p-7509">The graph of \(f (x) = P_0 b^x\) is shown in the figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:37.5%;margin-right:37.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-23.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div>
+<ol id="p-7510" class="lower-alpha">
+<li id="li-4659"><p id="p-7511">Read the value of \(P_0\) from the graph.</p></li>
+<li id="li-4660"><p id="p-7512">Make a short table of values for the function by reading values from the graph. Does your table confirm that the function is exponential?</p></li>
+<li id="li-4661"><p id="p-7513">Use your table to calculate the growth factor, \(b\text{.}\)</p></li>
+<li id="li-4662"><p id="p-7514">Using your answers to parts (a) and (c), write a formula for \(f (x)\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-840" id="answer-840"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-840"><div class="solution"><ol id="p-7515" class="lower-alpha cols2">
+<li id="li-4663"><p id="p-7516">\(P_0=300\)</p></li>
+<li id="li-4664"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="r m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="r m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t1 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(300\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(600\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(1200\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4665"><p id="p-7517">\(b=2\)</p></li>
+<li id="li-4666"><p id="p-7518">\(f(x)=300(2)^x \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1556"><h6 class="heading"><span class="codenumber">24.</span></h6>
+<p id="p-7519">The graph of \(g(x) = P_0 b^x\) is shown in the figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:37.5%;margin-right:37.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-24.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div>
+<ol id="p-7520" class="lower-alpha">
+<li id="li-4667"><p id="p-7521">Read the value of \(P_0\) from the graph.</p></li>
+<li id="li-4668"><p id="p-7522">Make a short table of values for the function by reading values from the graph. Does your table confirm that the function is exponential?</p></li>
+<li id="li-4669"><p id="p-7523">Use your table to calculate the decay factor, \(b\text{.}\)</p></li>
+<li id="li-4670"><p id="p-7524">Using your answers to parts (a) and (c), write a formula for \(g(x)\text{.}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1557"><h6 class="heading"><span class="codenumber">25.</span></h6>
+<p id="p-7525">For several days after the Northridge earthquake on January 17, 1994, the area received a number of significant aftershocks. The red graph shows that the number of aftershocks decreased exponentially over time. The graph of the function \(S(d) = S_0b^d\text{,}\) shown in black, approximates the data. (Source: <span class="booktitle">Los Angeles Times</span>, June 27, 1995)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32%;margin-right:32%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-25.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div>
+<ol id="p-7526" class="lower-alpha">
+<li id="li-4671"><p id="p-7527">Read the value of \(S_0\) from the graph.</p></li>
+<li id="li-4672"><p id="p-7528">Find an approximation for the decay factor, \(b\text{,}\) by comparing two points on the graph. (Some of the points on the graph of \(S(d)\) are approximately \((1, 82)\text{,}\) \((2, 45)\text{,}\) \((3, 25)\text{,}\) and \((4, 14)\text{.}\))</p></li>
+<li id="li-4673"><p id="p-7529">Using your answers to (a) and (b), write a formula for \(S(d)\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-841" id="answer-841"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-841"><div class="solution"><ol id="p-7530" class="lower-alpha cols3">
+<li id="li-4674"><p id="p-7531">\(S_0=150\)</p></li>
+<li id="li-4675"><p id="p-7532">\(b\approx 0.55\)</p></li>
+<li id="li-4676"><p id="p-7533">\(S(d) = 150(0.55)^d\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1558"><h6 class="heading"><span class="codenumber">26.</span></h6>
+<p id="p-7534">The frequency of a musical note depends on its pitch. The graph shows that the frequency increases exponentially. The function \(F(p) = F_0b^p\) gives the frequency as a function of the number of half-tones, \(p\text{,}\) above the starting point on the scale</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:34.5%;margin-right:34.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-26.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div>
+<ol id="p-7535" class="lower-alpha">
+<li id="li-4677"><p id="p-7536">Read the value of \(F_0\) from the graph. (This is the frequency of the note A above middle C.)</p></li>
+<li id="li-4678"><p id="p-7537">Find an approximation for the growth factor, \(b\text{,}\) by comparing two points on the graph. (Some of the points on the graph of \(F(p)\) are approximately \((1, 466)\text{,}\) \((2, 494)\text{,}\) \((3, 523)\text{,}\) and \((4, 554)\text{.}\))</p></li>
+<li id="li-4679"><p id="p-7538">Using your answers to (a) and (b), write a formula for \(F(p)\text{.}\)</p></li>
+<li id="li-4680"><p id="p-7539">The frequency doubles when you raise a note by one octave, which is equivalent to \(12\) half-tones. Use this information to find an exact value for \(b\text{.}\)</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-220">
+<div class="introduction" id="introduction-229"><p id="p-7540">Solve each equation algebraically.</p></div>
+<div class="exercisegroup-exercises cols3">
+<article class="exercise-like" id="exercise-1559"><h6 class="heading"><span class="codenumber">27.</span></h6>
+<p id="p-7541">\(5^{x+2} = 25^{4/3}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-842" id="answer-842"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-842"><div class="solution"><p id="p-7542">\(\dfrac{2}{3} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1560"><h6 class="heading"><span class="codenumber">28.</span></h6>
+<p id="p-7543">\(3^{x-1} = 27^{1/2}\)</p></article><article class="exercise-like" id="exercise-1561"><h6 class="heading"><span class="codenumber">29.</span></h6>
+<p id="p-7544">\(3^{2x-1} =\dfrac{\sqrt{3}}{9} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-843" id="answer-843"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-843"><div class="solution"><p id="p-7545">\(\dfrac{-1}{4} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1562"><h6 class="heading"><span class="codenumber">30.</span></h6>
+<p id="p-7546">\(2^{3x-1} =\dfrac{\sqrt{2}}{16} \)</p></article><article class="exercise-like" id="exercise-1563"><h6 class="heading"><span class="codenumber">31.</span></h6>
+<p id="p-7547">\(4\cdot 2^{x-3} =8^{-2x} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-844" id="answer-844"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-844"><div class="solution"><p id="p-7548">\(\dfrac{1}{7} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1564"><h6 class="heading"><span class="codenumber">32.</span></h6>
+<p id="p-7549">\(9\cdot 3^{x+2} =81^{-x} \)</p></article><article class="exercise-like" id="exercise-1565"><h6 class="heading"><span class="codenumber">33.</span></h6>
+<p id="p-7550">\(27^{4x+2} =81^{x-1} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-845" id="answer-845"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-845"><div class="solution"><p id="p-7551">\(\dfrac{-5}{4} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1566"><h6 class="heading"><span class="codenumber">34.</span></h6>
+<p id="p-7552">\(16^{2-3x} =64^{x+5} \)</p></article><article class="exercise-like" id="exercise-1567"><h6 class="heading"><span class="codenumber">35.</span></h6>
+<p id="p-7553">\(10^{x^2-1} =1000 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-846" id="answer-846"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-846"><div class="solution"><p id="p-7554">\(\pm 2 \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1568"><h6 class="heading"><span class="codenumber">36.</span></h6>
+<p id="p-7555">\(5^{x^2-x-4} =25 \)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1569"><h6 class="heading"><span class="codenumber">37.</span></h6>
+<p id="p-7556">Before the advent of antibiotics, an outbreak of cholera might spread through a city so that the number of cases doubled every \(6\) days.</p>
+<ol class="lower-alpha">
+<li id="li-4681"><p id="p-7557">Twenty-six cases were discovered on July 5. Write a function for the number of cases of cholera \(t\) days later.</p></li>
+<li id="li-4682"><p id="p-7558">Use your calculator to graph your function on the interval \(0 \le t\le 90\text{.}\)</p></li>
+<li id="li-4683"><p id="p-7559">When should hospitals expect to be treating \(106,496\) cases? Use algebraic methods to find your answer, and verify it on your graph.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-847" id="answer-847"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-847"><div class="solution"><ol id="p-7560" class="lower-alpha cols2">
+<li id="li-4684"><p id="p-7561">\(N(t) = 26(2)^{t/6}\)</p></li>
+<li id="li-4685"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-37.jpg" style="width: 100%; height: auto;" alt="GC growth"></div></div></div></li>
+<li id="li-4686"><p id="p-7562">\(72\) days later</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1570"><h6 class="heading"><span class="codenumber">38.</span></h6>
+<p id="p-7563">An outbreak of ungulate fever can sweep through the livestock in a region so that the number of animals affected triples every \(4\) days.</p>
+<ol class="lower-alpha">
+<li id="li-4687"><p id="p-7564">A rancher discovers \(4\) cases of ungulate fever among his herd. Write a function for the number of cases of ungulate fever \(t\) days later.</p></li>
+<li id="li-4688"><p id="p-7565">Use your calculator to graph your function on the interval \(0 \le t\le 20\text{.}\)</p></li>
+<li id="li-4689"><p id="p-7566">If the rancher does not act quickly, how long will it be until \(324\) head are affected? Use algebraic methods to find your answer, and verify it on your graph.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1571"><h6 class="heading"><span class="codenumber">39.</span></h6>
+<p id="p-7567">A color television set loses \(30\%\) of its value every \(2\) years.</p>
+<ol class="lower-alpha">
+<li id="li-4690"><p id="p-7568">Write a function for the value of a television set \(t\) years after it was purchased if it cost \(\$700\) originally.</p></li>
+<li id="li-4691"><p id="p-7569">Use your calculator to graph your function on the interval \(0 \le t\le 20\text{.}\)</p></li>
+<li id="li-4692"><p id="p-7570">How long will it be before a \(\$700\) television set depreciates to \(\$343\text{?}\) Use algebraic methods to find your answer, and verify it on your graph.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-848" id="answer-848"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-848"><div class="solution"><ol id="p-7571" class="lower-alpha cols2">
+<li id="li-4693"><p id="p-7572">\(V(t) = 700(0.7)^{t/2}\)</p></li>
+<li id="li-4694"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-39.jpg" style="width: 100%; height: auto;" alt="GC decay"></div></div></div></li>
+<li id="li-4695"><p id="p-7573">\(4\) yr</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1572"><h6 class="heading"><span class="codenumber">40.</span></h6>
+<p id="p-7574">A mobile home loses \(20\%\) of its value every \(3\) years.</p>
+<ol class="lower-alpha">
+<li id="li-4696"><p id="p-7575">A certain mobile home costs \(\$20,000\text{.}\) Write a function for its value after \(t\) years.</p></li>
+<li id="li-4697"><p id="p-7576">Use your calculator to graph your function on the interval \(0 \le t\le 30\text{.}\)</p></li>
+<li id="li-4698"><p id="p-7577">How long will it be before a \(\$20,000\) mobile home depreciates to \(\$12,800\text{?}\) Use algebraic methods to find your answer, and verify it on your graph.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-221">
+<div class="introduction" id="introduction-230"><p id="p-7578">Use a graph to find an approximate solution accurate to the nearest hundredth.</p></div>
+<div class="exercisegroup-exercises cols4">
+<article class="exercise-like" id="exercise-1573"><h6 class="heading"><span class="codenumber">41.</span></h6>
+<p id="p-7579">\(3^{x-1}=4 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-849" id="answer-849"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-849"><div class="solution"><p id="p-7580">\(x = 2.26\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1574"><h6 class="heading"><span class="codenumber">42.</span></h6>
+<p id="p-7581">\(2^{x+3}=5 \)</p></article><article class="exercise-like" id="exercise-1575"><h6 class="heading"><span class="codenumber">43.</span></h6>
+<p id="p-7582">\(4^{-x}=7 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-850" id="answer-850"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-850"><div class="solution"><p id="p-7583">\(x = -1.40\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1576"><h6 class="heading"><span class="codenumber">44.</span></h6>
+<p id="p-7584">\(6^{-x}=3 \)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-222">
+<div class="introduction" id="introduction-231"><p id="p-7585">Decide whether each function is an exponential function, a power function, or neither.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1577"><h6 class="heading"><span class="codenumber">45.</span></h6>
+<ol id="p-7586" class="lower-alpha cols2">
+<li id="li-4699"><p id="p-7587">\(g(t)=3 t^{0.4} \)</p></li>
+<li id="li-4700"><p id="p-7588">\(h(t)=4(0.3)^t \)</p></li>
+<li id="li-4701"><p id="p-7589">\(D(x)=6x^{1/2} \)</p></li>
+<li id="li-4702"><p id="p-7590">\(E(x)=4x+x^4 \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-851" id="answer-851"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-851"><div class="solution"><ol id="p-7591" class="lower-alpha cols2">
+<li id="li-4703"><p id="p-7592">Power</p></li>
+<li id="li-4704"><p id="p-7593">Exponential</p></li>
+<li id="li-4705"><p id="p-7594">Power</p></li>
+<li id="li-4706"><p id="p-7595">Neither</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1578"><h6 class="heading"><span class="codenumber">46.</span></h6>
+<ol id="p-7596" class="lower-alpha cols2">
+<li id="li-4707"><p id="p-7597">\(R(w) = 5(5)^{w-1} \)</p></li>
+<li id="li-4708"><p id="p-7598">\(Q(w) = 2^w-w^2 \)</p></li>
+<li id="li-4709"><p id="p-7599">\(M(z) = 0.2z^{1.3} \)</p></li>
+<li id="li-4710"><p id="p-7600">\(N(z) = z^{-3} \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-223">
+<div class="introduction" id="introduction-232"><p id="p-7601">Decide whether the table could describe a linear function, a power function, an exponential function, or none of these. Find a formula for each linear, power, or exponential function.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1579"><h6 class="heading"><span class="codenumber">47.</span></h6>
+<ol id="p-7602" class="lower-alpha cols2">
+<li id="li-4711"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(3\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(6\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(12\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(24\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(48\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4712"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(P\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(0.5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(4.5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(8\)</td>
+</tr>
+</table></div></div></div></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-852" id="answer-852"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-852"><div class="solution"><ol id="p-7603" class="lower-alpha">
+<li id="li-4713"><p id="p-7604">Exponential \(y=3\cdot 2^x\)</p></li>
+<li id="li-4714"><p id="p-7605">Power \(P=0.5 t^2\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1580"><h6 class="heading"><span class="codenumber">48.</span></h6>
+<ol id="p-7606" class="lower-alpha cols2">
+<li id="li-4715"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(N\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(54\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(128\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4716"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(p\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(R\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(405\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(135\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(45\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(15\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(5\)</td>
+</tr>
+</table></div></div></div></li>
+</ol></article><article class="exercise-like" id="exercise-1581"><h6 class="heading"><span class="codenumber">49.</span></h6>
+<ol id="p-7607" class="lower-alpha cols2">
+<li id="li-4717"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(100\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(50\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(33\frac{1}{3} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(25\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(20\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4718"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(P\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\frac{1}{2} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(4\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(8\)</td>
+</tr>
+</table></div></div></div></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-853" id="answer-853"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-853"><div class="solution"><ol id="p-7608" class="lower-alpha">
+<li id="li-4719"><p id="p-7609">Power \(y=100 x^{-1}\)</p></li>
+<li id="li-4720"><p id="p-7610">Exponential \(P=\frac{1}{4} \cdot 2^x\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1582"><h6 class="heading"><span class="codenumber">50.</span></h6>
+<ol id="p-7611" class="lower-alpha cols2">
+<li id="li-4721"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(h\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(a\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(70\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(7\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(0.7\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(0.07\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(0.007\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4722"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(Q\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\frac{1}{4} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\frac{9}{4} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(4\)</td>
+</tr>
+</table></div></div></div></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-224">
+<div class="introduction" id="introduction-233">
+<p id="p-7612">Fill in the tables. Graph each pair of functions in the same window. Then answer the questions below.</p>
+<ol class="lower-alpha">
+<li id="li-4723"><p id="p-7613">Give the range of \(f\) and the range of \(g\text{.}\)</p></li>
+<li id="li-4724"><p id="p-7614">For how many values of \(x\) does \(f (x) = g(x)\text{?}\)</p></li>
+<li id="li-4725"><p id="p-7615">Estimate the value(s) of \(x\) for which \(f (x) = g(x)\text{.}\)</p></li>
+<li id="li-4726"><p id="p-7616">For what values of \(x\) is \(f (x)\lt g(x)\text{?}\)</p></li>
+<li id="li-4727"><p id="p-7617">Which function grows more rapidly for large values of \(x\text{?}\)</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1583"><h6 class="heading"><span class="codenumber">51.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)=x^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)=2^x \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-854" id="answer-854"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-854"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)=x^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)=2^x \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{4} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{2} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-51.svg" style="width: 100%; height: auto;" alt="exponential growth and qudratic"></div></div></div>
+<ol id="p-7618" class="lower-alpha">
+<li id="li-4728"><p id="p-7619">Range of \(f\text{:}\) \([0, \infty)\text{;}\) Range of \(g\text{:}\) \((0, \infty)\)</p></li>
+<li id="li-4729"><p id="p-7620">\(3\)</p></li>
+<li id="li-4730"><p id="p-7621">\(-0.7667\text{,}\) \(2\text{,}\) \(4\)</p></li>
+<li id="li-4731"><p id="p-7622">\((-0.7667, 2) \) and \((4,\infty)\)</p></li>
+<li id="li-4732"><p id="p-7623">g</p></li>
+</ol>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-1584"><h6 class="heading"><span class="codenumber">52.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(f(x)=x^3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(g(x)=3^x \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-225">
+<div class="introduction" id="introduction-234"><p id="p-7624">For Problems 53–60, sketch the graph of each transformation of the given function, then write a formula and check your sketch with a graphing calculator. State the domain and range of each transformation, its intercept(s), and any asymptotes.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1585"><h6 class="heading"><span class="codenumber">53.</span></h6>
+<p id="p-7625">\(f(x)=3^x \)</p>
+<ol class="lower-alpha">
+<li id="li-4733"><p id="p-7626">\(y = f (x) - 4\)</p></li>
+<li id="li-4734"><p id="p-7627">\(y = f (x - 4)\)</p></li>
+<li id="li-4735"><p id="p-7628">\(y = -4 f (x)\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-855" id="answer-855"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-855"><div class="solution"><ol id="p-7629" class="lower-alpha">
+<li id="li-4736">
+<p id="p-7630">\(y = 3^x - 4\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-53.svg" style="width: 100%; height: auto;" alt="shifted growth"></div></div></div>
+<p id="p-7631">Domain: \((-\infty, \infty)\text{;}\) range: \((-4, \infty)\text{,}\) \(x\)-intercept \((1.26, 0)\text{;}\) \(y\)-intercept \((0, -3)\text{;}\) horizontal asymptote \(y=-4\)</p>
+</li>
+<li id="li-4737">
+<p id="p-7632">\(y=3^{x-4}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-53b.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div>
+<p id="p-7633">Domain: \((-\infty, \infty)\text{;}\) range: \((0, \infty)\text{,}\) no \(x\)-intercept; \(y\)-intercept \(\left(0, \dfrac{1}{81}\right)\text{;}\) the \(x\)-axis is the horizontal asymptote.</p>
+</li>
+<li id="li-4738">
+<p id="p-7634">\(y=-4\cdot 3^{x}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-53c.svg" style="width: 100%; height: auto;" alt="growth reflected"></div></div></div>
+<p id="p-7635">Domain: \((-\infty, \infty)\text{;}\) range: \((-\infty, 0)\text{,}\) no \(x\)-intercept; \(y\)-intercept \((0, -4)\text{;}\) the \(x\)-axis is the horizontal asymptote.</p>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1586"><h6 class="heading"><span class="codenumber">54.</span></h6>
+<p id="p-7636">\(g(x)=4^x \)</p>
+<ol class="lower-alpha">
+<li id="li-4739"><p id="p-7637">\(y = g(x) +2\)</p></li>
+<li id="li-4740"><p id="p-7638">\(y = g(x +2)\)</p></li>
+<li id="li-4741"><p id="p-7639">\(y = 2g(x)\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1587"><h6 class="heading"><span class="codenumber">55.</span></h6>
+<p id="p-7640">\(h(t)=6^t \)</p>
+<ol class="lower-alpha">
+<li id="li-4742"><p id="p-7641">\(y = -h(t) \)</p></li>
+<li id="li-4743"><p id="p-7642">\(y = h(-t) \)</p></li>
+<li id="li-4744"><p id="p-7643">\(y = -h(-t) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-856" id="answer-856"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-856"><div class="solution"><ol id="p-7644" class="lower-alpha">
+<li id="li-4745">
+<p id="p-7645">\(y =-6^t\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-55.svg" style="width: 100%; height: auto;" alt="reflected growth"></div></div></div>
+<p id="p-7646">Domain: \((-\infty, \infty)\text{;}\) range: \((-\infty, 0)\text{,}\) no \(t\)-intercept; \(y\)-intercept \((0, -1)\text{;}\) the \(t\)-axis is the horizontal asymptote.</p>
+</li>
+<li id="li-4746">
+<p id="p-7647">\(y=6^{-t}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-55b.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div>
+<p id="p-7648">Domain: \((-\infty, \infty)\text{;}\) range: \((0, \infty)\text{,}\) no \(t\)-intercept; \(y\)-intercept \((0, 1)\text{;}\) the \(t\)-axis is the horizontal asymptote.</p>
+</li>
+<li id="li-4747">
+<p id="p-7649">\(y=-6^{-t}\text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-55c.svg" style="width: 100%; height: auto;" alt="decay reflected"></div></div></div>
+<p id="p-7650">Domain: \((-\infty, \infty)\text{;}\) range: \((-\infty, 0)\text{,}\) no \(t\)-intercept; \(y\)-intercept \((0, -1)\text{;}\) the \(t\)-axis is the horizontal asymptote.</p>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1588"><h6 class="heading"><span class="codenumber">56.</span></h6>
+<p id="p-7651">\(j(t)=\left(\dfrac{1}{3} \right)^t \)</p>
+<ol class="lower-alpha">
+<li id="li-4748"><p id="p-7652">\(y = j(-t) \)</p></li>
+<li id="li-4749"><p id="p-7653">\(y = -j(t)\)</p></li>
+<li id="li-4750"><p id="p-7654">\(y = -j(-t) \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1589"><h6 class="heading"><span class="codenumber">57.</span></h6>
+<p id="p-7655">\(g(x)=2^x \)</p>
+<ol class="lower-alpha">
+<li id="li-4751"><p id="p-7656">\(y = g(x-3) \)</p></li>
+<li id="li-4752"><p id="p-7657">\(y = g(x-3)+4 \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-857" id="answer-857"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-857"><div class="solution"><ol id="p-7658" class="lower-alpha">
+<li id="li-4753">
+<p id="p-7659">\(y =2^{x-3}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-57.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div>
+<p id="p-7660">Domain: \((-\infty, \infty)\text{;}\) range: \((0, \infty)\text{,}\) no \(x\)-intercept; \(y\)-intercept \(\left(0, \frac{1}{8}\right)\text{;}\) the \(x\)-axis is the horizontal asymptote.</p>
+</li>
+<li id="li-4754">
+<p id="p-7661">\(y=2^{x-3}+4 \text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-57b.svg" style="width: 100%; height: auto;" alt="shifted growth"></div></div></div>
+<p id="p-7662">Domain: \((-\infty, \infty)\text{;}\) range: \((4, \infty)\text{,}\) no \(x\)-intercept; \(y\)-intercept \(&gt;\left(0, \frac{33}{8}\right)\text{;}\) horizontal asymptote \(y=4\)</p>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1590"><h6 class="heading"><span class="codenumber">58.</span></h6>
+<p id="p-7663">\(f(x)=10^x \)</p>
+<ol class="lower-alpha">
+<li id="li-4755"><p id="p-7664">\(y = f(x+5) \)</p></li>
+<li id="li-4756"><p id="p-7665">\(y = f(x+5)-20 \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1591"><h6 class="heading"><span class="codenumber">59.</span></h6>
+<p id="p-7666">\(N(t)=\left(\dfrac{1}{2} \right)^t \)</p>
+<ol class="lower-alpha">
+<li id="li-4757"><p id="p-7667">\(y = -N(t) \)</p></li>
+<li id="li-4758"><p id="p-7668">\(y = 6-N(t) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-858" id="answer-858"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-858"><div class="solution"><ol id="p-7669" class="lower-alpha">
+<li id="li-4759">
+<p id="p-7670">\(y =-\left(\dfrac{1}{2}\right)^t\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-59.svg" style="width: 100%; height: auto;" alt="reflected decay"></div></div></div>
+<p id="p-7671">Domain: \((-\infty, \infty)\text{;}\) range: \((-\infty, 0)\text{,}\) no \(t\)-intercept; \(y\)-intercept \((0, -1)\text{;}\) the \(t\)-axis is the horizontal asymptote.</p>
+</li>
+<li id="li-4760">
+<p id="p-7672">\(y=6-\left(\dfrac{1}{2} \right)^t \text{,}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-59b.svg" style="width: 100%; height: auto;" alt="shifted reflected decay"></div></div></div>
+<p id="p-7673">Domain: \((-\infty, \infty)\text{;}\) range: \((-\infty,6)\text{,}\) \(t\)-intercept approximately \((-2.58,0)\text{;}\) \(y\)-intercept \((0, 5)\text{;}\) horizontal asymptote is \(y=6\)</p>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1592"><h6 class="heading"><span class="codenumber">60.</span></h6>
+<p id="p-7674">\(P(t)=0.4^t \)</p>
+<ol class="lower-alpha">
+<li id="li-4761"><p id="p-7675">\(y = -P(t) \)</p></li>
+<li id="li-4762"><p id="p-7676">\(y = 8-P(t) \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-226">
+<div class="introduction" id="introduction-235">
+<p id="p-7677">For Problems 61–64,</p>
+<ol class="lower-alpha">
+<li id="li-4763"><p id="p-7678">Describe the graph as a transformation of \(y = 2^x\text{.}\)</p></li>
+<li id="li-4764"><p id="p-7679">Give an equation for the function graphed.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1593"><h6 class="heading"><span class="codenumber">61.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-61.svg" style="width: 100%; height: auto;" alt="shifted decay"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-859" id="answer-859"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-859"><div class="solution"><ol id="p-7680" class="lower-alpha">
+<li id="li-4765"><p id="p-7681">The graph of \(y = 2^x\) has been reflected about the \(y\)-axis and shifted up \(2\) units.</p></li>
+<li id="li-4766"><p id="p-7682">\(y=2^{-x}+2 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1594"><h6 class="heading"><span class="codenumber">62.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-62.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div></article><article class="exercise-like" id="exercise-1595"><h6 class="heading"><span class="codenumber">63.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-63.svg" style="width: 100%; height: auto;" alt="reflected and translated growth"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-860" id="answer-860"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-860"><div class="solution"><ol id="p-7683" class="lower-alpha">
+<li id="li-4767"><p id="p-7684">The graph of \(y = 2^x\) has been reflected about the \(x\)-axis and shifted up \(10\) units.</p></li>
+<li id="li-4768"><p id="p-7685">\(y=-2^{x}+10 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1596"><h6 class="heading"><span class="codenumber">64.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-64.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-227">
+<div class="introduction" id="introduction-236"><p id="p-7686">Match the graph of each function to its formula. In each formula, \(a\gt 0\) and \(b \gt 1\text{.}\)</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1597"><h6 class="heading"><span class="codenumber">65.</span></h6>
+<ol id="p-7687" class="lower-alpha cols3">
+<li id="li-4769"><p id="p-7688">\(y=ab^x\)</p></li>
+<li id="li-4770"><p id="p-7689">\(y=ab^{-x} \)</p></li>
+<li id="li-4771"><p id="p-7690">\(y=ax^b \)</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-65.svg" style="width: 100%; height: auto;" alt="three curves"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-861" id="answer-861"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-861"><div class="solution"><ol id="p-7691" class="lower-alpha cols3">
+<li id="li-4772"><p id="p-7692">I</p></li>
+<li id="li-4773"><p id="p-7693">III</p></li>
+<li id="li-4774"><p id="p-7694">II</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1598"><h6 class="heading"><span class="codenumber">66.</span></h6>
+<ol id="p-7695" class="lower-alpha cols3">
+<li id="li-4775"><p id="p-7696">\(y=ax^{-b}\)</p></li>
+<li id="li-4776"><p id="p-7697">\(y=-ab^{x} \)</p></li>
+<li id="li-4777"><p id="p-7698">\(y=ax^{1/b} \)</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-66.svg" style="width: 100%; height: auto;" alt="three curves"></div></div></div></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1599"><h6 class="heading"><span class="codenumber">67.</span></h6>
+<p id="p-7699">The function \(f (t)\) describes a volunteer's heart rate during a treadmill test.</p>
+<div class="displaymath">
+\begin{equation*}
+f (t) =
+\begin{cases}
+100 \amp 0 \le t \lt 3\\
+56t - 68 \amp 3 \le t \lt 4\\
+186 - 500(0.5)^t \amp 4 \le t \lt 9\\
+100 + 6.6(0.6)^{t-14} \amp  9\le t \lt 20
+\end{cases}
+\end{equation*}
+</div>
+<p>The heart rate is given in beats per minute and \(t\) is in minutes. (See <a href="basic-functions.html" class="internal" title="Section 3: Some Basic Functions">Section 3</a> to review functions defined piecewise.) (Source: Davis, Kimmet, and Autry, 1986)</p>
+<ol class="lower-alpha">
+<li id="li-4778">
+<p id="p-7700">Evaluate the function to complete the table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(15\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(t)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-4779"><p id="p-7701">Sketch the graph of the function.</p></li>
+<li id="li-4780"><p id="p-7702">The treadmill test began with walking at \(5.5\) kilometers per hour, then jogging, starting at \(12\) kilometers per hour and increasing to \(14\) kilometers per hour, and finished with a cool-down walking period. Identify each of these activities on the graph and describe the volunteer's heart rate during each phase.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-862" id="answer-862"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-862"><div class="solution"><ol id="p-7703" class="lower-alpha">
+<li id="li-4781"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(15\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(t)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(128\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(154.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(184.05\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(150.93\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(103.96\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4782"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-4-2-67.svg" style="width: 100%; height: auto;" alt="piecewise"></div></div></div></li>
+<li id="li-4783"><p id="p-7704">From \(0\) to \(3\) minutes, the volunteer is walking with heart rate \(100\) beats per minute. The volunteer jogged at a steady pace from \(3\) to \(4\) minutes, and the heart rate increased to about \(155\) beats per minutes. From \(4\) to \(9\) minutes, the jogging pace increased, and the heart rate rose to about \(185\) beats per minute. The cooldown started at \(9\) minutes, and the heart rate decreased rapidly and leveled off to about \(100\) beats per minute.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1600"><h6 class="heading"><span class="codenumber">68.</span></h6>
+<p id="p-7705">Carbon dioxide (\(\text{CO}_2\)) is called a greenhouse gas because it traps part of the Earth's outgoing energy. Animals release \(\text{CO}_2\) into the atmosphere, and plants remove \(\text{CO}_2\) through photosynthesis. In modern times, deforestation and the burning of fossil fuels both contribute to \(\text{CO}_2\) levels. The figure shows atmospheric concentrations of \(\text{CO}_2\text{,}\) in parts per million, measured at the Mauna Loa Observatory in Hawaii.</p>
+<ol class="lower-alpha">
+<li id="li-4784"><p id="p-7706">The red curve shows annual oscillations in \(\text{CO}_2\) levels. Can you explain why \(\text{CO}_2\) levels vary throughout the year?</p></li>
+<li id="li-4785"><p id="p-7707">The blue curve shows the average annual \(\text{CO}_2\) readings. By approximately how much does the \(\text{CO}_2\) level vary from its average value during the year?</p></li>
+<li id="li-4786"><p id="p-7708">In 1960, the average \(\text{CO}_2\) level was \(316.75\) parts per million, and the average level has been rising by \(0.4\%\) per year. If the level continues to rise at this rate, what \(\text{CO}_2\) readings can we expect in the year 2100?</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-4-2-68.svg" style="width: 100%; height: auto;" alt="CO2 concentrations"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-19" id="hint-19"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-19"><div class="solution"><p id="p-7709">For part (a): Why would photosynthesis vary throughout the year?</p></div></div>
+</div></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:36-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 3.5</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="summary-3-5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Joint-Variation.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-expo.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="summary-3-5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Joint-Variation.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-expo.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="section-3-5-exercises"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">6.6</span> <span class="title">Homework 3.5</span>
+</h2>
+<a href="section-3-5-exercises.html" class="permalink">¶</a><article class="exercise-like" id="exercise-1348"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-6514">Melody Airlines charges \(\$129\) for a coach ticket from San Francisco to Seattle, and \(\$240\) for a first-class ticket.</p>
+<ol class="lower-alpha">
+<li id="li-4079"><p id="p-6515">Write a function of two variables for the revenue, \(R\text{,}\) that Melody Airlines will collect from the flight.</p></li>
+<li id="li-4080"><p id="p-6516">The airplane has \(12\) first-class seats and \(24\) coach seats. What is the maximum revenue the airline can collect? Write your answer with function notation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-731" id="answer-731"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-731"><div class="solution"><ol id="p-6517" class="lower-alpha">
+<li id="li-4081"><p id="p-6518">\(R = f (x, y) = 129x + 240y\)</p></li>
+<li id="li-4082"><p id="p-6519">\(f (24, 12) = 5976\) dollars is the maximum revenue.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1349"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-6520">A manufacturing firm calculates its profit (or loss) by subtracting the cost of production from its revenue. The firm can produce 100 items per week, with fixed costs (overhead) of \(\$500\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-4083"><p id="p-6521">Write a function for the firm's weekly profit, \(P\text{,}\) if they charge a price of \(p\) dollars per item and it costs them \(c\) dollars to produce each item.</p></li>
+<li id="li-4084"><p id="p-6522">If each item costs \(\$80\) to produce, what price should the firm charge in order to make a profit? Write your answer with function notation.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1350"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-6523">Archaeologists can calculate the size of a pot from just a fragment, or sherd, of the original. If \(L\) and \(h\) are the dimensions of an arc of a circle, as shown in the figure, then the radius of the entire circle is given by the function</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:8.75%;margin-right:8.75%;">
+<div class="sbspanel" style="width:54.5454545454545%;justify-content:flex-start;"><div class="displaymath" id="p-6524">
+\begin{equation*}
+r = f (L, h) = \frac{L^2}{8h}+\frac{h}{2} 
+\end{equation*}
+</div></div>
+<div class="sbspanel" style="width:24.2424242424242%;justify-content:flex-start;"><img src="images/fig-3-5-3.svg" style="width: 100%; height: auto;" alt="pot"></div>
+</div></div>
+<ol id="p-6525" class="lower-alpha">
+<li id="li-4085"><p id="p-6526">A pottery sherd has dimensions \(L = 4\) inches and \(h = \dfrac{3}{2}\) inch. What was the radius of the whole pot? Write your answer with function notation.</p></li>
+<li id="li-4086"><p id="p-6527">Does \(r\) vary directly with \(L^2\text{?}\) Why or why not?</p></li>
+<li id="li-4087"><p id="p-6528">Show that the formula gives the correct value for \(r\) when the sherd is actually a semicircle.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-15" id="hint-15"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-15"><div class="solution"><p id="p-6529">For part (c): What are the values of \(L\) and \(h \) in this case?</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-732" id="answer-732"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-732"><div class="solution"><ol id="p-6530" class="lower-alpha">
+<li id="li-4088"><p id="p-6531">\(f\left(4,\dfrac{3}{2}\right)=\dfrac{25}{12}\approx 2.1 \) inches</p></li>
+<li id="li-4089"><p id="p-6532">No: We do not have \(r = kL^2\) for any constant \(k\text{.}\)</p></li>
+<li id="li-4090"><p id="p-6533">When \(L = 2r\) and \(h = r\text{,}\) \(f (L, h) = r\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1351"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-6534">The surface area of a cylinder is a function of its diameter and height,</p>
+<div class="displaymath">
+\begin{equation*}
+S = f (d, h) = \pi dh + \frac{\pi}{2}d^2 
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-4091"><p id="p-6535">What is the surface area of a cylindrical oatmeal container with diameter \(4\) inches and height \(7\) inches? Write your answer with function notation.</p></li>
+<li id="li-4092"><p id="p-6536">Write a formula in terms of \(d\) for the surface area of a cylinder whose height is equal to its diameter.</p></li>
+<li id="li-4093"><p id="p-6537">How does the surface area of the cylinder in part (b) compare with the surface area of a sphere of the same diameter? Sketch both surfaces with the same center.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1352"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-6538">The Dubois formula is used to estimate the surface area, \(S\text{,}\) of a person in terms of his or her weight and height. A good estimate of surface area is critical to some forms of cancer treatment. In square centimeters, \(S\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+S = f (w, h) = 71.84w^{0.425}h^{0.725}
+\end{equation*}
+</div>
+<p>where \(w\) is in kilograms and \(h\) is in centimeters.</p>
+<ol class="lower-alpha">
+<li id="li-4094"><p id="p-6539">Use the Dubois formula to estimate the surface area of a person who weighs \(60\) kg and is \(160\) cm tall.</p></li>
+<li id="li-4095"><p id="p-6540">Does surface area increase more rapidly with weight or with height?</p></li>
+<li id="li-4096"><p id="p-6541">What percent increase in surface area does a \(10\%\) increase in weight produce?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-733" id="answer-733"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-733"><div class="solution"><ol id="p-6542" class="lower-alpha cols3">
+<li id="li-4097"><p id="p-6543">\(16,220\) sq cm</p></li>
+<li id="li-4098"><p id="p-6544">Height</p></li>
+<li id="li-4099"><p id="p-6545">\(4.1\%\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1353"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<p id="p-6546">In the 1970s, McNeill Alexander proposed a relationship between an animal's running speed, \(v\text{,}\) its hip height, \(h\text{,}\) and its stride length, \(s\text{.}\) If stride and hip height are measured in meters, the running speed is given in meters per second by</p>
+<div class="displaymath">
+\begin{equation*}
+v = f (h, s) = 0.78s^{1.67}h^{-1.17}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-4100"><p id="p-6547">What is the speed of a racehorse whose hip height is \(1.6\) meters and stride length is \(7\) meters?</p></li>
+<li id="li-4101"><p id="p-6548">A cheetah can run at \(33\) meters per second. If its hip height is \(0.8\) meters, what is its stride length?</p></li>
+<li id="li-4102"><p id="p-6549">A pronghorn antelope has the same stride length as a cheetah and its hip height is \(12\%\) greater than the cheetah's. How does its running speed compare to a cheetah's?</p></li>
+</ol></article><article class="exercise-like" id="exercise-1354"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<p id="p-6550">If you walk for exercise, the number of calories, \(C\text{,}\) you burn per mile depends on your walking speed, \(s\text{,}\) and your weight, \(w\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:46.1538461538462%;justify-content:center;"><ol id="p-6551" class="lower-alpha">
+<li id="li-4103"><p id="p-6552">Write this fact in function notation.</p></li>
+<li id="li-4104"><p id="p-6553">Use the table to evaluate \(f (4.5, 160)\) and explain its meaning.</p></li>
+<li id="li-4105"><p id="p-6554">Solve the inequality \(f (s,160)\gt 110\) and explain its meaning.</p></li>
+<li id="li-4106"><p id="p-6555">If you weigh \(140\) pounds, how fast should you walk to burn the most calories per mile?</p></li>
+<li id="li-4107"><p id="p-6556">How can you use the table to calculate how many calories you burn per hour while walking?</p></li>
+</ol></div>
+<div class="sbspanel fixed-width" style="width:51.2820512820513%;justify-content:center;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="8">Calories Burned per Mile</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="7">Weight (pounds)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Speed<br>(mph)</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(120\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(140\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(160\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(180\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(200\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(220\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(2.0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(65\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(93\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(105\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(120\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(133\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(145\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(2.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(62\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(74\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(88\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(100\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(112\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(124\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(138\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(3.0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(72\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(83\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(95\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(108\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(120\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(132\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(3.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(59\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(71\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(83\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(93\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(107\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(119\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(130\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(4.0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(59\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(70\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(81\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(94\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(105\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(118\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(129\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(4.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(69\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(82\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(97\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(110\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(122\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(138\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(151\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(5.0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(77\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(92\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(108\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(123\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(138\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(154\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(169\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(6.0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(86\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(99\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(114\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(130\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(147\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(167\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(190\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(7.0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(96\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(111\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(128\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(146\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(165\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(187\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(212\)</td>
+</tr>
+</table></div>
+</div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-734" id="answer-734"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-734"><div class="solution"><ol id="p-6557" class="lower-alpha">
+<li id="li-4108"><p id="p-6558">\(C = f (s,w)\)</p></li>
+<li id="li-4109"><p id="p-6559">\(f (4.5, 160) = 110\text{,}\) so someone walking \(4.5\) mph and weighing \(160\) pounds burns \(110\) calories per mile.</p></li>
+<li id="li-4110"><p id="p-6560">\(s\gt 4.5\text{.}\) A person who weighs \(160\) pounds must walk faster than \(4.5\) mph in order to burn more than \(110\) calories per mile.</p></li>
+<li id="li-4111"><p id="p-6561">\(7\) mph</p></li>
+<li id="li-4112"><p id="p-6562">Find the row with your walking speed in the left column and move along that row until you are in the column with your weight at the top. The value in that row and column is the number of calories you burn per mile.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1355"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<p id="p-6563">The BMI (body mass index) is used to determine whether a person is a healthy weight, overweight, or obese. \(B\) is a function of height, \(h\text{,}\) and weight, \(w\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-4113"><p id="p-6564">Write this fact in function notation.</p></li>
+<li id="li-4114"><p id="p-6565">Use the table to evaluate \(f (68,150),\) and explain its meaning.</p></li>
+<li id="li-4115"><p id="p-6566">A person is deemed overweight if his or her BMI is at least \(25\) but less than \(30\text{.}\) Write this fact in function notation. (A person is obese if the BMI is over \(30\text{.}\))</p></li>
+<li id="li-4116"><p id="p-6567">Solve the inequality \(f (66,w)\lt 25\) and explain its meaning.</p></li>
+<li id="li-4117"><p id="p-6568">Solve the inequality \(f (h, 200)\gt 30\) and explain its meaning.</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="12">Body Mass Index</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="11">Weight (pounds)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Height<br>(inches)</td>
+<td class="c m b3 r1 l0 t0 lines">\(120\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(130\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(140\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(150\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(160\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(170\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(180\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(190\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(200\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(210\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(220\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(58\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(34\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(36\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(38\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(42\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(44\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(46\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(35\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(39\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(41\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(43\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(62\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(35\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(38\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(64\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(34\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(36\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(38\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(66\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(34\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(36\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(68\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(34\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(70\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(72\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(30\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(74\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(76\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+</tr>
+</table></div></div></div></article><article class="exercise-like" id="exercise-1356"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
+<div class="sbspanel" style="width:43.2432432432432%;justify-content:flex-start;"><p id="p-6569">An <em class="emphasis">amortization table</em> shows the monthly payments for a loan or mortgage. The table below gives monthly payments for a loan of \(\$100,000\text{.}\) The monthly payment, \(P\text{,}\) is a function of the annual interest rate, \(r\text{,}\) and the length of the loan, \(t\text{,}\) in years.</p></div>
+<div class="sbspanel fixed-width" style="width:48.6486486486486%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="7">Monthly Payment</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="6">Length of loan (years)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Interest<br>rate</td>
+<td class="c m b3 r1 l0 t0 lines">\(5\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(10\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(30\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(0.05\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1879\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1056\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(788\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(657\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(582\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(535\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(0.06\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1924\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1105\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(840\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(713\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(641\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(597\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(0.07\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1969\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1154\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(894\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(771\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(703\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(661\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(0.08\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2014\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1205\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(949\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(831\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(767\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(729\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(0.09\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2060\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1257\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1007\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(893\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(833\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(799\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(0.10\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2107\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1311\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1066\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(957\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(901\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(870\)</td>
+</tr>
+</table></div>
+</div></div>
+<ol id="p-6570" class="lower-alpha">
+<li id="li-4118"><p id="p-6571">You would like to borrow \(\$100,000\) for \(20\) years. What interest rate, to the nearest percent, can you accept if your monthly payments must be no more than \(\$800\text{?}\) What interest rate can you accept if the loan is for \(30\) years? If \(P = f (r, t)\text{,}\) use function notation to write both of these questions as inequalities.</p></li>
+<li id="li-4119"><p id="p-6572">Suppose you borrow \(\$100,000\) for \(10\) years at \(10\%\) interest. Which would cause a greater reduction in your monthly payment: Reducing the interest rate by \(5\%\) or increasing the length of the loan by \(5\) years?</p></li>
+<li id="li-4120"><p id="p-6573">At a fixed interest rate of \(8\%\text{,}\) is the monthly payment a linear function of the length of the loan?</p></li>
+<li id="li-4121"><p id="p-6574">For a fixed loan period of \(25\) years, is the monthly payment a linear function of interest rate?</p></li>
+<li id="li-4122"><p id="p-6575">Does a \(1\%\) increase in the interest rate have a greater affect on the monthly payment for a \(15\)-year loan or a \(30\)-year loan?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-735" id="answer-735"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-735"><div class="solution"><ol id="p-6576" class="lower-alpha">
+<li id="li-4123"><p id="p-6577">When is \(f (r, 20)\le 800\text{?}\) \(~r \le7\%\text{;}\) When is \(f (r, 30) \le 800\text{?}\) \(~r\le 9\%\)</p></li>
+<li id="li-4124"><p id="p-6578">Reducing interest rate by \(5\%\)</p></li>
+<li id="li-4125"><p id="p-6579">No</p></li>
+<li id="li-4126"><p id="p-6580">No</p></li>
+<li id="li-4127"><p id="p-6581">\(30\)-year loan</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1357"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<p id="p-6582">Warmer air can hold more moisture than cooler air. Relative humidity is the amount of moisture in the air, as a fraction of the saturation level at the current temperature. A common measure of humidity is the dewpoint: the temperature at which the current humidity would saturate the air, so that dew forms. The table gives dewpoints, \(D\text{,}\) in \(\degree\)F, as a function of temperature, \(T\text{,}\) and relative humidity, \(H\text{,}\) \(D = f (T, H)\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="12">Dewpoint</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="11">Relative humidity (\(\%\))</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Temperature (\(\degree\)F)</td>
+<td class="c m b3 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(10\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(70\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(80\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(900\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-60\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(14\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(30\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-53\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-12\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(34\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-47\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(44\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(47\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-41\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(36\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(41\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(46\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(54\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(57\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(60\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(70\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-35\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(45\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(55\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(64\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(67\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(70\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(35\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(46\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(54\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(65\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(69\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(73\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(77\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(90\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(43\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(54\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(62\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(69\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(74\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(79\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(83\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(87\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(90\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6583" class="lower-alpha">
+<li id="li-4128"><p id="p-6584">Estimate the relative humidity if the temperature is \(70\degree\)F and the dewpoint is \(40\degree\)F. Write your answer in function notation.</p></li>
+<li id="li-4129"><p id="p-6585">Does the dewpoint rise or fall with temperature? (Hint: Consider any column in the table, and notice how dewpoint changes with increasing temperature.)</p></li>
+<li id="li-4130"><p id="p-6586">Does the dewpoint rise or fall with humidity? (Hint: Consider any row in the table, and notice how dewpoint changes with increasing humidity.)</p></li>
+<li id="li-4131"><p id="p-6587">Suppose that the temperature is \(70\degree\)F and the relative humidity is \(70\%\text{.}\) Which would cause a larger change in dewpoint: a rise in temperature to \(80\degree\)F or an increase in humidity to \(80\%\text{?}\)</p></li>
+<li id="li-4132"><p id="p-6588">Does dewpoint change more rapidly with temperature when the humidity is low or when the humidity is high?</p></li>
+</ol></article><article class="exercise-like" id="exercise-1358"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<p id="p-6589">The table shows automobile fuel efficiency, \(E\text{,}\) as a function of gasoline used, \(g\text{,}\) and miles driven, \(m\text{.}\) Values of \(E\) are rounded to tenths where necessary.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="9">Fuel Efficiency</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="8">Distance (miles)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gas<br>(gallons)</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(150\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(200\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(250\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(300\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(350\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(400\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(450\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31.25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(43.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(56.25\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(35\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(45\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(12\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20.8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37.5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(14\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7.1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(10.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(14.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32.1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18.8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(21.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28.1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11.1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(13.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6590" class="lower-alpha">
+<li id="li-4133"><p id="p-6591">Choose one row of the table and decide if \(E\) varies directly with \(m\) or inversely with \(m\text{.}\) Explain your method.</p></li>
+<li id="li-4134"><p id="p-6592">Choose one column of the table and decide if \(E\) varies directly with \(g\) or inversely with \(g\text{.}\) Explain your method.</p></li>
+<li id="li-4135"><p id="p-6593">Find the constant of variation and write \(E\) as a function of \(g\) and \(m\text{.}\) What are the units of \(E\text{?}\)</p></li>
+<li id="li-4136"><p id="p-6594">Sketch a graph of \(E\) as a function of \(m\) for \(g = 8\text{,}\) \(10\text{,}\) \(12\text{,}\) and \(14\text{.}\)</p></li>
+<li id="li-4137"><p id="p-6595">Sketch a graph of \(E\) as a function of \(g\) for \(m = 100\text{,}\) \(200\text{,}\) \(300\text{,}\) and \(400\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-736" id="answer-736"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-736"><div class="solution"><ol id="p-6596" class="lower-alpha">
+<li id="li-4138"><p id="p-6597">Direct variation: In each row, \(E = km\) for some constant \(k\) that depends on the row.</p></li>
+<li id="li-4139"><p id="p-6598">Inverse variation: In each column, \(E = \dfrac{c}{g}\) for some constant \(c\) that depends on the column.</p></li>
+<li id="li-4140"><p id="p-6599">\(E = \dfrac{m}{g}\) miles/gallon</p></li>
+<li id="li-4141"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-5-11.svg" style="width: 100%; height: auto;" alt="four direct variation"></div></div></div></li>
+<li id="li-4142"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-5-11e.svg" style="width: 100%; height: auto;" alt="four inverse variation"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1359"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<p id="p-6600">The table shows the productivity, \(P\text{,}\) of a manufacturing plant as a function of the number of items produced, \(I\text{,}\) and the hours of labor used, \(w\text{.}\) Values of \(P\) are rounded to tenths where necessary.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="9">Productivity</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="8">Labor (hours)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Items<br>produced</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(150\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(200\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(250\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(300\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(350\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(400\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(450\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(600\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.3\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(700\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.6\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(800\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.8\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(900\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.2\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6601" class="lower-alpha">
+<li id="li-4143"><p id="p-6602">Choose one row of the table and decide if \(P\) varies directly with \(w\) or inversely with \(w\text{.}\) Explain your method.</p></li>
+<li id="li-4144"><p id="p-6603">Choose one column of the table and decide if \(P\) varies directly with \(I\) or inversely with \(I\text{.}\) Explain your method.</p></li>
+<li id="li-4145"><p id="p-6604">Find the constant of variation and write \(P\) as a function of \(I\) and \(w\text{.}\) What are the units of \(E\text{?}\)</p></li>
+<li id="li-4146"><p id="p-6605">Sketch a graph of \(P\) as a function of \(w\) for \(I = 500\text{,}\) \(600\text{,}\) \(800\text{,}\) and \(1000\text{.}\)</p></li>
+<li id="li-4147"><p id="p-6606">Sketch a graph of \(P\) as a function of \(I\) for \(w = 100\text{,}\) \(200\text{,}\) \(300\text{,}\) and \(400\text{.}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1360"><h6 class="heading"><span class="codenumber">13.</span></h6>
+<p id="p-6607">The water gushing out of a fire hose exerts a backward force that the firefighter must control. This force, called the nozzle reaction, \(R\text{,}\) is a function of the diameter, \(d\text{,}\) of the nozzle and the water pressure, \(P\text{,}\) at the nozzle.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="7">Nozzle Reaction (lb)</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="6">Water pressure (psi)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Nozzle<br>diameter<br>(in)</td>
+<td class="c m b3 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(70\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(80\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.00\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(47.1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(62.8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(78.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(94.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(109.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(125.6\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(73.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(98.1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(122.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(147.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(171.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(196.3\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(106\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(141.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(176.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(212\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(247.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(282.6\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(144.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(192.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(240.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(288.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(336.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(384.7\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(2.00\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(188.4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(251.2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(314\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(376.8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(439.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(502.4\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6608" class="lower-alpha">
+<li id="li-4148"><p id="p-6609">Show that \(R\) varies directly with \(P\text{.}\)</p></li>
+<li id="li-4149"><p id="p-6610">Show that \(R\) varies directly with a power of \(d\text{.}\) What is the power?</p></li>
+<li id="li-4150"><p id="p-6611">Find the constant of variation and write a formula for \(R\) as a function of \(d\) and \(P\text{.}\)</p></li>
+<li id="li-4151"><p id="p-6612">A typical fire hose has nozzle diameter \(2\frac{1}{2}\) inches and nozzle pressure \(60\) psi. Use your formula to calculate the nozzle reaction.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-737" id="answer-737"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-737"><div class="solution"><ol id="p-6613" class="lower-alpha">
+<li id="li-4152"><p id="p-6614">In each row, \(R = kp\) for some constant \(k\) that depends on the row.</p></li>
+<li id="li-4153"><p id="p-6615">In each column, \(R = cd^2\) for some constant \(c\) that depends on the column.</p></li>
+<li id="li-4154"><p id="p-6616">\(R = 1.57d^2 p\)</p></li>
+<li id="li-4155"><p id="p-6617">\(588.75\) pounds: When we keep \(p\) constant and double \(d\text{,}\) \(R\) is multiplied by a factor of \(4\text{.}\) So the value at \(d = 2\frac{1}{2} \text{,}\) \(p = 60\) should be \(4\) times the value at \(d = 1\frac{1}{4} \text{,}\) \(p = 60\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1361"><h6 class="heading"><span class="codenumber">14.</span></h6>
+<p id="p-6618">The resistance, \(R\text{,}\) of a wire depends on its length, \(L\text{,}\) and diameter, \(d\text{.}\) The table shows the resistance of copper wires of gauges from \(10\) to \(20\text{.}\) The diameters of the wires are given in mils, where \(1 \text{ mil} = 0.001 \text{ inch}\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="7">Resistance (ohms)</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="6">Diameter (mils)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Length<br>(ft)</td>
+<td class="c m b3 r1 l0 t0 lines">\(102\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(81\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(64\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(51\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(32\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.0500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.0793\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.1270\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.1999\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.325\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.5078\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(100\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.1000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.1585\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.2539\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.3999\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.65\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.0156\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(150\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.1499\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.2378\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.3809\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.5998\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.975\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.5234\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(200\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.1999\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.3170\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.5078\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.7997\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.0313\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6619" class="lower-alpha">
+<li id="li-4156"><p id="p-6620">Show that \(R\) varies directly with \(L\text{.}\)</p></li>
+<li id="li-4157"><p id="p-6621">Show that \(R\) varies directly with a power of \(d\text{.}\) What is the power?</p></li>
+<li id="li-4158"><p id="p-6622">Find the constant of variation and write a formula for \(R\) as a function of \(L\) and \(d\text{.}\)</p></li>
+<li id="li-4159"><p id="p-6623">Household current uses 12-gauge wire, with a diameter of 0.081 inches. Use your formula to calculate the resistance of a 100-foot length of 12-gauge wire, and verify with the table.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1362"><h6 class="heading"><span class="codenumber">15.</span></h6>
+<p id="p-6624">In 2005, <span class="booktitle">Popular Mechanics</span> tested the acceleration from rest for eight sports cars.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Car</td>
+<td class="c m b1 r1 l0 t1 lines">Time<br>(sec)</td>
+<td class="c m b1 r1 l0 t1 lines">Distance<br>(ft)</td>
+<td class="c m b1 r1 l0 t1 lines">Acceleration<br>(ft/sec \(^2\))</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mercedes-Benz E55 AMG</td>
+<td class="c m b1 r1 l0 t0 lines">\(5.06\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(222.64\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17.39\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Lamborghini Gallardo</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.68\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(205.92\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18.80\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Chevrolet Corvette Z06</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.58\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(201.52\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19.21\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mercedes-Benz SL600</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.62\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(203.29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Porsche 911 GT2</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.46\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(196.24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Dodge Viper SRT-10</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.30\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(189.20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Saleen S7 Competition</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.73\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(164.12\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Ford Gran Torino</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.43\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(150.92\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6625" class="lower-alpha">
+<li id="li-4160"><p id="p-6626">Acceleration, \(a\text{,}\) varies directly with distance, \(d\text{,}\) and inversely with a power of time, \(t\text{.}\) Use the information in the table to write \(a\) as a function of \(d\) and \(t\text{.}\)</p></li>
+<li id="li-4161"><p id="p-6627">Use your formula to compute the acceleration of the other five cars.</p></li>
+<li id="li-4162"><p id="p-6628">Use your formula to plot \(a\) against \(d\) for \(t = 1\text{,}\) \(2\text{,}\) \(3\text{,}\) and \(4\) seconds.</p></li>
+<li id="li-4163"><p id="p-6629">Use your formula to plot \(a\) against \(t\) for \(d = 100\text{,}\) \(200\text{,}\) \(300\text{,}\) and \(400\) feet.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-738" id="answer-738"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-738"><div class="solution"><ol id="p-6630" class="lower-alpha">
+<li id="li-4164"><p id="p-6631">\(a=\dfrac{2d}{t^2} \)</p></li>
+<li id="li-4165"><p id="p-6632">Mercedes-Benz: \(19.05 \text{ft}/\text{sec}^2\text{,}\) Porsche: \(19.73 \text{ft}/\text{sec}^2\text{,}\) Dodge: \(20.47 \text{ft}/\text{sec}^2\text{,}\) Saleen: \(23.59 \text{ft}/\text{sec}^2\text{,}\) Ford: \(25.66 \text{ft}/\text{sec}^2\)</p></li>
+<li id="li-4166"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-5-15.svg" style="width: 100%; height: auto;" alt="four lines"></div></div></div></li>
+<li id="li-4167"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-5-15d.svg" style="width: 100%; height: auto;" alt="four inverse square"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1363"><h6 class="heading"><span class="codenumber">16.</span></h6>
+<p id="p-6633">The rate of water flow, \(F\text{,}\) through a fire hose is a function of the diameter, \(d\text{,}\) of the nozzle and the nozzle pressure, \(p\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="7">Water pressure (psi)</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="6">Water pressure (psi)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Nozzle<br>diameter<br>(in)</td>
+<td class="c m b3 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(70\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(80\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.00\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(164\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(190\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(212\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(232\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(251\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(268\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(257\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(296\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(331\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(363\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(392\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(419\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(370\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(427\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(477\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(523\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(565\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(604\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(1.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(503\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(581\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(650\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(712\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(769\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(822\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(2.00\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(657\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(759\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(849\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(930\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1004\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1073\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6634" class="lower-alpha">
+<li id="li-4168"><p id="p-6635">Plot \(F\) as a function of \(d\) for \(p = 30\text{,}\) \(40\text{,}\) \(50\text{,}\) and \(60\text{.}\) Which basic function do your graphs resemble?</p></li>
+<li id="li-4169"><p id="p-6636">Plot \(F\) as a function of \(p\) for \(d = 1\text{,}\) \(1.25\text{,}\) \(1.5\text{,}\) and \(1.75\text{.}\) Which basic function do your graphs resemble?</p></li>
+<li id="li-4170"><p id="p-6637">Write a formula for \(F\) as a function of \(d\) and \(p\text{,}\) and find the constant of variation. Check your formula against the table.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1364"><h6 class="heading"><span class="codenumber">17.</span></h6>
+<p id="p-6638">Railroad engineers use a transition curve between straight sections of track and bends, which are designed as arcs of circles. The length, \(L\text{,}\) of the transition curve varies directly with the cube of the train's speed, \(v\text{,}\) and inversely with the radius, \(R\text{,}\) of the circular arc.</p>
+<ol class="lower-alpha">
+<li id="li-4171"><p id="p-6639">On a section of track where the speed limit is \(50\) mph, a circular bend has a radius of \(2000\) feet, and the transition curve is \(200\) feet long. Find the constant of variation and write a formula for \(L\) as a function of \(v\) and \(R\text{.}\)</p></li>
+<li id="li-4172"><p id="p-6640">If the speed limit is increased by \(20\%\text{,}\) how is the length of the transition curve affected?</p></li>
+<li id="li-4173"><p id="p-6641">If the radius of the bend is increased by \(20\%\text{,}\) how is the length of the transition curve affected?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-739" id="answer-739"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-739"><div class="solution"><ol id="p-6642" class="lower-alpha cols2">
+<li id="li-4174"><p id="p-6643">\(L = \dfrac{3.2v^3}{R}\)</p></li>
+<li id="li-4175"><p id="p-6644">Increased by \(72.8\%\)</p></li>
+<li id="li-4176"><p id="p-6645">Decreased by \(16\frac{2}{3}\%\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1365"><h6 class="heading"><span class="codenumber">18.</span></h6>
+<p id="p-6646">The density, \(D\text{,}\) of a planet varies directly with its mass, \(M\text{,}\) and inversely with the cube of its radius, \(r\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Planet</td>
+<td class="c m b1 r1 l0 t1 lines">Radius<br>(km)</td>
+<td class="c m b1 r1 l0 t1 lines">Mass<br>(\(10^{20}\text{ kg}\))</td>
+<td class="c m b1 r1 l0 t1 lines">Density<br>(\(\text{kg}/\text{m}^3\))</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mercury</td>
+<td class="r m b1 r1 l0 t0 lines">\(2440\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(3302\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Venus</td>
+<td class="r m b1 r1 l0 t0 lines">\(6052\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(48,690\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Earth</td>
+<td class="r m b1 r1 l0 t0 lines">\(6378\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(59,740\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(5497\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mars</td>
+<td class="r m b1 r1 l0 t0 lines">\(3397\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(6419\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Jupiter</td>
+<td class="r m b1 r1 l0 t0 lines">\(71,490\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(18,990,000\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Saturn</td>
+<td class="r m b1 r1 l0 t0 lines">\(60,270\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(5,685,000\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Uranus</td>
+<td class="r m b1 r1 l0 t0 lines">\(25,560\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(866,200\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Neptune</td>
+<td class="r m b1 r1 l0 t0 lines">\(24,765\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(1,028,000\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Pluto</td>
+<td class="r m b1 r1 l0 t0 lines">\(1150\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(150\)</td>
+<td class="r m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-6647" class="lower-alpha">
+<li id="li-4177"><p id="p-6648">Use the data for Earth to find the constant of variation, then write a formula for \(D\) as a function of \(M\) and \(r\text{.}\)</p></li>
+<li id="li-4178"><p id="p-6649">Calculate the densities of the other planets.</p></li>
+<li id="li-4179"><p id="p-6650">The planets are composed of three broad categories of materials: rocky materials, icy materials (including water), and the materials that dominate the sun, namely hydrogen and helium. The density of rock varies from \(3000\) to \(8000 \text{ kg}/\text{m}^3\text{.}\) Which of the planets could be composed mainly of rock?</p></li>
+</ol></article><article class="exercise-like" id="exercise-1366"><h6 class="heading"><span class="codenumber">19.</span></h6>
+<p id="p-6651">Ammonia has many uses in industry and agriculture, including the production of fertilizers. It is produced in the laboratory from nitrogen and hydrogen, but the process requires high pressure and temperature for significant yield. The graph illustrates the relationship. (Source: Hunt and Sykes, 1984)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-3-5-19.svg" style="width: 100%; height: auto;" alt="Yield vs pressure for five temperatures"></div></div></div>
+<ol id="p-6652" class="lower-alpha">
+<li id="li-4180">
+<p id="p-6653">Complete the table showing the yield of ammonia, as a percent of the gas mixture leaving the reactor, at various pressures and temperatures.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="9">Percent Ammonia</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="8">Pressure (atmospheres)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Temperature<br>(\(\degree\)C)</td>
+<td class="c m b3 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(150\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(200\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(250\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(300\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(350\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(400\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(350\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(400\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(450\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(550\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-4181"><p id="p-6654">What happens to the yield of ammonia if the pressure is held constant but the temperature is increased beyond \(350\degree\)C?</p></li>
+<li id="li-4182"><p id="p-6655">Sketch a graph of the yield of ammonia as a function of temperature when the pressure is \(300\) atmospheres.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-740" id="answer-740"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-740"><div class="solution"><ol id="p-6656" class="lower-alpha">
+<li id="li-4183"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="9">Percent Ammonia</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="8">Pressure (atmospheres)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Temperature<br>(\(\degree\)C)</td>
+<td class="c m b3 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(150\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(200\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(250\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(300\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(350\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(400\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(350\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(38\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(46\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(53\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(58\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(62\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(66\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(68\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(400\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(26\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(38\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(45\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(48\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(53\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(56\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(450\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(37\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(43\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(23\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(29\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(550\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(14\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-4184"><p id="p-6657">The ammonia yield decreases.</p></li>
+<li id="li-4185"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-5-19.svg" style="width: 100%; height: auto;" alt="yield vs temperature"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1367"><h6 class="heading"><span class="codenumber">20.</span></h6>
+<p id="p-6658">The graph shows the heat index, which combines air temperature and relative humidity to determine an apparent temperature, or what the temperature actually feels like. (Source: Ahrens, 1998)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-3-5-20.svg" style="width: 100%; height: auto;" alt="Air temperature vs relatve humidity for seven heat indices"></div></div></div>
+<ol id="p-6659" class="lower-alpha">
+<li id="li-4186">
+<p id="p-6660">Complete the table showing the heat index for various combinations of air temperature and relative humidity.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t1 lines" colspan="7">Heat Index</td></tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines" colspan="6">Relative humidity (\(\%\))</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Air<br>temperature<br>(\(\degree\)F)</td>
+<td class="c m b3 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(60\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(80\)</td>
+<td class="c m b3 r1 l0 t0 lines">\(100\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(90\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(100\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(110\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(120\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-4187">
+<p id="p-6661">Complete the table showing the relative humidity at which the heat index is equal to the actual air temperature.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Air Temperature (\(\degree\)F)</td>
+<td class="c m b1 r1 l0 t1 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(90\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(100\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(110\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(120\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Relative humidity (\(\%\))</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-4188"><p id="p-6662">Sketch a graph of the heat index as a function of air temperature if the relative humidity is \(70\%\text{.}\)</p></li>
+</ol></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

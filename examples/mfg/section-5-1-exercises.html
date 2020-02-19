@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:14-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 5.1</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="summary-5-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Inverse-Functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Logarithmic-Functions.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="summary-5-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Inverse-Functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Logarithmic-Functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="section-5-1-exercises"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.10</span> <span class="title">Homework 5.1</span>
+</h2>
+<a href="section-5-1-exercises.html" class="permalink">¶</a><article class="exercise-like" id="exercise-1883"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-9028">Let \(f (-1) = 0\text{,}\) \(f (0) = 1\text{,}\) \(f (1) = -2\text{,}\) and \(f (2) = -1\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5522"><p id="p-9029">Make a table of values for \(f (x)\) and another table for its inverse function.</p></li>
+<li id="li-5523"><p id="p-9030">Find \(f^{-1}(1) \)</p></li>
+<li id="li-5524"><p id="p-9031">Find \(f^{-1}(-1) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1019" id="answer-1019"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1019"><div class="solution"><ol id="p-9032" class="lower-alpha">
+<li id="li-5525">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(f^{-1}(y) \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5526"><p id="p-9033">\(f^{-1}(1)=0 \)</p></li>
+<li id="li-5527"><p id="p-9034">\(f^{-1}(-1)=2 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1884"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-9035">Let \(f (-1) = 1\text{,}\) \(f (-1) = -2\text{,}\) \(f (0) = 0\text{,}\) and \(f (1) = -1\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5528"><p id="p-9036">Make a table of values for \(f (x)\) and another table for its inverse function.</p></li>
+<li id="li-5529"><p id="p-9037">Find \(f^{-1}(-1) \)</p></li>
+<li id="li-5530"><p id="p-9038">Find \(f^{-1}(1) \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1885"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-9039">\(f (x) = x^3+x+1\)</p>
+<ol class="lower-alpha">
+<li id="li-5531"><p id="p-9040">Make a table of values for \(f (x)\) and another table for its inverse function.</p></li>
+<li id="li-5532"><p id="p-9041">Find \(f^{-1}(1) \)</p></li>
+<li id="li-5533"><p id="p-9042">Find \(f^{-1}(3) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1020" id="answer-1020"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1020"><div class="solution"><ol id="p-9043" class="lower-alpha">
+<li id="li-5534">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(11\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(f^{-1}(y) \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5535"><p id="p-9044">\(f^{1}(1)=0 \)</p></li>
+<li id="li-5536"><p id="p-9045">\(f^{-1}(3)=1 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1886"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-9046">\(f (x) =x^5+x^3+7 \)</p>
+<ol class="lower-alpha">
+<li id="li-5537"><p id="p-9047">Make a table of values for \(f (x)\) and another table for its inverse function.</p></li>
+<li id="li-5538"><p id="p-9048">Find \(f^{-1}(7) \)</p></li>
+<li id="li-5539"><p id="p-9049">Find \(f^{-1}(5) \)</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-261">
+<div class="introduction" id="introduction-271"><p id="p-9050">For Problems 5-8, use the graph to evaluate each expression.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1887"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<p id="p-9051">An insurance investigator measures the length, \(d\text{,}\) of the skid marks at an accident scene, in feet. The graph shows the function \(v = f (d)\text{,}\) which gives the velocity, \(v\) (mph), at which a car was traveling when it hit the brakes.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-5.svg" style="width: 100%; height: auto;" alt="velocity vs skid marks length"></div></div></div>
+<ol id="p-9052" class="lower-alpha">
+<li id="li-5540"><p id="p-9053">Use the graph to estimate \(f (60)\) and explain its meaning in this context.</p></li>
+<li id="li-5541"><p id="p-9054">Use the graph to estimate \(f^{-1}(60)\) and explain its meaning in this context.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1021" id="answer-1021"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1021"><div class="solution"><ol id="p-9055" class="lower-alpha">
+<li id="li-5542"><p id="p-9056">\(f (60)\approx 38\text{.}\) The car that left the \(60\)-foot skid marks was traveling at \(38\) mph.</p></li>
+<li id="li-5543"><p id="p-9057">\(f^{-1} (60) \approx 150\text{.}\) The car traveling at \(60\) mph left \(150\)-foot skid marks</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1888"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<p id="p-9058">The weight, \(m\text{,}\) of a missile launched from a catapult is a function of the distance, \(d\text{,}\) to the target. The graph shows the function \(m = f (d)\text{,}\) where \(d\) is in meters and \(m\) is in kilograms.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-6.svg" style="width: 100%; height: auto;" alt="mass vs target distance"></div></div></div>
+<ol id="p-9059" class="lower-alpha">
+<li id="li-5544"><p id="p-9060">Use the graph to estimate \(f (100)\) and explain its meaning in this context.</p></li>
+<li id="li-5545"><p id="p-9061">Use the graph to estimate \(f^{-1}(100)\) and explain its meaning in this context.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1889"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<p id="p-9062">After eating, the weight of a vampire bat drops steadily until its next meal. The graph shows the function \(W = f (t)\text{,}\) which gives the weight, \(W\text{,}\) of the bat in grams \(t\) hours since its last meal.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-7.svg" style="width: 100%; height: auto;" alt="bat weight vs time"></div></div></div>
+<ol id="p-9063" class="lower-alpha">
+<li id="li-5546"><p id="p-9064">What are the coordinates of the point of starvation? Include units in your answer.</p></li>
+<li id="li-5547"><p id="p-9065">Use the graph to estimate \(f^{-1}(90)\) and explain its meaning in this context.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1022" id="answer-1022"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1022"><div class="solution"><ol id="p-9066" class="lower-alpha">
+<li id="li-5548"><p id="p-9067">\((60~ \text{hours}, 78~ \text{grams})\)</p></li>
+<li id="li-5549"><p id="p-9068">\(f^{-1} (90) \approx  19\text{,}\) so that the vampire bat's weight has dropped to \(90\) grams about \(19\) hours after its last meal.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1890"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<p id="p-9069">The amount of money, \(A\text{,}\) in an interest-bearing savings account is a function of the number of years, \(t\text{,}\) it remains in the account. The graph shows \(A = f (t)\text{,}\) where \(A\) is in thousands of dollars.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-8.svg" style="width: 100%; height: auto;" alt="exponential growth"></div></div></div>
+<ol id="p-9070" class="lower-alpha">
+<li id="li-5550"><p id="p-9071">Use the graph to estimate \(f (30)\) and explain its meaning in this context.</p></li>
+<li id="li-5551"><p id="p-9072">Use the graph to estimate \(f^{-1}(30)\) and explain its meaning in this context.</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1891"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<p id="p-9073">The function \(I = g(r ) = (1 + r )^5 - 1\) gives the interest, \(I\text{,}\) that a dollar earns in \(5\) years in terms of the interest rate, \(r\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5552"><p id="p-9074">Evaluate \(g(0.05)\) and explain its meaning in this context.</p></li>
+<li id="li-5553"><p id="p-9075">Find the interest rate needed to earn \(\$0.50\) by substituting \(I = 0.50\) in the formula and solving for \(r\text{.}\)</p></li>
+<li id="li-5554"><p id="p-9076">Find a formula for the inverse function.</p></li>
+<li id="li-5555"><p id="p-9077">Write your answer to part (b) with inverse function notation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1023" id="answer-1023"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1023"><div class="solution"><ol id="p-9078" class="lower-alpha">
+<li id="li-5556"><p id="p-9079">\(g (0.05) = 0.28\text{.}\) At \(5\%\) interest, \(\$1\) earns \(\$0.28\) interest in \(5\) years.</p></li>
+<li id="li-5557"><p id="p-9080">\(8.45\%\)</p></li>
+<li id="li-5558"><p id="p-9081">\(g^{-1} (I ) = (I + 1)^{1/5} -1\)</p></li>
+<li id="li-5559"><p id="p-9082">\(g^{-1} (0.50)\approx 0.0845\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1892"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<p id="p-9083">The function \(C = h(F) = \dfrac{5}{9}(F - 32)\) gives the Celsius temperature \(C\) in terms of the Fahrenheit temperature \(F\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5560"><p id="p-9084">Evaluate \(h(104)\) and explain its meaning in this context.</p></li>
+<li id="li-5561"><p id="p-9085">Find the Fahrenheit temperature of \(37\degree\) Celsius by substituting \(C = 37\) in the formula and solving for \(F\text{.}\)</p></li>
+<li id="li-5562"><p id="p-9086">Find a formula for the inverse function.</p></li>
+<li id="li-5563"><p id="p-9087">Write your answer to part (b) with inverse function notation.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1893"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<p id="p-9088">If you are flying in an airplane at an altitude of \(h\) miles, on a clear day you can see a distance of \(d\) miles to the horizon, where \(d = f (h) = \sqrt{7920h}\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5564"><p id="p-9089">Evaluate \(f(0.5)\) and explain its meaning in this context.</p></li>
+<li id="li-5565"><p id="p-9090">Find the altitude needed in order to see a distance of \(10\) mile by substituting \(d = 10\) in the formula and solving for \(h\text{.}\)</p></li>
+<li id="li-5566"><p id="p-9091">Find a formula for the inverse function.</p></li>
+<li id="li-5567"><p id="p-9092">Write your answer to part (b) with inverse function notation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1024" id="answer-1024"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1024"><div class="solution"><ol id="p-9093" class="lower-alpha">
+<li id="li-5568"><p id="p-9094">\(f(0.5) \approx 62.9\text{.}\) At an altitude of \(0.5\) miles, you can see \(62.9\) miles to the horizon.</p></li>
+<li id="li-5569"><p id="p-9095">\(0.0126\) mile, or \(66.7\) feet</p></li>
+<li id="li-5570"><p id="p-9096">\(h = f^{-1}(d) =\dfrac{d^2}{7920} \)</p></li>
+<li id="li-5571"><p id="p-9097">\(f^{-1} (10)\approx 0.0126\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1894"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<p id="p-9098">A moving ship creates waves that impede its own speed. The function \(v = f (L) = 1.3\sqrt{L}\) gives the ship's maximum speed in knots in terms of its length, \(L\text{,}\) in feet.</p>
+<ol class="lower-alpha">
+<li id="li-5572"><p id="p-9099">Evaluate \(f(400)\) and explain its meaning in this context.</p></li>
+<li id="li-5573"><p id="p-9100">Find the length needed for a maximum speed of \(35\) knots by substituting \(v = 35\) in the formula and solving for \(L\text{.}\)</p></li>
+<li id="li-5574"><p id="p-9101">Find a formula for the inverse function.</p></li>
+<li id="li-5575"><p id="p-9102">Write your answer to part (b) with inverse function notation.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1895"><h6 class="heading"><span class="codenumber">13.</span></h6>
+<ol id="p-9103" class="lower-alpha">
+<li id="li-5576"><p id="p-9104">Use the graph of \(h(x) = \sqrt{5 - x}\) to find \(h^{-1}(3)\text{.}\)</p></li>
+<li id="li-5577"><p id="p-9105">Find a formula for \(h^{-1}(x)\) and evaluate \(h^{-1}(3)\text{.}\)</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-13.svg" style="width: 100%; height: auto;" alt="transformed square root"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1025" id="answer-1025"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1025"><div class="solution"><ol id="p-9106" class="lower-alpha">
+<li id="li-5578"><p id="p-9107">\(h^{-1} (3)\approx -4\)</p></li>
+<li id="li-5579"><p id="p-9108">\(h^{-1} (x)= 5 - x^2\text{;}\) \(~ h^{-1} (3)  = -4\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1896"><h6 class="heading"><span class="codenumber">14.</span></h6>
+<ol id="p-9109" class="lower-alpha">
+<li id="li-5580"><p id="p-9110">Use the graph of \(g(x) = \dfrac{1}{3 - x}\) to find \(g^{-1}(-2)\text{.}\)</p></li>
+<li id="li-5581"><p id="p-9111">Find a formula for \(g^{-1}(x)\) and evaluate \(g^{-1}(-2)\text{.}\)</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-14.svg" style="width: 100%; height: auto;" alt="transformed reciprocal function"></div></div></div></article><article class="exercise-like" id="exercise-1897"><h6 class="heading"><span class="codenumber">15.</span></h6>
+<ol id="p-9112" class="lower-alpha">
+<li id="li-5582"><p id="p-9113">Find \(f^{-1}\) for the function \(f (x) = (x - 2)^3\text{.}\)</p></li>
+<li id="li-5583"><p id="p-9114">Show that \(f^{-1}\) undoes the effect of \(f\) on \(x = 4\text{.}\)</p></li>
+<li id="li-5584"><p id="p-9115">Show that \(f\) undoes the effect of \(f^{-1}\) on \(x = -8\text{.}\)</p></li>
+<li id="li-5585"><p id="p-9116">Graph the function and its inverse on the same grid, along with the graph of \(y = x\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1026" id="answer-1026"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1026"><div class="solution"><ol id="p-9117" class="lower-alpha">
+<li id="li-5586"><p id="p-9118">\(f^{-1} (y) = 3 \sqrt[3]{y} + 2\)</p></li>
+<li id="li-5587"><p id="p-9119">\(f^{-1} ( f (4)) = f^{-1} (8) = 4\)</p></li>
+<li id="li-5588"><p id="p-9120">\(f ( f^{-1} (-8)) = f (0) = -8\)</p></li>
+<li id="li-5589"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-15.svg" style="width: 100%; height: auto;" alt="cubic and inverse"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1898"><h6 class="heading"><span class="codenumber">16.</span></h6>
+<ol id="p-9121" class="lower-alpha">
+<li id="li-5590"><p id="p-9122">Find \(f^{-1}\) for the function \(f (x) = \dfrac{2}{x+1} \text{.}\)</p></li>
+<li id="li-5591"><p id="p-9123">Show that \(f^{-1}\) undoes the effect of \(f\) on \(x = 3\text{.}\)</p></li>
+<li id="li-5592"><p id="p-9124">Show that \(f\) undoes the effect of \(f^{-1}\) on \(x = -1\text{.}\)</p></li>
+<li id="li-5593"><p id="p-9125">Graph the function and its inverse on the same grid, along with the graph of \(y = x\text{.}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1899"><h6 class="heading"><span class="codenumber">17.</span></h6>
+<p id="p-9126">If \(F(t) = \dfrac{2}{3}t + 1\text{,}\) find \(F^{-1}(5)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1027" id="answer-1027"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1027"><div class="solution"><p id="p-9127">\(6\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1900"><h6 class="heading"><span class="codenumber">18.</span></h6>
+<p id="p-9128">If \(G(s) = \dfrac{s-3}{4} \text{,}\) find \(G^{-1}(-2)\text{.}\)</p></article><article class="exercise-like" id="exercise-1901"><h6 class="heading"><span class="codenumber">19.</span></h6>
+<p id="p-9129">If \(m(v) =6- \dfrac{2}{v}\text{,}\) find \(m^{-1}(-3)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1028" id="answer-1028"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1028"><div class="solution"><p id="p-9130">\(\dfrac{2}{9} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1902"><h6 class="heading"><span class="codenumber">20.</span></h6>
+<p id="p-9131">If \(p(z) = 1- 2z^3 \text{,}\) find \(p^{-1}(7)\text{.}\)</p></article><article class="exercise-like" id="exercise-1903"><h6 class="heading"><span class="codenumber">21.</span></h6>
+<p id="p-9132">If \(f(x) = \dfrac{x+2}{x-1}\text{,}\) find \(f^{-1}(2)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1029" id="answer-1029"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1029"><div class="solution"><p id="p-9133">\(4 \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1904"><h6 class="heading"><span class="codenumber">22.</span></h6>
+<p id="p-9134">If \(g(n) = \dfrac{3n+1}{n-3} \text{,}\) find \(g^{-1}(-2)\text{.}\)</p></article><div class="exercisegroup" id="exercisegroup-262">
+<div class="introduction" id="introduction-272">
+<p id="p-9135">For Problems 23–26,</p>
+<ol class="lower-alpha">
+<li id="li-5594"><p id="p-9136">Use the graph to make a table of values for the function \(y = f (x)\text{.}\)</p></li>
+<li id="li-5595"><p id="p-9137">Make a table of values and a graph of the inverse function.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1905"><h6 class="heading"><span class="codenumber">23.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-23.svg" style="width: 100%; height: auto;" alt="line"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1030" id="answer-1030"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1030"><div class="solution"><ol id="p-9138" class="lower-alpha">
+<li id="li-5596"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(6\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(300\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1200\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-5597">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(300\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1200\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6\)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-23.svg" style="width: 100%; height: auto;" alt="line"></div></div></div>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1906"><h6 class="heading"><span class="codenumber">24.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:22.5%;margin-right:22.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-24.svg" style="width: 100%; height: auto;" alt="line"></div></div></div></article><article class="exercise-like" id="exercise-1907"><h6 class="heading"><span class="codenumber">25.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:22.5%;margin-right:22.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-25.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1031" id="answer-1031"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1031"><div class="solution"><ol id="p-9139" class="lower-alpha">
+<li id="li-5598"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(100\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-5599">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(100\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-25.svg" style="width: 100%; height: auto;" alt="line"></div></div></div>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1908"><h6 class="heading"><span class="codenumber">26.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-26.svg" style="width: 100%; height: auto;" alt="root"></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-263">
+<div class="introduction" id="introduction-273">
+<p id="p-9140">For Problems 27–32,</p>
+<ol class="lower-alpha">
+<li id="li-5600"><p id="p-9141">Find a formula for the inverse of the function.</p></li>
+<li id="li-5601"><p id="p-9142">Graph the function and its inverse on the same set of axes, along with the graph of \(y = x\text{.}\)</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols3">
+<article class="exercise-like" id="exercise-1909"><h6 class="heading"><span class="codenumber">27.</span></h6>
+<p id="p-9143">\(f(x)=2x-6 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1032" id="answer-1032"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1032"><div class="solution"><ol id="p-9144" class="lower-alpha">
+<li id="li-5602"><p id="p-9145">\(f^{-1}(x)=\dfrac{x+6}{2} \)</p></li>
+<li id="li-5603"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-27.svg" style="width: 100%; height: auto;" alt="function and inverse"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1910"><h6 class="heading"><span class="codenumber">28.</span></h6>
+<p id="p-9146">\(f(x)=3x-1 \)</p></article><article class="exercise-like" id="exercise-1911"><h6 class="heading"><span class="codenumber">29.</span></h6>
+<p id="p-9147">\(f(x)=x^3+1 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1033" id="answer-1033"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1033"><div class="solution"><ol id="p-9148" class="lower-alpha">
+<li id="li-5604"><p id="p-9149">\(f^{-1}(x)=\sqrt[3]{x-1} \)</p></li>
+<li id="li-5605"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-29.svg" style="width: 100%; height: auto;" alt="function and inverse"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1912"><h6 class="heading"><span class="codenumber">30.</span></h6>
+<p id="p-9150">\(f(x)=\sqrt[3]{x+1} \)</p></article><article class="exercise-like" id="exercise-1913"><h6 class="heading"><span class="codenumber">31.</span></h6>
+<p id="p-9151">\(f(x)=\dfrac{1}{x-1} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1034" id="answer-1034"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1034"><div class="solution"><ol id="p-9152" class="lower-alpha">
+<li id="li-5606"><p id="p-9153">\(f^{-1}(x)=\dfrac{1}{x}+1 \)</p></li>
+<li id="li-5607"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-31.svg" style="width: 100%; height: auto;" alt="function and inverse"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1914"><h6 class="heading"><span class="codenumber">32.</span></h6>
+<p id="p-9154">\(f(x)=\dfrac{1}{x}-3 \)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1915"><h6 class="heading"><span class="codenumber">33.</span></h6>
+<ol id="p-9155" class="lower-alpha">
+<li id="li-5608"><p id="p-9156">Find the domain and range of the function \(g(x) = \sqrt{4 - x}\text{.}\)</p></li>
+<li id="li-5609"><p id="p-9157">Find a formula for \(g^{-1}(x)\text{.}\)</p></li>
+<li id="li-5610"><p id="p-9158">State the domain and range of \(g^{-1}(x)\text{.}\)</p></li>
+<li id="li-5611"><p id="p-9159">Graph \(g\) and \(g^{-1}\) on the same grid.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1035" id="answer-1035"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1035"><div class="solution"><ol id="p-9160" class="lower-alpha">
+<li id="li-5612"><p id="p-9161">Domain: \((-\infty, 4]\text{;}\) Range: \([0,\infty)\)</p></li>
+<li id="li-5613"><p id="p-9162">\(g^{-1}(x)=4-x^2 \)</p></li>
+<li id="li-5614"><p id="p-9163">Domain: \([0,\infty)\text{;}\) Range: \((-\infty,4]\)</p></li>
+<li id="li-5615"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-1-33.svg" style="width: 100%; height: auto;" alt="function and inverse"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1916"><h6 class="heading"><span class="codenumber">34.</span></h6>
+<ol id="p-9164" class="lower-alpha">
+<li id="li-5616"><p id="p-9165">Find the domain and range of the function \(g(x) =8- \sqrt{x}\text{.}\)</p></li>
+<li id="li-5617"><p id="p-9166">Find a formula for \(g^{-1}(x)\text{.}\)</p></li>
+<li id="li-5618"><p id="p-9167">State the domain and range of \(g^{-1}(x)\text{.}\)</p></li>
+<li id="li-5619"><p id="p-9168">Graph \(g\) and \(g^{-1}\) on the same grid.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-264">
+<div class="introduction" id="introduction-274"><p id="p-9169">Which of the functions in Problems 35–42 have inverses that are also functions?</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1917"><h6 class="heading"><span class="codenumber">35.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-35.svg" style="width: 100%; height: auto;" alt="four curves"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1036" id="answer-1036"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1036"><div class="solution"><p id="p-9170">(a) and (d)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1918"><h6 class="heading"><span class="codenumber">36.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-36.svg" style="width: 100%; height: auto;" alt="four curves"></div></div></div></article><article class="exercise-like" id="exercise-1919"><h6 class="heading"><span class="codenumber">37.</span></h6>
+<ol id="p-9171" class="lower-alpha">
+<li id="li-5620"><p id="p-9172">\(f(x)=x \)</p></li>
+<li id="li-5621"><p id="p-9173">\(f(x)=x^2 \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1037" id="answer-1037"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1037"><div class="solution"><p id="p-9174">(a)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1920"><h6 class="heading"><span class="codenumber">38.</span></h6>
+<ol id="p-9175" class="lower-alpha">
+<li id="li-5622"><p id="p-9176">\(f(x)=x^3 \)</p></li>
+<li id="li-5623"><p id="p-9177">\(f(x)=\abs{x} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1921"><h6 class="heading"><span class="codenumber">39.</span></h6>
+<ol id="p-9178" class="lower-alpha">
+<li id="li-5624"><p id="p-9179">\(f(x)=\dfrac{1}{x} \)</p></li>
+<li id="li-5625"><p id="p-9180">\(f(x)=\dfrac{1}{x^2} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1038" id="answer-1038"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1038"><div class="solution"><p id="p-9181">(a)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1922"><h6 class="heading"><span class="codenumber">40.</span></h6>
+<ol id="p-9182" class="lower-alpha">
+<li id="li-5626"><p id="p-9183">\(f(x)=\sqrt{x} \)</p></li>
+<li id="li-5627"><p id="p-9184">\(f(x)=\sqrt[3]{x} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1923"><h6 class="heading"><span class="codenumber">41.</span></h6>
+<ol id="p-9185" class="lower-alpha">
+<li id="li-5628"><p id="p-9186">\(f(x)=2^x \)</p></li>
+<li id="li-5629"><p id="p-9187">\(f(x)=\left(\dfrac{1}{2}\right)^x \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1039" id="answer-1039"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1039"><div class="solution"><p id="p-9188">(a) and (b)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1924"><h6 class="heading"><span class="codenumber">42.</span></h6>
+<ol id="p-9189" class="lower-alpha">
+<li id="li-5630"><p id="p-9190">\(f(x)=x^3+x^2 \)</p></li>
+<li id="li-5631"><p id="p-9191">\(f(x)=x^3+x \)</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1925"><h6 class="heading"><span class="codenumber">43.</span></h6>
+<p id="p-9192">Find a formula for each function shown in (a)–(d). Then match each function with its inverse from I–IV.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-43.svg" style="width: 100%; height: auto;" alt="two columns of four graphs"></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1040" id="answer-1040"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1040"><div class="solution"><ol id="p-9193" class="lower-alpha cols2">
+<li id="li-5632"><p id="p-9194">\(f(x)=4+2x \text{;}\) IV</p></li>
+<li id="li-5633"><p id="p-9195">\(f(x)=2-\dfrac{x}{2} \text{;}\) III</p></li>
+<li id="li-5634"><p id="p-9196">\(f(x)=-4-2x \text{;}\) I</p></li>
+<li id="li-5635"><p id="p-9197">\(f(x)=\dfrac{x}{2} \text{;}\) II</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1926"><h6 class="heading"><span class="codenumber">44.</span></h6>
+<p id="p-9198">Find a formula for each function shown in (a)–(d). Then match each function with its inverse from I–IV.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-44.svg" style="width: 100%; height: auto;" alt="two columns of four graphs"></div></div></div></article><div class="exercisegroup" id="exercisegroup-265">
+<div class="introduction" id="introduction-275"><p id="p-9199">For Problems 45 and 46, use the graph of \(f\) to match the other graphs with the appropriate function. (<em class="emphasis">Hint</em>: Look at the coordinates of some specific points.)</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1927"><h6 class="heading"><span class="codenumber">45.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel" style="width:31.25%;justify-content:flex-start;"><img src="images/fig-5-1-45.svg" style="width: 100%; height: auto;" alt="increasing cu curve"></div>
+<div class="sbspanel" style="width:62.5%;justify-content:flex-start;"><ol id="p-9200" class="lower-alpha">
+<li id="li-5636"><p id="p-9201">\(-f\)</p></li>
+<li id="li-5637"><p id="p-9202">\(\dfrac{1}{f} \)</p></li>
+<li id="li-5638"><p id="p-9203">\(f^{-1} \)</p></li>
+</ol></div>
+</div></div>
+<ol id="p-9204" class="upper-roman cols3">
+<li id="li-5639"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-45-I.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div></li>
+<li id="li-5640"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-45-II.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div></li>
+<li id="li-5641"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-45-III.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1041" id="answer-1041"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1041"><div class="solution"><ol id="p-9205" class="lower-alpha cols3">
+<li id="li-5642"><p id="p-9206">III</p></li>
+<li id="li-5643"><p id="p-9207">II</p></li>
+<li id="li-5644"><p id="p-9208">I</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1928"><h6 class="heading"><span class="codenumber">46.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;">
+<div class="sbspanel" style="width:31.25%;justify-content:flex-start;"><img src="images/fig-5-1-46.svg" style="width: 100%; height: auto;" alt="curve"></div>
+<div class="sbspanel" style="width:62.5%;justify-content:flex-start;"><ol id="p-9209" class="lower-alpha">
+<li id="li-5645"><p id="p-9210">\(-f\)</p></li>
+<li id="li-5646"><p id="p-9211">\(\dfrac{1}{f} \)</p></li>
+<li id="li-5647"><p id="p-9212">\(f^{-1} \)</p></li>
+</ol></div>
+</div></div>
+<ol id="p-9213" class="upper-roman cols3">
+<li id="li-5648"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-46-I.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div></li>
+<li id="li-5649"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-46-II.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div></li>
+<li id="li-5650"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-1-46-III.svg" style="width: 100%; height: auto;" alt="curve"></div></div></div></li>
+</ol></article>
+</div>
+</div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

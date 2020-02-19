@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:28-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Equal Increments on a Log Scale</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-162.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Logarithm-Scales.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-164.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-162.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Logarithm-Scales.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-164.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-163"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3</span> <span class="title">Equal Increments on a Log Scale</span>
+</h2>
+<p id="p-9932">Log scales allow us to plot a wide range of values, but there is a trade-off. Equal increments on a log scale do not correspond to equal differences in value, as they do on a linear scale. You can see why in the figure below: The difference between \(10^1\) and \(10^0\) is \(10 - 1 = 9\text{,}\) but the difference between \(10^2\) and \(10^1\) is \(100 - 10 = 90\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-logscale-increments.svg" style="width: 100%; height: auto;" alt="logscale with integer exponents"></div></div></div>
+<p id="p-9933">If we include tick marks for intermediate values on the log scale, they look like this.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-logscale-increments2.svg" style="width: 100%; height: auto;" alt="logscale with decimal exponents"></div></div></div>
+<p id="p-9934">Once again, the difference between, say, \(10^{0.1}\) and \(10^{0.2}\) is not the same as the difference between \(10^{0.2}\) and \(10^{0.3}\text{.}\) The decimal values of the powers \(10^{0.1}\) through \(10^{0.9}\text{,}\) rounded to two places, are shown below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-logscale-increments3.svg" style="width: 100%; height: auto;" alt="logscale showing values of powers"></div></div></div>
+<p id="p-9935">As we move from left to right on this scale, we <em class="emphasis">multiply</em> the value at the previous tick mark by \(10^{0.1}\text{,}\) or about \(1.258\text{.}\) For example,</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+10^{0.2} \amp = 1.258 \times   10^{0.1} = 1.585\\
+10^{0.3} \amp = 1.585 \times   10^{0.1} = 1.995
+\end{aligned}
+\end{equation*}
+</div>
+<p>and so on. Moving up by equal increments on a log scale does not add equal amounts to the values plotted; it <em class="emphasis">multiplies</em> the values by equal <em class="emphasis">factors</em>.</p>
+<article class="example-like" id="example-logscale-half-step"><a data-knowl="" class="id-ref" data-refid="hk-example-logscale-half-step"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.3.5</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-logscale-half-step"><article class="example-like"><p id="p-9936">What number is halfway between \(10\) and \(100\) on a log scale?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-153" id="solution-153"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-153"><div class="solution">
+<p id="p-9937">On a log scale, the number \(10^{1.5}\) is halfway between \(10^1\) and \(10^2\text{,}\) as shown below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-logscale-half-step.svg" style="width: 100%; height: auto;" alt="log scale showing point halfway between 10 and 100"></div></div></div>
+<p id="p-9938">Now, \(10^{1.5} = 10\sqrt{10}\text{,}\) or approximately \(31.62\text{.}\) Note how equal increments of \(0.5\) on the log scale correspond to equal factors of \(10^{0.5}\) in the values plotted:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+10 \times 3.162 \amp = 31.62~~~~ \text{ and }~~~~ 31.62 \times 3.162 = 100\\
+10^1 \times 10^{0.5} \amp = 101.5~~~~ \text{ and }~~~~  101.5 \times 10^{0.5} = 10^2
+\end{aligned}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2078"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2078"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">5.3.6</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2078"><article class="exercise-like"><p id="p-9939">What number is halfway between \(10^{1.5}\) and \(10^2\) on a log scale?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1126" id="answer-1126"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1126"><div class="solution"><p id="p-9940">\(56.23\)</p></div></div>
+</div></article></div>
+<p id="p-9941">If we would like to label the log scale with integers, we get a very different-looking scale, one in which the tick marks are not evenly spaced.</p>
+<article class="example-like" id="example-logscale-integer-labels"><a data-knowl="" class="id-ref" data-refid="hk-example-logscale-integer-labels"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.3.7</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-logscale-integer-labels"><article class="example-like"><p id="p-9942">Plot the integer values 2 through 9 and 20 through 90 on a log scale.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-154" id="solution-154"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-154"><div class="solution">
+<p id="p-9943">We compute the logarithm of each integer value.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(7\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(9\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\log x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.301\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.477\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.602\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.699\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.778\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.845\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.903\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.954\)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(70\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(90\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\log x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.301\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.477\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.602\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.699\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.778\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.845\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.903\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.954\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-9944">We plot on a log scale, as shown below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-logscale-integer-labels.svg" style="width: 100%; height: auto;" alt="log scale showing integer points"></div></div></div>
+</div></div>
+</div></article></div>
+<p id="p-9945">On the log scale in <a data-knowl="./knowl/example-logscale-integer-labels.html" title="Example 5.3.7">Example 5.3.7</a>, notice how the integer values are spaced: They get closer together as they approach the next power of \(10\text{.}\) You will often see log scales labeled not with powers of \(10\text{,}\) but with integer values, like this:</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-logscale-integer-labels2.svg" style="width: 100%; height: auto;" alt="log scale showing tic marks at integer points"></div></div></div>
+<p id="p-9946">In fact, <dfn class="terminology">log-log graph paper</dfn> scales both axes with logarithmic scales.</p>
+<article class="exercise-like" id="exercise-2079"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2079"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">5.3.8</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2079"><article class="exercise-like"><p id="p-9947">The opening page of <span>(((Unresolved xref, reference "chap3"; check spelling or use "provisional" attribute)))</span><a href="" class="internal" title=""> </a> shows the "mouse-to-elephant" curve, a graph of the metabolic rate of mammals as a function of their mass. (The elephant does not appear on that graph, because its mass is too big.) The figure below shows the same function, graphed on log-log paper.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-log-log-graph.svg" style="width: 100%; height: auto;" alt="mouse-to-elephant curve on log-log graph"></div></div></div>
+<p id="p-9948">Use this graph to estimate the mass and metabolic rate for the following animals, labeled on the graph.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t3 lines">Animal</td>
+<td class="l m b1 r1 l0 t3 lines">Mouse</td>
+<td class="l m b1 r1 l0 t3 lines">Dog</td>
+<td class="l m b1 r1 l0 t3 lines">Sheep</td>
+<td class="l m b1 r1 l0 t3 lines">Cow</td>
+<td class="l m b1 r1 l0 t3 lines">Elephant</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mass (kg)</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Metabolic rate (kcal/day)</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1127" id="answer-1127"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1127"><div class="solution"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t3 lines">Animal</td>
+<td class="c m b1 r1 l0 t3 lines">Mouse</td>
+<td class="c m b1 r1 l0 t3 lines">Dog</td>
+<td class="c m b1 r1 l0 t3 lines">Sheep</td>
+<td class="c m b1 r1 l0 t3 lines">Cow</td>
+<td class="c m b1 r1 l0 t3 lines">Elephant</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mass (kg)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.02\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4000\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Metabolic rate (kcal/day)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1500\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(50,000\)</td>
+</tr>
+</table></div></div></div></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

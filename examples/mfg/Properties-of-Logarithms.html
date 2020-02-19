@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:56-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Properties of Logarithms</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-4-3-exercises.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-expo.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-126.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-4-3-exercises.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-expo.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-126.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link active"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Properties-of-Logarithms"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Properties of Logarithms</span>
+</h2>
+<a href="Properties-of-Logarithms.html" class="permalink">¶</a><section class="introduction" id="introduction-246"><p id="p-8063">Because logarithms are actually exponents, they have several properties that can be derived from the laws of exponents. Here are the laws we will need at present.</p>
+<article class="assemblage-like" id="assemblage-97"><ol id="p-8064" class="decimal">
+<li id="li-4965">
+<p id="p-8065">To multiply two powers with the same base, add the exponents and leave the base unchanged.</p>
+<div class="displaymath">
+\begin{equation*}
+a^m \cdot a^n = a^{m+n}
+\end{equation*}
+</div>
+</li>
+<li id="li-4966">
+<p id="p-8066">To divide two powers with the same base, subtract the exponents and leave the base unchanged.</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{a^m}{a^n} = a^{m-n}
+\end{equation*}
+</div>
+</li>
+<li id="li-4967">
+<p id="p-8067">To raise a power to a power, keep the same base and multiply the exponents.</p>
+<div class="displaymath">
+\begin{equation*}
+\left(a^m\right)^n = a^{mn}
+\end{equation*}
+</div>
+</li>
+</ol></article><p id="p-8068">Each of these laws corresponds to one of three properties of logarithms.</p>
+<article class="assemblage-like" id="assemblage-98"><h6 class="heading"><span class="title">Properties of Logarithms.</span></h6>
+<p id="p-8069">If \(x\text{,}\) \(y\text{,}\) \(b \gt 0\text{,}\) and \(b\ne 1\text{,}\) then</p>
+<ol class="decimal">
+<li id="li-4968"><p id="p-8070">\(\log_{b}{(xy)} = \log_{b}{x} + \log_{b}{y}\)</p></li>
+<li id="li-4969"><p id="p-8071">\(\log_{b}\dfrac{x}{y} = \log_b x - \log_b y\)</p></li>
+<li id="li-4970"><p id="p-8072">\(\log_b {x^k} = k \log_b x \)</p></li>
+</ol></article><p id="p-8073">We will consider proofs of the three properties of logarithms in the Homework problems. For now, study the examples below, keeping in mind that a logarithm is an exponent.</p>
+<article class="assemblage-like" id="assemblage-99"><ol id="p-8074" class="decimal">
+<li id="li-4971">
+<p id="p-8075">Property (1):</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\log_{2}{32} \amp=\log_{2}{(4 \cdot 8)} \amp\amp=\log_2 4 +\log_2 8 \amp \text{ because }2^\alert{5}  \amp= 2^\alert{2} \cdot 2^\alert{3} \\
+\alert{5} 		\amp\amp\amp = \alert{2} + \alert{3}		\amp 32 					\amp = 4 \cdot 8\\
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-4972">
+<p id="p-8076">Property (2):</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\log_{2}{8} \amp=\log_{2}{\frac{16}{2}} \amp\amp=\log_2{16}-\log_2 2 \amp \text{ because }2^\alert{3}  \amp= \frac{2^\alert{4}}{2^\alert{1}} \\
+\alert{3} 		\amp\amp\amp = \alert{4} - \alert{1}		\amp 8 					\amp = \frac{16}{2}\\
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-4973">
+<p id="p-8077">Property (3):</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\log_{2}{64} \amp=\log_{2}{(4)^3} \amp\amp=3\log_2 4  \amp \text{ because }\left(2^{\alert{2}}\right)^\alert{3}  \amp= 2^\alert{6}  \\
+\alert{6} 		\amp\amp\amp = \alert{3}\cdot \alert{2}		\amp (4)^\alert{3} 					\amp = 64\\
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+</ol></article></section><nav class="summary-links"><ul>
+<li><a href="subsection-126.html"><span class="codenumber">5.1</span> <span class="title">Using the Properties of Logarithms</span></a></li>
+<li><a href="subsection-127.html"><span class="codenumber">5.2</span> <span class="title">Solving Exponential Equations</span></a></li>
+<li><a href="subsection-128.html"><span class="codenumber">5.3</span> <span class="title">Applications</span></a></li>
+<li><a href="subsection-129.html"><span class="codenumber">5.4</span> <span class="title">Compound Interest</span></a></li>
+<li><a href="subsection-130.html"><span class="codenumber">5.5</span> <span class="title">Solving Formulas</span></a></li>
+<li><a href="summary-4-4.html"><span class="codenumber">5.6</span> <span class="title">Section Summary</span></a></li>
+<li><a href="section-4-4-exercises.html"><span class="codenumber">5.7</span> <span class="title">Homework 4.4</span></a></li>
+</ul></nav></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

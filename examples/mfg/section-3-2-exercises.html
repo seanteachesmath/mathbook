@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:23-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 3.2</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="summary-3-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Integer-Exponents.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Roots-and-Radicals.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="summary-3-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Integer-Exponents.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Roots-and-Radicals.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="section-3-2-exercises"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.6</span> <span class="title">Homework 3.2</span>
+</h2>
+<a href="section-3-2-exercises.html" class="permalink">¶</a><article class="exercise-like" id="exercise-1126"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-5295">Make a table showing powers of \(3\) from \(3^{-5}\) to \(3^5\text{.}\) Illustrate why defining \(3^0 = 1\) makes sense.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-609" id="answer-609"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-609"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r3 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r3 l1 t0 lines">\(3^n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{243} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{81} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{27} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{9} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{3} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(27\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(81\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(243\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-5296">Each time \(n\) increases by \(1\text{,}\) we multiply the power in the bottom row by \(3\text{.}\)</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-1127"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-5297">Make a table showing powers of \(5\) from \(5^{-4}\) to \(5^4\text{.}\) Illustrate why defining \(5^0 = 1\) makes sense.</p></article><div class="exercisegroup" id="exercisegroup-158">
+<div class="introduction" id="introduction-164"><p id="p-5298">For Problems 3–6, compute each power.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1128"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<ol id="p-5299" class="lower-alpha cols4">
+<li id="li-3245"><p id="p-5300">\(2^3\)</p></li>
+<li id="li-3246"><p id="p-5301">\((-2)^3 \)</p></li>
+<li id="li-3247"><p id="p-5302">\(2^{-3}\)</p></li>
+<li id="li-3248"><p id="p-5303">\((-2)^{-3} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-610" id="answer-610"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-610"><div class="solution"><ol id="p-5304" class="lower-alpha cols4">
+<li id="li-3249"><p id="p-5305">\(8\)</p></li>
+<li id="li-3250"><p id="p-5306">\(-8\)</p></li>
+<li id="li-3251"><p id="p-5307">\(\dfrac{1}{8} \)</p></li>
+<li id="li-3252"><p id="p-5308">\(\dfrac{-1}{8} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1129"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<ol id="p-5309" class="lower-alpha cols4">
+<li id="li-3253"><p id="p-5310">\(4^2\)</p></li>
+<li id="li-3254"><p id="p-5311">\((-4)^2 \)</p></li>
+<li id="li-3255"><p id="p-5312">\(4^{-2}\)</p></li>
+<li id="li-3256"><p id="p-5313">\((-4)^{-2} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1130"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<ol id="p-5314" class="lower-alpha cols4">
+<li id="li-3257"><p id="p-5315">\(\left(\dfrac{1}{2} \right)^3\)</p></li>
+<li id="li-3258"><p id="p-5316">\(\left(-\dfrac{1}{2} \right)^3 \)</p></li>
+<li id="li-3259"><p id="p-5317">\(\left(\dfrac{1}{2} \right)^{-3}\)</p></li>
+<li id="li-3260"><p id="p-5318">\(\left(-\dfrac{1}{2} \right)^{-3} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-611" id="answer-611"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-611"><div class="solution"><ol id="p-5319" class="lower-alpha cols4">
+<li id="li-3261"><p id="p-5320">\(\dfrac{1}{8} \)</p></li>
+<li id="li-3262"><p id="p-5321">\(\dfrac{-1}{8} \)</p></li>
+<li id="li-3263"><p id="p-5322">\(8 \)</p></li>
+<li id="li-3264"><p id="p-5323">\(-8 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1131"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<ol id="p-5324" class="lower-alpha cols4">
+<li id="li-3265"><p id="p-5325">\(\left(\dfrac{1}{4} \right)^2\)</p></li>
+<li id="li-3266"><p id="p-5326">\(\left(-\dfrac{1}{4} \right)^2 \)</p></li>
+<li id="li-3267"><p id="p-5327">\(\left(\dfrac{1}{4} \right)^{-2}\)</p></li>
+<li id="li-3268"><p id="p-5328">\(\left(-\dfrac{1}{4} \right)^{-2} \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-159">
+<div class="introduction" id="introduction-165"><p id="p-5329">For Problems 7–12, write without negative exponents and simplify.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1132"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<ol id="p-5330" class="lower-alpha cols4">
+<li id="li-3269"><p id="p-5331">\(2^{-1}\)</p></li>
+<li id="li-3270"><p id="p-5332">\((-5)^{-2} \)</p></li>
+<li id="li-3271"><p id="p-5333">\(\left(\dfrac{1}{3} \right)^{-3} \)</p></li>
+<li id="li-3272"><p id="p-5334">\(\dfrac{1}{(-2)^{-4}} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-612" id="answer-612"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-612"><div class="solution"><ol id="p-5335" class="lower-alpha cols4">
+<li id="li-3273"><p id="p-5336">\(\dfrac{1}{2^1}=\dfrac{1}{2} \)</p></li>
+<li id="li-3274"><p id="p-5337">\(\dfrac{1}{(-5)^2}=\dfrac{1}{25} \)</p></li>
+<li id="li-3275"><p id="p-5338">\(3^3=27 \)</p></li>
+<li id="li-3276"><p id="p-5339">\((-2)^4=16 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1133"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<ol id="p-5340" class="lower-alpha cols4">
+<li id="li-3277"><p id="p-5341">\(3^{-2}\)</p></li>
+<li id="li-3278"><p id="p-5342">\((-2)^{-3} \)</p></li>
+<li id="li-3279"><p id="p-5343">\(\left(\dfrac{3}{5} \right)^{-2} \)</p></li>
+<li id="li-3280"><p id="p-5344">\(\dfrac{1}{(-3)^{-3}} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1134"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<ol id="p-5345" class="lower-alpha cols4">
+<li id="li-3281"><p id="p-5346">\(\dfrac{5}{4^{-3}}\)</p></li>
+<li id="li-3282"><p id="p-5347">\((2q)^{-5} \)</p></li>
+<li id="li-3283"><p id="p-5348">\(-4x^{-2} \)</p></li>
+<li id="li-3284"><p id="p-5349">\(\dfrac{8}{b^{-3}} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-613" id="answer-613"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-613"><div class="solution"><ol id="p-5350" class="lower-alpha cols4">
+<li id="li-3285"><p id="p-5351">\(5\cdot 4^3=320 \)</p></li>
+<li id="li-3286"><p id="p-5352">\(\dfrac{1}{(2q)^5}=\dfrac{1}{32q^5} \)</p></li>
+<li id="li-3287"><p id="p-5353">\(\dfrac{-4}{x^2} \)</p></li>
+<li id="li-3288"><p id="p-5354">\(8b^3 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1135"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<ol class="lower-alpha cols4">
+<li id="li-3289"><p id="p-5355">\(\dfrac{3}{2^{-6}} \)</p></li>
+<li id="li-3290"><p id="p-5356">\((4k)^{-3} \)</p></li>
+<li id="li-3291"><p id="p-5357">\(-7x^{-4} \)</p></li>
+<li id="li-3292"><p id="p-5358">\(\dfrac{5}{a^{-5}} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1136"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<ol id="p-5359" class="lower-alpha cols2">
+<li id="li-3293"><p id="p-5360">\((m-n)^{-2} \)</p></li>
+<li id="li-3294"><p id="p-5361">\(y^{-2}+y^{-3} \)</p></li>
+<li id="li-3295"><p id="p-5362">\(2pq^{-4} \)</p></li>
+<li id="li-3296"><p id="p-5363">\(\dfrac{-5y^{-2}}{x^{-5}} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-614" id="answer-614"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-614"><div class="solution"><ol id="p-5364" class="lower-alpha cols2">
+<li id="li-3297"><p id="p-5365">\(\dfrac{1}{(m-n)^2} \)</p></li>
+<li id="li-3298"><p id="p-5366">\(\dfrac{1}{y^2}+\dfrac{1}{y^3} \)</p></li>
+<li id="li-3299"><p id="p-5367">\(\dfrac{2p}{q^4} \)</p></li>
+<li id="li-3300"><p id="p-5368">\(\dfrac{-5x^{5}}{y^{2}} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1137"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<ol id="p-5369" class="lower-alpha cols2">
+<li id="li-3301"><p id="p-5370">\((p+q)^{-3} \)</p></li>
+<li id="li-3302"><p id="p-5371">\(z^{-1}-z^{-2} \)</p></li>
+<li id="li-3303"><p id="p-5372">\(8m^{-2}n^2 \)</p></li>
+<li id="li-3304"><p id="p-5373">\(\dfrac{-6y^{-3}}{x^{-3}} \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-160">
+<div class="introduction" id="introduction-166"><p id="p-5374">Use your calculator to fill in the tables in Problems 13 and 14. Round your answers to two decimal places.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1138"><h6 class="heading"><span class="codenumber">13.</span></h6>
+<p id="p-5375">\(f(x)=x^{-2}\)</p>
+<ol class="lower-alpha">
+<li id="li-3305"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3306"><p id="p-5376">What happens to the values of \(f (x)\) as the values of \(x\) increase? Explain why.</p></li>
+<li id="li-3307"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.25\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.125\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.0625\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3308"><p id="p-5377">What happens to the values of \(f (x)\) as the values of \(x\) decrease toward \(0\text{?}\) Explain why.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-615" id="answer-615"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-615"><div class="solution"><ol id="p-5378" class="lower-alpha">
+<li id="li-3309"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(x^{-2}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.25 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.06 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.02 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.00 \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3310"><p id="p-5379">The values of \(f (x)\) decrease, because \(x^{-2}\) is the reciprocal of \(x^2\text{.}\)</p></li>
+<li id="li-3311"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.25\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.125\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.0625\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(x^{-2}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(64 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(256 \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3312"><p id="p-5380">The values of \(f (x)\) increase toward infinity, because \(x^{-2}\) is the reciprocal of \(x^2\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1139"><h6 class="heading"><span class="codenumber">14.</span></h6>
+<p id="p-5381">\(g(x)=x^{-3}\)</p>
+<ol class="lower-alpha">
+<li id="li-3313"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(6.2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(9.3\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(g(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3314"><p id="p-5382">What happens to the values of \(g(x)\) as the values of \(x\) increase? Explain why.</p></li>
+<li id="li-3315"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.6\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.03\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.002\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3316"><p id="p-5383">What happens to the values of \(g(x)\) as the values of \(x\) decrease toward \(0\text{?}\) Explain why.</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1140"><h6 class="heading"><span class="codenumber">15.</span></h6>
+<ol id="p-5384" class="lower-alpha">
+<li id="li-3317">
+<p id="p-5385">Use your calculator to graph each of the following functions on the window</p>
+<div class="displaymath">
+\begin{align*}
+{\text{Xmin}} \amp = -5 \amp\amp {\text{Xmax}} = 5\\
+{\text{Ymin}} \amp = -2 \amp\amp {\text{Ymax}} = 10
+\end{align*}
+</div>
+<ol class="lower-roman cols2">
+<li id="li-3318">\(\displaystyle f(x)=x^2\)</li>
+<li id="li-3319">\(\displaystyle f(x)=x^{-2} \)</li>
+<li id="li-3320">\(\displaystyle f(x)=\dfrac{1}{x^2} \)</li>
+<li id="li-3321">\(\displaystyle f(x)=\left(\dfrac{1}{x} \right)^2 \)</li>
+</ol>
+</li>
+<li id="li-3322"><p id="p-5386">Which functions have the same graph? Explain your results.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-616" id="answer-616"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-616"><div class="solution"><p id="p-5387">b. (ii), (iii), and (iv) have the same graph, because they represent the same function.</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1141"><h6 class="heading"><span class="codenumber">16.</span></h6>
+<ol id="p-5388" class="lower-alpha">
+<li id="li-3323">
+<p id="p-5389">Use your calculator to graph each of the following functions on the window</p>
+<div class="displaymath">
+\begin{align*}
+{\text{Xmin}} \amp = -3 \amp\amp {\text{Xmax}} = 5\\
+{\text{Ymin}} \amp = -5 \amp\amp {\text{Ymax}} = 5
+\end{align*}
+</div>
+<ol class="lower-roman cols2">
+<li id="li-3324">\(\displaystyle f(x)=x^3\)</li>
+<li id="li-3325">\(\displaystyle f(x)=x^{-3} \)</li>
+<li id="li-3326">\(\displaystyle f(x)=\dfrac{1}{x^3} \)</li>
+<li id="li-3327">\(\displaystyle f(x)=\left(\dfrac{1}{x} \right)^3 \)</li>
+</ol>
+</li>
+<li id="li-3328"><p id="p-5390">Which functions have the same graph? Explain your results.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-161">
+<div class="introduction" id="introduction-167"><p id="p-5391">For Problems 17–18, write each expression as a power function using negative exponents.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1142"><h6 class="heading"><span class="codenumber">17.</span></h6>
+<ol id="p-5392" class="lower-alpha cols3">
+<li id="li-3329">\(\displaystyle F(r)=\dfrac{3}{r^4} \)</li>
+<li id="li-3330">\(\displaystyle G(w)=\dfrac{2}{5w^3} \)</li>
+<li id="li-3331">\(\displaystyle H(z)=\dfrac{1}{(3z)^2} \)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-617" id="answer-617"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-617"><div class="solution"><ol id="p-5393" class="lower-alpha cols3">
+<li id="li-3332">\(\displaystyle F(r)=3r^{-4} \)</li>
+<li id="li-3333">\(\displaystyle G(w)=\dfrac{2}{5}w^{-3} \)</li>
+<li id="li-3334">\(\displaystyle H(z)=\dfrac{1}{9}z^{-2} \)</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1143"><h6 class="heading"><span class="codenumber">18.</span></h6>
+<ol id="p-5394" class="lower-alpha cols3">
+<li id="li-3335">\(\displaystyle h(s)=\dfrac{9}{s^3} \)</li>
+<li id="li-3336">\(\displaystyle f(v)=\dfrac{3}{8v^6} \)</li>
+<li id="li-3337">\(\displaystyle g(t)=\dfrac{1}{(5t)^4} \)</li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-162">
+<div class="introduction" id="introduction-168"><p id="p-5395">For Problems 19–24, olve.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1144"><h6 class="heading"><span class="codenumber">19.</span></h6>
+<p id="p-5396">\(6x^{-2}=3.84 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-618" id="answer-618"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-618"><div class="solution"><p id="p-5397">\(x=-1.25\) or \(x=1.25\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1145"><h6 class="heading"><span class="codenumber">20.</span></h6>
+<p id="p-5398">\(0.8w^{-2} = 1.25 \)</p></article><article class="exercise-like" id="exercise-1146"><h6 class="heading"><span class="codenumber">21.</span></h6>
+<p id="p-5399">\(12 + 0.04t^{-3} = 175.84 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-619" id="answer-619"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-619"><div class="solution"><p id="p-5400">\(t=\dfrac{1}{16} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1147"><h6 class="heading"><span class="codenumber">22.</span></h6>
+<p id="p-5401">\(854 - 48z^{-3} = 104 \)</p></article><article class="exercise-like" id="exercise-1148"><h6 class="heading"><span class="codenumber">23.</span></h6>
+<p id="p-5402">\(100 - 0.15v^{-4} = 6.25 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-620" id="answer-620"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-620"><div class="solution"><p id="p-5403">\(v=\dfrac{1}{5} \) or \(v=\dfrac{-1}{5}\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1149"><h6 class="heading"><span class="codenumber">24.</span></h6>
+<p id="p-5404">\(8100p^{-4} - 250 = 3656.25 \)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1150"><h6 class="heading"><span class="codenumber">25.</span></h6>
+<p id="p-5405">When an automobile accelerates, the power, \(P\text{,}\) needed to overcome air resistance varies directly with a power of the speed, \(v\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-3338">
+<p id="p-5406">Use the data and the graph to find the scaling exponent and the constant of variation. Then write a formula for \(P\) as a power function of \(v\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel fixed-width" style="width:52.6315789473684%;justify-content:center;"><table>
+<tr>
+<td class="l m b1 r3 l1 t1 lines">\(v\) (mph)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(40\)</td>
+</tr>
+<tr>
+<td class="l m b1 r3 l1 t0 lines">\(P\) (watts)</td>
+<td class="c m b1 r1 l0 t0 lines">\(355\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2840\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9585\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(22,720\)</td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:42.1052631578947%;justify-content:center;"><img src="images/fig-3-2-25.svg" style="width: 100%; height: auto;" alt="power function"></div>
+</div></div>
+</li>
+<li id="li-3339"><p id="p-5407">Find the speed that requires \(50,000\) watts of power.</p></li>
+<li id="li-3340"><p id="p-5408">If you increase your speed by \(50\%\text{,}\) by what factor does the power requirement increase?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-621" id="answer-621"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-621"><div class="solution"><ol id="p-5409" class="lower-alpha cols3">
+<li id="li-3341">\(\displaystyle P = 0.355v^3\)</li>
+<li id="li-3342"><p id="p-5410">\(v\approx 52.03\) mph</p></li>
+<li id="li-3343">\(\displaystyle 3.375\)</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1151"><h6 class="heading"><span class="codenumber">26.</span></h6>
+<p id="p-5411">The power, \(P\text{,}\) generated by a windmill varies directly with a power of wind velocity, \(v\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-3344">
+<p id="p-5412">Use the data and the graph to find the scaling exponent and the constant of variation. Then write a formula for \(P\) as a power function of \(v\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
+<div class="sbspanel fixed-width" style="width:54.0540540540541%;justify-content:center;"><table>
+<tr>
+<td class="l m b1 r3 l1 t1 lines">\(v\) (mph)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(40\)</td>
+</tr>
+<tr>
+<td class="l m b1 r3 l1 t0 lines">\(P\) (watts)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(120\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(405\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(960\)</td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:37.8378378378378%;justify-content:center;"><img src="images/fig-3-2-26.svg" style="width: 100%; height: auto;" alt="power function"></div>
+</div></div>
+</li>
+<li id="li-3345"><p id="p-5413">Find the wind velocity needed to generate \(500\) watts of power.</p></li>
+<li id="li-3346"><p id="p-5414">If the wind speed drops by half, what happens to the power generated?</p></li>
+</ol></article><article class="exercise-like" id="exercise-1152"><h6 class="heading"><span class="codenumber">27.</span></h6>
+<p id="p-5415">The “Rule of 70” is used to estimate how long it takes an investment to double in value when interest is compounded annually. The doubling time, \(D\text{,}\) is inversely proportional to the interest rate, \(i\text{.}\) (Note that \(i\) is expressed as a percent, not as a decimal fraction. For example, if the interest rate is \(8\%\text{,}\) then \(i = 8\text{.}\))</p>
+<ol class="lower-alpha">
+<li id="li-3347">
+<p id="p-5416">Use the data and the graph to find the constant of proportionality and write \(D\) as a power function of \(i\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
+<div class="sbspanel fixed-width" style="width:54.0540540540541%;justify-content:center;"><table>
+<tr>
+<td class="l m b1 r3 l1 t1 lines">\(i\) (mph)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+</tr>
+<tr>
+<td class="l m b1 r3 l1 t0 lines">\(D\) (watts)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11.67\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7\)</td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:37.8378378378378%;justify-content:center;"><img src="images/fig-3-2-26.svg" style="width: 100%; height: auto;" alt="power function"></div>
+</div></div>
+</li>
+<li id="li-3348"><p id="p-5417">If the interest rate increases from \(5\%\) to \(6\%\text{,}\) how will the doubling time change?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-622" id="answer-622"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-622"><div class="solution"><ol id="p-5418" class="lower-alpha cols3">
+<li id="li-3349">\(\displaystyle D =\dfrac{70}{i} \)</li>
+<li id="li-3350"><p id="p-5419">It decreases by about \(2.3\) years.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1153"><h6 class="heading"><span class="codenumber">28.</span></h6>
+<p id="p-5420">The f-stop setting on a camera regulates the size of the aperture and thus the amount of light entering the camera. The f-stop \(f\) is inversely proportional to the diameter, \(d\text{,}\) of the aperture.</p>
+<ol class="lower-alpha">
+<li id="li-3351">
+<p id="p-5421">Use the data and the graph to find the constant of proportionality and write \(d\) as a power function of \(f\text{.}\) Values of \(d\) have been rounded to one decimal place.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel fixed-width" style="width:52.6315789473684%;justify-content:center;"><table>
+<tr>
+<td class="l m b1 r3 l1 t1 lines">\(f\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5.6\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(11\)</td>
+</tr>
+<tr>
+<td class="l m b1 r3 l1 t0 lines">\(d\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(17.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8.9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.5\)</td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:42.1052631578947%;justify-content:center;"><img src="images/fig-3-2-28.svg" style="width: 100%; height: auto;" alt="power function"></div>
+</div></div>
+</li>
+<li id="li-3352"><p id="p-5422">Why are the f-stop settings labeled with the values given in the table?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-11" id="hint-11"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-11"><div class="solution"><p id="p-5423">As you stop down the aperture from one f-value to the next, by what factor does \(d\) increase?</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1154"><h6 class="heading"><span class="codenumber">29.</span></h6>
+<p id="p-5424">The Stefan-Boltzmann law relates the total amount of radiation emitted by a star to its temperature, \(T\text{,}\) in kelvins, by the following formula:</p>
+<div class="displaymath">
+\begin{equation*}
+sT^4=\frac{L}{4\pi R^2} 
+\end{equation*}
+</div>
+<p>where \(R\) is the radius of the star, \(L\) is its luminosity, and \(s = 5.7\times 10^{-8} \text{ watt/m}^2\) is a constant governing radiation. (See Algebra Skills Refresher <span>(((Unresolved xref, reference "Scientific-Notation"; check spelling or use "provisional" attribute)))</span><a href="" class="internal" title=""></a> to review scientific notation.)</p>
+<ol class="lower-alpha">
+<li id="li-3353"><p id="p-5425">Write a formula for luminosity as a power function of temperature for a fixed radius.</p></li>
+<li id="li-3354"><p id="p-5426">The radius of the Sun is \(R = 9.96\times 10^8\) meters, and its luminosity is \(L = 3.9\times 10^{26}\) watts. Calculate the temperature of the Sun.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-623" id="answer-623"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-623"><div class="solution"><ol id="p-5427" class="lower-alpha">
+<li id="li-3355"><p id="p-5428">\(L = \left(4\pi sR^2 \right)T^4\approx 7.2\times 10^{-7}R^2T^4\)</p></li>
+<li id="li-3356"><p id="p-5429">\(4840\) K</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1155"><h6 class="heading"><span class="codenumber">30.</span></h6>
+<p id="p-5430">Poiseuille's law for the flow of liquid through a tube can be used to describe blood flow through an artery. The rate of flow, \(F\text{,}\) in liters per minute is proportional to the fourth power of the radius, \(r\text{,}\) divided by the length, \(L\text{,}\) of the artery.</p>
+<ol class="lower-alpha">
+<li id="li-3357"><p id="p-5431">Write a formula for the rate of flow as a power function of radius.</p></li>
+<li id="li-3358"><p id="p-5432">If the radius and length of the artery are measured in centimeters, then the constant of variation, \(k = 7.8\times 10^5\text{,}\) is determined by blood pressure and viscosity. If a certain artery is \(20\) centimeters long, what should its radius be in order to allow a blood flow of \(5\) liters per minute?</p></li>
+</ol></article><article class="exercise-like" id="exercise-1156"><h6 class="heading"><span class="codenumber">31.</span></h6>
+<p id="p-5433">Airplanes use radar to detect the distances to other objects. A radar unit transmits a pulse of energy, which bounces off a distant object, and the echo of the pulse returns to the sender. The power, \(P\text{,}\) of the returning echo is inversely proportional to the fourth power of the distance, \(d\text{,}\) to the object. A radar operator receives an echo of \(5\times 10^{-10}\) watts from an aircraft \(2\) nautical miles away.</p>
+<ol class="lower-alpha">
+<li id="li-3359"><p id="p-5434">Express the power of the echo received in picowatts. (\(1\) picowatt \(= 10^{-12}\) watts.)</p></li>
+<li id="li-3360"><p id="p-5435">Write a function that expresses \(P\) in terms of d using negative exponents. Use picowatts for the units of power.</p></li>
+<li id="li-3361">
+<p id="p-5436">Complete the table of values for the power of the echo received from objects at various distances.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(d\) (nautical miles)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(7\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(P\) (picowatts)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-3362"><p id="p-5437">Radar unit scan typically detect signals as low as \(10^{-13}\) watts. How far away is an aircraft whose echo is \(10^{-13}\) watts?</p></li>
+<li id="li-3363"><p id="p-5438">Sketch a graph of \(P\) as a function of \(d\text{.}\) Use units of picowatts on the vertical axis</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-12" id="hint-12"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-12"><div class="solution"><p id="p-5439">Convert \(10^{-13}\) watts to picowatts.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-624" id="answer-624"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-624"><div class="solution"><ol id="p-5440" class="lower-alpha">
+<li id="li-3364"><p id="p-5441">\(500\) picowatts</p></li>
+<li id="li-3365"><p id="p-5442">\(P = 8000d^{-4}\)</p></li>
+<li id="li-3366"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(d\) (nautical miles)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(7\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(P\) (picowatts)</td>
+<td class="c m b1 r1 l0 t0 lines">\(31.3 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.8\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-3367"><p id="p-5443">\(16.8\) nautical miles</p></li>
+<li id="li-3368"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-2-31.svg" style="width: 100%; height: auto;" alt="inverse-square"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1157"><h6 class="heading"><span class="codenumber">32.</span></h6>
+<p id="p-5444">The lifetime of a star is roughly inversely proportional to the cube of its mass. Our Sun, which has a mass of one solar mass, will last for approximately \(10\) billion years.</p>
+<ol class="lower-alpha">
+<li id="li-3369"><p id="p-5445">Write a power function for the lifetime, \(L\text{,}\) of a star in terms of its mass, \(m\text{.}\)</p></li>
+<li id="li-3370"><p id="p-5446">Sketch a graph of the function using units of solar mass on the horizontal axis.</p></li>
+<li id="li-3371"><p id="p-5447">How long will a star that is \(10\) times as massive as the Sun last?</p></li>
+<li id="li-3372"><p id="p-5448">One solar mass is about \(2\times 10^{30}\) kilograms. Rewrite your formula for \(L\) with the units of mass in kilograms.</p></li>
+<li id="li-3373"><p id="p-5449">How long will a star that is half as massive as the Sun last?</p></li>
+</ol></article><article class="exercise-like" id="exercise-1158"><h6 class="heading"><span class="codenumber">33.</span></h6>
+<p id="p-5450">The amount of force or thrust generated by the propeller of a ship is a function of two variables: the diameter of the propeller and its speed, in rotations per minute. The thrust, \(T\text{,}\) in pounds, is proportional to the square of the speed, \(r\text{,}\) and the fourth power of the diameter, \(d\text{,}\) in feet.</p>
+<ol class="lower-alpha">
+<li id="li-3374"><p id="p-5451">Write a formula for the thrust in terms of the speed if the diameter of the propeller is \(2\) feet.</p></li>
+<li id="li-3375"><p id="p-5452">A propeller of diameter \(2\) feet generates a thrust of \(1000\) pounds at \(100\) rotations per minute. Find the constant of variation in the formula for thrust.</p></li>
+<li id="li-3376"><p id="p-5453">Sketch a graph of the thrust as a function of the propeller speed for a propellor of diameter \(4\) feet. If the speed of the propeller is doubled, by what factor does the thrust increase?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-625" id="answer-625"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-625"><div class="solution"><ol id="p-5454" class="lower-alpha">
+<li id="li-3377"><p id="p-5455">\(T = 16kr^2\)</p></li>
+<li id="li-3378"><p id="p-5456">\(T = 0.1r^2\)</p></li>
+<li id="li-3379"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-3-2-33.svg" style="width: 100%; height: auto;" alt="parabola"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1159"><h6 class="heading"><span class="codenumber">34.</span></h6>
+<p id="p-5457">Refer to Problem 33.</p>
+<ol class="lower-alpha">
+<li id="li-3380"><p id="p-5458">Write a formula for the thrust, \(T\text{,}\) in terms of the diameter of the propeller if its speed is \(100\) rotations per minute.</p></li>
+<li id="li-3381"><p id="p-5459">A propeller of diameter \(4\) feet generates a thrust of \(32,000\) pounds at \(100\) rotations per minute. Find the constant of variation in the formula for thrust.</p></li>
+<li id="li-3382"><p id="p-5460">Sketch a graph of the thrust as a function of the diameter of the propeller at a speed of \(100\) rotations per minute. If the diameter of the propeller is doubled, by what factor does the thrust increase?</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-163">
+<div class="introduction" id="introduction-169"><p id="p-5461">For Problems 35–40, use the laws of exponents to simplify and write without negative exponents.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1160"><h6 class="heading"><span class="codenumber">35.</span></h6>
+<ol id="p-5462" class="lower-alpha cols2">
+<li id="li-3383"><p id="p-5463">\(a^{-3}\cdot a^8 \)</p></li>
+<li id="li-3384"><p id="p-5464">\(5^{-4} \cdot 5^{-3} \)</p></li>
+<li id="li-3385"><p id="p-5465">\(\dfrac{p^{-7}}{p^{-4}} \)</p></li>
+<li id="li-3386"><p id="p-5466">\(\left(7^{-2} \right)^{5} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-626" id="answer-626"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-626"><div class="solution"><ol id="p-5467" class="lower-alpha cols2">
+<li id="li-3387"><p id="p-5468">\(a^5\)</p></li>
+<li id="li-3388"><p id="p-5469">\(\dfrac{1}{5^7} \)</p></li>
+<li id="li-3389"><p id="p-5470">\(\dfrac{1}{p^3} \)</p></li>
+<li id="li-3390"><p id="p-5471">\(\dfrac{1}{7^{10}} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1161"><h6 class="heading"><span class="codenumber">36.</span></h6>
+<ol id="p-5472" class="lower-alpha cols2">
+<li id="li-3391"><p id="p-5473">\(b^{2}\cdot b^{-6} \)</p></li>
+<li id="li-3392"><p id="p-5474">\(4^{-2} \cdot 4^{-6} \)</p></li>
+<li id="li-3393"><p id="p-5475">\(\dfrac{w^{-9}}{w^{2}} \)</p></li>
+<li id="li-3394"><p id="p-5476">\(\left(9^{-4} \right)^{3} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1162"><h6 class="heading"><span class="codenumber">37.</span></h6>
+<ol id="p-5477" class="lower-alpha cols3">
+<li id="li-3395"><p id="p-5478">\(\left(4x^{-5} \right)\left(5x^2 \right) \)</p></li>
+<li id="li-3396"><p id="p-5479">\(\dfrac{3u^{-3}}{9u^{9}} \)</p></li>
+<li id="li-3397"><p id="p-5480">\(\dfrac{5^6 t^0}{5^{-2}t^{-1}} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-627" id="answer-627"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-627"><div class="solution"><ol id="p-5481" class="lower-alpha cols3">
+<li id="li-3398"><p id="p-5482">\(\dfrac{20}{x^3} \)</p></li>
+<li id="li-3399"><p id="p-5483">\(\dfrac{1}{3u^{12}} \)</p></li>
+<li id="li-3400"><p id="p-5484">\(5^8 t \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1163"><h6 class="heading"><span class="codenumber">38.</span></h6>
+<ol id="p-5485" class="lower-alpha cols3">
+<li id="li-3401"><p id="p-5486">\(\left(3y^{-8} \right)\left(2y^4 \right) \)</p></li>
+<li id="li-3402"><p id="p-5487">\(\dfrac{4c^{-4}}{8c^{-8}} \)</p></li>
+<li id="li-3403"><p id="p-5488">\(\dfrac{3^{10}s^{-1}}{3^{-5}s^0} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1164"><h6 class="heading"><span class="codenumber">39.</span></h6>
+<ol id="p-5489" class="lower-alpha cols3">
+<li id="li-3404"><p id="p-5490">\(\left(3x^{-2}y^3 \right)^{-2} \)</p></li>
+<li id="li-3405"><p id="p-5491">\(\left(\dfrac{6a^{-3}}{b^{2}} \right)^{-2} \)</p></li>
+<li id="li-3406"><p id="p-5492">\(\dfrac{5h^{-3}(h^4)^{-2}}{6h^{-5}} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-628" id="answer-628"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-628"><div class="solution"><ol id="p-5493" class="lower-alpha cols3">
+<li id="li-3407"><p id="p-5494">\(\dfrac{x^4}{9y^6} \)</p></li>
+<li id="li-3408"><p id="p-5495">\(\dfrac{a^6 b^4}{36} \)</p></li>
+<li id="li-3409"><p id="p-5496">\(\dfrac{5}{6h^6} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1165"><h6 class="heading"><span class="codenumber">40.</span></h6>
+<ol id="p-5497" class="lower-alpha cols3">
+<li id="li-3410"><p id="p-5498">\(\left(2x^{3}y^{-4} \right)^{-3} \)</p></li>
+<li id="li-3411"><p id="p-5499">\(\left(\dfrac{a^{4}}{4b^{-5}}\right)^{-3} \)</p></li>
+<li id="li-3412"><p id="p-5500">\(\dfrac{4v^{-5}(v^{-2})^{-4}}{3v^{-8}} \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-164">
+<div class="introduction" id="introduction-170"><p id="p-5501">For Problems 41–44, write each expression as a sum of terms of the form \(kx^p\text{.}\)</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1166"><h6 class="heading"><span class="codenumber">41.</span></h6>
+<ol id="p-5502" class="lower-alpha cols2">
+<li id="li-3413"><p id="p-5503">\(\dfrac{x}{3}+\dfrac{3}{x} \)</p></li>
+<li id="li-3414"><p id="p-5504">\(\dfrac{x-6x^2}{4x^3} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-629" id="answer-629"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-629"><div class="solution"><ol id="p-5505" class="lower-alpha cols2">
+<li id="li-3415"><p id="p-5506">\(\dfrac{1}{3}x+3x^{-1} \)</p></li>
+<li id="li-3416"><p id="p-5507">\(\dfrac{1}{4}x^{-2}-\dfrac{3}{2}x^{-1} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1167"><h6 class="heading"><span class="codenumber">42.</span></h6>
+<ol id="p-5508" class="lower-alpha cols2">
+<li id="li-3417"><p id="p-5509">\(\dfrac{2}{x^2}-\dfrac{x^2}{2} \)</p></li>
+<li id="li-3418"><p id="p-5510">\(\dfrac{5x+1}{(3x)^2} \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1168"><h6 class="heading"><span class="codenumber">43.</span></h6>
+<ol id="p-5511" class="lower-alpha cols2">
+<li id="li-3419"><p id="p-5512">\(\dfrac{2}{x^4}\left(\dfrac{x^2}{4}+\dfrac{x}{2}-\dfrac{1}{4} \right) \)</p></li>
+<li id="li-3420"><p id="p-5513">\(\dfrac{x^2}{3}\left(\dfrac{2}{x^4}-\dfrac{1}{3x^2}+\dfrac{1}{2} \right) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-630" id="answer-630"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-630"><div class="solution"><ol id="p-5514" class="lower-alpha cols2">
+<li id="li-3421"><p id="p-5515">\(\dfrac{1}{2}x^{-2}+x^{-3}-\dfrac{1}{2}x^{-4} \)</p></li>
+<li id="li-3422"><p id="p-5516">\(\dfrac{2}{3}x^{-2}-\dfrac{1}{9}+\dfrac{1}{6}x^{2} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1169"><h6 class="heading"><span class="codenumber">44.</span></h6>
+<ol id="p-5517" class="lower-alpha cols2">
+<li id="li-3423"><p id="p-5518">\(\dfrac{9}{x^3}\left(\dfrac{x^3}{3}-1-\dfrac{1}{x^3} \right) \)</p></li>
+<li id="li-3424"><p id="p-5519">\(\dfrac{x^2}{2}\left(\dfrac{3}{x}-\dfrac{5}{x^3}+\dfrac{7}{x^5} \right) \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-165">
+<div class="introduction" id="introduction-171"><p id="p-5520">For Problems 45–50, use the distributive law to write each product as a sum of power functions.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1170"><h6 class="heading"><span class="codenumber">45.</span></h6>
+<p id="p-5521">\(x^{-1}(x^2 - 3x + 2)\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-631" id="answer-631"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-631"><div class="solution"><p id="p-5522">\(x - 3 + 2x^{-1}\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1171"><h6 class="heading"><span class="codenumber">46.</span></h6>
+<p id="p-5523">\(3x^{-2}(2x^4 +x^2 -4)\)</p></article><article class="exercise-like" id="exercise-1172"><h6 class="heading"><span class="codenumber">47.</span></h6>
+<p id="p-5524">\(-3t^{-2}(t^2 - 2 - 4t^{-2})\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-632" id="answer-632"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-632"><div class="solution"><p id="p-5525">\(-3 + 6t^{-2} + 12t^{-4}\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1173"><h6 class="heading"><span class="codenumber">48.</span></h6>
+<p id="p-5526">\(-t^{-3}(3t^2 - 1 - t^{-2})\)</p></article><article class="exercise-like" id="exercise-1174"><h6 class="heading"><span class="codenumber">49.</span></h6>
+<p id="p-5527">\(2u^{-3}(-2u^3 - u^2 + 3u)\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-633" id="answer-633"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-633"><div class="solution"><p id="p-5528">\(-4 - 2u^{-1} + 6u^{-2}\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1175"><h6 class="heading"><span class="codenumber">50.</span></h6>
+<p id="p-5529">\(2u^{-1}(-1 - u - 2u^2)\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-166">
+<div class="introduction" id="introduction-172"><p id="p-5530">For Problems 51–54, factor as indicated, writing the second factor with positive exponents only.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1176"><h6 class="heading"><span class="codenumber">51.</span></h6>
+<p id="p-5531">\(4x^2 + 16x^{-2} = 4x^{-2}(~~ \text{?} ~~)\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-634" id="answer-634"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-634"><div class="solution"><p id="p-5532">\(4x^{-2}(x^4 + 4)\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1177"><h6 class="heading"><span class="codenumber">52.</span></h6>
+<p id="p-5533">\(20y - 15y^{-1} = 5y^{-1} (~~ \text{?} ~~)\)</p></article><article class="exercise-like" id="exercise-1178"><h6 class="heading"><span class="codenumber">53.</span></h6>
+<p id="p-5534">\(3a^{-3} - 3a + a^3 = a^{-3} (~~ \text{?} ~~)\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-635" id="answer-635"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-635"><div class="solution"><p id="p-5535">\(a^{-3}(3 - 3a^4 + a^6)\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1179"><h6 class="heading"><span class="codenumber">54.</span></h6>
+<p id="p-5536">\(2 - 4q^{-2} - 8q^{-4} = 2q^{-4} (~~ \text{?} ~~)\)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1180"><h6 class="heading"><span class="codenumber">55.</span></h6>
+<ol id="p-5537" class="lower-alpha">
+<li id="li-3425"><p id="p-5538">Is it true that \((x + y)^{-2} = x^{-2} + y^{-2}\text{?}\) Explain why or why not.</p></li>
+<li id="li-3426"><p id="p-5539">Give a numerical example to support your answer.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-636" id="answer-636"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-636"><div class="solution"><ol id="p-5540" class="lower-alpha">
+<li id="li-3427"><p id="p-5541">No, because \(\frac{1}{(x+y)^2}\) is not \(\frac{1}{x^2} + \frac{1}{y^2}\text{.}\)</p></li>
+<li id="li-3428"><p id="p-5542">Let \(x = 1\text{,}\) \(y = 2\text{,}\) then \((x + y)^{-2} = (1 + 2)^{-2} = 3^{-2} = \frac{1}{9}\text{,}\) but \(x^{-2} + y^{-2} = 1^{-2} + 2^{-2} = 1 + \frac{1}{4} = \frac{5}{4}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1181"><h6 class="heading"><span class="codenumber">56.</span></h6>
+<ol id="p-5543" class="lower-alpha">
+<li id="li-3429"><p id="p-5544">Is it true that \((a - b)^{-1} = a^{-1} - b^{-1}\text{?}\) Explain why or why not.</p></li>
+<li id="li-3430"><p id="p-5545">Give a numerical example to support your answer.</p></li>
+</ol></article><article class="exercise-like" id="exercise-1182"><h6 class="heading"><span class="codenumber">57.</span></h6>
+<ol id="p-5546" class="lower-alpha">
+<li id="li-3431"><p id="p-5547">Show that \(x + x^{-1} = \dfrac{x^2 +1}{x}\text{.}\)</p></li>
+<li id="li-3432"><p id="p-5548">Show that \(x^3 + x^{-3} = \dfrac{x^6 +1}{x^3}\text{.}\)</p></li>
+<li id="li-3433"><p id="p-5549">Write \(x^n + x^{-n}\) as an algebraic fraction. Justify your answer.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-637" id="answer-637"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-637"><div class="solution"><ol id="p-5550" class="lower-alpha">
+<li id="li-3434"><p id="p-5551">\(x + x^{-1} = x + \dfrac{1}{x} = \dfrac{x^2}{x}+\dfrac{1}{x}= \dfrac{x^2 + 1}{x}\)</p></li>
+<li id="li-3435"><p id="p-5552">\(x^3 + x^{-3} = x^3 + \dfrac{1}{x^3} = \dfrac{x^6}{x^3}+\dfrac{1}{x^3}= \dfrac{x^6 + 1}{x^3}\)</p></li>
+<li id="li-3436"><p id="p-5553">\(x^n + x^{-n} = x^n + \dfrac{1}{x^n} = \dfrac{x^{2n}}{x^n}+\dfrac{1}{x^n}= \dfrac{x^{2n} + 1}{x^2}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1183"><h6 class="heading"><span class="codenumber">58.</span></h6>
+<ol id="p-5554" class="lower-alpha">
+<li id="li-3437"><p id="p-5555">Show that \(x^{-m} + x^{-n} = \dfrac{x^n +x^m}{x^{n +m}}\text{.}\)</p></li>
+<li id="li-3438"><p id="p-5556">If \(m \lt n\text{,}\) show that \(x^{-m} + x^{-n} = \dfrac{x^{n-m} +1}{x^{n} }\text{.}\)</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-167">
+<div class="introduction" id="introduction-173">
+<p id="p-5557">By rewriting the expressions in Problems 59–62 as fractions, verify that the laws of exponents hold for negative exponents . Show where you apply the corresponding law for positive exponents. Here is the fourth law as an example:</p>
+<div class="displaymath">
+\begin{align*}
+(ab)^{-3} \amp= \frac{1}{(ab)^3}= \frac{1}{a^3b^3} \amp\amp\text{By the fourth law of exponents.}\\
+\amp= \frac{1}{a^3}\cdot\frac{1}{b^3}=a^{-3}b^{-3} 
+\end{align*}
+</div>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1184"><h6 class="heading"><span class="codenumber">59.</span></h6>
+<p id="p-5558">\(a^{-2}a^{-3}=a^{-5} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-638" id="answer-638"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-638"><div class="solution"><div class="displaymath" id="p-5559">
+\begin{align*}
+a^{-2}a^{-3} \amp= \frac{1}{a^2}\cdot\frac{1}{a^3}=\frac{1}{a^2\cdot a^3} \\
+\amp= \frac{1}{a^{2+3}} \amp\amp \text{By the first law of exponents.} \\
+\amp= \frac{1}{a^5}=a^{-5} 
+\end{align*}
+</div></div></div>
+</div></article><article class="exercise-like" id="exercise-1185"><h6 class="heading"><span class="codenumber">60.</span></h6>
+<p id="p-5560">\(\dfrac{a^{-6}}{a^{-2}}=a^{-4}\)</p></article><article class="exercise-like" id="exercise-1186"><h6 class="heading"><span class="codenumber">61.</span></h6>
+<p id="p-5561">\(\dfrac{a^{-2}}{a^{-6}}=a^{4}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-639" id="answer-639"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-639"><div class="solution"><div class="displaymath" id="p-5562">
+\begin{align*}
+\frac{a^{-2}}{a^{-6}} \amp= a^{-2}\div a^{-6} = \frac{1}{a^2}\div\frac{1}{a^6} \\
+\amp= \frac{1}{a^{2}}\cdot\frac{a^6}{1} = \frac{a^6}{a^2}  \\
+\amp= a^{6-2}\amp\amp \text{By the second law of exponents.} \\
+\amp= a^4
+\end{align*}
+</div></div></div>
+</div></article><article class="exercise-like" id="exercise-1187"><h6 class="heading"><span class="codenumber">62.</span></h6>
+<p id="p-5563">\(\left(a^{-2}\right)^{-3}=a^6 \)</p></article>
+</div>
+</div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

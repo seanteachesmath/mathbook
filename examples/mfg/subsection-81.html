@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:20-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Power Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-80.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Integer-Exponents.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-82.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-80.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Integer-Exponents.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-82.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-81"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2</span> <span class="title">Power Functions</span>
+</h2>
+<p id="p-5198">The functions that describe direct and inverse variation are part of a larger family of functions called <dfn class="terminology">power functions</dfn>.</p>
+<article class="assemblage-like" id="assemblage-58"><h6 class="heading"><span class="title">Power Function.</span></h6>
+<p id="p-5199">A function of the form</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = kx^p
+\end{equation*}
+</div>
+<p>where \(k\) and \(p\) are nonzero constants, is called a <dfn class="terminology">power function</dfn>.</p></article><p id="p-5200">Examples of power functions are</p>
+<div class="displaymath">
+\begin{equation*}
+V(r ) = \frac{4}{3}\pi r^3 ~~\text{ and }~~L(T ) = 0.8125T^2
+\end{equation*}
+</div>
+<p>In addition, the basic functions</p>
+<div class="displaymath">
+\begin{equation*}
+f (x) = \frac{1}{x} ~~\text{ and }~~ g(x) = \frac{1}{x^2}
+\end{equation*}
+</div>
+<p>which we studied in <span>(((Unresolved xref, reference "chap2"; check spelling or use "provisional" attribute)))</span><a href="" class="internal" title=""> </a> can be written as</p>
+<div class="displaymath">
+\begin{equation*}
+f (x) = x^{-1} ~~\text{ and }~~ g(x) = x^{-2} 
+\end{equation*}
+</div>
+<p>Their graphs are shown below. Note that the domains of power functions with negative exponents do not include zero.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-basic-reciprocal-functions.svg" style="width: 100%; height: auto;" alt="graphs of the two basic reciprocal functions"></div></div></div>
+<article class="example-like" id="example-identify-power-functions"><a data-knowl="" class="id-ref" data-refid="hk-example-identify-power-functions"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.2.6</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-identify-power-functions"><article class="example-like"><p id="p-5201">Which of the following are power functions?</p>
+<ol class="lower-alpha cols3">
+<li id="li-3183"><p id="p-5202">\(f(x) = \dfrac{1}{3}x^4 + 2\)</p></li>
+<li id="li-3184"><p id="p-5203">\(g(x) = \dfrac{1}{3x^4}\)</p></li>
+<li id="li-3185"><p id="p-5204">\(h(x) = \dfrac{x + 6}{x^3}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-81" id="solution-81"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-81"><div class="solution"><ol id="p-5205" class="lower-alpha">
+<li id="li-3186"><p id="p-5206">This is not a power function, because of the addition of the constant term.</p></li>
+<li id="li-3187"><p id="p-5207">We can write \(g(x) = \frac{1}{3}x^{-4}\text{,}\) so \(g\) is a power function.</p></li>
+<li id="li-3188"><p id="p-5208">This is not a power function, but it can be treated as the sum of two power functions, because \(h(x) = x^{-2} + 6x^{-3}\text{.}\)</p></li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-1121"><a data-knowl="" class="id-ref" data-refid="hk-exercise-1121"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">3.2.7</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1121"><article class="exercise-like"><p id="p-5209">Write each function as a power function in the form \(y = kx ^p\text{.}\)</p>
+<ol class="lower-alpha cols3">
+<li id="li-3189"><p id="p-5210">\(f(x) = \dfrac{12}{x^2}\)</p></li>
+<li id="li-3190"><p id="p-5211">\(g(x) = \dfrac{1}{4x}\)</p></li>
+<li id="li-3191"><p id="p-5212">\(h(x) = \dfrac{2}{5x^6}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-604" id="answer-604"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-604"><div class="solution"><ol id="p-5213" class="lower-alpha cols3">
+<li id="li-3192"><p id="p-5214">\(f(x) = 12x^{-2}\)</p></li>
+<li id="li-3193"><p id="p-5215">\(g(x)=\dfrac{1}{4}x^{-1} \)</p></li>
+<li id="li-3194"><p id="p-5216">\(h(x)=\dfrac{2}{5}x^{-6} \)</p></li>
+</ol></div></div>
+</div></article></div>
+<p id="p-5217">Most applications are concerned with positive variables only, so many models use only the portion of the graph in the first quadrant.</p>
+<article class="example-like" id="example-trebuchet"><a data-knowl="" class="id-ref" data-refid="hk-example-trebuchet"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.2.8</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-trebuchet"><article class="example-like"><p id="p-5218">In the Middle Ages in Europe, castles were built as defensive strongholds. An attacking force would build a huge catapult called a trebuchet to hurl rocks and scrap metal inside the castle walls. The engineers could adjust its range by varying the mass of the projectiles. The mass, \(m\text{,}\) of the projectile should be inversely proportional to the square of the distance, \(d\text{,}\) to the target.</p>
+<ol class="lower-alpha">
+<li id="li-3195"><p id="p-5219">Use a negative exponent to write \(m\) as a function of \(d\text{,}\) \(m = f (d)\text{.}\)</p></li>
+<li id="li-3196"><p id="p-5220">The engineers test the trebuchet with a \(20\)-kilogram projectile, which lands \(250\) meters away. Find the constant of proportionality; then rewrite your formula for \(m\text{.}\)</p></li>
+<li id="li-3197"><p id="p-5221">Graph \(m = f (d)\text{.}\)</p></li>
+<li id="li-3198"><p id="p-5222">The trebuchet is \(180\) meters from the courtyard within the castle. What size projectile will hit the target?</p></li>
+<li id="li-3199"><p id="p-5223">The attacking force would like to hurl a \(100\)-kilogram projectile at the castle. How close must the attackers bring their trebuchet?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-82" id="solution-82"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-82"><div class="solution"><ol id="p-5224" class="lower-alpha">
+<li id="li-3200"><p id="p-5225">If we use \(k\) for the constant of proportionality, then \(m = \dfrac{k}{d^2}\text{.}\) Rewriting this equation with a negative exponent gives \(m = kd^{-2}\text{.}\)</p></li>
+<li id="li-3201">
+<p id="p-5226">We substitute \(m = 20\) and \(d = 250\) to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+20 \amp = k(250)^{-2}\amp\amp \blert{\text{Multiply both sides by }250^2.}\\
+1,250,000 \amp = k
+\end{aligned}
+\end{equation*}
+</div>
+<p>Thus, \(m = 1,250,000 d^{-2}\text{.}\)</p>
+</li>
+<li id="li-3202">
+<p id="p-5227">We evaluate the function for several values of \(m\text{,}\) or use a calculator to obtain the graph below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-trebuchet-graph.svg" style="width: 100%; height: auto;" alt="graph of mass vs distance"></div></div></div>
+</li>
+<li id="li-3203">
+<p id="p-5228">We substitute \(d = \alert{180}\) into the formula:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+m \amp = 1,250,000 (\alert{180} )^{-2} \\
+\amp = \frac{1,250,000}{32,400} \\
+\amp \approx 38.58
+\end{aligned}
+\end{equation*}
+</div>
+<p>The attackers should use a mass of approximately \(38.6\) kilograms.</p>
+</li>
+<li id="li-3204">
+<p id="p-5229">We substitute \(m=\alert{100}\) into the formula and solve for \(d\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\alert{100} \amp = 1,250,000 d^{-2} \amp\amp \blert{\text{Multiply by }d^2.}\\
+100d^2 \amp = 1,250,000 \amp\amp \blert{\text{Divide by }100.}\\
+d^2 \amp = 12,500 \amp\amp \blert{\text{Take sqwuare roots.}} \\
+d \amp = \pm \sqrt{12,500}
+\end{aligned}
+\end{equation*}
+</div>
+<p>They must locate the trebuchet \(\sqrt{12,500}\approx 111.8\) meters from the castle.</p>
+</li>
+</ol></div></div>
+</div></article></div>
+<p id="p-5230">The function \(m = \dfrac{k}{d^2}\) is an example of an <dfn class="terminology">inverse square law</dfn>, because \(m\) varies inversely with the square of \(d\text{.}\) Such laws are fairly common in physics and its applications, because gravitational and other forces behave in this way. Here is a more modern example of an inverse square law.</p>
+<article class="exercise-like" id="exercise-1122"><a data-knowl="" class="id-ref" data-refid="hk-exercise-1122"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">3.2.9</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1122"><article class="exercise-like"><p id="p-5231">Cell phone towers typically transmit signals at \(10\) watts of power. The signal strength varies inversely with the square of distance from the tower, and \(1\) kilometer away the signal strength is \(0.8\) picowatt. (A picowatt is \(10^{-12}\) watt.) Cell phones can receive a signal as small as \(0.01\) picowatt. How far can you be from the nearest tower and still hope to have cell phone reception?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-605" id="answer-605"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-605"><div class="solution"><p id="p-5232">About \(9\) km</p></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

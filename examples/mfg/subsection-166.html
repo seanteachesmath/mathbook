@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:29-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Richter Scale</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-165.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Logarithm-Scales.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="summary-5-4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-165.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Logarithm-Scales.html" title="Up">Up</a><a class="next-button button toolbar-item" href="summary-5-4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-166"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.6</span> <span class="title">The Richter Scale</span>
+</h2>
+<p id="p-9965">One method for measuring the magnitude of an earthquake compares the amplitude \(A\) of its seismographic trace with the amplitude \(A_0\) of the smallest detectable earthquake. The log of their ratio is the Richter magnitude, \(M\text{.}\) Thus,</p>
+<div class="displaymath">
+\begin{equation*}
+M=\log_{10}\left(\frac{A}{A_0} \right)
+\end{equation*}
+</div>
+<article class="example-like" id="example-northridge-earthquake"><a data-knowl="" class="id-ref" data-refid="hk-example-northridge-earthquake"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.6.14</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-northridge-earthquake"><article class="example-like"><ol id="p-9966" class="lower-alpha">
+<li id="li-6146">The Northridge earthquake of January 1994 registered 6.9 on the Richter scale. What would be the magnitude of an earthquake 100 times as powerful as the Northridge quake?</li>
+<li id="li-6147">How many times more powerful than the Northridge quake was the San Francisco earthquake of 1989, which registered 7.1 on the Richter scale?</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-157" id="solution-157"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-157"><div class="solution"><ol id="p-9967" class="lower-alpha">
+<li id="li-6148">We let \(A_N\) represent the amplitude of the Northridge quake and \(A_H\) represent the amplitude of a quake \(100\) times more powerful. From the Richter model, we have<div class="displaymath">
+\begin{equation*}
+6.9 = \log_{10}\left(\frac{A_N}{A_0}\right)
+\end{equation*}
+</div>or, rewriting in exponential form,<div class="displaymath">
+\begin{equation*}
+\frac{A_N}{A_0}= 10^{6.9}
+\end{equation*}
+</div>Now, \(A_H = 100A_N\) , so<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\frac{A_H}{A_0}\amp= \frac{100A_N}{A_0}\\
+\amp = 100\left(\frac{A_N}{A_0}\right)
+= 10^2(10^{6.9})\\
+\amp = 10^{8.9}
+\end{aligned}
+\end{equation*}
+</div>Thus, the magnitude of the more powerful quake is<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\log_{10}\left(\frac{A_H}{A_0}\right)
+\amp = \log_{10} 10^{8.9}\\
+\amp = 8.9
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-6149">We let \(A_S\) stand for the amplitude of the San Francisco earthquake. We are looking for the ratio \(A_S/A_N\text{.}\) First, we use the Richter formula to compute values for \(A_S\) and \(A_N\text{.}\)<div class="displaymath">
+\begin{equation*}
+6.9 = \log_{10}\left(\frac{A_N}{A_0}\right)
+~~\text{ and }~~ 7.1 = \log_{10}\left(\frac{A_s}{A_0}\right)
+\end{equation*}
+</div>Rewriting each equation in exponential form, we have<div class="displaymath">
+\begin{equation*}
+\frac{A_N}{A_0}= 10^{6.9}
+~~\text{ and }~~ \frac{A_S}{A_0}= 10^{7.1}
+\end{equation*}
+</div>or<div class="displaymath">
+\begin{equation*}
+A_N = 10^{6.9}A_0 ~~\text{ and }~~A_S = 10^{7.1}A_0
+\end{equation*}
+</div>Now we can compute the ratio we want:<div class="displaymath">
+\begin{equation*}
+\frac{A_S}{A_N}= \frac{10^{7.1}A_0}{10^{6.9}A_0}= 10^{0.2}
+\end{equation*}
+</div>The San Francisco earthquake was \(10^{0.2}\text{,}\) or approximately \(1.58\) times as powerful as the Northridge quake.</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2082"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2082"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">5.6.15</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2082"><article class="exercise-like"><p id="p-9968">In October 2005, a magnitude 7.6 earthquake struck Pakistan. How much more powerful was this earthquake than the 1989 San Francisco earthquake of magnitude 7.1?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1130" id="answer-1130"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1130"><div class="solution"><p id="p-9969">\(3.16\)</p></div></div>
+</div></article></div>
+<article class="remark-like" id="note-30"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">5.6.16</span>.</h6>
+<p id="p-9970">An earthquake \(100\text{,}\) or \(10^2\text{,}\) times as strong is only two units greater in magnitude on the Richter scale. In general, a difference of \(K\) units on the Richter scale (or any logarithmic scale) corresponds to a factor of \(10^K\) units in the intensity of the quake.</p></article><article class="example-like" id="example-compare-logscale"><a data-knowl="" class="id-ref" data-refid="hk-example-compare-logscale"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.6.17</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-compare-logscale"><article class="example-like"><p id="p-9971">On a log scale, the weights of two animals differ by \(1.6\) units. What is the ratio of their actual weights?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-158" id="solution-158"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-158"><div class="solution"><p id="p-9972">A difference of \(1.6\) on a log scale corresponds to a factor of \(10^{1.6}\) in the actual weights. Thus, the heavier animal is \(10^{1.6}\text{,}\) or \(39.8\) times as heavy as the lighter animal.</p></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2083"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2083"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">5.6.18</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2083"><article class="exercise-like"><p id="p-9973">Two points, labeled \(A\) and \(B\text{,}\) differ by \(2.5\) units on a log scale. What is the ratio of their decimal values?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1131" id="answer-1131"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1131"><div class="solution"><p id="p-9974">\(316.2\)</p></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

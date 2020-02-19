@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:23-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exponential Growth and Decay</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-157.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="The-Natural-Base.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-159.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-157.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="The-Natural-Base.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-159.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-158"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.5</span> <span class="title">Exponential Growth and Decay</span>
+</h2>
+<p id="p-9635">In <a href="Exponential-Growth-and-Decay.html" class="internal" title="Section 2: Exponential Growth and Decay">Section 2</a>, we considered functions of the form</p>
+<div class="displaymath">
+\begin{equation*}
+P(t) = P_0\cdot b^t 
+\end{equation*}
+</div>
+<p>which describe exponential growth when \(b \gt 1\) and exponential decay when \(0 \lt b \lt 1\text{.}\) Exponential growth and decay can also be modeled by functions of the form</p>
+<div class="displaymath">
+\begin{equation*}
+\blert{P(t) = P_0 \cdot e^{kt}}
+\end{equation*}
+</div>
+<p>where we have substituted \(e^k\) for the growth factor \(b\text{,}\) so that</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+P(t) \amp = P_0 \cdot b^t\\
+\amp = P_0 \cdot \left(e^k\right)^t = P_0 \cdot e^{kt}\\
+\end{aligned}
+\end{equation*}
+</div>
+<p>We can find the value of \(k\) by solving the equation \(b = e^k\) for \(k\text{,}\) to get \(k = \ln b\text{.}\)</p>
+<p id="p-9636">For instance, in <a data-knowl="./knowl/example-bacteria.html" title="Example 2.1.1">Example 2.1.1</a> in <a href="Exponential-Growth-and-Decay.html" class="internal" title="Section 2: Exponential Growth and Decay">Section 2</a> we found that a colony of bacteria grew according to the formula</p>
+<div class="displaymath">
+\begin{equation*}
+P(t) = 100 \cdot \alert{3^t}
+\end{equation*}
+</div>
+<p>We can express this function in the form \(P(t) = 100 \cdot \alert{e^{kt}}\) if we set</p>
+<div class="displaymath">
+\begin{equation*}
+3 = e^k ~ \text{ or } ~ k = \ln 3 \approx 1.0986
+\end{equation*}
+</div>
+<p>Thus, the growth law for the colony of bacteria can be written</p>
+<div class="displaymath">
+\begin{equation*}
+P(t) \approx 100 \cdot e^{1.0986t}
+\end{equation*}
+</div>
+<p>By graphing both functions on your calculator, you can verify that</p>
+<div class="displaymath">
+\begin{equation*}
+P(t) = 100 \cdot 3t~~~\text{and}~~~P(t) = 100 \cdot e^{1.0986t}
+\end{equation*}
+</div>
+<p>are just two ways of writing the same function.</p>
+<article class="example-like" id="example-population-growth-e"><a data-knowl="" class="id-ref" data-refid="hk-example-population-growth-e"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">4.5.15</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-population-growth-e"><article class="example-like"><p id="p-9637">From 1990 to 2000, the population of Clark County, Nevada, grew by \(6.4\%\) per year.</p>
+<ol class="lower-alpha">
+<li id="li-5935">What was the growth factor for the population of Clark County from 1990 to 2000? If the population of Clark County was \(768,000\) in 1990, write a formula for the population \(t\) years later.</li>
+<li id="li-5936">Write a growth formula for Clark County using base \(e\text{.}\)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-148" id="solution-148"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-148"><div class="solution"><ol id="p-9638" class="lower-alpha">
+<li id="li-5937">
+<p id="p-9639">The growth factor was \(b = 1 + r = 1.064\text{.}\) The population \(t\) years later was</p>
+<div class="displaymath">
+\begin{equation*}
+P(t) = 768,000 (1.064)^t
+\end{equation*}
+</div>
+</li>
+<li id="li-5938">
+<p id="p-9640">We use the formula \(P(t) = P_0 \cdot e^{kt}\text{,}\) where \(e^k = 1.064\text{.}\) Solving for \(k\text{,}\) we find</p>
+<div class="displaymath">
+\begin{equation*}
+k = \ln 1.064 = 0.062
+\end{equation*}
+</div>
+<p>so \(P(t) = 768,000 e^{0.062t}\text{.}\)</p>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2015"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2015"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">4.5.16</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2015"><article class="exercise-like"><p id="p-9641">From 1994 to 1998, the number of personal computers connected to the Internet grew according to the formula \(N(t) = 2.8e^{0.85t}\text{,}\) where \(t = 0\) in 1994 and \(N\) is in millions. (Source: Los Angeles Times, September 6, 1999)</p>
+<ol class="lower-alpha">
+<li id="li-5939">Evaluate \(N(1)\text{.}\) By what percent did the number of Internet users grow in one year?</li>
+<li id="li-5940">Express the growth law in the form \(N(t) = N_0 (1 + r)^t\text{.}\)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-27" id="hint-27"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-27"><div class="solution"><p id="p-9642">\(e^k = 1 + r\)</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1092" id="answer-1092"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1092"><div class="solution"><ol id="p-9643" class="lower-alpha cols2">
+<li id="li-5941"><p id="p-9644">\(N(1)\approx 6.55\text{,}\) \(~134\%\)</p></li>
+<li id="li-5942"><p id="p-9645">\(N(t)\approx 2.8 (1.3396)^t \)</p></li>
+</ol></div></div>
+</div></article></div>
+<p id="p-9646">If \(k\) is negative, then \(e^k\) is a fraction less than \(1\text{.}\) For example, if \(k = -2\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+e^{-2} = \frac{1}{e^2} \approx \frac{1}{7.3891} \approx 0.1353
+\end{equation*}
+</div>
+<p>Thus, for negative values of \(k\text{,}\) the function \(P(t) = P_0 e^{kt}\) describes exponential decay.</p>
+<article class="assemblage-like" id="assemblage-141"><h6 class="heading"><span class="title">Exponential Growth and Decay.</span></h6>
+<p id="p-9647">The function</p>
+<div class="displaymath">
+\begin{equation*}
+P(t) = P_0 e^{kt}
+\end{equation*}
+</div>
+<p>describes exponential growth if \(k \gt 0\text{,}\) and exponential decay if \(k \lt 0\text{.}\)</p></article><article class="example-like" id="example-write-decay-with-e"><a data-knowl="" class="id-ref" data-refid="hk-example-write-decay-with-e"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">4.5.17</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-write-decay-with-e"><article class="example-like"><p id="p-9648">Express the decay law \(N(t) = 60 (0.8)^t\) in the form \(N(t) = N_0 e^{kt}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-149" id="solution-149"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-149"><div class="solution">
+<p id="p-9649">For this decay law, \(N_0 = 60\) and \(b = 0.8\text{.}\) We would like to find a value for \(k\) so that \(e^k = b = 0.8\text{,}\) that is, we must solve the equation</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+e^k \amp = 0.8\amp\amp \blert{\text{Take natural log of both sides.}}\\
+\ln e^k\amp = \ln 0.8\amp\amp \blert{\text{Simplify.}}\\
+k\amp = \ln 0.8 \approx -0.2231
+\end{aligned}
+\end{equation*}
+</div>
+<p>Replacing \(b\) with \(e^k\text{,}\) we find that the decay law is</p>
+<div class="displaymath">
+\begin{equation*}
+N(t) \approx 60e^{-0.2231t}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2016"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2016"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">4.5.18</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2016"><article class="exercise-like"><p id="p-9650">A scientist isolates \(25\) grams of krypton-91, which decays according to the formula</p>
+<div class="displaymath">
+\begin{equation*}
+N(t) = 25e^{-0.07t}\text{,}
+\end{equation*}
+</div>
+<p>where \(t\) is in seconds.</p>
+<ol class="lower-alpha">
+<li id="li-5943">
+<p id="p-9651">Complete the table of values showing the amount of krypton-91 left at \(10\)-second intervals over the first minute.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(60\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(N(t)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5944"><p id="p-9652">Use the table to choose a suitable window and graph the function \(N(t)\text{.}\)</p></li>
+<li id="li-5945"><p id="p-9653">Write and solve an equation to answer the question: How long does it take for 60% of the krypton-91 to decay?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-28" id="hint-28"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-28"><div class="solution"><p id="p-9654">If \(60\%\) of the krypton-91 has decayed, \(40\%\) of the original \(25\) grams remains.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1093" id="answer-1093"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1093"><div class="solution"><ol id="p-9655" class="lower-alpha">
+<li id="li-5946"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(60\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(N(t)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.41\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6.16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.06\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.52\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.75\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.37\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-5947"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-5-3-8.jpg" style="width: 100%; height: auto;" alt="decay"></div></div></div></li>
+<li id="li-5948"><p id="p-9656">\(25 e^{-0.07t} = 0.40(25)\text{;}\) \(~~t=\dfrac{\ln(0.4)}{-0.07}\approx 13.09 \) seconds</p></li>
+</ol></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

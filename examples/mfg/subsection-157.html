@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:22-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Solving Equations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-156.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="The-Natural-Base.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-158.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-156.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="The-Natural-Base.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-158.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-157"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4</span> <span class="title">Solving Equations</span>
+</h2>
+<p id="p-9610">We use the natural logarithm to solve exponential equations with base \(e\text{.}\) The techniques we've learned for solving other exponential equations also apply to equations with base \(e\text{.}\)</p>
+<article class="example-like" id="example-solve-ln-equation"><a data-knowl="" class="id-ref" data-refid="hk-example-solve-ln-equation"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">4.4.8</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-solve-ln-equation"><article class="example-like"><p id="p-9611">Solve each equation for \(x\text{.}\)</p>
+<ol class="lower-alpha cols2">
+<li id="li-5927">\(\displaystyle e^x = 0.24\)</li>
+<li id="li-5928">\(\displaystyle \ln x = 3.5\)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-145" id="solution-145"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-145"><div class="solution"><ol id="p-9612" class="lower-alpha">
+<li id="li-5929">
+<p id="p-9613">We convert the equation to logarithmic form and evaluate using a calculator.</p>
+<div class="displaymath">
+\begin{equation*}
+x = \ln 0.24 \approx -1.427
+\end{equation*}
+</div>
+</li>
+<li id="li-5930">
+<p id="p-9614">We convert the equation to exponential form and evaluate.</p>
+<div class="displaymath">
+\begin{equation*}
+x = e^{3.5} \approx 33.1155
+\end{equation*}
+</div>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2012"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2012"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">4.4.9</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2012"><article class="exercise-like"><p id="p-9615">Solve each equation. Round your answers to four decimal places.</p>
+<ol class="lower-alpha cols2">
+<li id="li-5931">\(\displaystyle \ln x =-0.2\)</li>
+<li id="li-5932">\(\displaystyle e^x = 8\)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1089" id="answer-1089"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1089"><div class="solution"><ol id="p-9616" class="lower-alpha cols2">
+<li id="li-5933"><p id="p-9617">\(0.8187 \)</p></li>
+<li id="li-5934"><p id="p-9618">\(2.0794\)</p></li>
+</ol></div></div>
+</div></article></div>
+<p id="p-9619">To solve more complicated exponential equations, we isolate the power on one side of the equation before converting to logarithmic form.</p>
+<article class="example-like" id="example-solve-natural-exponential"><a data-knowl="" class="id-ref" data-refid="hk-example-solve-natural-exponential"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">4.4.10</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-solve-natural-exponential"><article class="example-like"><p id="p-9620">Solve \(140 = 20 e^{0.4x}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-146" id="solution-146"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-146"><div class="solution">
+<p id="p-9621">First, we divide each side by \(20\) to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+7 = e^{0.4x}
+\end{equation*}
+</div>
+<p>Then we convert the equation to logarithmic form.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+0.4x \amp = \ln 7 \amp\amp \blert{\text{Divide both sides by 0.4.}}\\
+x \amp= \frac{\ln 7}{0.4}
+\end{aligned}
+\end{equation*}
+</div>
+<p>Rounded to four decimal places, \(x \approx 4.8648\text{.}\)</p>
+</div></div>
+</div></article></div>
+<article class="remark-like" id="note-29"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">4.4.11</span>.</h6>
+<p id="p-9622">We can also solve the equation in <a data-knowl="./knowl/example-solve-natural-exponential.html" title="Example 4.4.10">Example 4.4.10</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+7 = e^{0.4x}
+\end{equation*}
+</div>
+<p>by taking the natural logarithm of both sides. This gives us</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\ln 7 \amp = \ln e^{0.4x}\amp\amp \blert{\text{Simplify the right side.}} \\
+\ln 7 \amp = 0.4x
+\end{aligned}
+\end{equation*}
+</div>
+<p>because \(\ln{e^a} = a\) for any number \(a\text{.}\) We then proceed with the solution as before.</p></article><article class="exercise-like" id="exercise-2013"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2013"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">4.4.12</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2013"><article class="exercise-like"><p id="p-9623">Solve</p>
+<div class="displaymath">
+\begin{equation*}
+80 -16e^{-0.2x} = 70.3
+\end{equation*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-25" id="hint-25"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-25"><div class="solution">
+<p id="p-9624">\(\blert{\text{Subtract  from both sides and divide by}~ -16.}\)</p>
+<p id="p-9625">\(\blert{\text{Take the natural log of both sides.}}\)</p>
+<p id="p-9626">\(\blert{\text{Divide by}~ -0.2.}\)</p>
+</div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1090" id="answer-1090"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1090"><div class="solution"><p id="p-9627">\(x = -5 \ln \left(\dfrac{9.6}{16} \right)\approx 2.5023\)</p></div></div>
+</div></article></div>
+<article class="example-like" id="example-solve-logistic"><a data-knowl="" class="id-ref" data-refid="hk-example-solve-logistic"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">4.4.13</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-solve-logistic"><article class="example-like"><p id="p-9628">Solve \(P = \dfrac{a}{1 + be^{-kt}}\) for \(t\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-147" id="solution-147"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-147"><div class="solution">
+<p id="p-9629">We multiply both sides of the equation by the denominator, \(1 + be^{-kt}\text{,}\) to get</p>
+<div class="displaymath">
+\begin{equation*}
+P(1 + be^{-kt} ) = a
+\end{equation*}
+</div>
+<p>Then we isolate the power, \(e^{-kt}\text{,}\) as follows:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+1 + be^{-kt} \amp = \frac{a}{P}\amp\amp \blert{\text{Subtract 1 from both sides.}}\\
+be^{-kt} \amp = \frac{a}{P}- 1 \amp\amp \blert{\text{Rewrite the right side. }}\\
+be^{-kt} \amp = \frac{a - P}{P}\amp\amp \blert{\text{Divide both sides by }b.}\\
+e^{-kt} \amp= \frac{a - P}{bP}
+\end{aligned}
+\end{equation*}
+</div>
+<p>Next, we take the natural logarithm of both sides to get</p>
+<div class="displaymath">
+\begin{equation*}
+\ln {e^{-kt}} = \ln{\frac{a - P}{bP}}
+\end{equation*}
+</div>
+<p>and recall that \(\ln {e^x} = x\) to simplify the left side.</p>
+<div class="displaymath">
+\begin{equation*}
+-kt = \ln{\frac{a - P}{bP}}
+\end{equation*}
+</div>
+<p>Finally, we divide both sides by \(-k\) to solve for \(t\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+t =\frac{-1}{k}\ln{\frac{a-P}{bP}}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2014"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2014"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">4.4.14</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2014"><article class="exercise-like"><p id="p-9630">Solve \(N = Ae^{-kt}\) for \(k\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-26" id="hint-26"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-26"><div class="solution">
+<p id="p-9631">\(\blert{\text{Divide both sides by}~ A.}\)</p>
+<p id="p-9632">\(\blert{\text{Take the natural log of both sides.}}\)</p>
+<p id="p-9633">\(\blert{\text{Divide both sides by}~ -t.}\)</p>
+</div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1091" id="answer-1091"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1091"><div class="solution"><p id="p-9634">\(k=\dfrac{-\ln(N/A) }{t} \)</p></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

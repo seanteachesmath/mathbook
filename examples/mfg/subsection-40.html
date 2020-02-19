@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:03-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Solving Nonlinear Equations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="nonlinear-models.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="nonlinear-models.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-41.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="nonlinear-models.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="nonlinear-models.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-41.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-40"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">Solving Nonlinear Equations</span>
+</h2>
+<p id="p-2846">When studying nonlinear models, we will need to solve nonlinear equations. For example, in <span>(((Unresolved xref, reference "investigation-Perimeter-and-Area"; check spelling or use "provisional" attribute)))</span><a href="" class="internal" title=""> </a> we used a graph to solve the quadratic equation</p>
+<div class="displaymath">
+\begin{equation*}
+18x - x^2 = 80
+\end{equation*}
+</div>
+<p id="p-2847">Here is another example. The figure shows a table and a graph for the function \(y = 2x^2 - 5\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:6%;margin-right:6%;">
+<div class="sbspanel" style="width:34.0909090909091%;justify-content:flex-start;"><img src="images/fig-parabola.svg" style="width: 100%; height: auto;" alt="parabola"></div>
+<div class="sbspanel fixed-width" style="width:56.8181818181818%;justify-content:center;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(-3\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(3\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(13\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(13\)</td>
+</tr>
+</table></div>
+</div></div>
+<p id="p-2848">You can see that there are two points on the graph for each \(y\)-value greater than \(-5\text{.}\) For example, the two points with \(y\)-coordinate \(7\) are shown. To solve the equation</p>
+<div class="displaymath">
+\begin{equation*}
+2x^2 - 5 = 7
+\end{equation*}
+</div>
+<p>we need only find the \(x\)-coordinates of these points. From the graph, the solutions appear to be about \(2.5\) and \(-2.5\text{.}\)</p>
+<p id="p-2849">How can we solve this equation algebraically? The opposite operation for squaring a number is taking a square root. So we can undo the operation of squaring by extracting square roots. We first solve for \(x^2\) to get</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+2x^2 \amp= 12 \\
+x^2 \amp= 6\\
+\end{aligned}
+\end{equation*}
+</div>
+<p>and then take square roots to find</p>
+<div class="displaymath">
+\begin{equation*}
+x = \pm\sqrt{6}
+\end{equation*}
+</div>
+<article class="remark-like" id="warning-5"><h6 class="heading">
+<span class="type">Warning</span> <span class="codenumber">2.1.1</span>.</h6>
+<p id="p-2850">Don't forget that every positive number has two square roots. The symbol \(\blert{\pm}\) (read “plus or minus”) is a shorthand notation used to indicate both square roots of \(6\text{.}\)</p></article><p id="p-2851">The exact solutions are thus \(\sqrt{6}\) and \(-\sqrt{6}\text{.}\) We can also find decimal approximations for the solutions using a calculator. Rounded to two decimal places, the approximate solutions are \(2.45\) and \(-2.45\text{.}\)</p>
+<p id="p-2852">In general, we can solve equations of the form \(ax^2 + c = 0\) by isolating \(x^2\) on one side of the equation and then taking the square root of each side. This method for solving equations is called <dfn class="terminology">extraction of roots</dfn>.</p>
+<article class="assemblage-like" id="assemblage-26"><h6 class="heading"><span class="title">Extraction of Roots.</span></h6>
+<p id="p-2853">To solve the equation</p>
+<div class="displaymath">
+\begin{equation*}
+ax^2 + c = 0
+\end{equation*}
+</div>
+<ol class="decimal">
+<li id="li-1813">Isolate \(x^2\text{.}\)</li>
+<li id="li-1814">Take square roots of both sides. There are two solutions.</li>
+</ol></article><article class="example-like" id="example-cat-falling"><a data-knowl="" class="id-ref" data-refid="hk-example-cat-falling"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">2.1.2</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-cat-falling"><article class="example-like"><p id="p-2854">If a cat falls off a tree branch 20 feet above the ground, its height \(t\) seconds later is given by \(h = 20 - 16t^2\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-1815">What is the height of the cat \(0.5\) second later?</li>
+<li id="li-1816">How long does the cat have to get in position to land on its feet before it reaches the ground?</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-41" id="solution-41"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-41"><div class="solution">
+<ol id="p-2855" class="lower-alpha">
+<li id="li-1817">
+<p id="p-2856">In this question, we are given a value of \(t\) and asked to find the corresponding value of \(h\text{.}\) To do this, we evaluate the formula for \(t = 0.5\text{.}\) We substitute \(\alert{0.5}\) for \(t\) into the formula and simplify.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+h \amp= 20 - 16(\alert{0.5})^2 \amp\amp \blert{\text{Compute the power.}}\\
+\amp = 20 - 16 (0.25) \amp\amp \blert{\text{Multiply; then subtract.}}\\
+\amp = 20 - 4 = 16
+\end{aligned}
+\end{equation*}
+</div>
+<p>The cat is \(16\) feet above the ground after \(0.5\) second.</p>
+</li>
+<li id="li-1818">
+<p id="p-2857">We would like to find the value of \(t\) when the height, \(h\text{,}\) is known. We substitute \(h = \alert{0}\) into the equation to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+\alert{0} = 20 - 16t^2
+\end{equation*}
+</div>
+<p>To solve this equation, we use extraction of roots. First we isolate \(t^2\) on one side of the equation.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+16t^2 \amp= 20 \amp\amp \blert{\text{Divide by 16.}}\\
+t^2 \amp= \frac{20}{16}=1.25
+\end{aligned}
+\end{equation*}
+</div>
+<p>Then we take the square root of both sides of the equation to find</p>
+<div class="displaymath">
+\begin{equation*}
+t = \pm \sqrt{1.25} \approx \pm1.118
+\end{equation*}
+</div>
+</li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:8%;margin-right:8%;">
+<div class="sbspanel" style="width:29.7619047619048%;justify-content:flex-start;"><img src="images/fig-cat-falling.svg" style="width: 100%; height: auto;" alt="cat falling"></div>
+<div class="sbspanel" style="width:59.5238095238095%;justify-content:flex-start;">
+<p id="p-2858">Only the positive solution makes sense here, so the cat has approximately 1.12 seconds to get into position for landing.</p>
+<p id="p-2859">A graph of the cat's height after \(t\) seconds is shown at left. The points corresponding to parts (a) and (b) are labeled.</p>
+</div>
+</div></div>
+</div></div>
+</div></article></div>
+<article class="remark-like" id="note-12"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">2.1.3</span>.</h6>
+<p id="p-2860">In part (a) of <a data-knowl="./knowl/example-cat-falling.html" title="Example 2.1.2">Example 2.1.2</a> we <dfn class="terminology">evaluated</dfn> the expression \(20 - 16t^2\) to find a value for \(h\text{,}\) and in part (b) we <dfn class="terminology">solved</dfn> the equation \(0 = 20 - 16t^2\) to find a value for \(t\text{.}\)</p></article><article class="exercise-like" id="exercise-561"><a data-knowl="" class="id-ref" data-refid="hk-exercise-561"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">2.1.4</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-561"><article class="exercise-like"><ol id="p-2861" class="lower-alpha">
+<li id="li-1819">
+<p id="p-2862">Solve by extracting roots \(\dfrac{3x^2 - 8}{5}= 10.\)</p>
+<p id="p-2863">\(\blert{\text{First, isolate } x^2.}\)</p>
+<p id="p-2864">\(\blert{\text{Take the square root of both sides.}}\)</p>
+</li>
+<li id="li-1820"><p id="p-2865">Give exact answers; then give approximations rounded to two decimal places.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-303" id="answer-303"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-303"><div class="solution"><p id="p-2866">\(x=\pm\sqrt{\dfrac{58}{3}}\approx \pm 4.40 \)</p></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

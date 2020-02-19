@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-06T14:34:38-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MFG Linear Models</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>(function() {
+  var cx = '006592449927388994635:w0x-ox5bpme';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand\degree[0]{^{\circ}}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\alert}[1]{\boldsymbol{\color{magenta}{#1}}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{blue}{#1}} 
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://yoshiwarabooks.org/" target="_blank"><img src="images/cover.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="MFG.html"><span class="title">Applied Algebra:</span> <span class="subtitle">Algebra for College Students</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chap1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chap1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="functions.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chap1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chap1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap1.html" data-scroll="chap1"><span class="codenumber">1</span> <span class="title">Functions and Their Graphs</span></a><ul>
+<li><a href="LinMod.html" data-scroll="LinMod" class="active">Linear Models</a></li>
+<li><a href="functions.html" data-scroll="functions">Functions</a></li>
+<li><a href="graphs-of-functions.html" data-scroll="graphs-of-functions">Graphs of Functions</a></li>
+<li><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change">Slope and Rate of Change</a></li>
+<li><a href="linear-functions.html" data-scroll="linear-functions">Linear Functions</a></li>
+<li><a href="linear-regression.html" data-scroll="linear-regression">Linear Regression</a></li>
+<li><a href="chap1-summary.html" data-scroll="chap1-summary">Chapter Summary and Review</a></li>
+<li><a href="section-1-1-exercises.html" data-scroll="section-1-1-exercises">Homework 1.1</a></li>
+<li><a href="section-1-2-exercises.html" data-scroll="section-1-2-exercises">Homework 1.2</a></li>
+<li><a href="section-1-3-exercises.html" data-scroll="section-1-3-exercises">Homework 1.3</a></li>
+<li><a href="section-1-4-exercises.html" data-scroll="section-1-4-exercises">Homework 1.4</a></li>
+<li><a href="section-1-5-exercises.html" data-scroll="section-1-5-exercises">Homework 1.5</a></li>
+<li><a href="section-1-6-exercises.html" data-scroll="section-1-6-exercises">Homework 1.6</a></li>
+<li><a href="chap1-rev-projects.html" data-scroll="chap1-rev-projects">Projects for Chapter 1</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chap2.html" data-scroll="chap2"><span class="codenumber">2</span> <span class="title">Modeling with Functions</span></a><ul>
+<li><a href="nonlinear-models.html" data-scroll="nonlinear-models">Nonlinear Models</a></li>
+<li><a href="basic-functions.html" data-scroll="basic-functions">Some Basic Functions</a></li>
+<li><a href="transformations.html" data-scroll="transformations">Transformations of Graphs</a></li>
+<li><a href="MathModels.html" data-scroll="MathModels">Functions as Mathematical Models</a></li>
+<li><a href="AbsoluteValue.html" data-scroll="AbsoluteValue">The Absolute Value Function</a></li>
+<li><a href="Domain-Range.html" data-scroll="Domain-Range">Domain and Range</a></li>
+<li><a href="section-2-1-exercises.html" data-scroll="section-2-1-exercises">Homework 2.1</a></li>
+<li><a href="section-2-2-exercises.html" data-scroll="section-2-2-exercises">Homework 2.2</a></li>
+<li><a href="section-2-3-exercises.html" data-scroll="section-2-3-exercises">Homework 2.3</a></li>
+<li><a href="section-2-4-exercises.html" data-scroll="section-2-4-exercises">Homework 2.4</a></li>
+<li><a href="section-2-5-exercises.html" data-scroll="section-2-5-exercises">Homework 2.5</a></li>
+<li><a href="section-2-6-exercises.html" data-scroll="section-2-6-exercises">Homework 2.6</a></li>
+<li><a href="chap2-summary.html" data-scroll="chap2-summary">Chapter Summary and Review</a></li>
+<li><a href="chap2-rev-projects.html" data-scroll="chap2-rev-projects">Projects for Chapter 2: Periodic Functions</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Appendices</span></a></li>
+<li class="link">
+<a href="appendix-a.html" data-scroll="appendix-a"><span class="codenumber">A</span> <span class="title">Algebra Skills Refresher</span></a><ul>
+<li><a href="Numbers-and-Operations.html" data-scroll="Numbers-and-Operations">Numbers and Operations</a></li>
+<li><a href="appendix-Linear-Equations-and-Inequalities.html" data-scroll="appendix-Linear-Equations-and-Inequalities">Linear Equations and Inequalities</a></li>
+<li><a href="appendix-Algebraic-Expressions-and-Problem-Solving.html" data-scroll="appendix-Algebraic-Expressions-and-Problem-Solving">Algebraic Expressions and Problem Solving</a></li>
+<li><a href="appendix-Graphs-and-Equations.html" data-scroll="appendix-Graphs-and-Equations">Graphs and Equations</a></li>
+<li><a href="appendix-Linear-Systems-in-Two-Variables.html" data-scroll="appendix-Linear-Systems-in-Two-Variables">Linear Systems in Two Variables</a></li>
+<li><a href="appendix-Laws-of-Exponents.html" data-scroll="appendix-Laws-of-Exponents">Laws of Exponents</a></li>
+<li><a href="appendix-Polynomials-and-Factoring.html" data-scroll="appendix-Polynomials-and-Factoring">Polynomials and Factoring</a></li>
+<li><a href="appendix-Factoring-Quadratic-Trinomials.html" data-scroll="appendix-Factoring-Quadratic-Trinomials">Factoring Quadratic Trinomials</a></li>
+<li><a href="appendix-Working-with-Algebraic-Fractions.html" data-scroll="appendix-Working-with-Algebraic-Fractions">Working with Algebraic Fractions</a></li>
+<li><a href="appendix-Working-with-Radicals.html" data-scroll="appendix-Working-with-Radicals">Working with Radicals</a></li>
+<li><a href="appendix-Facts-from-Geometry.html" data-scroll="appendix-Facts-from-Geometry">Facts from Geometry</a></li>
+<li><a href="Properties-of-Lines.html" data-scroll="Properties-of-Lines">Properties of Lines</a></li>
+<li><a href="appendix-The-Real-Number-System.html" data-scroll="appendix-The-Real-Number-System">The Real Number System</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="appendix-b.html" data-scroll="appendix-b"><span class="codenumber">B</span> <span class="title">Using a Graphing Calculator</span></a><ul>
+<li><a href="appendix-Getting-Started.html" data-scroll="appendix-Getting-Started">Getting Started</a></li>
+<li><a href="appendix-Entering-Expressions.html" data-scroll="appendix-Entering-Expressions">Entering Expressions</a></li>
+<li><a href="appendix-Editing-Expressions.html" data-scroll="appendix-Editing-Expressions">Editing Expressions</a></li>
+<li><a href="appendix-Graphing-an-Equation.html" data-scroll="appendix-Graphing-an-Equation">Graphing an Equation</a></li>
+<li><a href="appendix-Making-a-Table.html" data-scroll="appendix-Making-a-Table">Making a Table</a></li>
+<li><a href="appendix-Regression.html" data-scroll="appendix-Regression">Regression</a></li>
+<li><a href="appendix-Function-Notation-and-Transformation-of-Graphs.html" data-scroll="appendix-Function-Notation-and-Transformation-of-Graphs">Function Notation and Transformation of Graphs</a></li>
+</ul>
+</li>
+<li class="link"><a href="glossary.html" data-scroll="glossary"><span class="codenumber">C</span> <span class="title">Glossary</span></a></li>
+<li class="link"><a href="geometry.html" data-scroll="geometry"><span class="codenumber">D</span> <span class="title">Geometry formulas</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1"><span class="codenumber">E</span> <span class="title">Answers to Selected Exercises</span></a></li>
+<li class="link"><a href="appendix-gfdl.html" data-scroll="appendix-gfdl"><span class="codenumber">F</span> <span class="title">GNU Free Documentation License</span></a></li>
+<li class="link"><a href="bibliography.html" data-scroll="bibliography"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="LinMod"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Linear Models</span>
+</h2>
+<a href="LinMod.html" class="permalink">¶</a><section class="introduction" id="introduction-2"><article class="project-like" id="investigation-commission"><h6 class="heading">
+<span class="type">Investigation</span> <span class="codenumber">1.1.1</span>. <span class="title">Sales on Commission.</span>
+</h6>
+<p id="p-12">Delbert is offered a part-time job selling restaurant equipment. He will be paid $1000 per month plus a 6% commission on his sales. The sales manager tells Delbert he can expect to sell about $8000 worth of equipment per month. To help him decide whether to accept the job, Delbert does a few calculations.</p>
+<ol id="p-13" class="decimal">
+<li id="li-1"><p id="p-14">Based on the sales manager’s estimate, what monthly income can Delbert expect from this job? What annual salary would that provide?</p></li>
+<li id="li-2">
+<p id="p-15">What would Delbert’s monthly salary be if he sold only $5000 of equipment per month? What would his salary be if he sold $10,000 worth per month? Compute monthly incomes for each sales total shown in the table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel fixed-width" style="width:41.025641025641%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">Sales</td>
+<td class="c m b1 r1 l0 t3 lines">Income</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">8000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">10,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">12,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">15,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">18,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">20,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">25,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">30,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">35,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"> </td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"> </td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:56.4102564102564%;justify-content:flex-start;"><img src="images/Investigation1Grid.svg" style="width: 100%; height: auto;" alt="grid"></div>
+</div></div>
+</li>
+<li id="li-3"><p id="p-16">Plot your data points on a graph, using sales, \(S\text{,}\) on the horizontal axis and income, \(I\text{,}\) on the vertical axis, as shown in the figure. Connect the data points to show Delbert’s monthly income for all possible monthly sales totals.</p></li>
+<li id="li-4"><p id="p-17">Add two new data points to the table by reading values from your graph.</p></li>
+<li id="li-5">
+<p id="p-18">Write an algebraic expression for Delbert’s monthly income, \(I\text{,}\) in terms of his monthly sales, \(S\text{.}\) Use the description in the problem to help you:</p>
+<p id="p-19">He will be paid: $1000 . . . plus a 6% commission on his sales.</p>
+<p id="p-20"><em class="emphasis">Income</em> \(= \underline{\hspace{6.818181818181818em}}\)</p>
+</li>
+<li id="li-6"><p id="p-21">Test your formula from part (5) to see if it gives the same results as those you recorded in the table.</p></li>
+<li id="li-7"><p id="p-22">Use your formula to find out what monthly sales total Delbert would need in order to have a monthly income of $2500.</p></li>
+<li id="li-8"><p id="p-23">Each increase of $1000 in monthly sales increases Delbert’s monthly income by <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>.</p></li>
+<li id="li-9"><p id="p-24">Summarize the results of your work: In your own words, describe the relationship between Delbert’s monthly sales and his monthly income. Include in your discussion a description of your graph.</p></li>
+</ol></article></section><section class="subsection" id="subsection-1"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Tables, Graphs and Equations</span>
+</h3>
+<p id="p-25">The first step in creating a model is to describe relationships between variables.  In <a data-knowl="./knowl/investigation-commission.html" title="Investigation 1.1.1: Sales on Commission">Investigation 1.1.1</a>, we analyzed the relationship between Delbert's sales and his income.  Starting from a verbal description, we represented the relationship in three different ways.</p>
+<ol id="p-26" class="decimal">
+<li id="li-10"><p id="p-27">A <dfn class="terminology">table of values</dfn> displays specific data points with precise numerical values.</p></li>
+<li id="li-11"><p id="p-28">A <dfn class="terminology">graph</dfn> is a visual display of the data.  It is easier to spot trends and describe the overall behavior of the variables from a graph.</p></li>
+<li id="li-12"><p id="p-29">An <dfn class="terminology">algebraic equation</dfn> is a compact summary of the model.  It can be used to analyze the model and to make predictions</p></li>
+</ol>
+<p id="p-30">We begin our study of modeling with some examples of <dfn class="terminology">linear models</dfn>.  In the examples that follow, observe the interplay among the three modeling tools, and how each contributes to the model.</p>
+<article class="example-like" id="example-Annelise"><a data-knowl="" class="id-ref" data-refid="hk-example-Annelise"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.1</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-Annelise"><article class="example-like"><p id="p-31">Annelise is on vacation at a seaside resort.  She can rent a bicycle from her hotel for $3 an hour, plus a $5 insurance fee.  (A fraction of an hour is charged as the same fraction of $3.)</p>
+<ol id="p-32" class="lower-alpha">
+<li id="li-13"><p id="p-33">Make a table of values showing the cost, \(C\text{,}\) of renting a bike for various lengths of time, \(t\text{.}\)</p></li>
+<li id="li-14"><p id="p-34">Plot the points on a graph. Draw a curve through the data points.</p></li>
+<li id="li-15"><p id="p-35">Write an equation for \(C\) in terms of \(t\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution"><ol id="p-36" class="lower-alpha">
+<li id="li-16">
+<p id="p-37">To find the cost, we multiply the time by $3, and add the result to the $5 insurance fee.  For example, the cost of a 1-hour bike ride is</p>
+<div class="displaymath">
+\begin{align*}
+\text{Cost}\amp=(\$5\text{ insurance fee})+(\$3\text{ per hour})\times(\alert{1}\text{ hour})\\
+C\amp=5+3(\alert{1})=8
+\end{align*}
+</div>
+<p>A 1-hour bike ride costs $8.  We record the results in a table, as shown here:</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">Length of rental (hours)</td>
+<td class="c m b1 r1 l0 t3 lines">Cost of rental (dollars)</td>
+<td class="c m b1 r1 l0 t3 lines"></td>
+<td class="c m b1 r1 l0 t3 lines">\((t,C)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(C=5+3(\alert{1})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((1,8)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(C=5+3(\alert{2})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((2,11)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(14\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(C=5+3(\alert{3})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((3,14)\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-17"><div class="sidebyside"><div class="sbsrow" style="margin-left:4.25%;margin-right:4.25%;">
+<div class="sbspanel" style="width:60.1092896174863%;justify-content:flex-start;"><p id="p-38">Each pair of values represents a point on the graph.  The first value gives the horizontal coordinate of the point, and the second value gives the vertical coordinate.  The points lie on a straight line, as shown in the figure.  The line extends infinitely in only one direction, because negative values of \(t\) do not make sense here.</p></div>
+<div class="sbspanel" style="width:30.6010928961749%;justify-content:flex-start;"><img src="images/fig-Annelise-1.svg" style="width: 100%; height: auto;" alt="graph"></div>
+</div></div></li>
+<li id="li-18">
+<p id="p-39">To write an equation, we let \(C\) represent the cost of the rental, and we use \(t\) for the number of hours:</p>
+<div class="displaymath" id="p-40">
+\begin{align*}
+\text{Cost}\amp=(\$5\text{ insurance fee})+(\$3\text{ per hour})\times\text{(number of hours)}\\
+C\amp=5+3\cdot t
+\end{align*}
+</div>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="example-like" id="example-6hrbike"><a data-knowl="" class="id-ref" data-refid="hk-example-6hrbike"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.2</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6hrbike"><article class="example-like"><p id="p-41">Use the equation \(C=5+3\cdot t\) you found in <a data-knowl="./knowl/example-Annelise.html" title="Example 1.1.1">Example 1.1.1</a> to answer the following questions.  Then show how to find the answers by using the graph.</p>
+<ol id="p-42" class="lower-alpha">
+<li id="li-19"><p id="p-43">How much will it cost Annelise to rent a bicycle for 6 hours?</p></li>
+<li id="li-20"><p id="p-44">How long can Annelise bicycle for $18.50?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution"><ol id="p-45" class="lower-alpha">
+<li id="li-21">
+<p id="p-46">We substitute \(t=\alert{6}\) into the expression for \(C\) to find</p>
+<div class="displaymath">
+\begin{equation*}
+C=5+3(\alert{6})=23
+\end{equation*}
+</div>
+<p>A 6-hour bike ride will cost $23.  The point \(P\) on the graph in the figure represents the cost of a 6-hour bike ride.  The value on the \(C\)-axis at the same height as point \(P\) is 23, so a 6-hour bike ride costs $23.</p>
+</li>
+<li id="li-22"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel" style="width:61.5384615384615%;justify-content:flex-start;">
+<p id="p-47">We substitute \(C=\alert{18.50}\) into the equation and solve for \(t\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\alert{18.50}\amp=5+3t\\
+13.50\amp=3t\\
+t\amp=4.5
+\end{align*}
+</div>
+<p>For $18.50 Annelise can bicycle for 4½ hours. The point \(Q\)  on the graph represents an $18.50 bike ride. The value on the \(t\)-axis below point \(Q\) is 4.5, so $18.50 will buy a 4.5 hour bike ride.</p>
+</div>
+<div class="sbspanel" style="width:35.8974358974359%;justify-content:flex-start;"><img src="images/fig1-2.svg" style="width: 100%; height: auto;" alt="line though points"></div>
+</div></div></li>
+</ol></div></div>
+</div></article></div>
+<article class="remark-like" id="note-1"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">1.1.3</span>.</h6>
+<p id="p-48">In <a data-knowl="./knowl/example-6hrbike.html" title="Example 1.1.2">Example 1.1.2</a>, notice the different algebraic techniques we used in parts (a) and (b).</p>
+<ul id="p-49" class="disc">
+<li id="li-23"><p id="p-50">In part (a), we were given a value of \(t\) and we <dfn class="terminology">evaluated the expression</dfn>  \(5+3t\) to find \(C\text{.}\)</p></li>
+<li id="li-24"><p id="p-51">In part (b) we were given a value of \(C\) and we <dfn class="terminology">solved the equation</dfn> \(C=5+3t\) to find \(t\text{.}\)</p></li>
+</ul></article><article class="exercise-like" id="exercise-Frank-plants"><a data-knowl="" class="id-ref" data-refid="hk-exercise-Frank-plants"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.4</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-Frank-plants"><article class="exercise-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:63.1578947368421%;justify-content:center;">
+<p id="p-52">Frank plants a dozen corn seedlings, each 6 inches tall.  With plenty of water and sunlight they will grow approximately 2 inches per day.  Complete the table of values for the height, \(h\text{,}\) of the seedlings after \(t\) days.</p>
+<p id="p-53"></p>
+<table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(h\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table>
+</div>
+<div class="sbspanel" style="width:31.5789473684211%;justify-content:center;"><img src="images/fig-Example2.svg" style="width: 100%; height: auto;" alt="grid"></div>
+</div></div>
+<ol id="p-54" class="lower-alpha">
+<li id="li-25"><p id="p-55">Write an equation for the height of the seedlings in terms of the number of days since they were planted.</p></li>
+<li id="li-26"><p id="p-56">Graph the equation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="solution"><ol id="p-57" class="lower-alpha cols2">
+<li id="li-27"><p id="p-58">\(h = 6 + 2t\)</p></li>
+<li id="li-28"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:25%;"><div class="sbspanel" style="width:66.6666666666667%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-1-1.svg" style="width: 100%; height: auto;" alt="line"></div></div></div></li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.5</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2"><article class="exercise-like"><p id="p-59">Use your equation from <a data-knowl="./knowl/exercise-Frank-plants.html" title="Checkpoint 1.1.4">Checkpoint 1.1.4</a> to answer the questions.  Illustrate each answer on the graph.</p>
+<ol class="lower-alpha">
+<li id="li-29"><p id="p-60">How tall is the corn after 3 weeks?</p></li>
+<li id="li-30"><p id="p-61">How long will it be before the corn is 6 feet tall?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="solution"><p id="p-62">For part (b), convert feet to inches.</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="solution"><ol id="p-63" class="lower-alpha cols2">
+<li id="li-31"><p id="p-64">\(48\) inches tall</p></li>
+<li id="li-32"><p id="p-65">\(33\) days</p></li>
+</ol></div></div>
+</div></article></div></section><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.2</span> <span class="title">Choosing Scales for the Axes</span>
+</h3>
+<p id="p-66">To create a useful graph, we must choose appropriate scales for the axes.</p>
+<ul id="p-67" class="disc">
+<li id="li-33"><p id="p-68">The axes must extend far enough to show the values of the variables.</p></li>
+<li id="li-34"><p id="p-69">The tick marks should be equally spaced.</p></li>
+<li id="li-35"><p id="p-70">Usually we should use no more than 10 or 15 tick marks.</p></li>
+</ul>
+<article class="example-like" id="example-home-price"><a data-knowl="" class="id-ref" data-refid="hk-example-home-price"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.6</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-home-price"><article class="example-like"><p id="p-71">In 1990, the median price of a home in the US was $92,000.  The median price increased by about $4700 per year over the next decade.</p>
+<ol class="lower-alpha">
+<li id="li-36"><p id="p-72">Make a table of values showing the median price of a house in 1990, 1994, 1998, and 2000.</p></li>
+<li id="li-37"><p id="p-73">Choose suitable scales for the axes and plot the values you found in part (a) on a graph. Use \(t\text{,}\) the number of years since 1990, on the horizontal axis and the price of the house, \(P\text{,}\) on the vertical axis.  Draw a curve through the points.</p></li>
+<li id="li-38"><p id="p-74">Write an equation that expresses \(P\) in terms of \(t\text{.}\)</p></li>
+<li id="li-39"><p id="p-75">How much did the price of the house increase from 1990 to 1996?  Illustrate the increase on your graph.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution"><ol id="p-76" class="lower-alpha">
+<li id="li-40">
+<p id="p-77">In 1990 the median price was $92,000.  Four years later, in 1994, the price had increased by \(\alert{4}(4700)=18,800\) dollars, so</p>
+<div class="displaymath">
+\begin{equation*}
+P=92,000+\alert{4}(4700)=110,800
+\end{equation*}
+</div>
+<p>In 1998 the price had increased by \(\alert{8}(4700)=37,600\)  dollars, so</p>
+<div class="displaymath">
+\begin{equation*}
+P=92,000+\alert{8}(4700)=129,600
+\end{equation*}
+</div>
+<p>You can verify the price of the house in 2000 by a similar calculation.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">Year</td>
+<td class="c m b1 r1 l0 t3 lines">Price of House)</td>
+<td class="c m b1 r1 l0 t3 lines">\((t,P)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1990\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(92,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((0,\, 92,000)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1994\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(110,800\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((4,\, 110,800)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1998\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(129,600\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((8,\, 129,600)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(139,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((10,\, 139,000)\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-41">
+<p id="p-78">We let \(t\) stand for the number of years since 1990, so that \(t=0\) in 1990, \(t=4\) in 1994, and so on.  To choose scales for the axes, we look at the values in the table.  For this graph we scale the horizontal axis, or \(t\)-axis, in 1-year intervals and the vertical axis, or \(P\)-axis, for $90,000 to $140,000 in intervals of $5,000. The points lie on a straight line, as shown in the figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig1-3.svg" style="width: 100%; height: auto;" alt="grid"></div></div></div>
+</li>
+<li id="li-42">
+<p id="p-79">Look back at the calculations in part (a).  The price of the house started at $92,000 in 1990 and increased by \(t \times 4700\) dollars after \(t\) years.  Thus,</p>
+<div class="displaymath">
+\begin{equation*}
+P=92,000+4700t
+\end{equation*}
+</div>
+</li>
+<li id="li-43">
+<p id="p-80">We find the points on the graph for 1990 and 1996. These points lie above \(t=0\) and \(t=6\) on the \(t\)-axis.  Next we find the values on the \(P\)-axis corresponding to the two points.  The values are \(P=92,000\) in 1990 and \(P=120,200\) in 1996.  The increase in price is the difference of the two \(P\)-values.</p>
+<div class="displaymath">
+\begin{align*}
+\text{increase in price}\amp=120,200-92,000\\
+\amp=28,200
+\end{align*}
+</div>
+<p>The price of the home increased $28,200 between 1990 and 1996.  This increase is indicated by the arrows in the figure.</p>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="remark-like" id="note-2"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">1.1.7</span>.</h6>
+<p id="p-81">The graphs in the preceding examples are <dfn class="terminology">increasing graphs</dfn> .  As we move along the graph from left to right (in the direction of increasing \(t\) ), the second coordinate increases as well.  Try <a data-knowl="./knowl/exercise-Silver-Lake.html" title="Checkpoint 1.1.8">Checkpoint 1.1.8</a>, which illustrates a <dfn class="terminology">decreasing graph</dfn>.</p></article><article class="exercise-like" id="exercise-Silver-Lake"><a data-knowl="" class="id-ref" data-refid="hk-exercise-Silver-Lake"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.8</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-Silver-Lake"><article class="exercise-like"><p id="p-82">Silver Lake has been polluted by industrial waste products.  The concentration of toxic chemicals in the water is currently 285 parts per million (ppm).  Environmental officials would like to reduce the concentration by 15 ppm each year.</p>
+<ol class="lower-alpha">
+<li id="li-44">
+<p id="p-83">Complete the table of values showing the desired concentration, \(C,\)  of toxic chemicals \(t\) years from now.  For each \(t\)-value, calculate the corresponding value for \(C\text{.}\)  Write your answers as ordered pairs.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(C\)</td>
+<td class="c m b1 r1 l0 t3 lines"></td>
+<td class="c m b1 r1 l0 t3 lines">\((t,C)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">\(C=285-15(\alert{0})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((0, ~~~~ )\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">\(C=285-15(\alert{5})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((5, ~~~~ )\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">\(C=285-15(\alert{10})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((10, ~~~~ )\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">\(C=285-15(\alert{15})\)</td>
+<td class="c m b1 r1 l0 t0 lines">\((15, ~~~~ )\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-45">
+<p id="p-84">To choose scales for the axes, notice that the value of \(C\) starts at 285 and decreases from there.  We'll scale the vertical axis up to 300, and use 10 tick marks at intervals of 30.  Graph the ordered pairs on the grid, and connect them with a straight line. Extend the graph until it reaches the horizontal axis, but no farther.  Points with negative \(C\)-coordinates have no meaning for the problem.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-Exercise3.svg" style="width: 100%; height: auto;" alt="grid"></div></div></div>
+</li>
+<li id="li-46"><p id="p-85">Write an equation for the concentration, \(C\text{,}\) of toxic chemicals \(t\) years from now.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-hint-2" id="hint-2"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-2"><div class="solution"><p id="p-86">For part (c): The concentration is initially 285 ppm, and we subtract 15 ppm for each year that passes, or \(15 \times t\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="solution"><ol id="p-87" class="lower-alpha cols3">
+<li id="li-47"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr><td class="c m b1 r1 l1 t3 lines">\((t,C)\)</td></tr>
+<tr><td class="c m b1 r1 l1 t0 lines">\((0,285)\)</td></tr>
+<tr><td class="c m b1 r1 l1 t0 lines">\((5,210)\)</td></tr>
+<tr><td class="c m b1 r1 l1 t0 lines">\((10,135)\)</td></tr>
+<tr><td class="c m b1 r1 l1 t0 lines">\((15,60)\)</td></tr>
+</table></div></div></div></li>
+<li id="li-48"><div class="sidebyside"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-1-3.svg" style="width: 100%; height: auto;" alt="decreasing graph"></div></div></div></li>
+<li id="li-49"><p id="p-88">\(C = 285 - 15t\)</p></li>
+</ol></div></div>
+</div></article></div>
+<article class="remark-like" id="note-3"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">1.1.9</span>.</h6>
+<p id="p-89">In the previous Checkpoint, we extend the graph until it reaches the horizontal axis, but no farther.  Points with negative \(C\)-coordinates have no meaning for the problem.</p></article><article class="remark-like" id="technology-1"><h6 class="heading">
+<span class="type">Technology</span> <span class="codenumber">1.1.10</span>. <span class="title">Graphing an Equation.</span>
+</h6>
+<p id="p-90">We can use a graphing calculator to graph an equation. On most calculators, we follow three steps.</p>
+<p id="p-91">To Graph an Equation:</p>
+<ol id="p-92" class="decimal">
+<li id="li-50"><p id="p-93">Press <code class="code-inline tex2jax_ignore">Y=</code> and enter the equation you wish to graph.</p></li>
+<li id="li-51"><p id="p-94">Press <code class="code-inline tex2jax_ignore">WINDOW</code> and select a suitable graphing window.</p></li>
+<li id="li-52"><p id="p-95">Press <code class="code-inline tex2jax_ignore">GRAPH</code></p></li>
+</ol></article><article class="example-like" id="graphing-calculator"><a data-knowl="" class="id-ref" data-refid="hk-graphing-calculator"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.11</span>. <span class="title">Using a Graphing Calculator.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-graphing-calculator"><article class="example-like"><p id="p-96">In <a data-knowl="./knowl/example-home-price.html" title="Example 1.1.6">Example 1.1.6</a>, we found the equation</p>
+<div class="displaymath">
+\begin{equation*}
+P = 92,000 + 4700t
+\end{equation*}
+</div>
+<p>for the median price of a house \(t\) years after 1990. Graph this equation on a calculator.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution">
+<p id="p-97">To begin, we press <code class="code-inline tex2jax_ignore">Y=</code> and enter</p>
+<div class="displaymath">
+\begin{equation*}
+Y1 = 92,000 + 4700X
+\end{equation*}
+</div>
+<p id="p-98">For this graph, we’ll use the grid in <a data-knowl="./knowl/example-home-price.html" title="Example 1.1.6">Example 1.1.6</a> for our window settings, so we press <code class="code-inline tex2jax_ignore">WINDOW</code> and enter</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Xmin\(=0\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Xmax\(=10\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ymin\(=90,000\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Ymax\(=140,000\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-99">Finally, we press <code class="code-inline tex2jax_ignore">GRAPH</code>. The calculator's graph is shown in the figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-GC-house-price.svg" style="width: 100%; height: auto;" alt="grid"></div></div></div>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-4"><a data-knowl="" class="id-ref" data-refid="hk-exercise-4"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.12</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise-like"><ol id="p-100" class="lower-alpha">
+<li id="li-53"><p id="p-101">Solve the equation \(2y - 1575 = 45x\) for \(y\) in terms of \(x\text{.}\)</p></li>
+<li id="li-54">
+<p id="p-102">Graph the equation on a graphing calculator. Use the window</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Xmin\(=-50\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Xmax\(=50\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Xscl\(=5\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ymin\(=-500\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Ymax\(=1000\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Yscl\(=100\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-55"><p id="p-103">Sketch the graph on paper. Use the window settings to choose appropriate scales for the axes.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="solution"><ol id="p-104" class="lower-alpha cols2">
+<li id="li-56"><p id="p-105">\(y = (1575 + 45x)/ 2 \)</p></li>
+<li id="li-57"><div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-1-4b.jpg" style="width: 100%; height: auto;" alt="GC graph"></div></div></div></li>
+<li id="li-58"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-1-4c.svg" style="width: 100%; height: auto;" alt="graph"></div></div></div></li>
+</ol></div></div>
+</div></article></div></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Linear Equations</span>
+</h3>
+<p id="p-106">All the models in the preceding examples have equations with a similar form:</p>
+<div class="displaymath">
+\begin{equation*}
+\blert{y=\text{(starting value)}+\text{(rate of change)}\cdot x}
+\end{equation*}
+</div>
+<p>(We'll talk more about rate of change in <a href="slope-and-rate-of-change.html" class="internal" title="Section 1.4: Slope and Rate of Change">Section 1.4</a>.)  Their graphs were all portions of straight lines.  For this reason such equations are called  <dfn class="terminology">linear equations</dfn>.  The order of the terms in the equation does not matter.  For example, the equation in <a data-knowl="./knowl/example-Annelise.html" title="Example 1.1.1">Example 1.1.1</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+C=5+3t
+\end{equation*}
+</div>
+<p>can be written equivalently as</p>
+<div class="displaymath">
+\begin{equation*}
+-3t+C=5
+\end{equation*}
+</div>
+<p>and the equation in <a data-knowl="./knowl/example-home-price.html" title="Example 1.1.6">Example 1.1.6</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+P=92,000+4700t
+\end{equation*}
+</div>
+<p>can be written as</p>
+<div class="displaymath">
+\begin{equation*}
+-4700t +P=92,000
+\end{equation*}
+</div>
+<p>This form of a linear equation, \(Ax+By=C \text{,}\) is called the <dfn class="terminology">general form</dfn>.</p>
+<article class="assemblage-like" id="assemblage-1"><h6 class="heading"><span class="title">General Form for a Linear Equation.</span></h6>
+<p id="p-107">The graph of any equation</p>
+<div class="displaymath">
+\begin{equation*}
+Ax+By=C
+\end{equation*}
+</div>
+<p>where \(A\) and \(B\) are not both equal to zero, is a straight line.</p></article><article class="example-like" id="example-advertising"><a data-knowl="" class="id-ref" data-refid="hk-example-advertising"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.13</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-advertising"><article class="example-like"><p id="p-108">The manager at Albert's Appliances has $3000 to spend on advertising for the next fiscal quarter.  A 30-second spot on television costs $150 per broadcast, and a 30-second radio ad costs $50.</p>
+<ol id="p-109" class="lower-alpha">
+<li id="li-59"><p id="p-110">The manager decides to buy \(x\) television ads and \(y\) radio ads.  Write an equation relating \(x\) and \(y\text{.}\)</p></li>
+<li id="li-60"><p id="p-111">Make a table of values showing several choices for \(x\) and \(y\text{.}\)</p></li>
+<li id="li-61"><p id="p-112">Plot the points from your table, and graph the equation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution"><ol id="p-113" class="lower-alpha">
+<li id="li-62">
+<p id="p-114">Each television ad costs $150, so \(x\) ads will cost $\(150x\text{.}\)  Similarly, \(y\) radio ads will cost $\(50y\text{.}\)  The manager has $3000 to spend, so the sum of the costs must be $3000.  Thus,</p>
+<div class="displaymath">
+\begin{equation*}
+150x+50y=3000
+\end{equation*}
+</div>
+</li>
+<li id="li-63">
+<p id="p-115">We choose some values of \(x\text{,}\) and solve the equation for the corresponding value of \(y\text{.}\)  For example, if \(x=\alert{10}\) then</p>
+<div class="displaymath">
+\begin{align*}
+150(\alert{10})+50y\amp=300\\
+1500+50y\amp=3000\\
+50y\amp=1500\\
+y\amp=30
+\end{align*}
+</div>
+<p>If the manager buys 10 television ads, she can also buy 30 radio ads.  You can verify the other entries in the table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(12\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(14\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(36\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(24\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-64"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:2%;">
+<div class="sbspanel" style="width:51.0204081632653%;justify-content:flex-start;"><p id="p-116">We plot the points from the table. All the solutions lie on a straight line, as shown in the figure.</p></div>
+<div class="sbspanel" style="width:30.6122448979592%;justify-content:flex-start;"><img src="images/fig-example-advertising.svg" style="width: 100%; height: auto;" alt="grid"></div>
+</div></div></li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-crops"><a data-knowl="" class="id-ref" data-refid="hk-exercise-crops"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.14</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-crops"><article class="exercise-like"><p id="p-117">In central Nebraska, each acre of corn requires 25 acre-inches of water per year, and each acre of winter wheat requires 18 acre-inches of water. (An acre-inch is the amount of water needed to cover one acre of land to a depth of one inch.)  A farmer can count on 9000 acre-inches of water for the coming year.  (Source:  Institute of Agriculture and Natural Resources, University of Nebraska)</p>
+<ol class="lower-alpha">
+<li id="li-65"><p id="p-118">Write an equation relating the number of acres of corn, \(x\text{,}\) and the number of acres of wheat, \(y\text{,}\) that the farmer can plant.</p></li>
+<li id="li-66">
+<p id="p-119">Complete the table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(100\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(150\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(200\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="solution"><ol id="p-120" class="lower-alpha">
+<li id="li-67"><p id="p-121">\(25x + 18y = 9000\)</p></li>
+<li id="li-68"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:55%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(100\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(150\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(200\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(y\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(430.6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(361.1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(291.7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(222.2\)</td>
+</tr>
+</table></div></div></div></li>
+</ol></div></div>
+</div></article></div></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.4</span> <span class="title">Intercepts</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:25%;justify-content:center;"><img src="images/fig-intercepts.svg" style="width: 100%; height: auto;" alt="intercepts"></div>
+<div class="sbspanel" style="width:70%;justify-content:center;">
+<p id="p-122">Consider the graph of the equation</p>
+<div class="displaymath">
+\begin{equation*}
+3x-4y=12
+\end{equation*}
+</div>
+<p>shown at left. The points where the graph crosses the axes are called the <dfn class="terminology">intercepts</dfn> of the graph. The coordinates of these points are easy to find.</p>
+</div>
+</div></div>
+<p id="p-123">The \(y\)-coordinate of the \(x\)-intercept is zero, so we set \(y=\alert{0}\) in the equation to get</p>
+<div class="displaymath">
+\begin{align*}
+3(\alert{0})-4x\amp=12\\
+x=-3
+\end{align*}
+</div>
+<p id="p-124">The \(x\)-intercept is the point \((-3,0)\text{.}\) Also, the \(x\)-coordinate of the \(y\)-intercept is zero, so we set \(x=\alert{0}\) in the equation to get</p>
+<div class="displaymath">
+\begin{gather*}
+3y-4(\alert{0})=12\\
+y=4
+\end{gather*}
+</div>
+<p>The \(y\)-intercept is \((0,4)\text{.}\)</p>
+<article class="assemblage-like" id="assemblage-2"><h6 class="heading"><span class="title">Intercepts of a Graph.</span></h6>
+<p id="p-125">The points where a graph crosses the axes are called the <dfn class="terminology">intercepts of the graph</dfn>.</p>
+<ol class="decimal">
+<li id="li-69"><p id="p-126">To find the \(y\)-intercept, set \(x=0\) and solve for \(y\text{.}\)</p></li>
+<li id="li-70"><p id="p-127">To find the \(x\)-intercept, set \(y=0\) and solve for \(x\)</p></li>
+</ol></article><p id="p-128">The intercepts of a graph tell us something about the situation it models.</p>
+<article class="example-like" id="example-intercepts"><a data-knowl="" class="id-ref" data-refid="hk-example-intercepts"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.15</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-intercepts"><article class="example-like"><ol id="p-129" class="lower-alpha">
+<li id="li-71">Find the intercepts of the graph in <a data-knowl="./knowl/exercise-Silver-Lake.html" title="Checkpoint 1.1.8">Checkpoint 1.1.8</a>, about the pollution in Silver Lake.</li>
+<li id="li-72">What do the intercepts tell us about the problem?</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution"><ol id="p-130" class="lower-alpha">
+<li id="li-73">
+<p id="p-131">An equation for the concentration of toxic chemicals is</p>
+<div class="displaymath">
+\begin{equation*}
+C=285-15t
+\end{equation*}
+</div>
+<p>To find the \(C\)-intercept, set \(t\) equal to zero.</p>
+<div class="displaymath">
+\begin{equation*}
+C=285-15(\alert{0})=285
+\end{equation*}
+</div>
+<p>The \(C\)-intercept is the point \((0, 285)\text{,}\) or simply 285.</p>
+<p id="p-132">To find the \(t\)-intercept, set \(C\) equal to zero and solve for \(t\text{.}\)</p>
+<div class="displaymath" id="p-133">
+\begin{equation*}
+\begin{aligned}[t]
+\alert{0}\amp =285-15t \amp \amp \blert{\text{Add }15t \text{ to both sides.}}\\
+15t\amp =285  \amp \amp \blert{\text{Divide both sides by 15.}}\\
+t\amp =19 
+\end{aligned}
+\end{equation*}
+</div>
+<p id="p-134">The \(t\)-intercept is the point \((19,0)\text{,}\) or simply \(19\text{.}\)</p>
+</li>
+<li id="li-74">
+<p id="p-135">The \(C\)-intercept represents the concentration of toxic chemicals in Silver Lake now:  When  \(t=0\text{,}\) \(C=285\text{,}\)  so the concentration is currently \(285\) ppm.</p>
+<p id="p-136">The \(t\)-intercept represents the number of years it will take for the concentration of toxic chemicals to drop to zero:  When \(C=0\text{,}\) \(t=19\text{,}\)  so it will take \(19\) years for the pollution to be eliminated entirely.</p>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-6"><a data-knowl="" class="id-ref" data-refid="hk-exercise-6"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.16</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-6"><article class="exercise-like"><ol class="lower-alpha">
+<li id="li-75"><p id="p-137">Find the intercepts of the graph in <a data-knowl="./knowl/example-advertising.html" title="Example 1.1.13">Example 1.1.13</a>, about the advertising budget for Albert's Appliances: \(150x + 50y = 3000\text{.}\)</p></li>
+<li id="li-76"><p id="p-138">What do the intercepts tell us about the problem?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="solution"><p id="p-139">\((20, 0)\text{:}\) The manager can buy \(20\) television ads if she buys no radio ads. \((0, 60)\text{:}\) The manager can buy \(60\) radio ads if she buys no television ads.</p></div></div>
+</div></article></div></section><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.5</span> <span class="title">Intercept Method for Graphing Lines</span>
+</h3>
+<p id="p-140">Because we really only need two points to graph a linear equation, we might as well find the intercepts first and use them to draw the graph. The values of the intercepts will also help us choose suitable scales for the axes. It is always a good idea to find a third point as a check.</p>
+<article class="example-like" id="intercepts"><a data-knowl="" class="id-ref" data-refid="hk-intercepts"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">1.1.17</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-intercepts"><article class="example-like"><ol id="p-141" class="lower-alpha">
+<li id="li-77"><p id="p-142">Find the \(x\)- and \(y\)-intercepts of the graph of \(150x - 180y = 9000\text{.}\)</p></li>
+<li id="li-78"><p id="p-143">Use the intercepts to graph the equation. Find a third point as a check.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution"><ol id="p-144" class="lower-alpha">
+<li id="li-79">
+<p id="p-145">To find the \(x\)-intercept, we set \(y = \alert{0}\text{.}\)</p>
+<div class="displaymath" id="p-146">
+\begin{equation*}
+\begin{aligned}[t]
+150x-18(\alert{0})\amp =9000 \amp \amp \blert{\text{Simpify.}}\\
+150x\amp =9000 \amp \amp \blert{\text{Divide both sides by 150.}}\\
+x\amp =60   \amp \amp  
+\end{aligned}
+\end{equation*}
+</div>
+<p id="p-147">The \(x\)-intercept is the point \((60, 0)\text{.}\) To find the \(y\)-intercept, we set \(x = \alert{0}\text{.}\)</p>
+<div class="displaymath" id="p-148">
+\begin{equation*}
+\begin{aligned}[t]
+150(\alert{0})-18y\amp =9000 \amp \amp \blert{\text{Simpify.}}\\
+-180y\amp =9000 \amp \amp \blert{\text{Divide both sides by } -180\text{.}}\\
+y\amp =-50   \amp \amp  
+\end{aligned}
+\end{equation*}
+</div>
+<p id="p-149">The \(y\)-intercept is the point \((0, -50)\text{.}\)</p>
+</li>
+<li id="li-80">
+<p id="p-150">We scale both axes in intervals of 10 and then plot the two intercepts, \((60, 0)\) and \((0, -50)\text{.}\) We draw the line through them, as shown below. Finally, we find another point and check that it lies on this line. We choose \(x = \alert{20}\) and solve for \(y\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+150(\alert{20}) -180y \amp = 9000\\
+3000 -180y \amp = 9000\\
+-180y \amp = 6000\\
+y \amp =-33.\overline{3}
+\end{align*}
+</div>
+<p>We plot the point \((20, -33\frac{1}{3})\text{.}\) Because this point lies on the line, we can be reasonably confident that our graph is correct.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-example-graph-intercepts.svg" style="width: 100%; height: auto;" alt="grid"></div></div></div>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="remark-like" id="technology-2"><h6 class="heading">
+<span class="type">Technology</span> <span class="codenumber">1.1.18</span>. <span class="title">Choosing a Graphing Window.</span>
+</h6>
+<p id="p-151">Knowing the intercepts can also help us choose a suitable window on a graphing calculator. We would like the window to be large enough to show the intercepts. For the graph in the example above, we can enter the equation</p>
+<div class="displaymath">
+\begin{equation*}
+Y = (9000 -150X)/{-180}
+\end{equation*}
+</div>
+<p>in the window</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Xmin\(=-20\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Xmax\(=70\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ymin\(=-70\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Ymax\(=30\)</td>
+</tr>
+</table></div></div></div></article><article class="assemblage-like" id="assemblage-3"><h6 class="heading"><span class="title">To Graph a Line Using the Intercept Method:.</span></h6>
+<ol id="p-152" class="decimal">
+<li id="li-81">
+<p id="p-153">Find the intercepts of the line.</p>
+<ol class="lower-alpha">
+<li id="li-82"><p id="p-154">To find the \(x\)-intercept, set \(y=0\) and solve for \(x\text{.}\)</p></li>
+<li id="li-83"><p id="p-155">To find the \(y\)-intercept, set \(x=0\) and solve for \(y\text{.}\)</p></li>
+</ol>
+</li>
+<li id="li-84"><p id="p-156">Plot the intercepts.</p></li>
+<li id="li-85"><p id="p-157">Choose a value for \(x\) and find a third point on the line.</p></li>
+<li id="li-86"><p id="p-158">Draw a line through the points.</p></li>
+</ol></article><article class="exercise-like" id="exercise-7"><a data-knowl="" class="id-ref" data-refid="hk-exercise-7"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">1.1.19</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-7"><article class="exercise-like"><ol class="lower-alpha">
+<li id="li-87"><p id="p-159">In <a data-knowl="./knowl/exercise-crops.html" title="Checkpoint 1.1.14">Checkpoint 1.1.14</a>, you wrote an equation about crops in Nebraska. Find the intercepts of the graph.</p></li>
+<li id="li-88"><p id="p-160">Use the intercepts to help you choose appropriate scales for the axes, and then graph the equation.</p></li>
+<li id="li-89"><p id="p-161">What do the intercepts tell us about the problem?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="solution">
+<p id="p-162">a., c. \(~~(360, 0)\text{:}\) If he plants no wheat, the farmer can plant \(360\) acres of corn. \((0, 500)\text{:}\) If he plants no corn, the farmer can plant 500 acres of wheat.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:5%;justify-content:flex-start;"><p id="p-163">b.</p></div>
+<div class="sbspanel" style="width:25%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-1-7.svg" style="width: 100%; height: auto;" alt="line in first quadrant"></div>
+<div class="sbspanel" style="width:60%;justify-content:flex-start;"><p id="p-164"></p></div>
+</div></div>
+</div></div>
+</div></article></div>
+<article class="remark-like" id="note-4"><h6 class="heading">
+<span class="type">Note</span> <span class="codenumber">1.1.20</span>.</h6>
+<p id="p-165">The examples in this section model simple linear relationships between two variables. Such relationships, in which the value of one variable is determined by the value of the other, are called <dfn class="terminology">functions</dfn>. We will study various kinds of functions throughout the course.</p></article></section><section class="subsection" id="summary-1-1"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.6</span> <span class="title">Section Summary</span>
+</h3>
+<a href="LinMod.html#summary-1-1" class="permalink">¶</a><section class="subsubsection" id="subsubsection-1"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.1.6.1</span> <span class="title">Vocabulary</span>
+</h4>
+<p id="p-166">Look up the definitions of new terms in the Glossary.</p>
+<ul class="disc cols3">
+<li id="li-90"><p id="p-167">Variable</p></li>
+<li id="li-91"><p id="p-168">Solve an equation</p></li>
+<li id="li-92"><p id="p-169">Evaluate an expression</p></li>
+<li id="li-93"><p id="p-170">Linear equation</p></li>
+<li id="li-94"><p id="p-171">Increasing graph</p></li>
+<li id="li-95"><p id="p-172">Decreasing graph</p></li>
+<li id="li-96"><p id="p-173">Intercept</p></li>
+<li id="li-97"><p id="p-174">Mathematical model</p></li>
+</ul></section><section class="subsubsection" id="subsubsection-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.1.6.2</span> <span class="title">CONCEPTS</span>
+</h4>
+<ol id="p-175" class="decimal">
+<li id="li-98"><p id="p-176">We can describe a relationship between variables with a table of values, a graph, or an equation.</p></li>
+<li id="li-99">
+<p id="p-177">Linear models have equations of the following form:</p>
+<div class="displaymath">
+\begin{equation*}
+y = (\text{starting value}) + (\text{rate of change})\cdot x
+\end{equation*}
+</div>
+</li>
+<li id="li-100"><p id="p-178">To make a useful graph, we must choose appropriate scales for the axes.</p></li>
+<li id="li-101"><article class="assemblage-like" id="assemblage-4"><h6 class="heading"><span class="title">General Form for a Linear Equation.</span></h6>
+<p id="p-179">The graph of any equation</p>
+<div class="displaymath">
+\begin{equation*}
+Ax+By=C
+\end{equation*}
+</div>
+<p>where \(A\) and \(B\) are not both equal to zero, is a straight line.</p></article></li>
+<li id="li-102"><p id="p-180">The intercepts of a graph are the points where the graph crosses the axes.</p></li>
+<li id="li-103">
+<p id="p-181">We can use the intercepts to graph a line.</p>
+<p id="p-182"></p>
+<article class="assemblage-like" id="assemblage-5"><h6 class="heading"><span class="title">To Graph a Line Using the Intercept Method:.</span></h6>
+<ol id="p-183" class="decimal">
+<li id="li-104">
+<p id="p-184">Find the intercepts of the line.</p>
+<ol class="lower-alpha">
+<li id="li-105"><p id="p-185">To find the \(x\)-intercept, set \(y=0\) and solve for \(x\text{.}\)</p></li>
+<li id="li-106"><p id="p-186">To find the \(y\)-intercept, set \(x=0\) and solve for \(y\text{.}\)</p></li>
+</ol>
+</li>
+<li id="li-107"><p id="p-187">Plot the intercepts.</p></li>
+<li id="li-108"><p id="p-188">Choose a value for \(x\) and find a third point on the line.</p></li>
+<li id="li-109"><p id="p-189">Draw a line through the points.</p></li>
+</ol></article>
+</li>
+<li id="li-110"><p id="p-190">The intercepts are also useful for interpreting a model.</p></li>
+</ol></section><section class="subsubsection" id="subsubsection-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.1.6.3</span> <span class="title">STUDY QUESTIONS</span>
+</h4>
+<ol id="p-191" class="decimal">
+<li id="li-111"><p id="p-192">Name three ways to represent a relationship between two variables.</p></li>
+<li id="li-112"><p id="p-193">If \(C\) is expressed in terms of \(H\text{,}\) which variable goes on the horizontal axis?</p></li>
+<li id="li-113"><p id="p-194">Explain the difference between evaluating an expression and solving an equation.</p></li>
+<li id="li-114"><p id="p-195">How many points do you need to graph a linear equation?</p></li>
+<li id="li-115"><p id="p-196">Explain how the words <dfn class="terminology">intercept</dfn> and <dfn class="terminology">intersect</dfn> are related; explain how they are different.</p></li>
+<li id="li-116"><p id="p-197">Delbert says that the intercepts of the line \(3x + 5y = 30\) are \((10, 6)\text{.}\) What is wrong with his answer?</p></li>
+</ol></section><section class="subsubsection" id="subsubsection-4"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.1.6.4</span> <span class="title">SKILLS</span>
+</h4>
+<p id="p-198">Practice each skill in the <a href="section-1-1-exercises.html" class="internal" title="Exercises 1.8: Homework 1.1">Homework 1.8</a> problems listed.</p>
+<ol class="decimal">
+<li id="li-117"><p id="p-199">Make a table of values: #1–4, 7 and 8</p></li>
+<li id="li-118"><p id="p-200">Plot points and draw a graph: #1–4, 7 and 8</p></li>
+<li id="li-119"><p id="p-201">Choose appropriate scales for the axes: #5–12</p></li>
+<li id="li-120"><p id="p-202">Write a linear model of the form \(y = (\text{starting value}) + (\text{rate of change})\cdot x\text{:}\) #1–8</p></li>
+<li id="li-121"><p id="p-203">Write a linear model in general form: #25–28, 33–36</p></li>
+<li id="li-122"><p id="p-204">Evaluate a linear expression, algebraically and graphically: #1–4</p></li>
+<li id="li-123"><p id="p-205">Solve a linear equation, algebraically and graphically: #1–4</p></li>
+<li id="li-124"><p id="p-206">Find the intercepts of a graph: #5 and 6, 13–24, 45–52</p></li>
+<li id="li-125"><p id="p-207">Graph a line by the intercept method: #5 and 6, 13–24</p></li>
+<li id="li-126"><p id="p-208">Interpret the meaning of the intercepts: #5 and 6, 25–28</p></li>
+<li id="li-127"><p id="p-209">Use a graphing calculator to graph a line: #37–52</p></li>
+<li id="li-128"><p id="p-210">Sketch on paper a graph obtained on a calculator: #37–44</p></li>
+</ol></section></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

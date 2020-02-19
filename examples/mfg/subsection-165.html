@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:28-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Decibels</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-164.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Logarithm-Scales.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-166.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-164.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Logarithm-Scales.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-166.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-165"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.5</span> <span class="title">Decibels</span>
+</h2>
+<p id="p-9956">The <dfn class="terminology">decibel scale</dfn>, used to measure the loudness or intensity of a sound, is another example of a logarithmic scale. The loudness of a sound is measured in decibels, D, by</p>
+<div class="displaymath">
+\begin{equation*}
+D=10 \log_{10}\left(\frac{I}{10^{-12}}\right)
+\end{equation*}
+</div>
+<p>where \(I\) is the intensity of its sound waves (in watts per square meter). The table below shows the intensity of some common sounds, measured in watts per square meter.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b3 r1 l1 t3 lines">Sound</td>
+<td class="c m b3 r1 l0 t3 lines">Intensity (watts/m\(^2\))</td>
+<td class="c m b3 r1 l0 t3 lines">Decibels</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Whisper</td>
+<td class="c m b1 r1 l0 t0 lines">\(10^{-10}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Background music</td>
+<td class="c m b1 r1 l0 t0 lines">\(10^{-8}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Loud conversation</td>
+<td class="c m b1 r1 l0 t0 lines">\(10^{-6}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(60\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Heavy traffic</td>
+<td class="c m b1 r1 l0 t0 lines">\(10^{-4}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Jet airplane</td>
+<td class="c m b1 r1 l0 t0 lines">\(10^{-2}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(100\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Thunder</td>
+<td class="c m b1 r1 l0 t0 lines">\(10^{-1}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(110\)</td>
+</tr>
+</table></div></div></div>
+<p id="p-9957">Consider the ratio of the intensity of thunder to that of a whisper:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\text{Intensity of thunder}}{\text{Intensity of a whisper}}
+= \frac{10^{-1}}{10^{-10}}= 10^9
+\end{equation*}
+</div>
+<p>Thunder is \(10^9\text{,}\) or one billion times more intense than a whisper. It would be impossible to show such a wide range of values on a graph and still maintain reasonable precision. When we use a log scale, however, there is a difference of only \(90\) decibels between a whisper and thunder.</p>
+<article class="example-like" id="example-decibels"><a data-knowl="" class="id-ref" data-refid="hk-example-decibels"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.5.11</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-decibels"><article class="example-like"><ol id="p-9958" class="lower-alpha">
+<li id="li-6138">Normal breathing generates about \(10^{-11}\) watts per square meter at a distance of \(3\) feet. Find the number of decibels for a breath \(3\) feet away.</li>
+<li id="li-6139">Normal conversation registers at about \(40\) decibels. How many times more intense than breathing is normal conversation?</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-156" id="solution-156"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-156"><div class="solution"><ol id="p-9959" class="lower-alpha">
+<li id="li-6140">We evaluate the decibel formula with \(I = \alert{10^{-11}}\) to find<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+D \amp = 10 \log_{10}\left(\frac{\alert{10^{-11}}} {10^{-12}}\right)
+= 10 \log_{10} {10^1}\\ 
+\amp = 10(1) = 10 \text{ decibels}
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-6141">We let \(I_b\) stand for the sound intensity of breathing, and \(I_c\) stand for the intensity of normal conversation. We are looking for the ratio \(I_c/I_b\text{.}\) From part (a), we know that<div class="displaymath">
+\begin{equation*}
+I_w = 10^{-11}
+\end{equation*}
+</div>and from the formula for decibels, we have<div class="displaymath">
+\begin{equation*}
+40 = 10 \log_{10}\left(\frac{I_c}{10^{-12}}\right)
+\end{equation*}
+</div>which we can solve for \(I_c\text{.}\) Dividing both sides of the equation by \(10\) and rewriting in exponential form, we have<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\dfrac{I_c}{10^{-12}} \amp = 10^4\amp\amp \blert{\text{Multiply both sides by }10^{-12}.}\\
+I_c \amp = 10^4(10^{-12}) = 10^{-8}
+\end{aligned}
+\end{equation*}
+</div>Finally, we compute the ratio \(\dfrac{I_c}{I_b}\text{:}\)<div class="displaymath">
+\begin{equation*}
+\frac{I_c}{I_b}= \frac{10^{-8}}{10^{-11}}= 10^3
+\end{equation*}
+</div>Normal conversation is \(1000\) times more intense than breathing.</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-2081"><a data-knowl="" class="id-ref" data-refid="hk-exercise-2081"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">5.5.12</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2081"><article class="exercise-like"><p id="p-9960">The noise of city traffic registers at about \(70\) decibels.</p>
+<ol class="lower-alpha">
+<li id="li-6142">What is the intensity of traffic noise, in watts per square meter?</li>
+<li id="li-6143">How many times more intense is traffic noise than conversation?</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1129" id="answer-1129"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1129"><div class="solution"><ol id="p-9961" class="lower-alpha cols2">
+<li id="li-6144"><p id="p-9962">\(I = 10^{-5}~ \text{watts}/\text{m}^2\)</p></li>
+<li id="li-6145"><p id="p-9963">\(1000\)</p></li>
+</ol></div></div>
+</div></article></div>
+<article class="remark-like" id="warning-22"><h6 class="heading">
+<span class="type">Warning</span> <span class="codenumber">5.5.13</span>.</h6>
+<p id="p-9964">Both the decibel model and the Richter scale in the next example use expressions of the form \(\log\left(\dfrac{a}{b}\right)\text{.}\) Be careful to follow the order of operations when using these models. We must compute the quotient \(\dfrac{a}{b}\) before taking a logarithm. In particular, it is <em class="emphasis">not</em> true that \(\log\left(\dfrac{a}{b}\right)\) can be simplified to \(\dfrac{\log a}{\log b}\text{.}\)</p></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>
