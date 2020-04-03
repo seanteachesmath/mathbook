@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:27-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 5.3</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="summary-5-3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="The-Natural-Base.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Logarithm-Scales.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="summary-5-3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="The-Natural-Base.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Logarithm-Scales.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="section-5-3-exercises"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">4.8</span> <span class="title">Homework 5.3</span>
+</h2>
+<a href="section-5-3-exercises.html" class="permalink">¶</a><div class="exercisegroup" id="exercisegroup-278">
+<div class="introduction" id="introduction-289">
+<p id="p-9687">For Problems 1-4, use your calculator to complete the table for each function. Then choose a suitable window and graph the function.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000}\)</td>
+</tr>
+</table></div></div></div>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-2018"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-9688">\(f(x)=e^{0.2x} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1095" id="answer-1095"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1095"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.135\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.368\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.718\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7.389\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20.086\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(54.598\)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-1.jpg" style="width: 100%; height: auto;" alt="growth"></div></div></div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-2019"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-9689">\(f(x)=e^{0.6x} \)</p></article><article class="exercise-like" id="exercise-2020"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-9690">\(f(x)= e^{-0.3x} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1096" id="answer-1096"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1096"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(f(x)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20.086\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.482\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.223\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.05\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.011\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.00248\)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-3.jpg" style="width: 100%; height: auto;" alt="decay"></div></div></div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-2021"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-9691">\(f(x)=e^{-0.1x} \)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-279">
+<div class="introduction" id="introduction-290"><p id="p-9692">For Problems 5-6, simplify.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-2022"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<ol id="p-9693" class="lower-alpha cols4">
+<li id="li-5982"><p id="p-9694">\(\ln e^2\)</p></li>
+<li id="li-5983"><p id="p-9695">\(e^{\ln 5t} \)</p></li>
+<li id="li-5984"><p id="p-9696">\(e^{-\ln x} \)</p></li>
+<li id="li-5985"><p id="p-9697">\(\ln \sqrt{e} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1097" id="answer-1097"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1097"><div class="solution"><ol id="p-9698" class="lower-alpha cols4">
+<li id="li-5986"><p id="p-9699">\(2\)</p></li>
+<li id="li-5987"><p id="p-9700">\(5t\)</p></li>
+<li id="li-5988"><p id="p-9701">\(\dfrac{1}{x} \)</p></li>
+<li id="li-5989"><p id="p-9702">\(\dfrac{1}{2} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2023"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<ol id="p-9703" class="lower-alpha cols4">
+<li id="li-5990"><p id="p-9704">\(\ln e^{x^4}\)</p></li>
+<li id="li-5991"><p id="p-9705">\(e^{3 \ln x} \)</p></li>
+<li id="li-5992"><p id="p-9706">\(e^{\ln x -\ln y} \)</p></li>
+<li id="li-5993"><p id="p-9707">\(\ln \left(\dfrac{1}{e^{2t}} \right) \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-280">
+<div class="introduction" id="introduction-291"><p id="p-9708">For Problems 7-10, solve for \(x\text{.}\) Round your answers to two decimal places.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-2024"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<ol id="p-9709" class="lower-alpha cols3">
+<li id="li-5994"><p id="p-9710">\(e^x=1.9\)</p></li>
+<li id="li-5995"><p id="p-9711">\(e^x=45\)</p></li>
+<li id="li-5996"><p id="p-9712">\(e^x=0.3\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1098" id="answer-1098"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1098"><div class="solution"><ol id="p-9713" class="lower-alpha cols3">
+<li id="li-5997"><p id="p-9714">\(0.64\)</p></li>
+<li id="li-5998"><p id="p-9715">\(3.81\)</p></li>
+<li id="li-5999"><p id="p-9716">\(-1.20\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2025"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<ol id="p-9717" class="lower-alpha cols3">
+<li id="li-6000"><p id="p-9718">\(e^x=2.1\)</p></li>
+<li id="li-6001"><p id="p-9719">\(e^x=60\)</p></li>
+<li id="li-6002"><p id="p-9720">\(e^x=0.9\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-2026"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<ol id="p-9721" class="lower-alpha cols3">
+<li id="li-6003"><p id="p-9722">\(\ln x=1.42\)</p></li>
+<li id="li-6004"><p id="p-9723">\(\ln x = 0.63\)</p></li>
+<li id="li-6005"><p id="p-9724">\(\ln x = -2.6\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1099" id="answer-1099"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1099"><div class="solution"><ol id="p-9725" class="lower-alpha cols3">
+<li id="li-6006"><p id="p-9726">\(4.14\)</p></li>
+<li id="li-6007"><p id="p-9727">\(1.88\)</p></li>
+<li id="li-6008"><p id="p-9728">\(0.07\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2027"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<ol id="p-9729" class="lower-alpha cols3">
+<li id="li-6009"><p id="p-9730">\(\ln x=2.03\)</p></li>
+<li id="li-6010"><p id="p-9731">\(\ln x = 0.59\)</p></li>
+<li id="li-6011"><p id="p-9732">\(\ln x = -3.4\)</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-2028"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<p id="p-9733">The number of bacteria in a culture grows according to the function</p>
+<div class="displaymath">
+\begin{equation*}
+N(t) = N_0 e^{0.04t}
+\end{equation*}
+</div>
+<p>where \(N_0\) is the number of bacteria present at time \(t = 0\) and \(t\) is the time in hours.</p>
+<ol class="lower-alpha">
+<li id="li-6012"><p id="p-9734">Write a growth law for a sample in which \(6000\) bacteria were present initially.</p></li>
+<li id="li-6013"><p id="p-9735">Make a table of values for \(N(t)\) in \(5\)-hour intervals over the first \(30\) hours.</p></li>
+<li id="li-6014"><p id="p-9736">Graph \(N(t) \text{.}\)</p></li>
+<li id="li-6015"><p id="p-9737">How many bacteria were present at \(t = 24\) hours?</p></li>
+<li id="li-6016"><p id="p-9738">How much time must elapse (to the nearest tenth of an hour) for the original \(6000\) bacteria to increase to \(100,000\text{?}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1100" id="answer-1100"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1100"><div class="solution"><ol id="p-9739" class="lower-alpha">
+<li id="li-6017"><p id="p-9740">\(N(t)=6000e^{0.04t} \)</p></li>
+<li id="li-6018"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(30\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(N(t)\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7328\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8951\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(10,933\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(13,353\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16,310\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19,921\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-6019"><div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-11.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div></li>
+<li id="li-6020"><p id="p-9741">\(15,670\)</p></li>
+<li id="li-6021"><p id="p-9742">\(70.3\) hrs</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2029"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<p id="p-9743">Hope invests \(\$2000\) in a savings account that pays \(5\frac{1}{2}\%\) annual interest compounded continuously.</p>
+<ol class="lower-alpha">
+<li id="li-6022"><p id="p-9744">Write a formula that gives the amount of money \(A(t)\) in Hope’s account after \(t\) years.</p></li>
+<li id="li-6023"><p id="p-9745">Make a table of values for \(A(t)\) in \(2\)-year intervals over the first \(10\) years.</p></li>
+<li id="li-6024"><p id="p-9746">Graph \(A(t) \text{.}\)</p></li>
+<li id="li-6025"><p id="p-9747">How much will Hope's account be worth after \(7\) years?</p></li>
+<li id="li-6026"><p id="p-9748">How long will it take for the account to grow to \(\$5000\text{?}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-2030"><h6 class="heading"><span class="codenumber">13.</span></h6>
+<p id="p-9749">The intensity, \(I\) (in lumens), of a light beam after passing through \(t\) centimeters of a filter having an absorption coefficient of \(0.1\) is given by the function</p>
+<div class="displaymath">
+\begin{equation*}
+I (t) = 1000e^{-0.1t}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-6027"><p id="p-9750">Graph \(I (t)\text{.}\)</p></li>
+<li id="li-6028"><p id="p-9751">What is the intensity (to the nearest tenth of a lumen) of a light beam that has passed through \(0.6\) centimeter of the filter?</p></li>
+<li id="li-6029"><p id="p-9752">How many centimeters (to the nearest tenth) of the filter will reduce the illumination to \(800\) lumens?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1101" id="answer-1101"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1101"><div class="solution"><ol id="p-9753" class="lower-alpha cols2">
+<li id="li-6030"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-13.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div></li>
+<li id="li-6031"><p id="p-9754">\(941.8\) lumens</p></li>
+<li id="li-6032"><p id="p-9755">\(2.2\) cm</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2031"><h6 class="heading"><span class="codenumber">14.</span></h6>
+<p id="p-9756">X-rays can be absorbed by a lead plate so that</p>
+<div class="displaymath">
+\begin{equation*}
+I (t) = I_0 e^{-1.88t}
+\end{equation*}
+</div>
+<p>where \(I_0\) is the X-ray count at the source and \(I (t)\) is the X-ray count behind a lead plate of thickness \(t\) inches.</p>
+<ol class="lower-alpha">
+<li id="li-6033"><p id="p-9757">Graph \(I (t)\text{.}\)</p></li>
+<li id="li-6034"><p id="p-9758">What percent of an X-ray beam will penetrate a lead plate \(\frac{1}{2}\) inch thick?</p></li>
+<li id="li-6035"><p id="p-9759">How thick should the lead plate be in order to screen out \(70\%\) of the X-rays?</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-281">
+<div class="introduction" id="introduction-292"><p id="p-9760">For problems 15-18, express each exponential function in the form \(P(t) = P_0b^t\text{.}\) Is the function increasing or decreasing? What is itsinitial value?</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-2032"><h6 class="heading"><span class="codenumber">15.</span></h6>
+<p id="p-9761">\(P(t) = 20e^{0.4t}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1102" id="answer-1102"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1102"><div class="solution"><p id="p-9762">\(P (t) = 20\left(e^{0.4} \right)^t \approx 20\cdot 1.492^t\text{;}\) increasing; initial value \(20\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2033"><h6 class="heading"><span class="codenumber">16.</span></h6>
+<p id="p-9763">\(P(t)=0.8 e^{1.3t} \)</p></article><article class="exercise-like" id="exercise-2034"><h6 class="heading"><span class="codenumber">17.</span></h6>
+<p id="p-9764">\(P(t) = 6500e^{-2.5t}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1103" id="answer-1103"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1103"><div class="solution"><p id="p-9765">\(P (t) = 6500\left(e^{-2.5} \right)^t \approx 6500\cdot 0.082^t\text{;}\) decreasing; initial value \(6500\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2035"><h6 class="heading"><span class="codenumber">18.</span></h6>
+<p id="p-9766">\(P(t)=1.7 e^{-0.02t} \)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-2036"><h6 class="heading"><span class="codenumber">19.</span></h6>
+<ol id="p-9767" class="lower-alpha">
+<li id="li-6036">
+<p id="p-9768">Fill in the table, rounding your answers to four decimal places.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(e^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6037"><p id="p-9769">Compute the ratio of each function value to the previous one. Explain the result.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1104" id="answer-1104"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1104"><div class="solution"><ol id="p-9770" class="lower-alpha">
+<li id="li-6038"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1.5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(e^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.6487\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.7183\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4.4817\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7.3891\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(12.1825\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-6039"><p id="p-9771">Each ratio is \(e^{0.5} \approx 1.6487\text{:}\) Increasing \(x\)-values by a constant \(\Delta x = 0.5\) corresponds to multiplying the \(y\)-values of the exponential function by a constant factor of \(e^{\Delta x}\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2037"><h6 class="heading"><span class="codenumber">20.</span></h6>
+<ol id="p-9772" class="lower-alpha">
+<li id="li-6040">
+<p id="p-9773">Fill in the table, rounding your answers to four decimal places.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(e^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6041"><p id="p-9774">Compute the ratio of each function value to the previous one. Explain the result.</p></li>
+</ol></article><article class="exercise-like" id="exercise-2038"><h6 class="heading"><span class="codenumber">21.</span></h6>
+<ol id="p-9775" class="lower-alpha">
+<li id="li-6042">
+<p id="p-9776">Fill in the table, rounding your answers to the nearest integer.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.6931\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1.3863\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.0794\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.7726\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.4657\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4.1589\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(e^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6043"><p id="p-9777">Subtract each \(x\)-value from the next one. Explain the result.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1105" id="answer-1105"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1105"><div class="solution"><ol id="p-9778" class="lower-alpha">
+<li id="li-6044"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.6931\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1.3863\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.0794\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.7726\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.4657\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4.1589\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(e^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(32\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(64\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-6045"><p id="p-9779">Each difference in \(x\)-values is approximately \(\ln 2\approx 0.6931\text{:}\) Increasing \(x\)-values by a constant \(\Delta x = \ln 2\) corresponds to multiplying the \(y\)-values of the exponential function by a constant factor of \(e^{\Delta x} = e^{\ln 2} = 2\text{.}\) That is, each function value is approximately equal to double the previous one.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2039"><h6 class="heading"><span class="codenumber">22.</span></h6>
+<ol id="p-9780" class="lower-alpha">
+<li id="li-6046">
+<p id="p-9781">Fill in the table, rounding your answers to the nearest integer.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1.0986\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2.1972\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.2958\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4.3944\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5.4931\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(6.5917\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(e^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\phantom{000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6047"><p id="p-9782">Subtract each \(x\)-value from the next one. Explain the result.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-282">
+<div class="introduction" id="introduction-293"><p id="p-9783">For Problems 23–30, solve. Round your answers to two decimal places.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-2040"><h6 class="heading"><span class="codenumber">23.</span></h6>
+<p id="p-9784">\(6.21 = 2.3e^{1.2x}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1106" id="answer-1106"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1106"><div class="solution"><p id="p-9785">\(0.8277\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2041"><h6 class="heading"><span class="codenumber">24.</span></h6>
+<p id="p-9786">\(22.26 = 5.3e^{0.4x}\)</p></article><article class="exercise-like" id="exercise-2042"><h6 class="heading"><span class="codenumber">25.</span></h6>
+<p id="p-9787">\(6.4 = 20e^{0.3x} - 1.8 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1107" id="answer-1107"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1107"><div class="solution"><p id="p-9788">\(-2.9720\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2043"><h6 class="heading"><span class="codenumber">26.</span></h6>
+<p id="p-9789">\(4.5 = 4e^{2.1x} + 3.3 \)</p></article><article class="exercise-like" id="exercise-2044"><h6 class="heading"><span class="codenumber">27.</span></h6>
+<p id="p-9790">\(46.52 = 3.1e^{1.2x} + 24.2 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1108" id="answer-1108"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1108"><div class="solution"><p id="p-9791">\(1.6451\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2045"><h6 class="heading"><span class="codenumber">28.</span></h6>
+<p id="p-9792">\(1.23 = 1.3e^{2.1x} - 17.1 \)</p></article><article class="exercise-like" id="exercise-2046"><h6 class="heading"><span class="codenumber">29.</span></h6>
+<p id="p-9793">\(16.24 = 0.7e^{-1.3x} - 21.7 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1109" id="answer-1109"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1109"><div class="solution"><p id="p-9794">\(-3.0713\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2047"><h6 class="heading"><span class="codenumber">30.</span></h6>
+<p id="p-9795">\(55.68 = 0.6e^{-0.7x} + 23.1 \)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-283">
+<div class="introduction" id="introduction-294"><p id="p-9796">For Problems 31-36, solve the equation for the specified variable.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-2048"><h6 class="heading"><span class="codenumber">31.</span></h6>
+<p id="p-9797">\(y = e^{kt},~~\) for \(t\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1110" id="answer-1110"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1110"><div class="solution"><p id="p-9798">\(t=\dfrac{1}{k}\ln y \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2049"><h6 class="heading"><span class="codenumber">32.</span></h6>
+<p id="p-9799">\(\dfrac{T}{R} = e^{t/2},~~\) for \(t\)</p></article><article class="exercise-like" id="exercise-2050"><h6 class="heading"><span class="codenumber">33.</span></h6>
+<p id="p-9800">\(y = k(1-e^{-t}),~~\) for \(t\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1111" id="answer-1111"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1111"><div class="solution"><p id="p-9801">\(t=\ln \left(\dfrac{k}{k-y}\right) \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2051"><h6 class="heading"><span class="codenumber">34.</span></h6>
+<p id="p-9802">\(B - 2 = (A + 3)e^{-t/3},~~\) for \(t\)</p></article><article class="exercise-like" id="exercise-2052"><h6 class="heading"><span class="codenumber">35.</span></h6>
+<p id="p-9803">\(T = T_0 \ln(k + 10),~~\) for \(k\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1112" id="answer-1112"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1112"><div class="solution"><p id="p-9804">\(k=e^{T/T_0}-10 \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-2053"><h6 class="heading"><span class="codenumber">36.</span></h6>
+<p id="p-9805">\(P = P_0 + \ln 10k,~~\) for \(k\)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-2054"><h6 class="heading"><span class="codenumber">37.</span></h6>
+<ol id="p-9806" class="lower-alpha">
+<li id="li-6048">
+<p id="p-9807">Fill in the table, rounding your answers to three decimal places.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.39\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.9\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(39\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(390\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(\ln n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6049"><p id="p-9808">Subtract each natural logarithm in your table from the next one. (For example, compute \(\ln 3.9 - \ln 0.39\text{.}\)) Explain the result.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1113" id="answer-1113"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1113"><div class="solution"><ol id="p-9809" class="lower-alpha">
+<li id="li-6050"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.39\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3.9\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(39\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(390\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(\ln n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-0.942 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.361 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3.664 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5.966 \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-6051"><p id="p-9810">Each difference in function values is approximately \(\ln 10\approx 2.303\text{:}\) Multiplying \(x\)-values by a constant factor of \(10\) corresponds to adding a constant value of ln 10 to the \(y\)-values of the natural log function.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2055"><h6 class="heading"><span class="codenumber">38.</span></h6>
+<ol id="p-9811" class="lower-alpha">
+<li id="li-6052">
+<p id="p-9812">Fill in the table, rounding your answers to three decimal places.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0.64\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(6.4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(64\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(640\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(\ln n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6053"><p id="p-9813">Subtract each natural logarithm in your table from the next one. (For example, compute \(\ln 6.4 - \ln 0.64\text{.}\)) Explain the result.</p></li>
+</ol></article><article class="exercise-like" id="exercise-2056"><h6 class="heading"><span class="codenumber">39.</span></h6>
+<ol id="p-9814" class="lower-alpha">
+<li id="li-6054">
+<p id="p-9815">Fill in the table, rounding your answers to three decimal places.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(\ln n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6055"><p id="p-9816">Divide each natural logarithm in your table by \(\ln 2\text{.}\) Explain the result.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1114" id="answer-1114"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1114"><div class="solution"><ol id="p-9817" class="lower-alpha">
+<li id="li-6056"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(\ln n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.693 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.386 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.079 \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.773 \)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-6057"><p id="p-9818">Each quotient equals \(k\text{,}\) where \(n = 2^k\text{.}\) Because \(\ln n = \ln 2^k = k\cdot \ln 2\text{,}\) \(k = \dfrac{\ln n}{\ln 2}\text{.}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2057"><h6 class="heading"><span class="codenumber">40.</span></h6>
+<ol id="p-9819" class="lower-alpha">
+<li id="li-6058">
+<p id="p-9820">Fill in the table, rounding your answers to three decimal places.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">\(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(125\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(625\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">\(\ln n\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000} \)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-6059"><p id="p-9821">Divide each natural logarithm in your table by \(\ln 5\text{.}\) Explain the result.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-284">
+<div class="introduction" id="introduction-295">
+<p id="p-9822">For Problems 41–46,</p>
+<ol class="lower-alpha">
+<li id="li-6060"><p id="p-9823">Express each growth or decay law in the form \(N(t) = N_0e^{kt}\text{.}\)</p></li>
+<li id="li-6061"><p id="p-9824">Check your answer by graphing both forms of the function on the same axes. Do they have the same graph?</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols3">
+<article class="exercise-like" id="exercise-2058"><h6 class="heading"><span class="codenumber">41.</span></h6>
+<p id="p-9825">\(N(t) = 100\cdot 2^t\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1115" id="answer-1115"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1115"><div class="solution"><ol id="p-9826" class="lower-alpha">
+<li id="li-6062"><p id="p-9827">\(N (t) = 100e^{(\ln 2)t}\approx 100e^{0.6931t}\)</p></li>
+<li id="li-6063"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-41.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2059"><h6 class="heading"><span class="codenumber">42.</span></h6>
+<p id="p-9828">\(N(t) = 50\cdot 3^t\)</p></article><article class="exercise-like" id="exercise-2060"><h6 class="heading"><span class="codenumber">43.</span></h6>
+<p id="p-9829">\(N(t) = 1200(0.6)^t\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1116" id="answer-1116"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1116"><div class="solution"><ol id="p-9830" class="lower-alpha">
+<li id="li-6064"><p id="p-9831">\(N (t) = 1200e^{(\ln 0.6)t}\approx 1200e^{-0.5108t}\)</p></li>
+<li id="li-6065"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-43.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2061"><h6 class="heading"><span class="codenumber">44.</span></h6>
+<p id="p-9832">\(N(t) = 300(0.8)^t\)</p></article><article class="exercise-like" id="exercise-2062"><h6 class="heading"><span class="codenumber">45.</span></h6>
+<p id="p-9833">\(N(t) = 10(1.15)^t\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1117" id="answer-1117"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1117"><div class="solution"><ol id="p-9834" class="lower-alpha">
+<li id="li-6066"><p id="p-9835">\(N (t) = 10e^{(\ln 1.15)t}\approx 10e^{0.1398t}\)</p></li>
+<li id="li-6067"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-45.svg" style="width: 100%; height: auto;" alt="growth"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2063"><h6 class="heading"><span class="codenumber">46.</span></h6>
+<p id="p-9836">\(N(t) = 1000(1.04)^t\)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-2064"><h6 class="heading"><span class="codenumber">47.</span></h6>
+<p id="p-9837">The population of Citrus Valley was \(20,000\) in \(2000\text{.}\) In \(2010\text{,}\) it was \(35,000\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-6068"><p id="p-9838">What is \(P_0\) if \(t = 0\) in \(2000\text{?}\)</p></li>
+<li id="li-6069"><p id="p-9839">Use the population in \(2010\) to find the growth factor \(e^k\text{.}\)</p></li>
+<li id="li-6070"><p id="p-9840">Write a growth law of the form \(P(t) = P_0 e^{kt}\) for the population of Citrus Valley.</p></li>
+<li id="li-6071"><p id="p-9841">If it continues at the same rate of growth, what will the population be in \(2030\text{?}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1118" id="answer-1118"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1118"><div class="solution"><ol id="p-9842" class="lower-alpha cols2">
+<li id="li-6072"><p id="p-9843">\(20,000\)</p></li>
+<li id="li-6073"><p id="p-9844">\(\left(\dfrac{35,000}{20,000} \right)^{1/10}\approx e^{0.056} \)</p></li>
+<li id="li-6074"><p id="p-9845">\(P(t) = 20,000e^{0.056t} \)</p></li>
+<li id="li-6075"><p id="p-9846">\(107,188\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2065"><h6 class="heading"><span class="codenumber">48.</span></h6>
+<p id="p-9847">A copy of <span class="booktitle">Time</span> magazine cost $\(1.50\) in \(1981.~\) In \(1988\text{,}\) the cover price had increased to $\(2.00\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-6076"><p id="p-9848">What is \(P_0\) if \(t = 0\) in \(1981\text{?}\)</p></li>
+<li id="li-6077"><p id="p-9849">Use the price in \(1988\) to find the growth factor \(e^k\text{.}\)</p></li>
+<li id="li-6078"><p id="p-9850">Find a growth law of the form \(P(t) = P_0e^{kt}\) for the price of <span class="booktitle">Time</span>.</p></li>
+<li id="li-6079"><p id="p-9851">In \(1999\text{,}\) a copy of <span class="booktitle">Time</span> cost $\(3.50\text{.}\) Did the price of the magazine continue to grow at the same rate from \(1981\) to \(1999\text{?}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-2066"><h6 class="heading"><span class="codenumber">49.</span></h6>
+<p id="p-9852">Cobalt-60 is a radioactive isotope used in the treatment of cancer. A \(500\)-milligram sample of cobalt-60 decays to \(385\) milligrams after \(2\) years.</p>
+<ol class="lower-alpha">
+<li id="li-6080"><p id="p-9853">Using \(P_0 = 500\text{,}\) find the decay factor \(e^k\) for cobalt-60.</p></li>
+<li id="li-6081"><p id="p-9854">Write a decay law \(N(t) = N_0e^{kt}\) for cobalt-60.</p></li>
+<li id="li-6082"><p id="p-9855">How much of the original sample will be left after \(10\) years?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1119" id="answer-1119"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1119"><div class="solution"><ol id="p-9856" class="lower-alpha cols2">
+<li id="li-6083"><p id="p-9857">\(\left(\dfrac{385}{500} \right)^{1/2}\approx e^{-0.1307} \)</p></li>
+<li id="li-6084"><p id="p-9858">\(N(t) = 500e^{-0.1307t} \)</p></li>
+<li id="li-6085"><p id="p-9859">\(135.3\) mg</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2067"><h6 class="heading"><span class="codenumber">50.</span></h6>
+<p id="p-9860">Weed seeds can survive for a number of years in the soil. An experiment on cultivated land found \(155\) million weed seeds per acre, and in the following years the experimenters prevented the seeds from coming to maturity and producing new weeds. Four years later, there were \(13.6\) million seeds per acre. (Source: Burton, 1998)</p>
+<ol class="lower-alpha">
+<li id="li-6086"><p id="p-9861">Find the annual decay factor \(e^k\) for the number of weed seeds in the soil.</p></li>
+<li id="li-6087"><p id="p-9862">Write an exponential formula with base \(e\) for the number of weed seeds that survived after \(t\) years.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-285">
+<div class="introduction" id="introduction-296"><p id="p-9863">Problems 51–58 are about doubling time and half-life.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-2068"><h6 class="heading"><span class="codenumber">51.</span></h6>
+<p id="p-9864">Delbert invests $\(500\) in an account that pays \(9.5\%\) interest compounded continuously.</p>
+<ol class="lower-alpha">
+<li id="li-6088"><p id="p-9865">Write a formula for \(A(t)\) that gives the amount of money in Delbert's account after \(t\) years.</p></li>
+<li id="li-6089"><p id="p-9866">How long will it take Delbert's investment to double to $\(1000\text{?}\)</p></li>
+<li id="li-6090"><p id="p-9867">How long will it take Delbert's money to double again, to $\(2000\text{?}\)</p></li>
+<li id="li-6091"><p id="p-9868">Graph \(A(t)\) and illustrate the doubling time on your graph.</p></li>
+<li id="li-6092"><p id="p-9869">Choose any point \((t_1, A_1)\) on the graph, then find the point on the graph with vertical coordinate \(2A_1\text{.}\) Verify that the difference in the \(t\)-coordinates of the two points is the doubling time.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1120" id="answer-1120"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1120"><div class="solution">
+<ol id="p-9870" class="lower-alpha cols3">
+<li id="li-6093"><p id="p-9871">\(A(t) = 500e^{0.095t}\)</p></li>
+<li id="li-6094"><p id="p-9872">\(7.3\) years</p></li>
+<li id="li-6095"><p id="p-9873">\(7.3\) years</p></li>
+</ol>
+<p>d–e</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-51.svg" style="width: 100%; height: auto;" alt="growth with marked doubling time"></div></div></div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-2069"><h6 class="heading"><span class="codenumber">52.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
+<div class="sbspanel" style="width:41.2371134020619%;justify-content:flex-start;"><p id="p-9874">The growth of plant populations can be measured by the amount of pollen they produce. The pollen from a population of pine trees that lived more than \(9500\) years ago in Norfolk, England, was deposited in the layers of sediment in a lake basin and dated with radiocarbon techniques.</p></div>
+<div class="sbspanel" style="width:55.6701030927835%;justify-content:flex-start;"><img src="images/fig-5-3-52.svg" style="width: 100%; height: auto;" alt="growth"></div>
+</div></div>
+<p id="p-9875">The figure shows the rate of pollen accumulation plotted against time, and the fitted curve \(P(t) = 650e^{0.00932t}\text{.}\) (Source: Burton, 1998)</p>
+<ol class="lower-alpha">
+<li id="li-6096"><p id="p-9876">What was the annual rate of growth in pollen accumulation?</p></li>
+<li id="li-6097"><p id="p-9877">Find the doubling time for the pollen accumulation, that is, the time it took for the accumulation rate to double.</p></li>
+<li id="li-6098"><p id="p-9878">By what factor did the pollen accumulation rate increase over a period of \(500\) years?</p></li>
+</ol></article><article class="exercise-like" id="exercise-2070"><h6 class="heading"><span class="codenumber">53.</span></h6>
+<p id="p-9879">Technetium-99m (Tc-99m) is an artificially produced radionuclide used as a tracer for producing images of internal organs such as the heart, liver, and thyroid. A solution of Tc-99m with initial radioactivity of \(10,000\) becquerels (Bq) decays according to the formula</p>
+<div class="displaymath">
+\begin{equation*}
+N(t) = 10,000e^{-0.1155t}
+\end{equation*}
+</div>
+<p>where \(t\) is in hours.</p>
+<ol class="lower-alpha">
+<li id="li-6099"><p id="p-9880">How long will it take the radioactivity to fall to half its initial value, or \(5000\) Bq?</p></li>
+<li id="li-6100"><p id="p-9881">How long will it take the radioactivity to be halved again?</p></li>
+<li id="li-6101"><p id="p-9882">Graph \(N(t)\) and illustrate the half-life on your graph.</p></li>
+<li id="li-6102"><p id="p-9883">Choose any point \((t_1, N_1)\) on the graph, then find the point on the graph with vertical coordinate \(0.5N_1\text{.}\) Verify that the difference in the \(t\)-coordinates of the two points is the half-life.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1121" id="answer-1121"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1121"><div class="solution"><ol id="p-9884" class="lower-alpha cols2">
+<li id="li-6103"><p id="p-9885">\(6\) hours</p></li>
+<li id="li-6104"><p id="p-9886">\(6\) hours</p></li>
+<li id="li-6105"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-53.svg" style="width: 100%; height: auto;" alt="decay with marked half-life"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2071"><h6 class="heading"><span class="codenumber">54.</span></h6>
+<p id="p-9887">All living things contain a certain amount of the isotope carbon-14. When an organism dies, the carbon-14 decays according to the formula</p>
+<div class="displaymath">
+\begin{equation*}
+N(t) = N_0e^{-0.000124t}
+\end{equation*}
+</div>
+<p>where \(t\) is measured in years. Scientists can estimate the age of an organic object by measuring the amount of carbon-14 remaining.</p>
+<ol class="lower-alpha">
+<li id="li-6106"><p id="p-9888">When the Dead Sea scrolls were discovered in 1947, they had \(78.8\%\) of their original carbon-14. How old were the Dead Sea scrolls then?</p></li>
+<li id="li-6107"><p id="p-9889">What is the half-life of carbon-14, that is, how long does it take for half of an object's carbon-14 to decay?</p></li>
+</ol></article><article class="exercise-like" id="exercise-2072"><h6 class="heading"><span class="codenumber">55.</span></h6>
+<p id="p-9890">The half-life of iodine-131 is approximately \(8\) days.</p>
+<ol class="lower-alpha">
+<li id="li-6108"><p id="p-9891">If a sample initially contains \(N_0\) grams of iodine-131, how much will it contain after \(8\) days? How much will it contain after \(16\) days? After \(32\) days?</p></li>
+<li id="li-6109"><p id="p-9892">Use your answers to part (a) to sketch a graph of \(N(t)\text{,}\) the amount of iodine-131 remaining, versus time. (Choose an arbitrary height for \(N_0\) on the vertical axis.)</p></li>
+<li id="li-6110"><p id="p-9893">Calculate \(k\text{,}\) and hence find a decay law of the form \(N(t) = N_0e^{kt}\text{,}\) where \(k \lt 0\text{,}\) for iodine-131.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1122" id="answer-1122"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1122"><div class="solution"><ol id="p-9894" class="lower-alpha cols2">
+<li id="li-6111"><p id="p-9895">\(\frac{1}{2}N_0 \text{,}\) \(\frac{1}{4}N_0 \text{,}\) \(\frac{1}{16}N_0\)</p></li>
+<li id="li-6112"><div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-55.svg" style="width: 100%; height: auto;" alt="decay"></div></div></div></li>
+<li id="li-6113"><p id="p-9896">\(N (t) = N_0e^{-0.0866t}\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2073"><h6 class="heading"><span class="codenumber">56.</span></h6>
+<p id="p-9897">The half-life of hydrogen-3 is \(12.5\) years.</p>
+<ol class="lower-alpha">
+<li id="li-6114"><p id="p-9898">If a sample initially contains \(N_0\) grams of hydrogen-3, how much will it contain after \(12.5\) years? How much will it contain after \(25\) years?</p></li>
+<li id="li-6115"><p id="p-9899">Use your answers to part (a) to sketch a graph of \(N(t)\text{,}\) the amount of hydrogen-3 remaining, versus time. (Choose an arbitrary height for \(N_0\) on the vertical axis.)</p></li>
+<li id="li-6116"><p id="p-9900">Calculate \(k\text{,}\) and hence find a decay law of the form \(N(t) = N_0e^{kt}\text{,}\) where \(k\lt 0\text{,}\) for hydrogen-3.</p></li>
+</ol></article><article class="exercise-like" id="exercise-2074"><h6 class="heading"><span class="codenumber">57.</span></h6>
+<p id="p-9901">A Geiger counter measures the amount of radioactive material present in a substance. The table shows the count rate for a sample of iodine-128 as a function of time. (Source: Hunt and Sykes, 1984)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Time (min)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(70\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(90\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Counts/sec</td>
+<td class="c m b1 r1 l0 t0 lines">\(120\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(90\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(69\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(54\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(42\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(19\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(15\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(13\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-9902" class="lower-alpha">
+<li id="li-6117"><p id="p-9903">Graph the data and use your calculator's exponential regression feature to fit a curve to them.</p></li>
+<li id="li-6118"><p id="p-9904">Write your equation in the form \(G(t) = G_0e^{kt}\text{.}\)</p></li>
+<li id="li-6119"><p id="p-9905">Calculate the half-life of iodine-128.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1123" id="answer-1123"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1123"><div class="solution"><ol id="p-9906" class="lower-alpha cols2">
+<li id="li-6120">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-3-57.jpg" style="width: 100%; height: auto;" alt="decay fit on data"></div></div></div>
+<p id="p-9907">\(y = 116 (0.975)^t\)</p>
+</li>
+<li id="li-6121"><p id="p-9908">\(G (t) = 116e^{-0.025t}\)</p></li>
+<li id="li-6122"><p id="p-9909">\(28\) minutes</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2075"><h6 class="heading"><span class="codenumber">58.</span></h6>
+<p id="p-9910">The table shows the count rate for sodium-24 registered by a Geiger counter as a function of time. (Source: Hunt and Sykes, 1984)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Time (min)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(10\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(30\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(50\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(60\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(70\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(80\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(90\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Counts/sec</td>
+<td class="c m b1 r1 l0 t0 lines">\(180\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(112\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(71\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(45\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(28\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(18\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-9911" class="lower-alpha">
+<li id="li-6123"><p id="p-9912">Graph the data and use your calculator's exponential regression feature to fit a curve to them.</p></li>
+<li id="li-6124"><p id="p-9913">Write your equation in the form \(G(t) = G_0e^{kt}\text{.}\)</p></li>
+<li id="li-6125"><p id="p-9914">Calculate the half-life of sodium-24.</p></li>
+</ol></article>
+</div>
+</div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

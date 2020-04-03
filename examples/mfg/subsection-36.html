@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:01-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear Regression</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-35.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="linear-regression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-37.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-35.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="linear-regression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-37.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-36"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">7.3</span> <span class="title">Linear Regression</span>
+</h2>
+<p id="p-2356">One measure of a person's physical fitness is the <em class="emphasis">body mass index</em>, or BMI. Your BMI is the ratio of your weight in kilograms to the square of your height in centimeters. Thus, thinner people have lower BMI scores, and fatter people have higher scores. The Centers for Disease Control considers a BMI between 18.5 and 24.9 to be healthy.</p>
+<p id="p-2357">The points on the scatterplot below show the BMI of Miss America from 1921 to 1991. From the data in the scatterplot, can we see a trend in Americans’ ideal of female beauty?</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-BMI.svg" style="width: 100%; height: auto;" alt="Miss America BMI"></div></div></div>
+<article class="example-like" id="example-BMI"><a data-knowl="" class="id-ref" data-refid="hk-example-BMI"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">7.3.6</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-BMI"><article class="example-like"><ol id="p-2358" class="lower-alpha">
+<li id="li-1514">Estimate a line of best fit for the scatterplot above. (Source: http://www.pbs.org)</li>
+<li id="li-1515">Use your line to estimate the BMI of Miss America 1980.</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-37" id="solution-37"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-37"><div class="solution"><ol id="p-2359" class="lower-alpha">
+<li id="li-1516">
+<p id="p-2360">We draw a line that fits the data points as best we can, as shown below. (Note that we have set \(t = 0\) in 1920 on this graph.) We try to end up with roughly equal numbers of data points above and below our line.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-BMI2.svg" style="width: 100%; height: auto;" alt="Miss America BMI"></div></div></div>
+</li>
+<li id="li-1517">We see that when \(t = 60\) on this line, the \(y\)-value is approximately 18.3. We therefore estimate that Miss America 1980 had a BMI of 18.3. (Her actual BMI was 17.85.)</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-437"><a data-knowl="" class="id-ref" data-refid="hk-exercise-437"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">7.3.7</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-437"><article class="exercise-like"><p id="p-2361">Human brains consume a large amount of energy, about 16 times as much as muscle tissue per unit weight. In fact, brain metabolism accounts for about 25% of an adult human’s energy needs, as compared to about 5% for other mammals.</p>
+<p id="p-2362">As hominid species evolved, their brains required larger and larger amounts of energy, as shown below. (Source: Scientific American, December 2002)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-hominid-brains.svg" style="width: 100%; height: auto;" alt="hominid brains"></div></div></div>
+<ol id="p-2363" class="lower-alpha">
+<li id="li-1518">Draw a line of best fit through the data points.</li>
+<li id="li-1519">Estimate the amount of energy used by the brain of a hominid species that lived three million years ago.</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-239" id="answer-239"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-239"><div class="solution"><ol id="p-2364" class="lower-alpha">
+<li id="li-1520"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:60%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-6-3.svg" style="width: 100%; height: auto;" alt="scatterplot with regression line"></div></div></div></li>
+<li id="li-1521"><p id="p-2365">About \(10.5\%\)</p></li>
+</ol></div></div>
+</div></article></div>
+<p id="p-2366">The process of predicting an output value based on a straight line that fits the data is called <dfn class="terminology">linear regression</dfn>, and the line itself is called the <dfn class="terminology">regression line</dfn>. The equation of the regression line is usually used (instead of a graph) to predict values.</p>
+<article class="example-like" id="example-BMI-regression"><a data-knowl="" class="id-ref" data-refid="hk-example-BMI-regression"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">7.3.8</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-BMI-regression"><article class="example-like"><ol id="p-2367" class="lower-alpha">
+<li id="li-1522">Find the equation of the regression line in <a data-knowl="./knowl/example-BMI.html" title="Example 7.3.6">Example 7.3.6</a>.</li>
+<li id="li-1523">Use the regression equation to predict the BMI of Miss America 1980.</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-38" id="solution-38"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-38"><div class="solution"><ol id="p-2368" class="lower-alpha">
+<li id="li-1524">We first calculate the slope by choosing two points on the regression line. The points we choose are not necessarily any of the original data points; instead they should be points on the regression line itself. The line appears to pass through the points \((17, 20)\) and \((67, 18)\text{.}\) The slope of the line is then<div class="displaymath">
+\begin{equation*}
+m = \frac{18 - 20}{67 - 17}\approx -0.04
+\end{equation*}
+</div>Now we use the point-slope formula to find the equation of the line. (If you need to review the point-slope formula, see <a href="linear-functions.html" class="internal" title="Section 6: Linear Functions">Section 6</a>.) We substitute \(m = -0.04\) and use either of the two points for \((x_1, y_1)\text{;}\) we will choose \((17, 20)\text{.}\) The equation of the regression line is<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+y \amp = y_1 + m(x - x_1)\\
+y \amp = 20-0.04(x-17) \amp \amp \blert{\text{Simplify.}}\\
+y \amp = 20.68 - 0.04t\\
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+<li id="li-1525">We will use the regression equation to make our prediction. For Miss America 1980, \(t = 60\) and<div class="displaymath">
+\begin{equation*}
+y = 20.68 - 0.04(60) = 18.28
+\end{equation*}
+</div>This value agrees well with the estimate we made in <a data-knowl="./knowl/example-BMI.html" title="Example 7.3.6">Example 7.3.6</a>.</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-438"><a data-knowl="" class="id-ref" data-refid="hk-exercise-438"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">7.3.9</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-438"><article class="exercise-like"><p id="p-2369">The number of manatees killed by watercraft in Florida waters has been increasing since 1975. Data are given at 5-year intervals in the table. (Source: Florida Fish and Wildlife Conservation Commission)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width" style="width:50%;justify-content:center;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">Year</td>
+<td class="c m b1 r1 l0 t3 lines">Manatee deaths</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1975\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(6\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1980\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1985\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(33\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1990\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(47\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1995\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(42\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(78\)</td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:50%;justify-content:center;"><img src="images/fig-manatees.svg" style="width: 100%; height: auto;" alt="manatee deaths"></div>
+</div></div>
+<ol id="p-2370" class="lower-alpha">
+<li id="li-1526">Draw a regression line through the data points shown in the figure.</li>
+<li id="li-1527">Use the regression equation to estimate the number of manatees killed by watercraft in 1998.</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-240" id="answer-240"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-240"><div class="solution"><ol id="p-2371" class="lower-alpha">
+<li id="li-1528"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:55%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-in-ex-ans-1-6-4.svg" style="width: 100%; height: auto;" alt="scatterplot with regression line"></div></div></div></li>
+<li id="li-1529"><p id="p-2372">\(y = 4.7 + 2.6t\)</p></li>
+<li id="li-1530"><p id="p-2373">\(65\)</p></li>
+</ol></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:03-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Other Nonlinear Equations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-43.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="nonlinear-models.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="summary-2-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-43.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="nonlinear-models.html" title="Up">Up</a><a class="next-button button toolbar-item" href="summary-2-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-44"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5</span> <span class="title">Other Nonlinear Equations</span>
+</h2>
+<p id="p-2890">Because squaring and taking square roots are opposite operations, we can solve the equation</p>
+<div class="displaymath">
+\begin{equation*}
+\sqrt{x} = 8.2
+\end{equation*}
+</div>
+<p>by squaring both sides to get</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+(\sqrt{x})^2 \amp= 8.2^2 \\
+x \amp = 67.24
+\end{aligned}
+\end{equation*}
+</div>
+<p>Similarly, we can solve</p>
+<div class="displaymath">
+\begin{equation*}
+x^3 = 258
+\end{equation*}
+</div>
+<p>by taking the cube root of both sides, because cubing and taking cube roots are opposite operations. Rounding to three places, we find</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\sqrt[3]{x^3}\amp=258\\
+x \amp \approx 6.366
+\end{aligned}
+\end{equation*}
+</div>
+<p>The notion of undoing operations can help us solve a variety of simple nonlinear equations. The operation of taking a reciprocal is its own opposite, so we solve the equation</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{1}{x} = 50
+\end{equation*}
+</div>
+<p>by taking the reciprocal of both sides to get</p>
+<div class="displaymath">
+\begin{equation*}
+x = \frac{1}{50}= 0.02
+\end{equation*}
+</div>
+<article class="example-like" id="example-nonlinear-equation"><a data-knowl="" class="id-ref" data-refid="hk-example-nonlinear-equation"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">2.5.11</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-nonlinear-equation"><article class="example-like"><p id="p-2891">Solve \(~~\dfrac{3}{x - 2}= 4\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution">
+<p id="p-2892">We begin by taking the reciprocal of both sides of the equation to get</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{x - 2}{3}= \frac{1}{4}
+\end{equation*}
+</div>
+<p>We continue to undo the operations in reverse order. First, we multiply both sides by \(3\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+x - 2 \amp = \frac{3}{4} \amp\amp \blert{\text{Add 2 to both sides.}}\\
+x \amp = 2 + \frac{3}{4}= \frac{11}{4} \amp\amp \blert{\tfrac{2}{1}=\tfrac{8}{4}
+\text{, so } \tfrac{2}{1}+ \tfrac{3}{4}=\tfrac{8}{4}+\tfrac{3}{4}=\tfrac{11}{4}}\\
+\end{aligned}
+\end{equation*}
+</div>
+<p>The solution is \(\dfrac{11}{4}\text{,}\) or \(2.75\text{.}\)</p>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-565"><a data-knowl="" class="id-ref" data-refid="hk-exercise-565"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">2.5.12</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-565"><article class="exercise-like"><p id="p-2893">Solve \(~~2\sqrt{x + 4} = 6\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-307" id="answer-307"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-307"><div class="solution"><p id="p-2894">\(x=5\)</p></div></div>
+</div></article></div>
+<article class="remark-like" id="technology-9"><h6 class="heading">
+<span class="type">Technology</span> <span class="codenumber">2.5.13</span>. <span class="title">Using the Intersect Feature.</span>
+</h6>
+<p id="p-2895">We can use the <em class="emphasis">intersect</em> feature on a graphing calculator to solve equations.</p>
+<article class="example-like" id="example-GC-nonlinear-equation"><a data-knowl="" class="id-ref" data-refid="hk-example-GC-nonlinear-equation"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">2.5.14</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-GC-nonlinear-equation"><article class="example-like"><p id="p-2896">Use a graphing calculator to solve \(~~\dfrac{3}{x -2}= 4\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-46" id="solution-46"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-46"><div class="solution">
+<p id="p-2897">We would like to find the points on the graph of \(~~y = \dfrac{3}{x -2}~~\) that have \(y\)-coordinate equal to \(4\text{.}\) We graph the two functions</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+Y_1 \amp = 3/(X - 2)  \\
+Y_2 \amp = 4
+\end{aligned}
+\end{equation*}
+</div>
+<p>in the window</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4\\
+\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10
+\end{aligned}
+\end{equation*}
+</div>
+<p>The point where the two graphs intersect locates the solution of the equation. If we trace along the graph of \(Y_1\text{,}\) the closest we can get to the intersection point is \((2.8, 3.75)\text{,}\) as shown in figure (a). We get a better approximation using the <em class="emphasis">intersect</em> feature.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-GC-nonlinear.svg" style="width: 100%; height: auto;" alt="GC displays"></div></div></div>
+<p id="p-2898">Use the arrow keys to position the Trace bug as close to the intersection point as you can. Then press <code class="code-inline tex2jax_ignore">2nd</code> <code class="code-inline tex2jax_ignore">TRACE</code> to see the Calculate menu. Press \(5\) for intersect; then respond to each of the calculator's questions, <em class="emphasis">First curve?</em>, <em class="emphasis">Second curve?</em>, and <em class="emphasis">Guess?</em> by pressing <code class="code-inline tex2jax_ignore">ENTER</code>. The calculator will then display the intersection point, \(x = 2.75\text{,}\) \(y = 4\text{,}\) as shown in figure (b). The solution of the original equation is \(x = 2.75\text{.}\)</p>
+</div></div>
+</div></article></div></article><article class="exercise-like" id="exercise-566"><a data-knowl="" class="id-ref" data-refid="hk-exercise-566"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">2.5.15</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-566"><article class="exercise-like"><p id="p-2899">Use the intersect feature to solve the equation \(2x^2 - 5 = 7\text{.}\) Round your answers to three decimal places.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-308" id="answer-308"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-308"><div class="solution"><p id="p-2900">\(x=\pm 2.449\)</p></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

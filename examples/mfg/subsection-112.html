@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:02:41-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Comparing Linear Growth and Exponential Growth</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="subsection-111.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Exponential-Growth-and-Decay.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="summary-4-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="subsection-111.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Exponential-Growth-and-Decay.html" title="Up">Up</a><a class="next-button button toolbar-item" href="summary-4-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-112"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.6</span> <span class="title">Comparing Linear Growth and Exponential Growth</span>
+</h2>
+<p id="p-7007">It may be helpful to compare linear growth  and  exponential growth. Consider the two functions</p>
+<div class="displaymath">
+\begin{equation*}
+L(t) = 5 + 2t ~\text{ and } ~ E(t) = 5 \cdot 2^t ~~~ (t \ge 0)
+\end{equation*}
+</div>
+<p>whose graphs are shown below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel" style="width:22.2222222222222%;justify-content:flex-start;">
+<table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(L(t)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(7\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(11\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(13\)</td>
+</tr>
+</table>
+<p id="p-7008">Slope \(m=2\)</p>
+</div>
+<div class="sbspanel" style="width:27.7777777777778%;justify-content:flex-start;">
+<table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(E(t)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(5\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(10\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+</tr>
+</table>
+<p id="p-7009">Growth factor \(b=2\)</p>
+</div>
+<div class="sbspanel" style="width:27.7777777777778%;justify-content:flex-start;"><img src="images/fig-linear-vs-exponential.svg" style="width: 100%; height: auto;" alt="graph of linear and exponential"></div>
+</div></div>
+<p id="p-7010">\(L\) is a linear function with initial value \(5\) and slope \(2\text{;}\) \(E\) is an exponential function with initial value \(5\) and growth factor \(2\text{.}\) In a way, the growth factor of an exponential function is analogous to the slope of a linear function: Each measures how quickly the function is increasing (or decreasing).</p>
+<p id="p-7011">However, for each unit increase in \(t\text{,}\) \(2\) units are <em class="emphasis">added</em> to the value of \(L(t)\text{,}\) whereas the value of \(E(t)\) is <em class="emphasis">multiplied</em> by \(2\text{.}\) An exponential function with growth factor \(2\) eventually grows much more rapidly than a linear function with slope \(2\text{,}\) as you can see by comparing the graphs in the figure or the function values in the tables.</p>
+<article class="example-like" id="example-compare-linear-vs-exponential"><a data-knowl="" class="id-ref" data-refid="hk-example-compare-linear-vs-exponential"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">2.6.12</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-compare-linear-vs-exponential"><article class="example-like"><p id="p-7012">A solar energy company sold $\(80,000\) worth of solar collectors last year, its first year of operation. This year its sales rose to $\(88,000\text{,}\) an increase of \(10\)%. The marketing department must estimate its projected sales for the next \(3\) years.</p>
+<ol class="lower-alpha">
+<li id="li-4356"><p id="p-7013">If the marketing department predicts that sales will grow linearly, what should it expect the sales total to be next year? Graph the projected sales figures over the next \(3\) years, assuming that sales will grow linearly.</p></li>
+<li id="li-4357"><p id="p-7014">If the marketing department predicts that sales will grow exponentially, what should it expect the sales total to be next year? Graph the projected sales figures over the next \(3\) years, assuming that sales will grow exponentially.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-98" id="solution-98"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-98"><div class="solution">
+<ol id="p-7015" class="lower-alpha">
+<li id="li-4358">
+<p id="p-7016">Let \(L(t)\) represent the company's total sales \(t\) years after starting business, where \(t = 0\) is the first year of operation. If sales grow linearly, then \(L(t)\) has the form \(L(t) = mt + b\text{.}\) Now \(L(0) = 80,000\text{,}\) so the intercept \(b\) is \(80,000\text{.}\) The slope \(m\) of the graph is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\Delta S}{\Delta t}= 
+\frac{8000 \text{ dollars}}{1\text{ year}}= 
+8000 \text{ dollars/year}
+\end{equation*}
+</div>
+<p>where \(\Delta S = 8000\) is the increase in sales during the first year. Thus, \(L(t) = 8000t + 80,000\text{,}\) and sales grow by adding $\(8000\) each year. The expected sales total for the next year is</p>
+<div class="displaymath">
+\begin{equation*}
+L(2) = 8000(2) + 80,000 = 96,000
+\end{equation*}
+</div>
+</li>
+<li id="li-4359">
+<p id="p-7017">Let \(E(t)\) represent the company's sales assuming that sales will grow exponentially. Then \(E(t)\) has the form \(E(t) = E_0b^t\) . The percent increase in sales over the first year was \(r = 0.10\text{,}\) so the growth rate is</p>
+<div class="displaymath">
+\begin{equation*}
+b = 1 + r = 1.10
+\end{equation*}
+</div>
+<p>The initial value, \(E_0\text{,}\) is \(80,000\text{.}\) Thus, \(E(t) = 80,000(1.10)^t\text{,}\) and sales grow by being multiplied each year by \(1.10\text{.}\) The expected sales total for the next year is</p>
+<div class="displaymath">
+\begin{equation*}
+E(2) = 80,000(1.10)^2= 96,800
+\end{equation*}
+</div>
+</li>
+</ol>
+<p id="p-7018">We evaluate each function at several points to obtain the graphs shown in the figure.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel fixed-width" style="width:47.3684210526316%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t3 lines">\(t\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(L(t)\)</td>
+<td class="c m b1 r1 l0 t3 lines">\(E(t)\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80,000\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(88,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(88,000\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(96,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(96,800\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(104,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(106,480\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(112,000\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(117,128\)</td>
+</tr>
+</table></div>
+<div class="sbspanel" style="width:47.3684210526316%;justify-content:flex-start;"><img src="images/fig-linear-vs-exponential2.svg" style="width: 100%; height: auto;" alt="linear and exponential growth"></div>
+</div></div>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-1454"><a data-knowl="" class="id-ref" data-refid="hk-exercise-1454"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">2.6.13</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1454"><article class="exercise-like"><p id="p-7019">A new car begins to depreciate in value as soon as you drive it off the lot. Some models depreciate linearly, and others depreciate exponentially. Suppose you buy a new car for $\(20,000\text{,}\) and \(1\) year later its value has decreased to $\(17,000\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-4360"><p id="p-7020">If the value decreased linearly, what was its annual rate of decrease?</p></li>
+<li id="li-4361"><p id="p-7021">If the value decreased exponentially, what was its annual decay factor? What was its annual percent depreciation?</p></li>
+<li id="li-4362"><p id="p-7022">Calculate the value of your car when it is \(5\) years old under each assumption, linear or exponential depreciation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-786" id="answer-786"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-786"><div class="solution"><ol id="p-7023" class="lower-alpha">
+<li id="li-4363"><p id="p-7024">\(\$3000\) per year</p></li>
+<li id="li-4364"><p id="p-7025">\(0.85\text{;}\) \(15\%\)</p></li>
+<li id="li-4365"><p id="p-7026">Linear: \(\$5000\text{;}\) Exponential: \(\$8874\)</p></li>
+</ol></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

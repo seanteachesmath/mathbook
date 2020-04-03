@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:01-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fitting an Exponential Function through Two Points</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Exponential-Models.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Exponential-Models.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-133.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Exponential-Models.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Exponential-Models.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-133.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="subsection" id="subsection-132"><h2 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.1</span> <span class="title">Fitting an Exponential Function through Two Points</span>
+</h2>
+<p id="p-8450">To write a formula for an exponential function, we need to know the initial value, \(a\text{,}\) and the growth or decay factor, \(b\text{.}\) We can find these two parameters if we know any two function values.</p>
+<article class="example-like" id="example-fit-exponential"><a data-knowl="" class="id-ref" data-refid="hk-example-fit-exponential"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">6.1.1</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-fit-exponential"><article class="example-like"><p id="p-8451">Find an exponential function that has the values \(f (2) = 4.5\) and \(f (5) = 121.5\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-117" id="solution-117"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-117"><div class="solution">
+<p id="p-8452">We would like to find values of \(a\) and \(b\) so that the given function values satisfy \(f (x) = ab^x\) . By substituting the function values into the formula, we can write two equations.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+f (2) \amp= 4.5~~~ \text{ means }~~~x = 2, y = 4.5, \amp\amp\text{so }ab^2 = 4.5\\
+f (5) \amp= 121.5~~~ \text{ means }~~~x = 5, y = 121.5, \amp\amp\text{so }ab^5 = 121.5
+\end{aligned}
+\end{equation*}
+</div>
+<p>This is a system of equations in the two unknowns, \(a\) and \(b\text{,}\) but it is not a linear system. We can solve the system by the method of elimination, but we will divide one of the equations by the other.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\frac{ab^5}{ab^2}\amp= \frac{121.5}{4.5}\\
+b^3 \amp = 27
+\end{aligned}
+\end{equation*}
+</div>
+<p>Note that by dividing the two equations, we eliminated \(a\text{,}\) and we can now solve for \(b\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+b^3 \amp = 27 \\
+b \amp = \sqrt[3]{27} = 3
+\end{aligned}
+\end{equation*}
+</div>
+<p>Next we substitute \(b = 3\) into either of the two equations and solve for \(a\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+a(3)^2 \amp = 4.5 \\
+a \amp= \frac{4.5}{9} \\
+\amp = 0.5
+\end{aligned}
+\end{equation*}
+</div>
+<p>Thus, \(a = 0.5\) and \(b = 3\text{,}\) so the function is \(f (x) = 0.5(3^ x )\text{.}\)</p>
+</div></div>
+</div></article></div>
+<article class="remark-like" id="warning-18"><h6 class="heading">
+<span class="type">Warning</span> <span class="codenumber">6.1.2</span>.</h6>
+<p id="p-8453">Knowing only two points on the graph of f is not enough to tell us what <em class="emphasis">kind</em> of function \(f\) is. Through the two points in <a data-knowl="./knowl/example-fit-exponential.html" title="Example 6.1.1">Example 6.1.1</a>, we can also fit a linear function or a power function.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
+<div class="sbspanel" style="width:54.0540540540541%;justify-content:flex-start;">
+<p id="p-8454">You can check that the three functions below all satisfy \(f (2) = 4.5\) and \(f (5) = 121.5\text{.}\) The graphs of the functions are shown at right.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+L(x) \amp = -73.5 + 39x \\
+P(x) \amp = 0.372x^{3.6} \\
+E(x) \amp = 0.5(3^x ) \\
+\end{aligned}
+\end{equation*}
+</div>
+</div>
+<div class="sbspanel" style="width:37.8378378378378%;justify-content:flex-start;"><img src="images/fig-fit-3-functions.svg" style="width: 100%; height: auto;" alt="three functions through the same two points"></div>
+</div></div></article><p id="p-8455">However, if we already know that we are looking for an exponential function, we can follow the steps below to find its formula. This method is sometimes called the <dfn class="terminology">ratio method</dfn>. (Of course, if one of the known function values is the initial value, we can find \(b\) without resorting to the ratio method.)</p>
+<article class="assemblage-like" id="assemblage-105"><h6 class="heading"><span class="title">To find an exponential function \(f(x)=ab^x\) through two points:.</span></h6>
+<ol id="p-8456" class="decimal">
+<li id="li-5187"><p id="p-8457">Use the coordinates of the points to write two equations in \(a\) and \(b\text{.}\)</p></li>
+<li id="li-5188"><p id="p-8458">Divide one equation by the other to eliminate \(a\text{.}\)</p></li>
+<li id="li-5189"><p id="p-8459">Solve for \(b\text{.}\)</p></li>
+<li id="li-5190"><p id="p-8460">Substitute \(b\) into either equation and solve for \(a\text{.}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1748"><a data-knowl="" class="id-ref" data-refid="hk-exercise-1748"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">6.1.3</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1748"><article class="exercise-like"><p id="p-8461">Use the ratio method to find an exponential function whose graph includes the points \((1, 20)\) and \((3, 125)\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-943" id="answer-943"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-943"><div class="solution"><p id="p-8462">\(f (x) = 8(2.5)^x\)</p></div></div>
+</div></article></div>
+<p id="p-8463">We can use the ratio method to find an exponential growth or decay model if we know two function values.</p>
+<article class="example-like" id="example-cedi-inflation"><a data-knowl="" class="id-ref" data-refid="hk-example-cedi-inflation"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">6.1.4</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-cedi-inflation"><article class="example-like"><p id="p-8464">The unit of currency in Ghana is the cedi, denoted by ¢. Beginning in 1986, the cedi underwent a period of exponential inflation. In 1993, one U.S. dollar was worth ¢720, and in 1996, the dollar was worth about ¢1620. Find a formula for the number of cedi to the dollar as a function of time since 1986. What was the annual inflation rate?</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-solution-118" id="solution-118"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-118"><div class="solution">
+<p id="p-8465">We want to find a function \(C(t) = ab^t\) for the number of cedi to the dollar, where \(t = 0\) in 1986. We have two function values, \(C(7) = 720\text{,}\) and \(C(10) = 1620\text{,}\) and with these values we can write two equations.</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+ab^7 \amp = 720 \\
+ab^{10} \amp = 1620
+\end{aligned}
+\end{equation*}
+</div>
+<p>We divide the second equation by the first to find</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+\frac{ab^{10}}{ab^7} \amp= \frac{1620}{720} \\
+b^3 \amp= 2.25
+\end{aligned}
+\end{equation*}
+</div>
+<p>Now we can solve this last equation for \(b\) to get \(b = \sqrt[3]{2.25}\approx 1.31\text{.}\) Finally, we substitute \(b = 1.31\) into the first equation to find \(a\text{.}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}[t]
+a(1.31)^7 \amp = 720 \\
+a \amp = \frac{720}{1.317} \\
+\amp = 108.75
+\end{aligned}
+\end{equation*}
+</div>
+<p>Thus, \(C(t) = 108.75(1.31)^t\) , and the annual inflation rate was \(31\)%.</p>
+</div></div>
+</div></article></div>
+<article class="exercise-like" id="exercise-1749"><a data-knowl="" class="id-ref" data-refid="hk-exercise-1749"><h6 class="heading">
+<span class="type">Checkpoint</span> <span class="codenumber">6.1.5</span>.</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1749"><article class="exercise-like"><p id="p-8466">The number of earthquakes that occur worldwide is a decreasing exponential function of their magnitude on the Richter scale. Between 2000 and 2005, there were \(7480\) earthquakes of magnitude \(5\) and \(793\) earthquakes of magnitude \(6\text{.}\) (Source: National Earthquake Information Center, U.S. Geological Survey)</p>
+<ol class="lower-alpha">
+<li id="li-5191">Find a formula for the number of earthquakes, \(N(m)\text{,}\) in terms of their magnitude.</li>
+<li id="li-5192">It is difficult to keep an accurate count of small earthquakes. Use your formula to estimate the number of magnitude \(1\) earthquakes that occurred between 2000 and 2005. How many earthquakes of magnitude \(8\) occurred?</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-944" id="answer-944"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-944"><div class="solution"><ol id="p-8467" class="lower-alpha">
+<li id="li-5193"><p id="p-8468">\(N(m) = 558,526,329(0.106)^m\)</p></li>
+<li id="li-5194"><p id="p-8469">\(59,212,751\text{;}\) \(~9\)</p></li>
+</ol></div></div>
+</div></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>

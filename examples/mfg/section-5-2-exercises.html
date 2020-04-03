@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-12-05T15:03:20-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 5.2</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.12;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Applied Algebra Homework:</span> <span class="subtitle">PRETEXT XML SAMPLE ONLY</span></a></h1>
+<p class="byline">Sean Laverty and others</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="summary-5-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Logarithmic-Functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="subsection-153.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="summary-5-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Logarithmic-Functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="subsection-153.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-functions.html" data-scroll="part-functions"><span class="codenumber">I</span> <span class="title">Functions and graphs</span></a></li>
+<li class="link"><a href="chap1-summary.html" data-scroll="chap1-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="LinMod.html" data-scroll="LinMod"><span class="codenumber">2</span> <span class="title">Linear Models</span></a></li>
+<li class="link"><a href="functions.html" data-scroll="functions"><span class="codenumber">3</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="graphs-of-functions.html" data-scroll="graphs-of-functions"><span class="codenumber">4</span> <span class="title">Graphs of Functions</span></a></li>
+<li class="link"><a href="slope-and-rate-of-change.html" data-scroll="slope-and-rate-of-change"><span class="codenumber">5</span> <span class="title">Slope and Rate of Change</span></a></li>
+<li class="link"><a href="linear-functions.html" data-scroll="linear-functions"><span class="codenumber">6</span> <span class="title">Linear Functions</span></a></li>
+<li class="link"><a href="linear-regression.html" data-scroll="linear-regression"><span class="codenumber">7</span> <span class="title">Linear Regression</span></a></li>
+<li class="link part"><a href="part-modeling.html" data-scroll="part-modeling"><span class="codenumber">II</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap2-summary.html" data-scroll="chap2-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="nonlinear-models.html" data-scroll="nonlinear-models"><span class="codenumber">2</span> <span class="title">Nonlinear Models</span></a></li>
+<li class="link"><a href="basic-functions.html" data-scroll="basic-functions"><span class="codenumber">3</span> <span class="title">Some Basic Functions</span></a></li>
+<li class="link"><a href="transformations.html" data-scroll="transformations"><span class="codenumber">4</span> <span class="title">Transformations of Graphs</span></a></li>
+<li class="link"><a href="MathModels.html" data-scroll="MathModels"><span class="codenumber">5</span> <span class="title">Functions as Mathematical Models</span></a></li>
+<li class="link"><a href="AbsoluteValue.html" data-scroll="AbsoluteValue"><span class="codenumber">6</span> <span class="title">The Absolute Value Function</span></a></li>
+<li class="link"><a href="Domain-Range.html" data-scroll="Domain-Range"><span class="codenumber">7</span> <span class="title">Domain and Range</span></a></li>
+<li class="link part"><a href="part-power.html" data-scroll="part-power"><span class="codenumber">III</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap3-summary.html" data-scroll="chap3-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Variation.html" data-scroll="Variation"><span class="codenumber">2</span> <span class="title">Variation</span></a></li>
+<li class="link"><a href="Integer-Exponents.html" data-scroll="Integer-Exponents"><span class="codenumber">3</span> <span class="title">Integer Exponents</span></a></li>
+<li class="link"><a href="Roots-and-Radicals.html" data-scroll="Roots-and-Radicals"><span class="codenumber">4</span> <span class="title">Roots and Radicals</span></a></li>
+<li class="link"><a href="Rational-Exponents.html" data-scroll="Rational-Exponents"><span class="codenumber">5</span> <span class="title">Rational Exponents</span></a></li>
+<li class="link"><a href="Joint-Variation.html" data-scroll="Joint-Variation"><span class="codenumber">6</span> <span class="title">Joint Variation</span></a></li>
+<li class="link part"><a href="part-expo.html" data-scroll="part-expo"><span class="codenumber">IV</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap4-summary.html" data-scroll="chap4-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Exponential-Growth-and-Decay.html" data-scroll="Exponential-Growth-and-Decay"><span class="codenumber">2</span> <span class="title">Exponential Growth and Decay</span></a></li>
+<li class="link"><a href="Exponential-Functions.html" data-scroll="Exponential-Functions"><span class="codenumber">3</span> <span class="title">Exponential Functions</span></a></li>
+<li class="link"><a href="Logarithms.html" data-scroll="Logarithms"><span class="codenumber">4</span> <span class="title">Logarithms</span></a></li>
+<li class="link"><a href="Properties-of-Logarithms.html" data-scroll="Properties-of-Logarithms"><span class="codenumber">5</span> <span class="title">Properties of Logarithms</span></a></li>
+<li class="link"><a href="Exponential-Models.html" data-scroll="Exponential-Models"><span class="codenumber">6</span> <span class="title">Exponential Models</span></a></li>
+<li class="link part"><a href="part-logs.html" data-scroll="part-logs"><span class="codenumber">V</span> <span class="title">Modeling with functions</span></a></li>
+<li class="link"><a href="chap5-summary.html" data-scroll="chap5-summary"><span class="codenumber">1</span> <span class="title">Chapter Summary and Review</span></a></li>
+<li class="link"><a href="Inverse-Functions.html" data-scroll="Inverse-Functions"><span class="codenumber">2</span> <span class="title">Inverse Functions</span></a></li>
+<li class="link"><a href="Logarithmic-Functions.html" data-scroll="Logarithmic-Functions"><span class="codenumber">3</span> <span class="title">Logarithmic Functions</span></a></li>
+<li class="link"><a href="The-Natural-Base.html" data-scroll="The-Natural-Base"><span class="codenumber">4</span> <span class="title">The Natural Base</span></a></li>
+<li class="link"><a href="Logarithm-Scales.html" data-scroll="Logarithm-Scales"><span class="codenumber">5</span> <span class="title">Logarithmic Scales</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="exercises" id="section-5-2-exercises"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.7</span> <span class="title">Homework 5.2</span>
+</h2>
+<a href="section-5-2-exercises.html" class="permalink">¶</a><div class="exercisegroup" id="exercisegroup-266">
+<div class="introduction" id="introduction-276">
+<p id="p-9311">In Problems 1–4,</p>
+<ol class="lower-alpha">
+<li id="li-5736"><p id="p-9312">Make tables of values for each exponential function and its inverse logarithmic function.</p></li>
+<li id="li-5737"><p id="p-9313">Graph both functions on the same set of axes.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1937"><h6 class="heading"><span class="codenumber">1.</span></h6>
+<p id="p-9314">\(f(x)=2^x \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1050" id="answer-1050"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1050"><div class="solution"><ol id="p-9315" class="lower-alpha">
+<li id="li-5738">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\frac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\log_2 x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5739"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-1.svg" style="width: 100%; height: auto;" alt="exponential and log functions"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1938"><h6 class="heading"><span class="codenumber">2.</span></h6>
+<p id="p-9316">\(f(x)=3^x \)</p></article><article class="exercise-like" id="exercise-1939"><h6 class="heading"><span class="codenumber">3.</span></h6>
+<p id="p-9317">\(f(x)=\left(\dfrac{1}{3} \right)^x \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1051" id="answer-1051"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1051"><div class="solution"><ol id="p-9318" class="lower-alpha">
+<li id="li-5740">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\left(\frac{1}{3}\right)^x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\frac{1}{3} \)</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\frac{1}{3} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\log_{1/3} x\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5741"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-3.svg" style="width: 100%; height: auto;" alt="exponential and log functions"></div></div></div></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1940"><h6 class="heading"><span class="codenumber">4.</span></h6>
+<p id="p-9319">\(f(x)=\left(\dfrac{1}{2} \right)^x \)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1941"><h6 class="heading"><span class="codenumber">5.</span></h6>
+<ol id="p-9320" class="lower-alpha">
+<li id="li-5742"><p id="p-9321">How large must \(x\) be before the graph of \(y = \log_{10} x\) reaches a height of \(4\text{?}\)</p></li>
+<li id="li-5743"><p id="p-9322">How large must \(x\) be before the graph of \(y = \log_{10} x\) reaches a height of \(8\text{?}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1052" id="answer-1052"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1052"><div class="solution"><ol id="p-9323" class="lower-alpha cols2">
+<li id="li-5744"><p id="p-9324">\(x=10,000\)</p></li>
+<li id="li-5745"><p id="p-9325">\(x=10^{8} \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1942"><h6 class="heading"><span class="codenumber">6.</span></h6>
+<ol id="p-9326" class="lower-alpha">
+<li id="li-5746"><p id="p-9327">How large must \(x\) be before the graph of \(y = \log_{2} x\) reaches a height of \(5\text{?}\)</p></li>
+<li id="li-5747"><p id="p-9328">How large must \(x\) be before the graph of \(y = \log_{10} x\) reaches a height of \(10\text{?}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1943"><h6 class="heading"><span class="codenumber">7.</span></h6>
+<p id="p-9329">For what values of \(x\) is \(y = \log_{10} x \lt -2\text{?}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1053" id="answer-1053"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1053"><div class="solution"><p id="p-9330">\(0\lt x \lt 0.01\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1944"><h6 class="heading"><span class="codenumber">8.</span></h6>
+<p id="p-9331">For what values of \(x\) is \(y = \log_{2} x \lt -3\text{?}\)</p></article><div class="exercisegroup" id="exercisegroup-267">
+<div class="introduction" id="introduction-277"><p id="p-9332">In Problems 9–14, \(f(x) = \log_{10} x\text{.}\) Evaluate.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1945"><h6 class="heading"><span class="codenumber">9.</span></h6>
+<ol id="p-9333" class="lower-alpha">
+<li id="li-5748"><p id="p-9334">\(f(487)+f(206) \)</p></li>
+<li id="li-5749"><p id="p-9335">\(f(487+206) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1054" id="answer-1054"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1054"><div class="solution"><ol id="p-9336" class="lower-alpha cols2">
+<li id="li-5750"><p id="p-9337">\(\log 100,322\approx 5.001\)</p></li>
+<li id="li-5751"><p id="p-9338">\(\log 693\approx 2.841\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1946"><h6 class="heading"><span class="codenumber">10.</span></h6>
+<ol id="p-9339" class="lower-alpha">
+<li id="li-5752"><p id="p-9340">\(f(93)+f(1500) \)</p></li>
+<li id="li-5753"><p id="p-9341">\(f(93+1500) \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1947"><h6 class="heading"><span class="codenumber">11.</span></h6>
+<ol id="p-9342" class="lower-alpha">
+<li id="li-5754"><p id="p-9343">\(f(-7) \)</p></li>
+<li id="li-5755"><p id="p-9344">\(6f(28) \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1055" id="answer-1055"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1055"><div class="solution"><ol id="p-9345" class="lower-alpha cols2">
+<li id="li-5756"><p id="p-9346">\(\log (-7)\) is undefined.</p></li>
+<li id="li-5757"><p id="p-9347">\(6 \log 28\approx 8.683\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1948"><h6 class="heading"><span class="codenumber">12.</span></h6>
+<ol id="p-9348" class="lower-alpha">
+<li id="li-5758"><p id="p-9349">\(f(0) \)</p></li>
+<li id="li-5759"><p id="p-9350">\(3f(41 ) \)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1949"><h6 class="heading"><span class="codenumber">13.</span></h6>
+<ol id="p-9351" class="lower-alpha">
+<li id="li-5760"><p id="p-9352">\(18-5f(3) \)</p></li>
+<li id="li-5761"><p id="p-9353">\(\dfrac{2}{5+f(0.6)} \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1056" id="answer-1056"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1056"><div class="solution"><ol id="p-9354" class="lower-alpha cols2">
+<li id="li-5762"><p id="p-9355">\(15.614\)</p></li>
+<li id="li-5763"><p id="p-9356">\(0.419\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1950"><h6 class="heading"><span class="codenumber">14.</span></h6>
+<ol id="p-9357" class="lower-alpha">
+<li id="li-5764"><p id="p-9358">\(15-4f(7) \)</p></li>
+<li id="li-5765"><p id="p-9359">\(\dfrac{3}{2+f(0.2)} \)</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1951"><h6 class="heading"><span class="codenumber">15.</span></h6>
+<p id="p-9360">Let \(f(x) = 3^x\) and \(g(x) = \log_3 x\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5766"><p id="p-9361">Compute \(f (4)\text{.}\)</p></li>
+<li id="li-5767"><p id="p-9362">Compute \(g[ f (4)]\text{.}\)</p></li>
+<li id="li-5768"><p id="p-9363">Explain why \(\log_3 3^x = x\) for any \(x\text{.}\)</p></li>
+<li id="li-5769"><p id="p-9364">Compute \(\log_3 3^{1.8}\text{.}\)</p></li>
+<li id="li-5770"><p id="p-9365">Simplify \(\log_3 3^a\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1057" id="answer-1057"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1057"><div class="solution"><ol id="p-9366" class="lower-alpha cols3">
+<li id="li-5771"><p id="p-9367">\(81\)</p></li>
+<li id="li-5772"><p id="p-9368">\(4\)</p></li>
+<li id="li-5773"><p id="p-9369">Definition of logarithm base \(3\)</p></li>
+<li id="li-5774"><p id="p-9370">\(1.8\)</p></li>
+<li id="li-5775"><p id="p-9371">\(a\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1952"><h6 class="heading"><span class="codenumber">16.</span></h6>
+<p id="p-9372">Let \(f(x) = 2^x\) and \(g(x) = \log_2 x\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-5776"><p id="p-9373">Compute \(f (32)\text{.}\)</p></li>
+<li id="li-5777"><p id="p-9374">Compute \(g[ f (32)]\text{.}\)</p></li>
+<li id="li-5778"><p id="p-9375">Explain why \(2^{\log_2 x} = x\) for any \(x\gt 0\text{.}\)</p></li>
+<li id="li-5779"><p id="p-9376">Compute \(2^{\log_2 6} \text{.}\)</p></li>
+<li id="li-5780"><p id="p-9377">Simplify \(2^{\log_2 Q}\text{.}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1953"><h6 class="heading"><span class="codenumber">17.</span></h6>
+<ol id="p-9378" class="lower-alpha">
+<li id="li-5781"><p id="p-9379">If \(h(r ) = \log_2 r\text{,}\) find \(h^{-1}(8)\text{.}\)</p></li>
+<li id="li-5782"><p id="p-9380">If \(H(w) = 3^w\text{,}\) find \(H^{-1}\left(\dfrac{1}{9} \right) \text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1058" id="answer-1058"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1058"><div class="solution"><ol id="p-9381" class="lower-alpha cols2">
+<li id="li-5783"><p id="p-9382">\(2^8\)</p></li>
+<li id="li-5784"><p id="p-9383">\(-2\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1954"><h6 class="heading"><span class="codenumber">18.</span></h6>
+<ol id="p-9384" class="lower-alpha">
+<li id="li-5785"><p id="p-9385">If \(g(z ) = \log_3 z\text{,}\) find \(g^{-1}(-3)\text{.}\)</p></li>
+<li id="li-5786"><p id="p-9386">If \(G(q) = 2^q\text{,}\) find \(G^{-1}(1) \text{.}\)</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-268">
+<div class="introduction" id="introduction-278"><p id="p-9387">For Problems 19–20, simplify.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1955"><h6 class="heading"><span class="codenumber">19.</span></h6>
+<ol id="p-9388" class="lower-alpha">
+<li id="li-5787"><p id="p-9389">\(10^{\log 2k} \)</p></li>
+<li id="li-5788"><p id="p-9390">\(10^{3\log x} \)</p></li>
+<li id="li-5789"><p id="p-9391">\((\sqrt{10})^{\log x} \)</p></li>
+<li id="li-5790"><p id="p-9392">\(\log 100^m \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1059" id="answer-1059"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1059"><div class="solution"><ol id="p-9393" class="lower-alpha cols2">
+<li id="li-5791"><p id="p-9394">\(2k\)</p></li>
+<li id="li-5792"><p id="p-9395">\(x^3\)</p></li>
+<li id="li-5793"><p id="p-9396">\(\sqrt{x} \)</p></li>
+<li id="li-5794"><p id="p-9397">\(2m\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1956"><h6 class="heading"><span class="codenumber">20.</span></h6>
+<ol id="p-9398" class="lower-alpha">
+<li id="li-5795"><p id="p-9399">\(\log 10^{(1-x)} \)</p></li>
+<li id="li-5796"><p id="p-9400">\(100^{\log 2x} \)</p></li>
+<li id="li-5797"><p id="p-9401">\((0.1)^{\log (x-1)} \)</p></li>
+<li id="li-5798"><p id="p-9402">\(\log 10^{\log 10} \)</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1957"><h6 class="heading"><span class="codenumber">21.</span></h6>
+<ol id="p-9403" class="lower-alpha">
+<li id="li-5799"><p id="p-9404">What is the domain of the function \(f(x) = 4 + \log_3(x - 9)\text{?}\)</p></li>
+<li id="li-5800"><p id="p-9405">Find a formula for \(f^{-1}(x)\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1060" id="answer-1060"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1060"><div class="solution"><ol id="p-9406" class="lower-alpha cols2">
+<li id="li-5801"><p id="p-9407">\((9,\infty) \)</p></li>
+<li id="li-5802"><p id="p-9408">\(f^{-1} (x) = 3^{x-4} + 9 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1958"><h6 class="heading"><span class="codenumber">22.</span></h6>
+<ol id="p-9409" class="lower-alpha">
+<li id="li-5803"><p id="p-9410">What is the domain of the function \(f(x) = 1- \log_2(16-4x)\text{?}\)</p></li>
+<li id="li-5804"><p id="p-9411">Find a formula for \(f^{-1}(x)\text{.}\)</p></li>
+</ol></article><article class="exercise-like" id="exercise-1959"><h6 class="heading"><span class="codenumber">23.</span></h6>
+<ol id="p-9412" class="lower-alpha">
+<li id="li-5805"><p id="p-9413">Find the inverse of the function \(f (x) = 100 - 4^{x+2}\text{.}\)</p></li>
+<li id="li-5806"><p id="p-9414">Show that \(f^{-1}\) undoes the effect of \(f\) on \(x = 1\text{.}\)</p></li>
+<li id="li-5807"><p id="p-9415">Show that \(f\) undoes the effect of \(f^{-1}\) on \(x = 84\text{.}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1061" id="answer-1061"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1061"><div class="solution"><ol id="p-9416" class="lower-alpha">
+<li id="li-5808"><p id="p-9417">\(f^{-1}(x)= \log_4 (100 - x) - 2 \)</p></li>
+<li id="li-5809"><p id="p-9418">\(f^{-1} (f(1)) = f^{-1}(36)=\log_4(64)-2=1 \)</p></li>
+<li id="li-5810"><p id="p-9419">\(f\left(f^{-1} (84)\right)= f (0) = 100 - 4^2 = 84\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1960"><h6 class="heading"><span class="codenumber">24.</span></h6>
+<ol id="p-9420" class="lower-alpha">
+<li id="li-5811"><p id="p-9421">Find the inverse of the function \(f (x) = 5 + 2^{-x}\text{.}\)</p></li>
+<li id="li-5812"><p id="p-9422">Show that \(f^{-1}\) undoes the effect of \(f\) on \(x = -2\text{.}\)</p></li>
+<li id="li-5813"><p id="p-9423">Show that \(f\) undoes the effect of \(f^{-1}\) on \(x = 6\text{.}\)</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-269">
+<div class="introduction" id="introduction-279"><p id="p-9424">For Problems 25–26, match each graph to its equation.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1961"><h6 class="heading"><span class="codenumber">25.</span></h6>
+<ol id="p-9425" class="lower-alpha cols2">
+<li id="li-5814"><p id="p-9426">\(y = \log_2(x - 3) \)</p></li>
+<li id="li-5815"><p id="p-9427">\(y = 3 + \log_2 x \)</p></li>
+<li id="li-5816"><p id="p-9428">\(y=2 - \log_2 x \)</p></li>
+<li id="li-5817"><p id="p-9429">\(y = \log_2(x + 4) - 1 \)</p></li>
+</ol>
+<ol id="p-9430" class="upper-roman cols2">
+<li id="li-5818"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-25-I.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+<li id="li-5819"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-25-II.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+<li id="li-5820"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-25-III.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+<li id="li-5821"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-25-IV.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1062" id="answer-1062"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1062"><div class="solution"><ol id="p-9431" class="lower-alpha cols4">
+<li id="li-5822"><p id="p-9432">IV</p></li>
+<li id="li-5823"><p id="p-9433">I</p></li>
+<li id="li-5824"><p id="p-9434">II</p></li>
+<li id="li-5825"><p id="p-9435">III</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1962"><h6 class="heading"><span class="codenumber">26.</span></h6>
+<ol id="p-9436" class="lower-alpha cols2">
+<li id="li-5826"><p id="p-9437">\(y = 5\log x \)</p></li>
+<li id="li-5827"><p id="p-9438">\(y = \log \dfrac{x}{2} \)</p></li>
+<li id="li-5828"><p id="p-9439">\(y= \log \dfrac{1}{x} \)</p></li>
+<li id="li-5829"><p id="p-9440">\(y = \log(-x) \)</p></li>
+</ol>
+<ol id="p-9441" class="upper-roman cols2">
+<li id="li-5830"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-26-I.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+<li id="li-5831"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-26-II.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+<li id="li-5832"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-26-III.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+<li id="li-5833"><div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-26-IV.svg" style="width: 100%; height: auto;" alt="transformed log"></div></div></div></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1963"><h6 class="heading"><span class="codenumber">27.</span></h6>
+<p id="p-9442">In a psychology experiment, volunteers were asked to memorize a list of nonsense words, then 24 hours later were tested to see how many of the words they recalled. On average, the subjects had forgotten \(20\%\) of the words. The researchers found that the more lists their volunteers memorized, the larger the fraction of words they were unable to recall. (Source: Underwood, <span class="booktitle">Scientific American</span>, vol. 210, no. 3)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Number of lists, \(n\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(8\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(12\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(20\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Percent forgotten, \(F\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(20\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(40\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(55\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(66\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(74\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(80\)</td>
+</tr>
+</table></div></div></div>
+<ol id="p-9443" class="lower-alpha">
+<li id="li-5834"><p id="p-9444">Plot the data. What sort of function seems to fit the data points?</p></li>
+<li id="li-5835">
+<p id="p-9445">Psychologists often describe rates of forgetting by logarithmic functions. Graph the function</p>
+<div class="displaymath">
+\begin{equation*}
+f (n) = 16.6 + 46.3 \log n
+\end{equation*}
+</div>
+<p>on the same graph with your data. Comment on the fit.</p>
+</li>
+<li id="li-5836"><p id="p-9446">What happens to the function \(f (n)\) as \(n\) grows increasingly large? Does this behavior accurately reflect the situation being modeled?</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1063" id="answer-1063"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1063"><div class="solution"><ol id="p-9447" class="lower-alpha">
+<li id="li-5837"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-27.svg" style="width: 100%; height: auto;" alt="data points and log curve"></div></div></div></li>
+<li id="li-5838"><p id="p-9448">The graph resembles a logarithmic function. The (translated) log function is close to the points but appears too steep at first and not steep enough after \(n = 15\text{.}\) Overall, it is a good fit.</p></li>
+<li id="li-5839"><p id="p-9449">\(f\) grows (more and more slowly) without bound. \(f\) will eventually exceed \(100\) per cent, but no one can forget more than \(100\%\) of what is learned.</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1964"><h6 class="heading"><span class="codenumber">28.</span></h6>
+<p id="p-9450">The water velocity at any point in a stream or river is related to the logarithm of the depth at that point. For the Hoback River near Bondurant, Wyoming,</p>
+<div class="displaymath">
+\begin{equation*}
+v = 2.63 + 1.03 \log d
+\end{equation*}
+</div>
+<p>where \(v\) is the velocity of the water, in feet per second, and \(d\) is the vertical distance from the stream bed, in feet, at that point. For Pole Creek near Pinedale, Wyoming,</p>
+<div class="displaymath">
+\begin{equation*}
+v = 1.96 + 0.65 \log d
+\end{equation*}
+</div>
+<p>Both streams are \(1.2\) feet deep at the locations mentioned. (Source: Leopold, Luna, Wolman, and Gordon, 1992)</p>
+<ol class="lower-alpha">
+<li id="li-5840">
+<p id="p-9451">Complete the table of values for each stream.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Distance from bed (feet)</td>
+<td class="l m b1 r1 l0 t1 lines">\(0.2\)</td>
+<td class="l m b1 r1 l0 t1 lines">\(0.4\)</td>
+<td class="l m b1 r1 l0 t1 lines">\(0.6\)</td>
+<td class="l m b1 r1 l0 t1 lines">\(0.8\)</td>
+<td class="l m b1 r1 l0 t1 lines">\(1.0\)</td>
+<td class="l m b1 r1 l0 t1 lines">\(1.2\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Velocity, Hoback<br>River, (ft/sec)</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Velocity, Pole Creek (ft/sec)</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5841"><p id="p-9452">If you double the distance from the bed, by how much does the velocity increase in each stream?</p></li>
+<li id="li-5842"><p id="p-9453">Plot both functions on the same graph.</p></li>
+<li id="li-5843"><p id="p-9454">The average velocity of the entire stream can be closely approximated as follows: Measure the velocity at \(20\%\) of the total depth of the stream from the surface and at \(80\%\) of the total depth, then average these two values. Find the average velocity for the Hoback River and for Pole Creek.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-270">
+<div class="introduction" id="introduction-280"><p id="p-9455">In Problems 29–30, \(f (x) = \log_{10} x\text{.}\) Solve for \(x\text{.}\)</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1965"><h6 class="heading"><span class="codenumber">29.</span></h6>
+<ol id="p-9456" class="lower-alpha cols3">
+<li id="li-5844"><p id="p-9457">\(f (x) = 1.41\)</p></li>
+<li id="li-5845"><p id="p-9458">\(f (x) = -1.69\)</p></li>
+<li id="li-5846"><p id="p-9459">\(f (x) = 0.52\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1064" id="answer-1064"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1064"><div class="solution"><ol id="p-9460" class="lower-alpha cols2">
+<li id="li-5847"><p id="p-9461">\(10^{1.41}\approx 25.704 \)</p></li>
+<li id="li-5848"><p id="p-9462">\(10^{-1.69}\approx 0.020417 \)</p></li>
+<li id="li-5849"><p id="p-9463">\(10^{0.52}\approx 3.3113 \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1966"><h6 class="heading"><span class="codenumber">30.</span></h6>
+<ol id="p-9464" class="lower-alpha cols3">
+<li id="li-5850"><p id="p-9465">\(f (x) = 2.3\)</p></li>
+<li id="li-5851"><p id="p-9466">\(f (x) = -1.3\)</p></li>
+<li id="li-5852"><p id="p-9467">\(f (x) = 0.8\)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-271">
+<div class="introduction" id="introduction-281"><p id="p-9468">For Problems 31-38, convert the logarithmic equation to exponential form.</p></div>
+<div class="exercisegroup-exercises cols3">
+<article class="exercise-like" id="exercise-1967"><h6 class="heading"><span class="codenumber">31.</span></h6>
+<p id="p-9469">\(\log_{16}256 = w\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1065" id="answer-1065"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1065"><div class="solution"><p id="p-9470">\(16^w = 256\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1968"><h6 class="heading"><span class="codenumber">32.</span></h6>
+<p id="p-9471">\(\log_{9}729 = y\)</p></article><article class="exercise-like" id="exercise-1969"><h6 class="heading"><span class="codenumber">33.</span></h6>
+<p id="p-9472">\(\log_{b}9 = -2\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1066" id="answer-1066"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1066"><div class="solution"><p id="p-9473">\(b^{-2} = 9\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1970"><h6 class="heading"><span class="codenumber">34.</span></h6>
+<p id="p-9474">\(\log_{b}8 = -3\)</p></article><article class="exercise-like" id="exercise-1971"><h6 class="heading"><span class="codenumber">35.</span></h6>
+<p id="p-9475">\(\log_{10}A = -2.3\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1067" id="answer-1067"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1067"><div class="solution"><p id="p-9476">\(10^{-2.3} = A\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1972"><h6 class="heading"><span class="codenumber">36.</span></h6>
+<p id="p-9477">\(\log_{10}C = -4.5\)</p></article><article class="exercise-like" id="exercise-1973"><h6 class="heading"><span class="codenumber">37.</span></h6>
+<p id="p-9478">\(\log_{u}v = w\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1068" id="answer-1068"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1068"><div class="solution"><p id="p-9479">\(u^{w} = v\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1974"><h6 class="heading"><span class="codenumber">38.</span></h6>
+<p id="p-9480">\(\log_{m}n = p\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-272">
+<div class="introduction" id="introduction-282"><p id="p-9481">For Problems 39-46, solve for the unknown value.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1975"><h6 class="heading"><span class="codenumber">39.</span></h6>
+<p id="p-9482">\(\log_{b} 8 = 3\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1069" id="answer-1069"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1069"><div class="solution"><p id="p-9483">\(b=2\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1976"><h6 class="heading"><span class="codenumber">40.</span></h6>
+<p id="p-9484">\(\log_{b} 625 = 4\)</p></article><article class="exercise-like" id="exercise-1977"><h6 class="heading"><span class="codenumber">41.</span></h6>
+<p id="p-9485">\(\log_{b} 10 = \dfrac{1}{2} \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1070" id="answer-1070"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1070"><div class="solution"><p id="p-9486">\(b=100\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1978"><h6 class="heading"><span class="codenumber">42.</span></h6>
+<p id="p-9487">\(\log_{b} 0.1 = -1\)</p></article><article class="exercise-like" id="exercise-1979"><h6 class="heading"><span class="codenumber">43.</span></h6>
+<p id="p-9488">\(\log_{2} (3x-1) = 5 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1071" id="answer-1071"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1071"><div class="solution"><p id="p-9489">\(x=11\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1980"><h6 class="heading"><span class="codenumber">44.</span></h6>
+<p id="p-9490">\(\log_{5} (9-4x) = 3\)</p></article><article class="exercise-like" id="exercise-1981"><h6 class="heading"><span class="codenumber">45.</span></h6>
+<p id="p-9491">\(3(\log_{7} x) + 5=7 \)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1072" id="answer-1072"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1072"><div class="solution"><p id="p-9492">\(x=7^{2/3} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1982"><h6 class="heading"><span class="codenumber">46.</span></h6>
+<p id="p-9493">\(5(\log_{2} x)+6 = -14\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-273">
+<div class="introduction" id="introduction-283"><p id="p-9494">For Problems 47-54, solve the logarithmic equation.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1983"><h6 class="heading"><span class="codenumber">47.</span></h6>
+<p id="p-9495">\(\log_{10} x + \log_{10}(x + 21) = 2\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1073" id="answer-1073"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1073"><div class="solution"><p id="p-9496">\(x=4\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1984"><h6 class="heading"><span class="codenumber">48.</span></h6>
+<p id="p-9497">\(\log_{10} (x+3) + \log_{10}x = 1\)</p></article><article class="exercise-like" id="exercise-1985"><h6 class="heading"><span class="codenumber">49.</span></h6>
+<p id="p-9498">\(\log_{8} (x+5) - \log_{8}2 = 1\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1074" id="answer-1074"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1074"><div class="solution"><p id="p-9499">\(x=11\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1986"><h6 class="heading"><span class="codenumber">50.</span></h6>
+<p id="p-9500">\(\log_{10} (x-1) - \log_{10}4 = 2\)</p></article><article class="exercise-like" id="exercise-1987"><h6 class="heading"><span class="codenumber">51.</span></h6>
+<p id="p-9501">\(\log_{10} (x+2) + \log_{10}(x-1) = 1\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1075" id="answer-1075"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1075"><div class="solution"><p id="p-9502">\(x=3\)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1988"><h6 class="heading"><span class="codenumber">52.</span></h6>
+<p id="p-9503">\(\log_{4} (x+8) - \log_{4}(x+2) = 2\)</p></article><article class="exercise-like" id="exercise-1989"><h6 class="heading"><span class="codenumber">53.</span></h6>
+<p id="p-9504">\(\log_{3} (x-2) - \log_{3}(x+1) = 3\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1076" id="answer-1076"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1076"><div class="solution"><p id="p-9505">No solution</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1990"><h6 class="heading"><span class="codenumber">54.</span></h6>
+<p id="p-9506">\(\log_{10} (x+3) - \log_{10}(x-1) = 1\)</p></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-274">
+<div class="introduction" id="introduction-284"><p id="p-9507">For Problems 55-60, solve for the indicated variable.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-1991"><h6 class="heading"><span class="codenumber">55.</span></h6>
+<p id="p-9508">\(t = T \log_{10}\left(1+\dfrac{A}{k} \right)\text{,}\) for \(A\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1077" id="answer-1077"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1077"><div class="solution"><p id="p-9509">\(A=k(10^{t/T}-1) \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1992"><h6 class="heading"><span class="codenumber">56.</span></h6>
+<p id="p-9510">\(\log_{10} R= \log_{10} R_0 +kt \text{,}\) for \(R\)</p></article><article class="exercise-like" id="exercise-1993"><h6 class="heading"><span class="codenumber">57.</span></h6>
+<p id="p-9511">\(N=N_0 \log_b (ks) \text{,}\) for \(s\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1078" id="answer-1078"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1078"><div class="solution"><p id="p-9512">\(s=\dfrac{b^{N/N_0}}{k} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1994"><h6 class="heading"><span class="codenumber">58.</span></h6>
+<p id="p-9513">\(T=\dfrac{H\log_{10}\dfrac{N}{N _0} }{\log_{10} \dfrac{1}{2}} \text{,}\) for \(N\)</p></article><article class="exercise-like" id="exercise-1995"><h6 class="heading"><span class="codenumber">59.</span></h6>
+<p id="p-9514">\(M=\sqrt{\dfrac{\log_{10}H}{k\log_{10} H_0}} \text{,}\) for \(H\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1079" id="answer-1079"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1079"><div class="solution"><p id="p-9515">\(H=(H_0)^{kM^2} \)</p></div></div>
+</div></article><article class="exercise-like" id="exercise-1996"><h6 class="heading"><span class="codenumber">60.</span></h6>
+<p id="p-9516">\(h=a-\sqrt{\dfrac{\log_{10}B}{t}} \text{,}\) for \(B\)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-1997"><h6 class="heading"><span class="codenumber">61.</span></h6>
+<p id="p-9517">Choose the graph for each function described below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:2%;margin-right:2%;">
+<div class="sbspanel" style="width:52.0833333333333%;justify-content:center;"><ol id="p-9518" class="lower-alpha">
+<li id="li-5853">The area, \(A\text{,}\) of a pentagon is a quadratic function of the length, \(l\text{,}\) of its side.</li>
+<li id="li-5854">The strength, \(F\text{,}\) of a hurricane varies inversely with its speed, \(s\text{.}\)</li>
+<li id="li-5855">The price of food has increased by \(3\%\) every year for a decade.</li>
+<li id="li-5856">The magnitude, \(M\text{,}\) of a star is a logarithmic function of its brightness, \(I\text{.}\)</li>
+<li id="li-5857">The speed of the train increased at a constant rate.</li>
+<li id="li-5858">If you do not practice a foreign language, you lose \(\frac{1}{8} \) of the words in your working vocabulary, \(V\text{,}\) each year.</li>
+</ol></div>
+<div class="sbspanel" style="width:43.75%;justify-content:center;"><img src="images/fig-5-2-61.svg" style="width: 100%; height: auto;" alt="six curves"></div>
+</div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1080" id="answer-1080"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1080"><div class="solution"><ol id="p-9519" class="lower-alpha cols3">
+<li id="li-5859"><p id="p-9520">II</p></li>
+<li id="li-5860"><p id="p-9521">VI</p></li>
+<li id="li-5861"><p id="p-9522">III</p></li>
+<li id="li-5862"><p id="p-9523">V</p></li>
+<li id="li-5863"><p id="p-9524">I</p></li>
+<li id="li-5864"><p id="p-9525">IV</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-1998"><h6 class="heading"><span class="codenumber">62.</span></h6>
+<p id="p-9526">For each of the functions listed below, select the graph of its inverse function, if possible, from the figures labeled I–VI. (The inverse of one of the functions is not shown.)</p>
+<ol class="lower-alpha cols3">
+<li id="li-5865"><p id="p-9527">\(f (x) = 2^x\)</p></li>
+<li id="li-5866"><p id="p-9528">\(f (x) = x^2, ~~x \ge 0\)</p></li>
+<li id="li-5867"><p id="p-9529">\(f (x) = \dfrac{2}{x} \)</p></li>
+<li id="li-5868"><p id="p-9530">\(f(x)=\sqrt{x} \)</p></li>
+<li id="li-5869"><p id="p-9531">\(f (x) = \log_2 x\)</p></li>
+<li id="li-5870"><p id="p-9532">\(f(x)=\left(\dfrac{1}{2} \right)^x \)</p></li>
+</ol>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-62-I-II.svg" style="width: 100%; height: auto;" alt="two curves"></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-62-III-IV.svg" style="width: 100%; height: auto;" alt="two curves"></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-5-2-62-V-VI.svg" style="width: 100%; height: auto;" alt="two curves"></div></div></div></article><div class="exercisegroup" id="exercisegroup-275">
+<div class="introduction" id="introduction-285"><p id="p-9533">For Problems 63-64, graph the function on the domain [-4, 4] and a suitable range. Which have inverses that are also functions?</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-1999"><h6 class="heading"><span class="codenumber">63.</span></h6>
+<ol id="p-9534" class="lower-alpha">
+<li id="li-5871"><p id="p-9535">\(f (x) = 5(2^{-x^2})\)</p></li>
+<li id="li-5872"><p id="p-9536">\(f (x) = 2^x + 2^{-x}\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1081" id="answer-1081"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1081"><div class="solution"><ol id="p-9537" class="lower-alpha">
+<li id="li-5873">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-63.svg" style="width: 100%; height: auto;" alt="bell"></div></div></div>
+<p id="p-9538">No inverse function</p>
+</li>
+<li id="li-5874">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-63b.svg" style="width: 100%; height: auto;" alt="catenary"></div></div></div>
+<p id="p-9539">No inverse function</p>
+</li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2000"><h6 class="heading"><span class="codenumber">64.</span></h6>
+<ol id="p-9540" class="lower-alpha">
+<li id="li-5875"><p id="p-9541">\(f(x)=5(\log(x))^2+1 \)</p></li>
+<li id="li-5876"><p id="p-9542">\(f(x)=5\log(x^2+1) \)</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-276">
+<div class="introduction" id="introduction-286"><p id="p-9543">For Problems 65-68, graph the pair of functions on your calculator. Explain the result.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise-like" id="exercise-2001"><h6 class="heading"><span class="codenumber">65.</span></h6>
+<p id="p-9544">\(f (x) = \log(2x), ~~~g(x) = \log 2 + \log x\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1082" id="answer-1082"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1082"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-65.jpg" style="width: 100%; height: auto;" alt="translated log"></div></div></div>
+<p id="p-9545">The functions are equal.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-2002"><h6 class="heading"><span class="codenumber">66.</span></h6>
+<p id="p-9546">\(f (x) = \log\left(\dfrac{x}{3}\right), ~~~g(x) = \log x - \log 3\)</p></article><article class="exercise-like" id="exercise-2003"><h6 class="heading"><span class="codenumber">67.</span></h6>
+<p id="p-9547">\(f (x) =\log\left(\dfrac{1}{x}\right), ~~~g(x) = -\log x\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1083" id="answer-1083"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1083"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-67.jpg" style="width: 100%; height: auto;" alt="translated log"></div></div></div>
+<p id="p-9548">The functions are equal.</p>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-2004"><h6 class="heading"><span class="codenumber">68.</span></h6>
+<p id="p-9549">\(f (x) = \log(x^3), ~~~g(x) = 3 \log x\)</p></article>
+</div>
+</div>
+<article class="exercise-like" id="exercise-2005"><h6 class="heading"><span class="codenumber">69.</span></h6>
+<ol id="p-9550" class="lower-alpha">
+<li id="li-5877">
+<p id="p-9551">Complete the following table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(x^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\log_{10}x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\log_{10}x^2 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5878"><p id="p-9552">Do you notice a relationship between \(\log_{10} x\) and \(\log_{10} x^2\text{?}\) State the relationship as an equation.</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1084" id="answer-1084"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1084"><div class="solution"><ol id="p-9553" class="lower-alpha">
+<li id="li-5879"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(x^2\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\log_{10}x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\log_{10}x^2 \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.301\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.602\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(9\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.477\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.954\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.602\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.204\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(25\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.699\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.398\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(36\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.778\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.556\)</td>
+</tr>
+</table></div></div></div></li>
+<li id="li-5880"><p id="p-9554">\(\log_{10}x^2=2\log_{10}x \)</p></li>
+</ol></div></div>
+</div></article><article class="exercise-like" id="exercise-2006"><h6 class="heading"><span class="codenumber">70.</span></h6>
+<ol id="p-9555" class="lower-alpha">
+<li id="li-5881">
+<p id="p-9556">Complete the following table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\dfrac{1}{x} \)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\log_{10}x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(\log_{10}\dfrac{1}{x} \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{0000000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(3\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(5\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(6\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\hphantom{00000}\)</td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-5882"><p id="p-9557">Do you notice a relationship between \(\log_{10} x\) and \(\log_{10} \dfrac{1}{x} \text{?}\) State the relationship as an equation.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-277">
+<div class="introduction" id="introduction-287"><p id="p-9558">In Problems 69 and 70, you found relationships between \(\log_{10} x\) and \(\log_{10} x^2\text{,}\) and between \(\log_{10} x\) and \(\log_{10} \dfrac{1}{x}\text{.}\) Assumingthat those relationships hold for any base, complete the following tables and use them to graph the given functions.</p></div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise-like" id="exercise-2007"><h6 class="heading"><span class="codenumber">71.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=\log_e x \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.693\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{16} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref" data-refid="hk-answer-1085" id="answer-1085"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1085"><div class="solution">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=\log_e x \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.693\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(1.386\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(2.772\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-0.693\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-1.386\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{16} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(-2.772\)</td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/fig-ans-5-2-71.svg" style="width: 100%; height: auto;" alt="log base e"></div></div></div>
+</div></div>
+</div></article><article class="exercise-like" id="exercise-2008"><h6 class="heading"><span class="codenumber">72.</span></h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="c m b1 r1 l1 t1 lines">\(x\)</td>
+<td class="c m b1 r1 l0 t1 lines">\(y=\log_f x \)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(1\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(2\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(0.431\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(4\)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(16\)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{2} \)</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{4} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">\(\frac{1}{16} \)</td>
+<td class="c m b1 r1 l0 t0 lines">\(\)</td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
+</body>
+</html>
