@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-02-21T15:13:22-06:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Broken WeBWorK Problems</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="errors-and-warnings.html"><span class="title">Errors and Warnings in MathBook XML</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-15.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="errors-and-warnings.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-15.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="errors-and-warnings.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="introduction-id.html" data-scroll="introduction-id"><span class="codenumber">1</span> <span class="title">Introduction</span></a></li>
+<li class="link"><a href="section-2.html" data-scroll="section-2"><span class="codenumber">2</span> <span class="title">Global Deprecations</span></a></li>
+<li class="link"><a href="section-3.html" data-scroll="section-3"><span class="codenumber">3</span> <span class="title">Introduction</span></a></li>
+<li class="link"><a href="section-4.html" data-scroll="section-4"><span class="codenumber">4</span> <span class="title">Cross-References</span></a></li>
+<li class="link"><a href="section-5.html" data-scroll="section-5"><span class="codenumber">5</span> <span class="title">Bad Math</span></a></li>
+<li class="link"><a href="section-images.html" data-scroll="section-images"><span class="codenumber">6</span> <span class="title">Images</span></a></li>
+<li class="link"><a href="section-7.html" data-scroll="section-7"><span class="codenumber">7</span> <span class="title">Miscellaneous</span></a></li>
+<li class="link"><a href="section-8.html" data-scroll="section-8"><span class="codenumber">8</span> <span class="title">Ordered Lists with No Labels</span></a></li>
+<li class="link"><a href="section-9.html" data-scroll="section-9"><span class="codenumber">9</span> <span class="title">Catching Mis-Authored Code Chunks</span></a></li>
+<li class="link">
+<a href="section-10.html" data-scroll="section-10"><span class="codenumber">10</span> <span class="title">A Badly Structured Section</span></a><ul><li><a href="section-10.html#subsection-1" data-scroll="subsection-1">First Subsection</a></li></ul>
+</li>
+<li class="link"><a href="section-11.html" data-scroll="section-11"><span class="codenumber">11</span> <span class="title">Prohibited Cross-References in Display Mathematics</span></a></li>
+<li class="link"><a href="section-12.html" data-scroll="section-12"><span class="codenumber">12</span> <span class="title">Side-by-Side Paragraphs</span></a></li>
+<li class="link"><a href="section-13.html" data-scroll="section-13"><span class="codenumber">13</span> <span class="title">WeBWorK</span></a></li>
+<li class="link"><a href="section-14.html" data-scroll="section-14"><span class="codenumber">14</span> <span class="title">Image Descriptions</span></a></li>
+<li class="link"><a href="section-15.html" data-scroll="section-15"><span class="codenumber">15</span> <span class="title">Bona Fide WeBWorK Problems</span></a></li>
+<li class="link active"><a href="section-16.html" data-scroll="section-16"><span class="codenumber">16</span> <span class="title">Broken WeBWorK Problems</span></a></li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-16"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">16</span> <span class="title">Broken WeBWorK Problems</span>
+</h2>
+<p id="p-52">These are remnants of the two legitimate WeBWorK problems copied from the WW sample chapter on 2018-07-12 (above).  We are leaving them as <code class="code-inline tex2jax_ignore">&lt;exercise&gt;</code> but removing the <code class="code-inline tex2jax_ignore">&lt;webwork&gt;</code> wrapper to provoke errors.</p>
+<article class="exercise exercise-like" id="exercise-4"><a data-knowl="" class="id-ref original" data-refid="hk-exercise-4"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">16.1</span><span class="period">.</span><span class="space"> </span><span class="title">Part 1: Identify the coefficients.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise exercise-like"><p id="p-53">Consider the quadratic equation given by</p>
+<div class="displaymath">
+\begin{equation*}
+= 0\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">First, identify the coefficients for the quadratic equation using the standard form from <span>(((Unresolved xref, reference "theorem-quadratic-formula"; check spelling or use "provisional" attribute)))</span><a href="" class="internal" title=""> </a>.</p>
+<p id="p-54">\(a=\) , \(b=\) , \(c=\) </p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><p id="p-55">Take the coefficient of \(x^2\) for the value of \(a\text{,}\) the coefficient of \(x\) for \(b\text{,}\) and the constant for \(c\text{.}\)  <em class="emphasis">In this case</em>, they are \(a = \text{,}\) \(b = \text{,}\) \(c = \text{.}\)</p></div></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-5"><a data-knowl="" class="id-ref original" data-refid="hk-exercise-5"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">16.2</span><span class="period">.</span><span class="space"> </span><span class="title">Part 2: Solve using the quadratic formula.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-5"><article class="exercise exercise-like"><p id="p-56">Using the quadratic formula, solve \(=0\text{.}\)</p>
+<p id="p-57">\(x=\)  or \(x=\) </p>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
+<p id="p-58">Recall that the quadratic formula is given in <span>(((Unresolved xref, reference "theorem-quadratic-formula"; check spelling or use "provisional" attribute)))</span><a href="" class="internal" title=""> </a>.</p>
+<p id="p-59">You already identified \(a = \text{,}\) \(b = \text{,}\) and \(c = \text{,}\) so the results are:</p>
+<div class="displaymath">
+\begin{equation*}
+x = { \over 2()} = 
+\end{equation*}
+</div>
+<p data-braille="continuation">or</p>
+<div class="displaymath">
+\begin{equation*}
+x = { \over 2()} = 
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-6"><a data-knowl="" class="id-ref original" data-refid="hk-exercise-6"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">16.3</span><span class="period">.</span><span class="space"> </span><span class="title">Tables.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-6"><article class="exercise exercise-like"><p id="p-60">A table with minimal XML source.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">A</td>
+<td class="l m b0 r0 l0 t0 lines">B</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">C</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">D</td>
+<td class="l m b0 r0 l0 t0 lines">E</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">G</td>
+<td class="l m b0 r0 l0 t0 lines">H</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">I</td>
+</tr>
+</table></div></div></div>
+<p id="p-61">Finish this table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width" style="width:100%;justify-content:flex-start;"><table>
+<tr>
+<td class="r m b0 r1 l0 t1 lines">1</td>
+<td class="c m b0 r2 l0 t3 lines">two</td>
+<td class="l m b0 r1 l0 t3 lines" data-braille="last-cell">\(\lfloor\pi\rfloor\)</td>
+</tr>
+<tr>
+<td class="r b b1 r1 l3 t0 lines">\(\text{I}+\text{I}\)<br>\({}+\text{I}+\text{I}\)</td>
+<td class="c b b3 r2 l0 t0 lines"></td>
+<td class="l b b3 r1 l0 t0 lines" data-braille="last-cell">six</td>
+</tr>
+<tr>
+<td class="r m b3 r1 l3 t0 lines">\(2^3-1\)</td>
+<td class="c m b3 r1 l0 t0 lines" data-braille="last-cell" colspan="2">VIII</td>
+</tr>
+</table></div></div></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like"><p id="p-62">The missing number is .</p></div></div>
+</div></article></div>
+<figure class="figure figure-like" id="figure-6"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel" style="width:31.5789473684211%;justify-content:flex-start;"><figure class="list table-like" id="list-1"><div class="named-list-content">
+<div class="introduction" id="introduction-1"><p id="p-63">Dr. Seuss again.</p></div>
+<ul class="disc">
+<li id="li-10">One fish</li>
+<li id="li-11">Two fish</li>
+<li id="li-12">Red fish</li>
+<li id="li-13">Blue fish</li>
+</ul>
+</div>
+<figcaption><span class="codenumber">(a)</span><span class="space"> </span>Employed, so Caption is commented</figcaption></figure></div>
+<div class="sbspanel" style="width:63.1578947368421%;justify-content:flex-start;"><figure class="list table-like" id="color-list-as-panel"><div class="named-list-content">
+<ol class="decimal">
+<li id="li-14">
+<p id="p-64">Blue</p>
+<ol class="lower-alpha">
+<li id="li-15">Light</li>
+<li id="li-16">Navy</li>
+<li id="li-17">Royal</li>
+</ol>
+</li>
+<li id="li-18">
+<p id="p-65">Red</p>
+<ol class="lower-alpha">
+<li id="li-19">Maroon</li>
+<li id="li-20">Pink</li>
+<li id="li-21">Shocking</li>
+</ol>
+</li>
+</ol>
+<div class="conclusion" id="conclusion-1"><p id="p-66">This ends our example.</p></div>
+</div>
+<figcaption><span class="codenumber">(b)</span><span class="space"> </span>Color Shades</figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16.4<span class="period">.</span></span><span class="space"> </span>Two named lists</figcaption></figure><figure class="table figure-like" id="table-2"><table>
+<tr>
+<td class="l m b2 r0 l0 t0 lines">Sign</td>
+<td class="l m b2 r0 l0 t0 lines">Unicode</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">Name</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">$</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">U+0024</code></td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">dollar</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">¢</td>
+<td class="l m b0 r0 l0 t0 lines"><code class="code-inline tex2jax_ignore">U+00A2</code></td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">cent</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">16.5<span class="period">.</span></span><span class="space"> </span>Supported Currency</figcaption></figure></section></div></main>
+</div>
+</body>
+</html>
