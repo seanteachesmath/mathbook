@@ -22,7 +22,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--
 To process this file, at the command-line issue:
 
-xsltproc /path/to/mathbook/xsl/mathbook-html.xsl /path/to/mathbook/examples/sample-article.xml
+xsltproc /path/to/mathbook/xsl/pretext-html.xsl /path/to/mathbook/examples/sample-article.xml
 
 then find  "derivatives.html"  in the current working directory
 and use a web browser to view.  For PDF/print, issue:
@@ -678,7 +678,31 @@ the xsltproc executable.
                     <sage>
                         <input>2+2</input>
                     </sage>
+
+                    <p>We test a Sage cell inside a knowl, which should set the value of a variable that will be available to subsequent cells.</p>
+
+                    <sage>
+                        <input>
+                        a = 6
+                        a
+                        </input>
+                    </sage>
+
+                    <sage>
+                        <input>
+                        b = a + 10
+                        b
+                        </input>
+                    </sage>
                 </example>
+
+                <p>This next Sage cell will not execute properly unless the knowl immediately prior is opened and cells there are executed.</p>
+
+                <sage>
+                    <input>
+                    a + b
+                    </input>
+                </sage>
 
                 <p>We cross-reference the example just prior, <xref ref="example-mysterious" text="type-global" />, to test the simple Sage cell that will now be part of a cross-reference knowl (an external file).</p>
 
@@ -749,6 +773,8 @@ the xsltproc executable.
                         <hint>
                             <p>Start writing!</p>
                         </hint>
+                        <!-- private answer in private solutions file -->
+                        <!-- private solution in private solutions file -->
                     </exercise>
                 </subsubsection>
 
@@ -786,7 +812,7 @@ the xsltproc executable.
                         </solution>
                     </question>
 
-                    <exercise>
+                    <exercise xml:id="inline-exercise">
                         <title>An Inline Exercise</title>
 
                         <statement>
@@ -808,6 +834,9 @@ the xsltproc executable.
                                 <p>Praesent rutrum scelerisque felis sit amet adipiscing. Phasellus in mollis velit. Nunc malesuada felis sit amet massa cursus, eget elementum neque viverra. Integer sagittis dictum turpis vel aliquet. Fusce ut suscipit dolor, nec tristique nisl. Aenean luctus, leo et ornare fermentum, nibh dui vulputate leo, nec tincidunt augue ipsum sed odio. Nunc non erat sollicitudin, iaculis eros consequat, dapibus eros.</p>
                             </proof>
                         </solution>
+                        <!-- private hint in private solutions file -->
+                        <!-- two private solutions in private solutions file -->
+
                     </exercise>
 
                     <example xml:id="example-math-title">
@@ -888,6 +917,107 @@ the xsltproc executable.
                         <p>An <tag>aside</tag> is similar to a remark, but is not as critical to the narrative.  It is not numbered, and so requires a title.  It can be the target of a cross-reference.  They are meant to be short, and so are not knowlized at their first appearance.  If the content is appropriate, these can be marked as <tag>historical</tag> or <tag>biographical</tag>, though longer items should use subdivisions (<eg /> sections, subsections) instead.</p>
                     </aside>
 
+                    <p>An <tag>exercise</tag> can be structured with <tag>task</tag>.</p>
+
+                    <exercise xml:id="exercise-structured">
+                        <title>A very structured exercise</title>
+
+                        <introduction>
+                            <p>This is an over-arching introduction to the whole exercise.  We follow with some tasks.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                        </introduction>
+
+                        <task>
+                            <p>This first task is very simple, just a paragraph.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                        </task>
+
+                        <task>
+                            <p>Now three paragraphs.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                        </task>
+
+                        <task>
+                            <introduction>
+                                <p>This second task is further divided by more tasks.  This is its introduction.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </introduction>
+                            <task>
+                                <statement>
+                                    <p>A really simple subtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                    <p>A short paragraph, before an answer.</p>
+                                </statement>
+                                <answer>
+                                    <p>With a proof.</p>
+                                    <proof>
+                                        <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                    </proof>
+                                    <p>And a bit more to say.</p>
+                                </answer>
+                            </task>
+                            <task>
+                                <statement>
+                                    <p>A subtask with an answer.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                </statement>
+                                <answer>
+                                    <p>Right!  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                </answer>
+                            </task>
+                            <task>
+                                <introduction>
+                                    <p>Two simple sub-sub-tasks.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                </introduction>
+                                <task>
+                                    <p>First subsubtask.  Short paragraph.</p>
+                                </task>
+                                <task>
+                                    <p>Second subsubtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                    <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                </task>
+                                <task>
+                                    <p>Third subsubtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                    <p>In interdum suscipit ullamcorper</p>
+                                    <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                </task>
+                                <conclusion>
+                                    <p>The conclusion of the structured subtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                </conclusion>
+                            </task>
+                            <task>
+                                <p>A simple task as the last subtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </task>
+                            <conclusion>
+                                <p>This concludes our structured second task.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </conclusion>
+                        </task>
+
+                        <task>
+                            <statement>
+                                <p>This third top-level task is intermediate in complexity, you are reading the <c>statement</c>, which is followed by more items. In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </statement>
+                            <hint>
+                                <p>One hint.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </hint>
+                            <answer>
+                                <p>First answer.  In interdum suscipit ullamcorper.</p>
+                            </answer>
+                            <answer>
+                                <p>Second answer.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </answer>
+                            <solution>
+                                <p>At last, the solution.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                            </solution>
+                        </task>
+
+                        <conclusion>
+                            <p>This is a conclusion where you could summarize the exercise.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                        </conclusion>
+                    </exercise>
+
+                    <p>The following <tag>project</tag> is nearly identical to the preceding <tag>exercise</tag>.</p>
+
                     <project permid="aBc" xml:id="project-structured">
                         <title>A very structured project</title>
 
@@ -947,10 +1077,15 @@ the xsltproc executable.
                                     <p>Second subsubtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
                                     <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
                                 </task>
-                                <task>
-                                    <p>Third subsubtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
-                                    <p>In interdum suscipit ullamcorper</p>
-                                    <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                <!-- This task is uded to test private solutions, so it must    -->
+                                <!-- have the structure necessary to have an "answer" added in, -->
+                                <!-- thus the "statement" is necessary                          -->
+                                <task xml:id="deep-terminal-task">
+                                    <statement>
+                                        <p>Third subsubtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                        <p>In interdum suscipit ullamcorper</p>
+                                        <p>In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
+                                    </statement>
                                 </task>
                                 <conclusion>
                                     <p>The conclusion of the structured subtask.  In interdum suscipit ullamcorper. Morbi sit amet malesuada augue, id vestibulum magna. Nulla blandit dui metus, malesuada mollis sapien ullamcorper sit amet. Nulla at neque nisi. Integer vel porta felis.</p>
@@ -1024,6 +1159,18 @@ the xsltproc executable.
                                 <p>And another skinny paragraph which should also be just 30% of the width.</p>
                             </sidebyside>
                         </solution>
+                    </exercise>
+
+                    <exercise xml:id="exercise-with-tasks">
+                        <introduction>
+                            <p>An <tag>exercise</tag> can be structured with parts, called <tag>task</tag>.  This is the <tag>introduction</tag>.</p>
+                        </introduction>
+                        <task>
+                            <p>Do this.</p>
+                        </task>
+                        <task>
+                            <p>And the other thing.</p>
+                        </task>
                     </exercise>
                 </exercises>
 
@@ -1244,7 +1391,8 @@ the xsltproc executable.
 
                 <p>Long after we started this mess, we added <pretext /> tags to mark up tags and attributes.  The elements are: <tag>tag</tag>, <tag>tage</tag>, <tag>attr</tag>.  Examples of how these render are (respectively): <tag>section</tag>, <tage>hash</tage>, <attr>width</attr>.  Perhaps this document will make greater use of these tags.</p>
 
-                <p>We supply two incomplete cross-references for testing purposes only: <xref provisional="a first incomplete cross-reference"/>, <xref provisional="a second incomplete cross-reference"/>.</p>
+                <p>We supply two provisional cross-references for testing purposes only: <xref provisional="a first incomplete cross-reference"/>, <xref provisional="a second incomplete cross-reference"/>.</p>
+
             </subsection>
 
             <conclusion>
@@ -2857,7 +3005,11 @@ the xsltproc executable.
                     </image>
                 </figure>
 
-                <p>These 3D images in HTML output are rotable with a pointing device (mouse, trackpad) with a click-and-drag.  A finger should suffice on touch-sensitive devices (phones, tablets).  As a contribution to the accessibility of <pretext/> HTML output, keyboard controls will also allow for exploration of these images.  (Make sure the image has focus when you attempt to use these.)</p>
+                <p>These 3D images in HTML output are rotable with a pointing device (mouse, trackpad) with a click-and-drag.  A finger should suffice on touch-sensitive devices (phones, tablets).  Zooming in and out can be accomplished with a mouse wheel, or by pinching.  As a contribution to the accessibility of <pretext/> HTML output, keyboard controls will also allow for exploration of these images.  (Make sure the image has focus when you attempt to use these.)</p>
+
+                <!-- More possible keyboard shortcuts are at Section 8.29, page 136 -->
+                <!-- https://asymptote.sourceforge.io/asymptote.pdf                 -->
+                <!-- Not all seem to be implented, so review/test carefully         -->
 
                 <table>
                     <title>3D Image Keyboard Controls</title>
@@ -2872,7 +3024,7 @@ the xsltproc executable.
                     </tabular>
                 </table>
 
-                <p>And finally, an example of a 3-D graph (from the Asymptote documentation again).  This SVG image is a beautiful example of a Riemann surface.  As you rotate the image, notice how the reflection of the light source varies, along with the brightness of various regions of the surface.  This example is accomplished with just 10 lines of Asymptote code.</p>
+                <p>And finally, an example of a 3-D graph (from the Asymptote documentation again).  This WebGL image is a beautiful example of a Riemann surface.  As you rotate the image, notice how the reflection of the light source varies, along with the brightness of various regions of the surface.  This example is accomplished with just 10 lines of Asymptote code.</p>
 
                 <!-- http://asymptote.sourceforge.net/gallery/3D%20graphs/filesurface.asy -->
                 <!-- Projection point adjusted by Michael Doob -->
@@ -5544,15 +5696,27 @@ the xsltproc executable.
         <section xml:id="section-audio">
             <title>Audio</title>
 
-            <p>2019-05-24: this is preliminary, and mostly based on the code for <tag>video</tag> so read the next section and mimic the style from there.  But use an <tag>audio</tag> element and have the <attr>source</attr> attribute point to an OGG, MP3, or WAV file.  Plus, a <attr>height</attr> attribute will be ignored.</p>
+            <p>2019-05-24: this is preliminary, and mostly based on the code for <tag>video</tag> so read the next section and mimic the style from there.  But use an <tag>audio</tag> element and have the <attr>source</attr> attribute point to an OGG, MP3, or WAV file.  Plus, an <attr>aspect</attr> attribute will be ignored.</p>
 
             <p>We have not entirely decided how to handle the static version present in a PDF.</p>
+
+            <p>First in a <tag>figure</tag>, so it can be cross-referenced.</p>
 
             <figure>
                 <caption>MP3 Piano Trill (<c>www.kozco.com/tech/soundtests.html</c>)</caption>
                 <audio xml:id="audio-piano-trill" source="http://www.kozco.com/tech/piano2-CoolEdit.mp3" width="80%"/>
             </figure>
 
+            <p>Now, naked, between a couple of paragraphs, with specified asymmetric margins, and a computed width.</p>
+
+            <audio xml:id="audio-piano-trill-two" source="http://www.kozco.com/tech/piano2-CoolEdit.mp3" margins="30% 15%"/>
+
+            <p>Now in a <tag>sidebyside</tag> with an <q>Organ Finale</q> WAV file on the left, and on the right, Bach in OGG format at a very low bit rate (32 kps).  From <url href="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/index-e.html"/>.</p>
+
+            <sidebyside>
+                <audio xml:id="audio-organ-finale" source="https://www.kozco.com/tech/organfinale.wav" width="30%"/>
+                <audio xml:id="audio-bach" source="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/a2002011001-e02-32k.ogg" width="60%"/>
+            </sidebyside>
         </section>
 
         <section xml:id="section-video">
@@ -5577,42 +5741,66 @@ the xsltproc executable.
                 <p>You can replace the <q>preview</q> image of a video with one of your own making.  <init>HTML</init> refers to this as the <term>poster</term>, presumably because it advertises the video.  The image you make should be of the same quality as the video, and with the same aspect-ratio, and is presumably one of the frames of the video.  So a screenshot is the likely avenue.  (Maybe we will have advice on how to do this easily, or see <url href="https://github.com/rbeezer/mathbook/issues/853" />.)
                 <idx><h>link</h><h>external, url</h></idx>
                 <idx><h>reference</h><h>external, url</h></idx>
-                On the <tag>video</tag> tag, include a <attr>preview</attr> attribute which is the name of an image file, including a relative path.  (JPEG or PNG formats are best.  JPEG may be smaller for video screenshots, while PNG is lossless and so may work better for diagrams.)</p>
+                On the <tag>video</tag> tag, include a <attr>preview</attr> attribute which is the name of an image file, including a relative path.  (JPEG or PNG formats are best.  JPEG may be smaller for video screenshots, while PNG is lossless and so may work better for diagrams.)  The next video has a preview/poster that is a fram part way into the introduction.</p>
 
                 <figure>
                     <caption>University of Puget Sound Promotional Video</caption>
                     <video source="images/ups-visitor-guide-360" width="80%" preview="images/ups-promo-preview.jpg" />
                 </figure>
 
-                <p>If you find the posters distracting or objectionable, you can cover them up by requesting a generic poster with the attribute-value pair: <c>preview = "generic"</c>.</p>
+                <p>If you find the posters provided automatically for a video to be distracting or objectionable, you can cover them up by requesting a generic poster with the attribute-value pair: <c>preview = "generic"</c>.</p>
 
                 <figure>
                     <caption>University of Puget Sound Promotional Video</caption>
                     <video source="images/ups-visitor-guide-360" width="80%" preview="generic" />
                 </figure>
 
-                <p>You can use a very similar construction to point to a video hosted somewhere on the Internet, just use a complete <init>URL</init> for the <tag>source</tag> attribute.  Note that if the URL has a query string (parameters following a question-mark), then any ampersands (&amp;) will need to be escaped, so as to not confuse the <init>XML</init> processor (<ie /> use <c>&amp;amp</c>).  Also, the question-mark character needs to <em>not</em> be <init>URL</init>-encoded (<c>%3F</c>), so presumably edit the <init>URL</init> to be the character.  Here are two examples, the second one uses the <attr>start</attr> and <attr>stop</attr> attributes to limit the video to just the time between the 16-second and 30-second locations.</p>
-
-                <figure>
-                    <caption>Sintel (Trailer @480p), <url href="https://durian.blender.org/" /></caption>
-                    <video xml:id="video-sintel" source="https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4" width="100%" preview="images/sintel-trailer.jpg" />
-                </figure>
+                <p>You can use a very similar construction to point to a video hosted somewhere on the Internet, just use a complete <init>URL</init> for the <tag>source</tag> attribute.  Note that if the URL has a query string (parameters following a question-mark), then any ampersands (&amp;) will need to be escaped, so as to not confuse the <init>XML</init> processor (<ie /> use <c>&amp;amp</c>).  Also, the question-mark character needs to <em>not</em> be <init>URL</init>-encoded (<c>%3F</c>), so presumably edit the <init>URL</init> to be the character.  Here are several examples, the second one uses the <attr>start</attr> and <attr>stop</attr> attributes to limit the video to just the time between the 16-second and 30-second locations, and has asymmetric margins.</p>
 
                 <!-- http://camendesign.com/code/video_for_everybody/test.html -->
 
                 <figure>
                     <caption>Big Buck Bunny from <q>Video for Everybody</q> Test Page at <url href="http://camendesign.com/code/video_for_everybody/test.htm"><c>camendesign.com/code/video_for_everybody/test.htm</c></url></caption>
-                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" start="16" end="30" width="70%" preview="images/big-buck-bunny-frame-one.jpg" />
+                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" width="70%" preview="images/big-buck-bunny-frame-one.jpg" />
+                </figure>
+
+                <figure>
+                    <caption>Big Buck Bunny, Controlled Start/End, Asymmetric Margins</caption>
+                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" start="16" end="30" margins="25% 5%" width="70%" preview="images/big-buck-bunny-frame-one.jpg" />
+                </figure>
+
+                <figure>
+                    <caption>Big Buck Bunny, Ogg container, <c>*.ogv</c> extension</caption>
+                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" width="60%" preview="images/big-buck-bunny-frame-one.jpg" />
+                </figure>
+
+                <figure>
+                    <caption>Big Buck Bunny, MP4 format</caption>
+                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" width="50%" preview="images/big-buck-bunny-frame-one.jpg" />
+                </figure>
+
+                <figure>
+                    <caption>Big Buck Bunny, WebM format</caption>
+                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" width="40%" preview="images/big-buck-bunny-frame-one.jpg" />
+                </figure>
+
+                <figure>
+                    <caption>Big Buck Bunny, Automatic best format (temporarily broken)</caption>
+                    <video source="http://clips.vorwaerts-gmbh.de/big_buck_bunny" width="30%" preview="images/big-buck-bunny-frame-one.jpg" />
                 </figure>
 
                 <!-- A Coursera URL that expires via digital signature scheme:
                 https://d18ky98rnyall9.cloudfront.net/u5_p4_1_%20chisq_gof.77c96ac0ad8211e498e5e34296ce5455/full/360p/index.webm?Expires=1522800000&Signature=DJKrmAOfuGF4HMmWmQ2nCHnOdoeFzZd7qJzp1cfwOjQa-J~1kGNzwllMxFmGi8UXxt3wTXrhdhTQVcFQNk5nPzAi64mjJkMVu0m~QyKISqzjkFBZJm1NCnkNcbSyOk6WRDj6mjlrxEDaUSD6hHmD04ehumORG3G55Sp5OGEhYnU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A -->
+
+                <p>Videos are assumed to have a 16:9 aspect ratio (width:height).  If this is not the case, then you must specify the aspect ratio with either a ratio (e.g. 4:3) or as a number expressing the fraction width/height (e.g. 1.3333).  Four decimal places should suffice for the latter.  Note that you cannot <em>change</em> the aspect ratio, and you <em>must</em> supply the aspect ratio for any video that does not have the default ratio.  This is a technical requirement that allows us to smoothly scale the videos on small devices (try this page on your mobile phone!).</p>
             </subsection>
 
             <subsection>
                 <title>YouTube</title>
 
-                <p>YouTube<idx><h>YouTube videos</h></idx><idx><h>videos</h><h>YouTube</h></idx> videos may be embedded with only knowledge of a video's <q>ID</q> or a <q>playlist ID</q>.  A single video's YouTube ID is a string of eleven seemingly random characters that show up in the URL when you watch a video.  For the Led Zeppelin performance below, the ID is <c>hAzdgU_kpGo</c>, which you might normally watch directly from the URL <url href="https://www.youtube.com/watch?v=hAzdgU_kpGo" />.  Screen real estate is determined by specifying an optional <c>@width</c> attribute as a percentage, and aspect ratio is preserved on the assumption of HD video (16:9).  (Enhancements will include other aspect ratios.)</p>
+                <p>YouTube<idx><h>YouTube videos</h></idx><idx><h>videos</h><h>YouTube</h></idx> videos may be embedded with only knowledge of a video's <q>ID</q> or a <q>playlist ID</q>.  A single video's YouTube ID is a string of eleven seemingly random characters that show up in the URL when you watch a video.  For the Led Zeppelin performance below, the ID is <c>hAzdgU_kpGo</c>, which you might normally watch directly from the URL <url href="https://www.youtube.com/watch?v=hAzdgU_kpGo" />.  As described just above, you need to specify a different aspect ratio if the video does not have a 16:9 aspect ratio.</p>
+
+                <p>Note: some of these videos may not play if viewed locally, and maybe not even if you start up a local web server (such as can be easily done with Python).  So if you are testing new features, be careful about assuming videos from cloud services are not working properly.</p>
 
                 <p>If you have ever owned a drone, you sympathize with this guy.  Way funnier than a cat video.</p>
 
@@ -5627,10 +5815,10 @@ the xsltproc executable.
                 <figure>
                     <title>My first day with my drone (Splashdown)</title>
                     <caption>First Drone Flight (Splashdown, 0:54 to 1:12)</caption>
-                    <video xml:id="drone-flight-clip" youtube="VsHMjWORFvI" start="54" end="72" />
+                    <video xml:id="drone-flight-clip" youtube="VsHMjWORFvI" width="50%" start="54" end="72"/>
                 </figure>
 
-                <p>Videos may be placed <q>standalone</q> in a <tag>sidebyside</tag>, but are designed mostly on the assumption that they are wrapped in a <c>figure</c> with a <c>title</c> (which is distinct from a <c>caption</c>).  This video comes with a deafult poster featuring Robert Plant.  We've replaced it with Jimmy Page.</p>
+                <p>This next video comes with a default poster from YouTube featuring Robert Plant.  We've replaced it with a poster featuring Jimmy Page.</p>
 
                 <figure>
                     <title>Kashmir (Live), Led Zeppelin</title>
@@ -5640,7 +5828,7 @@ the xsltproc executable.
                     <video xml:id="led-zeppelin-kashmir" youtube="hAzdgU_kpGo" width="70%" preview="images/jimmy-page.jpg" />
                 </figure>
 
-                <p>And if you don't want to be reminded of Plant, Page, Bonham, or Jones, you can cover them up.</p>
+                <p>And if you don't want to be reminded of Plant, Page, Bonham, or Jones, you can cover them up entirely.</p>
 
                 <figure>
                     <title>Kashmir (Live), Led Zeppelin</title>
@@ -5650,7 +5838,11 @@ the xsltproc executable.
                     <video xml:id="led-zeppelin-kashmir-generic" youtube="hAzdgU_kpGo" width="50%" preview="generic" />
                 </figure>
 
-                <p>We can pack two videos side-by-side, with a lot of horizontal control, using two panels in the <c>sidebyside</c> element.  We have simply chose not to provide a caption (overall, or separately) as an illustration.  The sizes are purposely a bit odd.  See <xref ref="section-side-by-side" text="type-global" /> for much more on side-by-side panels.  These videos come from the <q>Topic</q> and <q>VEVO</q> areas of YouTube (respectively) and both have start/end times.</p>
+                <p>Videos were first designed mostly on the assumption that they are wrapped in a <c>figure</c> with a <c>title</c> (which is distinct from a <c>caption</c>).  But you can just place a video <q>naked</q> inbetween a couple of paragraphs.  This is nice if you don't want the clutter of numbers, and/or if you plan to exclude videos from some edition of your document.</p>
+
+                <video xml:id="led-zeppelin-kashmir-solo" youtube="hAzdgU_kpGo" width="50%" preview="images/jimmy-page.jpg" />
+
+                <p>We can pack two videos side-by-side, with a lot of horizontal control, using two panels in the <c>sidebyside</c> element.  We have simply chosen here to not provide a caption (overall, or separately) as an illustration.  The sizes are purposely a bit odd.  See <xref ref="section-side-by-side" text="type-global"/> for much more on side-by-side panels.  These videos come from the <q>Topic</q> and <q>VEVO</q> areas of YouTube (respectively) and both have start/end times.</p>
 
                 <sidebyside margins="auto" widths="20% 40%" valign="middle">
                     <!-- Liza Minelli -->
@@ -5689,82 +5881,76 @@ the xsltproc executable.
                     </figure>
                 </sidebyside>
 
-                <p>Videos may be embedded, or popped-out to play in a new window or tab (at greater width), or a link will give the reader the option to choose either style of playback.  The automatic pop-out option requires a static thumbnail image.  (For YouTube, these images can be obtained automatically with the <c>pretext</c> script.)</p>
+                <p>We test three equally-wide YouTube videos in a <tag>sidebyside</tag> with a few variations.</p>
+
+                <sidebyside margins="0%" width="30%">
+                    <figure>
+                        <caption>Medium Length</caption>
+                        <video xml:id="pre-roll-countdown-1" youtube="Srmdij0CU1U"/>
+                    </figure>
+                    <figure>
+                        <caption>Short</caption>
+                        <video xml:id="pre-roll-countdown-2" youtube="Srmdij0CU1U" start="2" end="4"/>
+                    </figure>
+                    <figure>
+                        <caption>A Really Long Caption That Will Wrap onto a New Line</caption>
+                        <video xml:id="pre-roll-countdown-3" youtube="Srmdij0CU1U"/>
+                    </figure>
+                </sidebyside>
+
+                <p>We test three equally-wide YouTube videos in a <tag>sidebyside</tag> with a few variations, and now contained in a <tag>figure</tag>.</p>
 
                 <figure>
-                    <caption>YouTube Play Location Options (<c>play-at</c> attribute)</caption>
+                    <caption>Author-Hosted videos as Sub-Figures</caption>
                     <sidebyside margins="0%" width="30%">
                         <figure>
-                            <caption>Embedded Only</caption>
-                            <video xml:id="pre-roll-countdown-1" youtube="gFHQ6Y0nxWs" play-at="embed" />
+                            <caption>Medium Length</caption>
+                            <video xml:id="pre-roll-countdown-4" youtube="Srmdij0CU1U"/>
                         </figure>
                         <figure>
-                            <caption>Pop-Out Only, w/ Start/End</caption>
-                            <video xml:id="pre-roll-countdown-2" youtube="gFHQ6Y0nxWs" start="2" end="4" play-at="popout" />
+                            <caption>Short</caption>
+                            <video xml:id="pre-roll-countdown-5" youtube="Srmdij0CU1U" start="2" end="4"/>
                         </figure>
                         <figure>
-                            <caption>User Selection</caption>
-                            <video xml:id="pre-roll-countdown-3" youtube="gFHQ6Y0nxWs" play-at="select" />
+                            <caption>A Really Long Caption That Will Wrap onto a New Line</caption>
+                            <video xml:id="pre-roll-countdown-6" youtube="Srmdij0CU1U"/>
                         </figure>
                     </sidebyside>
                 </figure>
 
-                <p>Each of the three options above may have a generic play button placed over the one provided by the video.</p>
+                <p>We test three equally-wide author-hosted videos in a <tag>sidebyside</tag> with a few variations.</p>
+
+                <sidebyside margins="0%" width="30%">
+                    <figure>
+                        <caption>Medium Length</caption>
+                        <video xml:id="ups-promo-1" source="images/ups-visitor-guide-360"/>
+                    </figure>
+                    <figure>
+                        <caption>Short</caption>
+                        <video xml:id="ups-promo-2" source="images/ups-visitor-guide-360" start="4" end="10"/>
+                    </figure>
+                    <figure>
+                        <caption>A Really Long Caption That Will Wrap onto a New Line</caption>
+                        <video xml:id="ups-promo-3" source="images/ups-visitor-guide-360"/>
+                    </figure>
+                </sidebyside>
+
+                <p>We test three equally-wide author-hosted videos in a <tag>sidebyside</tag> with a few variations, and now contained in a <tag>figure</tag>.</p>
 
                 <figure>
-                    <caption>YouTube with Generic Preview</caption>
+                    <caption>YouTube videos as Sub-Figures</caption>
                     <sidebyside margins="0%" width="30%">
                         <figure>
-                            <caption>Embedded Only</caption>
-                            <video xml:id="pre-roll-countdown-4" youtube="gFHQ6Y0nxWs" play-at="embed" preview="generic" />
+                            <caption>Medium Length</caption>
+                            <video xml:id="ups-promo-4" source="images/ups-visitor-guide-360"/>
                         </figure>
                         <figure>
-                            <caption>Pop-Out Only, w/ Start/End</caption>
-                            <video xml:id="pre-roll-countdown-5" youtube="gFHQ6Y0nxWs" start="2" end="4" play-at="popout" preview="generic" />
+                            <caption>Short</caption>
+                            <video xml:id="ups-promo-5" source="images/ups-visitor-guide-360" start="4" end="10"/>
                         </figure>
                         <figure>
-                            <caption>User Selection</caption>
-                            <video xml:id="pre-roll-countdown-6" youtube="gFHQ6Y0nxWs" play-at="select" preview="generic" />
-                        </figure>
-                    </sidebyside>
-                </figure>
-
-                <p>Now, the six combinations above with an author-hosted video.</p>
-
-                <figure>
-                    <caption>Author-Hosted Play Location Options (<c>play-at</c> attribute)</caption>
-                    <sidebyside margins="0%" width="30%">
-                        <figure>
-                            <caption>Embedded Only</caption>
-                            <video xml:id="ups-promo-1" source="images/ups-visitor-guide-360" play-at="embed" preview="images/ups-promo-frame-one.jpg"/>
-                        </figure>
-                        <!-- A @preview is effective on next, and might become       -->
-                        <!-- necessary as part of a deprecation of the popout option -->
-                        <figure>
-                            <caption>Pop-Out Only, w/ Start/End</caption>
-                            <video xml:id="ups-promo-2" source="images/ups-visitor-guide-360" start="15" end="21" play-at="popout" />
-                        </figure>
-                        <figure>
-                            <caption>User Selection</caption>
-                            <video xml:id="ups-promo-3" source="images/ups-visitor-guide-360" play-at="select" preview="images/ups-promo-frame-one.jpg"/>
-                        </figure>
-                    </sidebyside>
-                </figure>
-
-                <figure>
-                    <caption>Author-Hosted, Generic Preview, Experimental Aspect Ratios</caption>
-                    <sidebyside margins="0%" width="30%">
-                        <figure>
-                            <caption>Embedded Only</caption>
-                            <video xml:id="ups-promo-4" source="images/ups-visitor-guide-360" play-at="embed" preview="generic" aspect="4:3"/>
-                        </figure>
-                        <figure>
-                            <caption>Pop-Out Only, w/ Start/End</caption>
-                            <video xml:id="ups-promo-5" source="images/ups-visitor-guide-360" start="15" end="21" play-at="popout" preview="generic" aspect=".40"/>
-                        </figure>
-                        <figure>
-                            <caption>User Selection</caption>
-                            <video xml:id="ups-promo-6" source="images/ups-visitor-guide-360" play-at="select" preview="generic" aspect="1.05" />
+                            <caption>A Really Long Caption That Will Wrap onto a New Line</caption>
+                            <video xml:id="ups-promo-6" source="images/ups-visitor-guide-360"/>
                         </figure>
                     </sidebyside>
                 </figure>
@@ -5775,6 +5961,12 @@ the xsltproc executable.
 
                 <p>We support videos from <url href="https://vimeo.com/">Vimeo</url><fn><c>vimeo.com</c></fn> in much the same way as YouTube videos.  Now the identifier is a long integer.  For example, the video up next would normally be found at <c>https://vimeo.com/27246366</c>.  But instead, you can embed the video with as little as <c>&lt;video vimeo="27246366"/&gt;</c>.  As of 2019-05-18, we intend to support as many of the options described above as possible.  Widths and heights (via the aspect ratio) will perform as expected.  We have not investigated start and end times.</p>
 
+                <figure>
+                    <caption><articletitle>MOVE</articletitle>, by <url href="https://vimeo.com/rickmereki">Rick Mereki</url>, <c>vimeo.com/rickmereki</c></caption>
+                    <video vimeo="27246366" width="80%"/>
+                </figure>
+
+                <p>Now with an author-supplied poster.</p>
                 <figure>
                     <caption><articletitle>MOVE</articletitle>, by <url href="https://vimeo.com/rickmereki">Rick Mereki</url>, <c>vimeo.com/rickmereki</c></caption>
                     <video vimeo="27246366" width="80%" preview="images/move.png"/>
@@ -6315,7 +6507,7 @@ the xsltproc executable.
                 </program>
             </sidebyside>
 
-            <p>Look in the <c>mathbook-common.xsl</c> file to see the strings to use to identify languages.  Always all-lowercase, no symbols, no punctuation.</p>
+            <p>Look in the <c>pretext-common.xsl</c> file to see the strings to use to identify languages.  Always all-lowercase, no symbols, no punctuation.</p>
 
             <p>Note that the above examples all have slightly different widths (theser are very evident in print with the frames).  As 2-D atomic objects, to place them in the narrative requires the layout features of a <c>sidebyside</c> element.  Then <c>width</c> and/or <c>margin</c> attributes will influence the width of the panel.</p>
 
@@ -6618,7 +6810,7 @@ the xsltproc executable.
             </quantity>
             in a full circle.</p>
 
-            <p>For a full list of the allowed units and prefixes, see <c>mathbook-units.xsl</c>. If you have a need for more units, they need to be added to <c>mathbook-units.xsl</c> in the section that deals with units which are not part of <c>siunitx</c> by default.  Note that the <c>mag</c> element should come first, followed by the <c>unit</c> element, followed by the <c>per</c> element.</p>
+            <p>For a full list of the allowed units and prefixes, see <c>pretext-units.xsl</c>. If you have a need for more units, they need to be added to <c>pretext-units.xsl</c> in the section that deals with units which are not part of <c>siunitx</c> by default.  Note that the <c>mag</c> element should come first, followed by the <c>unit</c> element, followed by the <c>per</c> element.</p>
 
         </section>
 
@@ -8367,8 +8559,109 @@ the xsltproc executable.
                     </sidebyside>
                 </figure>
             </subsection>
-        </section>
 
+            <subsection xml:id="atomic-video">
+                <title><tag>video</tag></title>
+
+                <p>An <tag>video</tag> can be placed in five different ways:<ol>
+                    <li>all by itself, as a peer of <tag>p</tag> typically, with layout control,</li>
+                    <li>inside a <tag>figure</tag>, earning a number and caption,</li>
+                    <li>inside a <tag>sidebyside</tag>, with size and layout configured,</li>
+                    <li>inside a <tag>figure</tag> inside a <tag>sidebyside</tag>, with size and layout configured, with a number and caption, and</li>
+                    <li>inside a <tag>figure</tag> inside a <tag>sidebyside</tag> inside a <tag>figure</tag>, with size and layout configured, with a number and caption, but now sub-numbered ((a), (b), (c),<ellipsis/>).</li>
+                </ol>Examples of each, and more.</p>
+
+                <p>Videos can be realized in many forms, and can come from a variety of sources.  See <xref ref="section-video" text="type-global"/> for tests of some of that variety.  Here we are testing placement within surroundings and testing the schema for location.  But we do have two videos in each test, one provided as a local file and one embedded from a service.</p>
+
+                <p>All by itsef, with no layout specified, so showing the default size and placement.  Vivamus in congue massa. Morbi condimentum ac magna at accumsan. Vestibulum ac augue eu lorem semper gravida.</p>
+
+                <video source="images/ups-visitor-guide-360"/>
+
+                <p>Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.</p>
+
+                <video youtube="Srmdij0CU1U"/>
+
+                <p>Width set at 40%, so equal margins and thus centered.  Aenean faucibus augue tellus, et sollicitudin tortor finibus non. Maecenas semper dolor quis diam placerat, iaculis sollicitudin augue finibus. Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non.</p>
+
+                <video source="images/ups-visitor-guide-360" width="40%"/>
+
+                <p>Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.</p>
+
+                <video youtube="Srmdij0CU1U" width="40%"/>
+
+                <p>Asymmetric margins of 20% and 40% given, implying 40% width, equal to previous instance.  Vivamus suscipit diam eget mi cursus viverra.</p>
+
+                <video source="images/ups-visitor-guide-360" margins="20% 40%"/>
+
+                <p>Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.</p>
+
+                <video youtube="Srmdij0CU1U" margins="20% 40%"/>
+
+                <p>As a plain component of a <tag>sidebyside</tag>.  Widths here are 20% and 30%, margins and gaps are automatic, default alignment on top edges.  Nulla pharetra imperdiet elit, in sodales nibh blandit ultricies. Maecenas efficitur ac felis ut pharetra.</p>
+
+                <sidebyside widths="20% 30%">
+                    <video source="images/ups-visitor-guide-360"/>
+                    <video youtube="Srmdij0CU1U"/>
+                </sidebyside>
+
+                <p>Inside a <tag>figure</tag> with no adjustments, so default behavior.  Note how a <tag>figure</tag> occupies the entire width of the page, so then does the caption.</p>
+
+                <figure>
+                    <caption>University of Puget Sound Promotional Video</caption>
+                    <video source="images/ups-visitor-guide-360"/>
+                </figure>
+
+                <p>Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.</p>
+
+                <figure>
+                    <caption>Pre-Roll Countdown</caption>
+                    <video youtube="Srmdij0CU1U"/>
+                </figure>
+
+                <p>Inside a <tag>figure</tag> with asymmetric (large) margins of 30% and 60%.  Quisque finibus augue sit amet facilisis fringilla. Aenean faucibus augue tellus, et sollicitudin tortor finibus non.</p>
+
+                <figure>
+                    <caption>University of Puget Sound Promotional Video</caption>
+                    <video source="images/ups-visitor-guide-360" margins="30% 60%"/>
+                </figure>
+
+                <p>Vestibulum facilisis ligula lectus, ac tristique nisl aliquet non. Quisque ornare felis arcu. Vivamus suscipit diam eget mi cursus viverra.</p>
+
+                <figure>
+                    <caption>Pre-Roll Countdown</caption>
+                    <video youtube="Srmdij0CU1U" margins="30% 60%"/>
+                </figure>
+
+                <p>Inside figures inside a <tag>sidebyside</tag>.  Same widths as previous <tag>sidebyside</tag> but alignment on bottoms of the panels, to partially align captions.  Note how the captions are constrained in width by the width of the panels of the side-by-side.</p>
+
+                <sidebyside widths="20% 30%" valign="bottom">
+                    <figure>
+                        <caption>Pre-Roll Countdown</caption>
+                        <video youtube="Srmdij0CU1U"/>
+                    </figure>
+                    <figure>
+                        <caption>University of Puget Sound Promotional Video</caption>
+                        <video source="images/ups-visitor-guide-360"/>
+                    </figure>
+                </sidebyside>
+
+                <p>Identical code to previous example, but now wrapped in an overall <tag>figure</tag>, which has its own caption and number, leaving the interior figures to be sub-numbered.  Cross-references use the full number: <xref ref="ups-video" text="type-global"/>.</p>
+
+                <figure>
+                    <caption>Amalgamation of Videos</caption>
+                    <sidebyside widths="20% 30%" valign="bottom">
+                        <figure>
+                            <caption>Pre-Roll Countdown</caption>
+                            <video youtube="Srmdij0CU1U"/>
+                        </figure>
+                        <figure xml:id="ups-video">
+                            <caption>University of Puget Sound Promotional Video</caption>
+                            <video source="images/ups-visitor-guide-360"/>
+                        </figure>
+                    </sidebyside>
+                </figure>
+            </subsection>
+        </section>
 
         <section xml:id="advanced-numbering">
             <title>Advanced Numbering</title>

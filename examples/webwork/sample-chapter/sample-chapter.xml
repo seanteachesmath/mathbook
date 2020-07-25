@@ -129,15 +129,19 @@
                 </introduction>
 
                 <webwork xml:id="integer-addition">
+                    <description>
+                        Add two positive single-digit integers.
+                    </description>
+
                     <pg-code>
-                        $a = Compute(random(1, 9, 1));
-                        $b = Compute(random(1, 9, 1));
-                        $c = $a + $b;
+                        $a = random(1, 9, 1);
+                        $b = random(1, 9, 1);
+                        $c = Compute($a + $b);
                     </pg-code>
 
                     <statement>
                         <p>Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:</p>
-                        <p><m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="2" category="integer" /></p>
+                        <p><m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" category="integer" /></p>
                     </statement>
 
                     <solution>
@@ -161,14 +165,14 @@
 
                 <webwork xml:id="integer-addition-with-seed" seed="510">
                     <pg-code>
-                        $a = Compute(random(1, 9, 1));
-                        $b = Compute(random(1, 9, 1));
-                        $c = $a + $b;
+                        $a = random(1, 9, 1);
+                        $b = random(1, 9, 1);
+                        $c = Compute($a + $b);
                     </pg-code>
 
                     <statement>
                         <p>Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:</p>
-                        <p><m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="2" category="integer" /></p>
+                        <p><m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" category="integer" /></p>
                     </statement>
 
                     <solution>
@@ -186,15 +190,15 @@
 
                 <webwork xml:id="integer-addition-with-control-seed" seed="1">
                     <pg-code>
-                        $a = Compute(random(1, 9, 1));
-                        $b = Compute(random(1, 9, 1));
+                        $a = random(1, 9, 1);
+                        $b = random(1, 9, 1);
                         if ($envir{problemSeed}==1){$a=1;$b=2};
-                        $c = $a + $b;
+                        $c = Compute($a + $b);
                     </pg-code>
 
                     <statement>
                         <p>Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:</p>
-                        <p><m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="2" category="integer" /></p>
+                        <p><m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" category="integer" /></p>
                     </statement>
 
                     <solution>
@@ -217,8 +221,8 @@
 
                 <webwork>
                     <pg-code>
-                        $a = Compute(random(1, 9, 1));
-                        $b = Compute(random(1, 9, 1));
+                        $a = random(1, 9, 1);
+                        $b = random(1, 9, 1);
                         $c = $a + $b;
                         $expression = Formula("x^($a)*x^($b)");
 
@@ -261,8 +265,8 @@
                 <webwork>
                     <pg-code>
                         do {
-                            $a = Compute(list_random(2,3,5,6));
-                            $b = Compute(random(1, 5, 1));
+                            $a = list_random(2,3,5,6);
+                            $b = random(1, 5, 1);
                            } until (gcd($a,$b) == 1);
                         $c = $a * $b**2;
                         Context()->flags->set(reduceConstantFunctions=>0);
@@ -336,8 +340,11 @@
                 <title>Solving Quadratic Equations</title>
 
                 <webwork xml:id="quadratic-equation">
+                    <description>
+                        <line>Find a quadratic equation's solutions.</line>
+                        <line>One positive integer solution and one negative fraction solution.</line>
+                    </description>
 
-                    <!-- TODO: move out context shift -->
                     <pg-code>
                         Context("Fraction");
 
@@ -614,6 +621,101 @@
         </section>
 
         <section>
+            <title>Math Content</title>
+
+            <p>
+                This section helps with testing aspects of math content.
+            </p>
+
+            <exercise>
+                <title>Math Elements and Alignment</title>
+                <introduction>
+                    <p>
+                        In this exercise we demonstrate the allowed math elements: <tag>m</tag>, <tag>me</tag>, and <tag>md</tag>.
+                        The last of these may have attribute <attr>alignment</attr> with options <c>gather</c>, <c>align</c>, or <c>alignat</c>.
+                        The first two are used by default, depending on if you have <c>&amp;</c> or <c>\amp</c> in your math.
+                    </p>
+                </introduction>
+                <webwork>
+                    <statement>
+                        <p>
+                            If <m>a=5</m> and <m>b=12</m>, then <me>a^2+b^2=13^2</me>.
+                        </p>
+                        <p>
+                            Here, we solve an equation.
+                            <md>
+                                <mrow>2x+1 \amp= 3</mrow>
+                                <mrow>2x   \amp= 2</mrow>
+                                <mrow>x    \amp= 1</mrow>
+                            </md>
+                            Here we have a three-way inequality to solve.
+                            <md>
+                                <mrow>1 \lt 2x+1 \lt 3</mrow>
+                                <mrow>0 \lt 2x   \lt 2</mrow>
+                                <mrow>0 \lt x    \lt 1</mrow>
+                            </md>
+                            And here, we see a system of equations.
+                            <md alignment="alignat">
+                                <mrow>2x + 2y \amp {}+{} \amp z \amp {}={} \amp 10</mrow>
+                                <mrow>y \amp {}-{} \amp  4z \amp {}={} \amp 9</mrow>
+                                <mrow>\amp\amp   3z \amp {}={} \amp -6</mrow>
+                            </md>
+                        </p>
+                    </statement>
+                </webwork>
+            </exercise>
+
+            <exercise>
+                <title>Intertext</title>
+                <introduction>
+                    <p>
+                        With an <tag>md</tag> you might have <tag>intertext</tag> among the rows.
+                    </p>
+                </introduction>
+                <webwork>
+                    <statement>
+                        <p>
+                            Here, we solve an equation.
+                            <md>
+                                <mrow>2x+1 \amp= 3</mrow>
+                                <intertext> Now subtract <m>1</m> from each side.</intertext>
+                                <mrow>2x   \amp= 2</mrow>
+                                <intertext> Now divide by <m>2</m> on each side.</intertext>
+                                <mrow>x    \amp= 1</mrow>
+                            </md>
+                        </p>
+                        <p>
+                            We should also test when the <tag>md</tag> is within a list.
+                            <ol>
+                                <li>
+                                    <p>
+                                        Start a list.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <md>
+                                            <mrow>2x+1 \amp= 3</mrow>
+                                            <intertext> Now subtract <m>1</m> from each side.</intertext>
+                                            <mrow>2x   \amp= 2</mrow>
+                                            <intertext> Now divide by <m>2</m> on each side.</intertext>
+                                            <mrow>x    \amp= 1</mrow>
+                                        </md>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Still in the list?
+                                    </p>
+                                </li>
+                            </ol>
+                        </p>
+                    </statement>
+                </webwork>
+            </exercise>
+        </section>
+
+        <section>
             <title>PGML Formatting and Verbatim Calisthenics</title>
 
             <p>This section is designed to test various PGML formatting rules and verbatim content returned in answer hashes. Consult the source to see how the special characters and formatting are realized.</p>
@@ -823,7 +925,7 @@
                 </webwork>
             </exercise>
 
-            <!--Checkboxes not yet implemented fully. See note in mathbook-webwork-pg.xsl -->
+            <!--Checkboxes not yet implemented fully. See note in pretext-webwork-pg.xsl -->
             <!--<exercise>
                 <title>Choose several</title>
 
@@ -1078,7 +1180,7 @@
             </exercise>
 
             <exercise>
-                <!--Checkbox not implemented yet; see note in mathbook-webwork-pg.xsl  -->
+                <!--Checkbox not implemented yet; see note in pretext-webwork-pg.xsl  -->
                 <title>Multiple choice by popup, radio buttons<!--, or checkbox--></title>
 
                 <webwork xml:id="multiple-choice-popup-or-radio-buttons">

@@ -34,7 +34,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     extension-element-prefixes="exsl date str"
 >
 
-<xsl:import href="./mathbook-common.xsl" />
+<xsl:import href="./pretext-common.xsl" />
 <xsl:import href="./pretext-assembly.xsl"/>
 
 <!-- Intend output for rendering by pdflatex -->
@@ -81,7 +81,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--  -->
 <!-- Author's Tools                                            -->
 <!-- Set the author-tools parameter to 'yes'                   -->
-<!-- (Documented in mathbook-common.xsl)                       -->
+<!-- (Documented in pretext-common.xsl)                       -->
 <!-- Installs some LaTeX-specific behavior                     -->
 <!-- (1) Index entries in margin of the page                   -->
 <!--      where defined, on single pass (no real index)        -->
@@ -117,12 +117,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- early or late                          -->
 <xsl:param name="latex.preamble.early" select="''" />
 <xsl:param name="latex.preamble.late" select="''" />
-<!--  -->
-<!-- DEPRECATED: 2017-12-18, do not use, any value -->
-<!-- besides an empty string will raise a warning  -->
-<xsl:param name="latex.console.macro-char" select="''" />
-<xsl:param name="latex.console.begin-char" select="''" />
-<xsl:param name="latex.console.end-char" select="''" />
 
 
 <!-- ############### -->
@@ -157,11 +151,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Variables that affect LaTeX creation -->
 <!-- More in the -common file             -->
 
-<!-- LaTeX is handled natively, so we flip a  -->
-<!-- switch here to signal the general text() -->
-<!-- handler in xsl/mathbook-common.xsl to    -->
-<!-- not dress-up clause-ending punctuation   -->
-<xsl:variable name="latex-processing" select="'native'" />
+<!-- Search for the "math.punctuation.include" -->
+<!-- global variable, which is discussed in    -->
+<!-- closer proximity to its application.      -->
 
 <!-- Not a parameter, a variable to override deliberately within a conversion -->
 <xsl:variable name="b-latex-hardcode-numbers" select="false()"/>
@@ -201,7 +193,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <xsl:variable name="chunk-level">
     <xsl:choose>
         <xsl:when test="$chunk.level != ''">
-            <xsl:message terminate="yes">MBX:ERROR:   chunking of LaTeX output is deprecated as of 2016-06-10, remove the "chunk.level" stringparam</xsl:message>
+            <xsl:message>MBX:ERROR:   chunking of LaTeX output is deprecated as of 2016-06-10, remove the "chunk.level" stringparam</xsl:message>
         </xsl:when>
         <xsl:otherwise>
             <xsl:text>0</xsl:text>
@@ -270,7 +262,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <xsl:when test="$latex.font.size='17pt'"><xsl:value-of select="$latex.font.size" /></xsl:when>
         <xsl:when test="$latex.font.size='20pt'"><xsl:value-of select="$latex.font.size" /></xsl:when>
         <xsl:otherwise>
-            <xsl:message terminate="yes">MBX:ERROR   the latex.font.size parameter must be 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, or 20pt, not "<xsl:value-of select="$latex.font.size" />"</xsl:message>
+            <xsl:text>10pt</xsl:text>
+            <xsl:message>MBX:ERROR   the latex.font.size parameter must be 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, or 20pt, not "<xsl:value-of select="$latex.font.size" />".  Using the default ('10pt')</xsl:message>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:variable>
@@ -1059,7 +1052,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <xsl:text>}&#xa;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:message terminate="yes">MBX:ERROR: invalid value <xsl:value-of select="$latex.fillin.style" /> for latex.fillin.style stringparam. Should be 'underline' or 'box'.</xsl:message>
+                <xsl:message>MBX:ERROR:   the latex.fillin.style parameter should be 'underline' or 'box', not '<xsl:value-of select="$latex.fillin.style"/>'.  Using the default ('underline').</xsl:message>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:if>
@@ -1075,7 +1068,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <xsl:text>\ifxetex\sisetup{math-micro=\text{µ},text-micro=µ}\fi</xsl:text>
         <xsl:text>\ifluatex\sisetup{math-micro=\text{µ},text-micro=µ}\fi</xsl:text>
         <xsl:text>%% Common non-SI units&#xa;</xsl:text>
-        <xsl:for-each select="document('mathbook-units.xsl')//base[@siunitx]">
+        <xsl:for-each select="document('pretext-units.xsl')//base[@siunitx]">
             <xsl:text>\DeclareSIUnit\</xsl:text>
             <xsl:value-of select="@full" />
             <xsl:text>{</xsl:text>
@@ -1571,7 +1564,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </xsl:if>
     </xsl:if>
     <!-- Numbering Equations -->
-    <!-- See numbering-equations variable being set in mathbook-common.xsl         -->
+    <!-- See numbering-equations variable being set in pretext-common.xsl         -->
     <!-- With number="yes|no" on mrow, we must allow for the possibility of an md  -->
     <!-- variant having numbers (we could be more careful, but it is not critical) -->
     <!-- NB: global numbering is level 0 and "level-to-name" is (a) incorrect,     -->
@@ -4477,7 +4470,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Arbitrary Lists -->
 <!-- ############### -->
 
-<!-- See general routine in  xsl/mathbook-common.xsl -->
+<!-- See general routine in  xsl/pretext-common.xsl -->
 <!-- which expects the two named templates and the  -->
 <!-- two division'al and element'al templates below,  -->
 <!-- it contains the logic of constructing such a list -->
@@ -5272,6 +5265,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </xsl:apply-templates>
         </xsl:when>
         <!-- "normal" exercise -->
+        <!-- structured versions first     -->
+        <!-- task+, conclusion?, postlude? -->
+        <xsl:when test="task">
+            <xsl:if test="$b-has-inline-statement">
+                <xsl:apply-templates select="introduction"/>
+            </xsl:if>
+            <xsl:apply-templates select="task">
+                <xsl:with-param name="b-original" select="true()" />
+                <xsl:with-param name="b-has-statement" select="true()" />
+                <xsl:with-param name="b-has-hint"      select="$b-has-inline-hint" />
+                <xsl:with-param name="b-has-answer"    select="$b-has-inline-answer" />
+                <xsl:with-param name="b-has-solution"  select="$b-has-inline-solution" />
+            </xsl:apply-templates>
+            <xsl:if test="$b-has-inline-statement">
+                <xsl:apply-templates select="conclusion"/>
+            </xsl:if>
+        </xsl:when>
+        <!-- Now no task possibility -->
         <xsl:otherwise>
             <xsl:apply-templates select="." mode="exercise-components">
                 <xsl:with-param name="b-original" select="true()" />
@@ -5392,6 +5403,25 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </xsl:apply-templates>
             </xsl:when>
             <!-- "normal" exercise -->
+            <!-- structured versions first     -->
+            <!-- task+, conclusion?, postlude? -->
+            <xsl:when test="task">
+                <xsl:if test="$b-has-statement">
+                    <xsl:apply-templates select="introduction"/>
+                </xsl:if>
+                <xsl:apply-templates select="task" mode="solutions">
+                    <xsl:with-param name="b-original" select="false()" />
+                    <xsl:with-param name="purpose" select="$purpose" />
+                    <xsl:with-param name="b-has-statement" select="$b-has-statement" />
+                    <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                    <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                    <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
+                </xsl:apply-templates>
+                <xsl:if test="$b-has-statement">
+                    <xsl:apply-templates select="conclusion"/>
+                </xsl:if>
+            </xsl:when>
+            <!-- Now no task possibility -->
             <xsl:otherwise>
                 <xsl:apply-templates select="." mode="exercise-components">
                     <xsl:with-param name="b-original" select="false()" />
@@ -5522,6 +5552,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </xsl:apply-templates>
         </xsl:when>
         <!-- "normal" exercise -->
+        <!-- structured versions first      -->
+        <!-- task+, conclusion?, postlude? -->
+        <xsl:when test="task">
+            <xsl:if test="$b-has-statement">
+                <xsl:apply-templates select="introduction"/>
+            </xsl:if>
+            <xsl:apply-templates select="task">
+                <xsl:with-param name="b-original" select="true()" />
+                <xsl:with-param name="b-has-statement" select="$b-has-statement" />
+                <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
+            </xsl:apply-templates>
+            <xsl:if test="$b-has-statement">
+                <xsl:apply-templates select="conclusion"/>
+            </xsl:if>
+        </xsl:when>
+        <!-- Now no task possibility -->
         <xsl:otherwise>
             <xsl:apply-templates select="." mode="exercise-components">
                 <xsl:with-param name="b-original" select="true()" />
@@ -5659,6 +5707,25 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </xsl:apply-templates>
             </xsl:when>
             <!-- "normal" exercise -->
+            <!-- structured versions first     -->
+            <!-- task+, conclusion?, postlude? -->
+            <xsl:when test="task">
+                <xsl:if test="$b-has-statement">
+                    <xsl:apply-templates select="introduction"/>
+                </xsl:if>
+                <xsl:apply-templates select="task" mode="solutions">
+                    <xsl:with-param name="b-original" select="false()" />
+                    <xsl:with-param name="purpose" select="$purpose" />
+                    <xsl:with-param name="b-has-statement" select="$b-has-statement" />
+                    <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                    <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                    <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
+                </xsl:apply-templates>
+                <xsl:if test="$b-has-statement">
+                    <xsl:apply-templates select="conclusion"/>
+                </xsl:if>
+            </xsl:when>
+            <!-- Now no task possibility -->
             <xsl:otherwise>
                 <xsl:apply-templates select="." mode="exercise-components">
                     <xsl:with-param name="b-original" select="false()" />
@@ -5931,18 +5998,30 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </xsl:if>
     <xsl:text>%&#xa;</xsl:text>
     <xsl:apply-templates select="introduction" />
+    <!-- sanitize the number of columns safely -->
+    <xsl:variable name="ncols">
+        <xsl:choose>
+            <xsl:when test="not(@cols)">
+                <xsl:text>1</xsl:text>
+            </xsl:when>
+            <xsl:when test="(@cols=1) or (@cols = 2) or (@cols = 3) or (@cols = 4) or (@cols = 5) or (@cols = 6)">
+                <xsl:value-of select="@cols"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>1</xsl:text>
+                <xsl:message>MBX:ERROR:   the @cols attribute of "exercisegroup" should be between 1 and 6 inclusive, not <xsl:value-of select="@cols"/>.  Using the default, 1 column.</xsl:message>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
     <xsl:choose>
-        <xsl:when test="not(@cols) or (@cols = 1)">
+        <xsl:when test="$ncols = 1">
             <xsl:text>\begin{exercisegroup}&#xa;</xsl:text>
         </xsl:when>
-        <xsl:when test="@cols = 2 or @cols = 3 or @cols = 4 or @cols = 5 or @cols = 6">
+        <xsl:otherwise>
             <xsl:text>\begin{exercisegroupcol}</xsl:text>
             <xsl:text>{</xsl:text>
-            <xsl:value-of select="@cols"/>
+            <xsl:value-of select="$ncols"/>
             <xsl:text>}&#xa;</xsl:text>
-        </xsl:when>
-        <xsl:otherwise>
-            <xsl:message terminate="yes">MBX:ERROR: invalid value <xsl:value-of select="@cols" /> for cols attribute of exercisegroup</xsl:message>
         </xsl:otherwise>
     </xsl:choose>
     <!-- an exercisegroup can only appear in an "exercises" division,    -->
@@ -6304,7 +6383,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <!-- prelude?, introduction?, task+, conclusion?, postlude? -->
         <xsl:when test="task">
             <xsl:apply-templates select="introduction"/>
-            <xsl:apply-templates select="task"/>
+            <xsl:apply-templates select="task">
+                <xsl:with-param name="b-has-statement" select="true()" />
+                <xsl:with-param name="b-has-hint"      select="$b-has-project-hint" />
+                <xsl:with-param name="b-has-answer"    select="$b-has-project-answer" />
+                <xsl:with-param name="b-has-solution"  select="$b-has-project-solution" />
+            </xsl:apply-templates>
             <xsl:apply-templates select="conclusion"/>
         </xsl:when>
         <xsl:otherwise>
@@ -6369,31 +6453,32 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <xsl:text>%&#xa;</xsl:text>
         <xsl:choose>
             <!-- structured versions first      -->
-            <!-- prelude?, introduction?, task+, conclusion?, postlude? -->
+            <!-- task+, conclusion?, postlude? -->
             <xsl:when test="task">
                 <xsl:if test="$b-has-statement">
                     <xsl:apply-templates select="introduction"/>
                 </xsl:if>
                 <xsl:apply-templates select="task" mode="solutions">
+                    <xsl:with-param name="b-original" select="false()" />
                     <xsl:with-param name="purpose" select="$purpose" />
                     <xsl:with-param name="b-has-statement" select="$b-has-statement" />
-                    <xsl:with-param name="b-has-hint" select="$b-has-hint" />
-                    <xsl:with-param name="b-has-answer" select="$b-has-answer" />
-                    <xsl:with-param name="b-has-solution" select="$b-has-solution" />
+                    <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                    <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                    <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
                 </xsl:apply-templates>
                 <xsl:if test="$b-has-statement">
                     <xsl:apply-templates select="conclusion"/>
                 </xsl:if>
             </xsl:when>
-            <!-- Now no project/task possibility -->
+            <!-- Now no task possibility -->
             <xsl:otherwise>
                 <xsl:apply-templates select="." mode="exercise-components">
                     <xsl:with-param name="b-original" select="false()" />
                     <xsl:with-param name="purpose" select="$purpose" />
                     <xsl:with-param name="b-has-statement" select="$b-has-statement" />
-                    <xsl:with-param name="b-has-hint" select="$b-has-hint" />
-                    <xsl:with-param name="b-has-answer" select="$b-has-answer" />
-                    <xsl:with-param name="b-has-solution" select="$b-has-solution" />
+                    <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                    <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                    <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
                 </xsl:apply-templates>
             </xsl:otherwise>
         </xsl:choose>
@@ -6405,10 +6490,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <!-- no prelude as duplicating in solutions division -->
 </xsl:template>
 
-<!-- Task (a part of a project) -->
+<!-- Task (a part of an exercise or project) -->
 <!-- Parameterized, but with no defaults, since this -->
 <!-- is always a constituent of something larger     -->
 <xsl:template match="task">
+    <xsl:param name="b-has-statement"/>
+    <xsl:param name="b-has-hint"     />
+    <xsl:param name="b-has-answer"   />
+    <xsl:param name="b-has-solution" />
+
     <!-- if first at its level, start the list environment -->
     <xsl:if test="not(preceding-sibling::task)">
         <!-- set the label style of this list       -->
@@ -6446,16 +6536,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <xsl:choose>
         <xsl:when test="task">
             <xsl:apply-templates select="introduction"/>
-            <xsl:apply-templates select="task" />
+            <xsl:apply-templates select="task">
+                <xsl:with-param name="b-original" select="true()" />
+                <xsl:with-param name="b-has-statement" select="true()" />
+                <xsl:with-param name="b-has-hint" select="$b-has-hint" />
+                <xsl:with-param name="b-has-answer" select="$b-has-answer" />
+                <xsl:with-param name="b-has-solution" select="$b-has-solution" />
+            </xsl:apply-templates>
             <xsl:apply-templates select="conclusion"/>
         </xsl:when>
         <xsl:otherwise>
             <xsl:apply-templates select="." mode="exercise-components">
                 <xsl:with-param name="b-original" select="true()" />
                 <xsl:with-param name="b-has-statement" select="true()" />
-                <xsl:with-param name="b-has-hint" select="$b-has-project-hint" />
-                <xsl:with-param name="b-has-answer" select="$b-has-project-answer" />
-                <xsl:with-param name="b-has-solution" select="$b-has-project-solution" />
+                <xsl:with-param name="b-has-hint" select="$b-has-hint" />
+                <xsl:with-param name="b-has-answer" select="$b-has-answer" />
+                <xsl:with-param name="b-has-solution" select="$b-has-solution" />
             </xsl:apply-templates>
         </xsl:otherwise>
     </xsl:choose>
@@ -6538,9 +6634,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <xsl:apply-templates select="task" mode="solutions">
                     <xsl:with-param name="purpose" select="$purpose" />
                     <xsl:with-param name="b-has-statement" select="$b-has-statement" />
-                    <xsl:with-param name="b-has-hint" select="$b-has-hint" />
-                    <xsl:with-param name="b-has-answer" select="$b-has-answer" />
-                    <xsl:with-param name="b-has-solution" select="$b-has-solution" />
+                    <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                    <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                    <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
                 </xsl:apply-templates>
                 <xsl:if test="$b-has-statement">
                     <xsl:apply-templates select="conclusion"/>
@@ -6551,9 +6647,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <xsl:with-param name="b-original" select="false()"/>
                     <xsl:with-param name="purpose" select="$purpose" />
                     <xsl:with-param name="b-has-statement" select="$b-has-statement" />
-                    <xsl:with-param name="b-has-hint" select="$b-has-hint" />
-                    <xsl:with-param name="b-has-answer" select="$b-has-answer" />
-                    <xsl:with-param name="b-has-solution" select="$b-has-solution" />
+                    <xsl:with-param name="b-has-hint"      select="$b-has-hint" />
+                    <xsl:with-param name="b-has-answer"    select="$b-has-answer" />
+                    <xsl:with-param name="b-has-solution"  select="$b-has-solution" />
                 </xsl:apply-templates>
             </xsl:otherwise>
         </xsl:choose>
@@ -6691,19 +6787,19 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- differences which we need to accomodate via abstract -->
 <!-- templates.                                           -->
 
+<!-- See the -common stylesheet for manipulations of math elements     -->
+<!-- and subsequent text nodes that lead with punctuation.  Basically, -->
+<!-- punctuation can migrate from the start of the text node and into  -->
+<!-- the math, wrapped in a \text{}.  We do this to display math as a  -->
+<!-- service to authors.  But LaTeX handles this situation carefully   -->
+<!-- for inline math.                                                  -->
+<xsl:variable name="math.punctuation.include" select="'display'"/>
+
 <!-- Inline Mathematics ("m") -->
 <!-- We use the asymmetric LaTeX delimiters \( and \).     -->
 <!-- For LaTeX these are not "robust", hence break moving  -->
 <!-- items (titles, index), so use the "fixltx2e" package, -->
 <!-- which declares \MakeRobust\( and \MakeRobust\)        -->
-<!-- Note: LaTeX, unlike HTML, needs no help with          -->
-<!-- clause-ending punctuation trailing inline math,       -->
-<!-- it always does the right thing.  So when the general  -->
-<!-- template for text nodes in -common goes to drop this  -->
-<!-- punctuation, it also checks the $latex-processing     -->
-<!-- global variable                                       -->
-<!-- NB: we should be able to use templates to make this   -->
-<!-- happen without the global variable                    -->
 
 <!-- These two templates provide the delimiters for -->
 <!-- inline math, implementing abstract templates.  -->
@@ -6714,12 +6810,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <xsl:template name="end-inline-math">
     <xsl:text>\)</xsl:text>
 </xsl:template>
-
-<!-- This is the override for LaTeX processing,        -->
-<!-- since punctuation following inline math is        -->
-<!-- not a problem for traditional TeX's line-breaking -->
-<xsl:template match="m" mode="get-clause-punctuation" />
-
 
 <!-- Displayed Single-Line Math ("me", "men") -->
 
@@ -7856,7 +7946,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 <!-- With a "cline" element present, we assume   -->
 <!-- that is the entire structure (see the cline -->
-<!-- template in the mathbook-common.xsl file)   -->
+<!-- template in the pretext-common.xsl file)   -->
 <xsl:template match="cd[cline]">
     <xsl:text>%&#xa;</xsl:text>
     <xsl:text>\begin{codedisplay}&#xa;</xsl:text>
@@ -7868,7 +7958,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- The "interior" templates decide between two styles  -->
 <!--   (a) clean up raw text, just like for Sage code    -->
 <!--   (b) interpret cline as line-by-line structure     -->
-<!-- (See templates in xsl/mathbook-common.xsl file)     -->
+<!-- (See templates in xsl/pretext-common.xsl file)     -->
 <!-- Then wrap in a  verbatim  environment               -->
 <xsl:template match="pre">
     <xsl:text>\begin{preformatted}&#xa;</xsl:text>
@@ -7890,7 +7980,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- ################### -->
 
 <!-- Across all possibilities                     -->
-<!-- See mathbook-common.xsl for discussion       -->
+<!-- See pretext-common.xsl for discussion       -->
 <!-- See default LaTeX2e textcomp symbols at:     -->
 <!-- http://hevea.inria.fr/examples/test/sym.html -->
 
@@ -8442,7 +8532,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- ################## -->
 
 <!-- These are specific instances of abstract templates        -->
-<!-- See the similar section of  mathbook-common.xsl  for more -->
+<!-- See the similar section of  pretext-common.xsl  for more -->
 
 <!-- TODO: Perhaps use LaTeX double and triple hyphen variants of  -->
 <!-- en-dash and em-dash under some option for human-variant LaTeX -->
@@ -8765,10 +8855,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- SideBySide Layouts -->
 <!-- ################## -->
 
-<!-- See xsl/mathbook-common.xsl for descriptions of the  -->
+<!-- See xsl/pretext-common.xsl for descriptions of the  -->
 <!-- four modal templates which must be implemented here  -->
 <!-- The main templates for "sidebyside" and "sbsgroup"   -->
-<!-- are in xsl/mathbook-common.xsl, as befits containers -->
+<!-- are in xsl/pretext-common.xsl, as befits containers -->
 
 <!-- Note: Various end-of-line "%" are necessary to keep  -->
 <!-- headings, panels, and captions together as one unit  -->
@@ -9636,7 +9726,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Typically use these at the last moment,             -->
 <!-- while outputting, and thus use MBX terms internally -->
 
-<!-- Some utilities are defined in xsl/mathbook-common.xsl -->
+<!-- Some utilities are defined in xsl/pretext-common.xsl -->
 
 <!-- "halign-specification" : param "align" -->
 <!--     left, right, center -> l, c, r     -->
@@ -9645,7 +9735,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--     top, middle, bottom -> t, m, b     -->
 
 <!-- paragraph valign-specifications (p, m, b) are  -->
-<!-- different from (t, m, b) in mathbook-common    -->
+<!-- different from (t, m, b) in pretext-common    -->
 
 <!-- paragraph halign-specifications (left, center, right, justify) -->
 <!-- converted to \raggedright, \centering, \raggedleft, <empty>    -->
@@ -10001,7 +10091,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- ways LaTeX cannot, so the union of the match critera here should be    -->
 <!-- the list above.  Or said differently, a new object needs to preserve   -->
 <!-- this union property across the various "xref-number" templates.        -->
-<!-- See xsl/mathbook-common.xsl for more info.                             -->
+<!-- See xsl/pretext-common.xsl for more info.                             -->
 
 <xsl:template match="*" mode="xref-number">
     <xsl:param name="xref" select="/.." />

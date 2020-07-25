@@ -39,6 +39,25 @@
             </ul>Setting these attributes to non-empty strings is the signal to add the relevant code to each of the pages of your HTML output.  See <xref ref="online-analytics"/> for more.</p>
         </subsection>
 
+        <subsection xml:id="online-calculator">
+            <title>HTML Embedded Calculator</title>
+            <idx><h>calculator</h><h>embedded in <init>HTML</init></h></idx>
+
+            <p>The<cd>
+                <cline>/publication/html/calculator</cline>
+            </cd>element has the following attributes:<ul>
+                <li>
+                    <p><attr>model</attr>: used to control which calculator is available on every page.  Possible values are:<ul>
+                        <li><c>geogebra-classic</c></li>
+                        <li><c>geogebra-graphing</c></li>
+                        <li><c>geogebra-geometry</c></li>
+                        <li><c>geogebra-3d</c></li>
+                        <li><c>none</c></li>
+                    </ul></p>
+                </li>
+            </ul>  See <xref ref="online-embedded-calculator" text="title"/> in <xref ref="html-publisher-options"/> for more.</p>
+        </subsection>
+
         <subsection xml:id="online-index-page">
             <title>HTML Index Page</title>
             <idx><h>index page</h><h>HTML</h></idx>
@@ -48,7 +67,20 @@
                 <cline>/publication/html/index-page</cline>
             </cd>element can have the following attribute:<ul>
                 <li><attr>ref</attr>: the <attr>xml:id</attr> of a division which will be a complete page at whatever level the document is chunked (broken into smaller pages).</li>
-            </ul>An <c>index.html</c> page will be created which redirects immediately to this page.  Many webservers will serve this page when a <init>URL</init> stops with the enclosing directory.  So the Table of Contents (<tag>book</tag>, <tag>article</tag>) or the <tag>frontmatter</tag> are common choices.  See <xref ref="index-page"/> for more.</p>
+            </ul>An <c>index.html</c> page will be created which redirects immediately to this page.  Many webservers will serve this page when a <init>URL</init> stops with the enclosing directory.  So the Table of Contents (<tag>book</tag>, <tag>article</tag>) or the <tag>frontmatter</tag> are common choices.  See <xref ref="index-page" text="title"/> in <xref ref="html-publisher-options"/> for more.</p>
+        </subsection>
+
+        <subsection xml:id="online-platform-options">
+            <title>HTML Platforms</title>
+            <idx><h>platform</h><h>HTML</h></idx>
+            <idx>online platforms</idx>
+
+            <p>The<cd>
+                <cline>/publication/html</cline>
+            </cd>element can have an attribute <attr>platform</attr> with values:<ul>
+                <li><c>web</c>: the default, meant for self-hosting with no server configuration, features, or assumptions</li>
+                <li><c>runestone</c>: output meant for hosting on a Runestone server (<xref ref="runestone"/>)</li>
+            </ul>Here <term>platform</term> refers to the server where the <init>HTML</init> output will eventually be hosted.  The effect is to create minor variations in the output to take advantage of extra features of the indicated platform.</p>
         </subsection>
 
         <subsection xml:id="online-style-options">
@@ -79,6 +111,18 @@
                 <li><attr>google-cx</attr>: a Google <term>cx number</term>, gained from configuring search for a site.</li>
             </ul>Setting this attributes to a non-empty string is the signal to add the relevant code for a search box in the masthead.  See <xref ref="online-search"/> for more.</p>
         </subsection>
+
+        <subsection xml:id="embedded-video-privacy-options">
+            <title>HTML Video Embedding</title>
+            <idx><h>video</h><h>embedding</h></idx>
+            <idx><h>privacy</h><h>video</h></idx>
+
+            <p>The<cd>
+                <cline>/publication/html/video</cline>
+            </cd>element can have the following attribute:<ul>
+                <li><attr>privacy</attr>: allowed values are <c>yes</c> or <c>no</c>.</li>
+            </ul>Setting this to yes (the default) prevents certain tracking cookies from being used. Currently only supported for videos from YouTube. See <xref ref="video-embedding" text="title"/> in <xref ref="html-publisher-options"/> for more.</p>
+        </subsection>
     </section>
 
     <section xml:id="publisher-file-revealjs">
@@ -101,6 +145,30 @@
             </ul></p>
         </subsection>
 
+        <subsection xml:id="revealjs-control-options">
+            <title>Reveal.js Controls</title>
+            <idx><h>publisher options</h><h>reveal.js controls</h></idx>
+
+            <p>The<cd>
+                <cline>/publication/revealjs/controls</cline>
+            </cd>element can have the following attributes:<ul>
+                <li><attr>backarrow</attr>: for the visibility of a <q>back</q> arrow.  Values are <c>faded</c>, <c>hidden</c>, or <c>visible</c>.  The default is <c>faded</c>.</li>
+                <li><attr>display</attr>: for the overall visibility of controls.  Values are <c>yes</c> or <c>no</c>.  The default is <c>yes</c>.</li>
+                <li><attr>layout</attr>: for the location of the controls.  Values are <c>edges</c> or <c>bottom-right</c>.  The default is <c>bottom-right</c>.</li>
+                <li><attr>tutorial</attr>: for animation of suggested navigation arrows.  Values are <c>yes</c> or <c>no</c>.  The default is <c>yes</c>.</li>
+            </ul></p>
+        </subsection>
+
+        <subsection xml:id="revealjs-navigation-options">
+            <title>Reveal.js Navigation</title>
+            <idx><h>publisher options</h><h>reveal.js navigation</h></idx>
+
+            <p>The<cd>
+                <cline>/publication/revealjs/navigation</cline>
+            </cd>element can have the following attribute:<ul>
+                <li><attr>mode</attr>: for the arrangement of the navigation through slides.  Values are <c>default</c>, <c>linear</c>, or <c>grid</c>.  The default is <c>default</c>.  The value <c>default</c> refers to the default mode of Reveal.js and is synonomous with <c>grid</c>.  In other words, the choice of <c>default</c> or <c>grid</c> results in identical behavior.</li>
+            </ul>See <xref ref="publisher-revealjs"/> for more explanation of the two different navigation modes.</p>
+        </subsection>
 
         <subsection xml:id="revealjs-resources-options">
             <title>Reveal.js Resources</title>
@@ -116,4 +184,23 @@
             </ul></p>
         </subsection>
     </section>
+
+    <section xml:id="publisher-file-source">
+        <title>Source Options</title>
+        <idx>source publisher options</idx>
+        <idx><h>publisher options</h><h>source</h></idx>
+
+        <introduction>
+            <p>Some source material is optional, and may be included based on the publisher and the audience.</p>
+        </introduction>
+
+        <p>The<cd>
+            <cline>/publication/source</cline>
+        </cd>element can have the following attributes:<ul>
+            <li><attr>private-solutions</attr>: A filename for a structured file of <tag>hint</tag>, <tag>answer</tag>, <tag>solution</tag> that will see limited distribution (for example, instructors only).  A relative path for the filename is relative to the main source file.  Try an absolute path if there are any problems.  See <xref ref="private-solutions-file"/> for details about the use of a private solutions file.</li>
+            <li><attr>webwork-problems</attr>: A filename for a structured file of multiple representatiions of <webwork/> problems.  See <xref ref="representations-publisher"/> for details about the use of a <webwork/> representations file.</li>
+        </ul></p>
+
+    </section>
+
 </chapter>

@@ -26,7 +26,7 @@
       for use in the <q>traditional</q> way.
     </p>
     <p>
-      See the <pretext/> Publisher Guide for how to configure a <webwork/> course and server to process your <webwork/> problems,
+      See <xref ref="webwork-publisher"/> for how to configure a <webwork/> course and server to process your <webwork/> problems,
       and then how to process them.
     </p>
   </introduction>
@@ -277,6 +277,53 @@
         or <q>Differentiate each of the functions below.</q>, then you have language that doesn't fit the individual problem
         when it is used for homework on a <webwork/> server. Instead you might write <q>Differentiate the function</q>.
         It makes sense as common instructions for the <tag>exercisegroup</tag> as well as the instructions for an individual exercise.
+      </p>
+    </subsection>
+
+    <subsection xml:id="webwork-metadata">
+      <title>Metadata</title>
+      <p>
+        A <tag>webwork</tag> <em>without a source attribute</em> can have a plain text <tag>description</tag>.
+        This should be a summary of what the exercise asks a user to do,
+        including any relevant pedagogical details of the exercise. For example:
+      </p>
+      <pre>
+        <![CDATA[
+        <webwork>
+
+          <description>
+            Add two fractions with distinct one-digit prime denominators.
+          </description>
+
+          ...
+
+        </webwork>
+        ]]>
+      </pre>
+      <p>
+        A longer description may be broken into lines where the lines are plain text.
+      </p>
+      <pre>
+        <![CDATA[
+        <webwork>
+
+          <description>
+            <line>
+              Add two fractions with distinct one-digit prime denominators.
+            </line>
+            <line>
+              One fraction is always positive, the other always negative.
+            </line>
+          </description>
+
+          ...
+
+        </webwork>
+        ]]>
+      </pre>
+      <p>
+        The content of the description will be written into a PG <c>COMMENT</c> command,
+        making the description visible in a <webwork/> Library Browser.
       </p>
     </subsection>
 

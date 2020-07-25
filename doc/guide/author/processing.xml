@@ -24,13 +24,13 @@
         <sidebyside>
             <console>
                 <prompt>rob@lava:~/mathbook$ </prompt>
-                <input>xsltproc xsl/mathbook-html.xsl ~/books/aota/animals.xml</input>
+                <input>xsltproc xsl/pretext-html.xsl ~/books/aota/animals.xml</input>
             </console>
         </sidebyside>
 
         <p>By default, <c>xsltproc</c> writes output to <c>stdout</c> (the screen), which you could redirect to a file, or you could use the <c>-o</c> switch to send the output to a named file.  However, <pretext /> automatically writes to a file whose name is derived from the <attr>xml:id</attr> attribute of the top-level <tag>book</tag> or <tag>article</tag> tag.  If no such attribute is given the filename will be derived from <c>book-1</c> or <c>article-1</c>.  All output is produced in whatever the current default directory is, so you will likely want to set this beforehand.</p>
 
-        <p>The <c>xsl</c> subdirectory of the <pretext /> distribution contains a variety of XSL stylesheets<idx>XSL stylesheet</idx>, which I will also refer to as <term>converters</term><idx><h>converter</h><see>XSL stylesheet</see></idx> or <term>conversions</term><idx><h>conversion</h><see>XSL stylesheet</see></idx>.  The ones that you will use as an author all have filenames of the form <c>xsl/mathbook-XXX.xsl</c>, where <c>XXX</c> is some indication of the output produced.  Conversions to <latex /> or HTML output are the two most mature converters.</p>
+        <p>The <c>xsl</c> subdirectory of the <pretext /> distribution contains a variety of XSL stylesheets<idx>XSL stylesheet</idx>, which I will also refer to as <term>converters</term><idx><h>converter</h><see>XSL stylesheet</see></idx> or <term>conversions</term><idx><h>conversion</h><see>XSL stylesheet</see></idx>.  The ones that you will use as an author all have filenames of the form <c>xsl/pretext-XXX.xsl</c>, where <c>XXX</c> is some indication of the output produced.  Conversions to <latex /> or HTML output are the two most mature converters.</p>
 
         <p>Note that authors are not responsible for creating XSL stylesheets.  Stock conversions are part of the <pretext /> distribution, and anybody is welcome to assume a source document is valid <pretext /> and create new conversions to process it to existing, or as yet unimagined, formats.</p>
     </section>
@@ -47,14 +47,14 @@
             <li><p>Within the <tag>chapter</tag> element for the chapter on mammals, add the line <c>&lt;xi:include href="monkeys.xml" /&gt;</c> to <q>pull in</q> the section on monkeys at that location.  The <attr>href</attr> attribute can point to a file in a subdirectory, but will be interpreted relative to the location of the file containing the mammal chapter element.</p></li>
             <li><p>Add the switch <c>-xinclude</c> to your invocation of <c>xsltproc</c>, just after <c>xsltproc</c>, but before the filenames for the stylesheet and the master source file.  Note that for some versions of <c>xsltproc</c> it might be necessary to use two dashes for the switch, <c>--xinclude</c>.</p></li>
         </ol>So now a typical invocation (using one dash) might look like<cd>
-            <cline>xsltproc -xinclude xsl/mathbook-html.xsl ~/books/aota/animals.xml</cline>
+            <cline>xsltproc -xinclude xsl/pretext-html.xsl ~/books/aota/animals.xml</cline>
         </cd></p>
 
         <p>Note that when you invoke <c>xsltproc</c> the default directory can be far away from your source, and the processor will locate all the component files of your project through the relative file locations in the <attr>href</attr> attribute.  Several comments are in order.<ul>
             <li><p>Begin small and start a project <em>without</em> using modular files.  Modularizing seems to add a layer of complexity that sometimes obscures other beginner's errors.  So get comfortable with a single source file before branching out.</p></li>
             <li><p>I am forever forgetting the <c>-xinclude</c> switch.  Empty output, or cryptic error messages, are your first clue to this simple, but common, mistake.</p></li>
             <li><p>The <init>XML</init> specification requires that a source file only contain a single outermost element.  So for example, two <tag>chapter</tag> elements cannot go into the same file as simultaneous outermost elements.</p></li>
-            <li><p>Any file that uses an <tag>xi:include</tag> element will need the <c>xml:ns</c> delaration on the outermost element.  So in our animal book example, the <q>master</q> file, which presumably includes several chapter files, would need this declaration on the <tag>mathbook</tag> element.</p></li>
+            <li><p>Any file that uses an <tag>xi:include</tag> element will need the <c>xml:ns</c> declaration on the outermost element.  So in our animal book example, the <q>master</q> file, which presumably includes several chapter files, would need this declaration on the <tag>pretext</tag> element.</p></li>
             <li><p>In practice, there is not a lot to be gained by creating a subdirectory structure mirroring your modularization<mdash />all your source files can go into one big directory and the XML hierarchy will take care of the organization.  I do sometimes like to name my files accordingly, so for example <c>chapter-mammals.xml</c> and <c>section-monkeys.xml</c>.</p></li>
             <li><p>Just as you provide only the master source file to <c>xsltproc</c>, it is the same when you validate your source (see <xref ref="processing-dtd"/> and <xref ref="schema"/>).</p></li>
         </ul></p>
@@ -85,13 +85,13 @@
 
         <p>At this writing (2019-07-10) we have begun to transition between two different ways to accomplish this.  The new method is to create a <term>publisher file</term> that is an <init>XML</init> file that specifies options that are independent of your source material.  See <xref ref="publisher-file"/> in <xref ref="part-publisher"/> for details.  We continue to provide many of the values for these parameters on the command-line <em>at processing time</em>.  They have become known as <term>stringparam</term><idx>stringparam</idx> for a soon-to-be obvious reason.</p>
 
-        <p>Suppose you want to make a large-font version of your textbook for a student who has limited vision.  Look inside the top of <c>xsl/mathbook-latex.xsl</c> and find the <c>latex.font.size</c> parameter.  The preceding comments in this file suggest <c>20pt</c> is the maximum supported.  So you would use a command-line like the following (possibly with <c>--xinclude</c>, <etc />).</p>
+        <p>Suppose you want to make a large-font version of your textbook for a student who has limited vision.  Look inside the top of <c>xsl/pretext-latex.xsl</c> and find the <c>latex.font.size</c> parameter.  The preceding comments in this file suggest <c>20pt</c> is the maximum supported.  So you would use a command-line like the following (possibly with <c>--xinclude</c>, <etc />).</p>
 
         <sidebyside>
             <console>
                 <prompt>$ </prompt>
                 <input>xsltproc -o animals.tex --stringparam latex.font.size "20pt"</input>
-                <input>  /path/to/xsl/mathbook-latex.xsl ~/books/aota/animals.xml</input>
+                <input>  /path/to/xsl/pretext-latex.xsl ~/books/aota/animals.xml</input>
             </console>
         </sidebyside>
 
@@ -221,19 +221,19 @@
 
         <p>One choice of the parameter will result in just <q>copying</q> your source file and making all the cosmetic source format changes (we refer to this here as <term>normalization</term><idx>normalization</idx>).  This might be a useful thing to do first, all by itself, either as a first step, or an exploratory experiment.  The other value of the parameter will actually make changes, and report some information about progress.</p>
 
-        <p>Here are some notes:<ul>
+        <p>Here are some notes:<ol>
             <li><p>Be sure to experiment on copies of your source in a scratch directory.  Send your output to another directory.  When finished, use a <c>diff</c> tool to inspect the actual changes made.  You can record your eventual changes using revision-control. (See <pubtitle><url ref="https://pretextbook.org/gfa/html/">Git for Authors</url></pubtitle>.)</p></li>
             <li><p>Do not enable <c>xinclude</c> processing or else your several files will all be merged into one as output and any modularity of your source will be lost.</p></li>
             <li><p>Every single bit of indentation and whitespace in your source will be preserved, except perhaps for some blank lines near the top of your source files, and limited exceptions noted below.</p></li>
             <li><p>Attributes will likely be re-ordered, with normalized spacing between them.</p></li>
             <li><p>Empty elements will have any spaces removed from the end of the tag.</p></li>
             <li><p>Elements with no content may be written with a single empty tag.</p></li>
-            <li><p><abbr>CDATA</abbr> sections will be converted to text acceptable to the <init>XML</init> parser.  In other words, the <abbr>CDATA</abbr> wrapper will be removed and dangerous characters (&amp;, &lt;, &gt;) will be replaced by equivalent entities (such as <c>&amp;amp;</c>).  If you have many matrices expressed in <latex /> and wrapped in a <abbr>CDATA</abbr>, this might be a big change.</p></li>
+            <li xml:id="deprecation-fixer-cdata"><p><abbr>CDATA</abbr> sections will be converted to text acceptable to the <init>XML</init> parser.  In other words, the <abbr>CDATA</abbr> wrapper will be removed and dangerous characters (&amp;, &lt;, &gt;) will be replaced by equivalent entities (such as <c>&amp;amp;</c>).  If you have many matrices expressed in <latex /> and wrapped in a <abbr>CDATA</abbr>, this might be a big change.  See <xref ref="topic-exceptional-characters"/> for background.</p></li>
             <li><p>The output files will be labeled as having <c>UTF-8</c> encoding.</p></li>
             <li><p>It could be necessary to run this conversion more than once if deprecations build on one another.  In other words, we do not update specific conversions, but rely on regular use to keep source up-to-date.</p></li>
             <li><p>It should be safe to run this conversion repeatedly, even after new deprecations are added.  In fact, it is encouraged.</p></li>
             <li><p>The <pretext /> source file <c>examples/sample-errors-and-warnings.xml</c> is intentionally full of lots of bad stuff.  You can experiment with it, should you want to see interesting things happen.  We have already performed the normalization step, so you can concentrate on substantive changes.</p></li>
-        </ul></p>
+        </ol></p>
 
         <p>To process a directory with multiple source files, I would proceed as follows.  First make three temporary directories, <c>/tmp/original</c>, <c>/tmp/normal</c>, <c>/tmp/clean</c>, and copy my source files into <c>/tmp/original</c>.  Then, using a BASH shell, and inputting the command all on one long line,</p>
 
@@ -351,7 +351,7 @@
 
         <p>One of our main motivations for this project was mixing in code from the powerful, open source, mathematical software project, Sage (<xref ref="overview-sage" />).  When you add example Sage code to illustrate mathematical ideas, you are then encouraged to also include expected output in the <tag>output</tag> element.  Here comes one of the powerful advantages of XML source and XSL processing.</p>
 
-        <p>The <c>mathbook/xsl/mathbook-sage-doctest.xsl</c> stylesheet, used in the usual way, will create one (or several, depending on the <c>chunk.level</c> stringparam) file(s), in <em>exactly</em> the format Sage expects for automated testing.  So all your words are gone, and all your Sage input and output is packaged so Sage can run all the <tag>input</tag> and compare the results to the expected <tag>output</tag>.</p>
+        <p>The <c>mathbook/xsl/pretext-sage-doctest.xsl</c> stylesheet, used in the usual way, will create one (or several, depending on the <c>chunk.level</c> stringparam) file(s), in <em>exactly</em> the format Sage expects for automated testing.  So all your words are gone, and all your Sage input and output is packaged so Sage can run all the <tag>input</tag> and compare the results to the expected <tag>output</tag>.</p>
 
         <p>We have many years' experience testing hundreds of non-trivial Sage examples from textbooks, for linear algebra and abstract algebra.  Roughly every six months, we discover ten to twenty examples that fail.  Frequently the failures are trivial (usually output gets re-ordered), but some are significant changes in behavior that leads us to re-word surrounding guidance in the text, and in a few cases the failures have exposed bugs introduced into Sage.  It has been relatively easy to do this maintenance on a regular basis, and if it had not been done, the accumulated errors would be enough to greatly degrade confidence in the accuracy of the examples.</p>
 
@@ -363,11 +363,12 @@
 
         <p>CoCalc <url href="https://cocalc.com/"><c>cocalc.com</c></url><idx>CoCalc</idx> has <em>all</em> the tools you need to author with MathBook <init>XML</init>.  You will need an upgrade from a subscription to allow Internet connectivity, but at a minimum a colleague with a paid plan can spare you one, they are plentiful and meant to be shared.<ul>
             <li><p>Text editor: reasonably good, partially <init>XML</init> syntax-aware.</p></li>
-            <li><p><c>git</c>: installed (so clone <pretext />).</p></li>
+            <li><p><c>git</c>: installed (so you can clone/pull <pretext/>).</p></li>
+            <li><p><c>jing</c>: installed, so you can do <init>RELAX-NG</init> validation.</p></li>
             <li><p><latex />: installed with many additional packages.</p></li>
             <li><p>Python: installed, necessary for <c>pretext</c> script.</p></li>
             <li><p><init>PDF</init> viewer: handed off to your browser.</p></li>
-            <li><p><init>HTML</init> viewer: convert to the <q>raw</q> <init>URL</init> and you can preview.</p></li>
+            <li><p><init>HTML</init> viewer: get a context menu on the cloud icon in the file view, and open in a new tab or new window.</p></li>
             <li><p><init>HTML</init> server: nope.  Zip up output and host elsewhere.</p></li>
         </ul></p>
     </section>
