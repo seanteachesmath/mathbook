@@ -411,6 +411,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <xsl:variable name="b-host-runestone" select="$host-platform = 'runestone'"/>
 <xsl:variable name="b-host-aim"       select="$host-platform = 'aim'"/>
 
+<!-- Temporary, undocumented, and experimental           -->
+<!-- Makes randomization buttons for inline WW probmlems -->
+<xsl:param name="debug.webwork.inline.randomize" select="''"/>
+<xsl:variable name="b-webwork-inline-randomize" select="$debug.webwork.inline.randomize = 'yes'"/>
 
 <!-- ################################################ -->
 <!-- Following is slated to migrate above, 2019-07-10 -->
@@ -521,28 +525,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- There are also "compact" versions of the navigation buttons in the top right -->
 <xsl:param name="html.navigation.style"  select="'full'" />
 
-
-<!-- Permalinks -->
-<!-- Next to subdivision headings a "paragraph" symbol     -->
-<!-- (a pilcrow) along with internationalized text         -->
-<!-- ("permalink") indicates a link to that section.       -->
-<!-- It is useful if you want to right-click on it to      -->
-<!-- capture a link for use somewhere else.  (Similar      -->
-<!-- behavior for theorems, examples, etc is planned.)     -->
-<!--                                                       -->
-<!-- "Permalink" is a bit of an exaggeration.  Site        -->
-<!-- domain name is relative to wherever content is        -->
-<!-- hosted.  We say a link is "stable" if there is        -->
-<!-- an  xml:id  on the enclosing page AND an  xml:id      -->
-<!-- on the subdivision (which could be the same).         -->
-<!-- If you change the chunking level, then the enclosing  -->
-<!-- page could change and these links will be affected.   -->
-<!--                                                       -->
-<!-- 'none' - no permalinks anywhere                       -->
-<!-- 'stable' - only stable links (see paragraph above)    -->
-<!-- 'all' - every section heading, even if links are poor -->
-<xsl:param name="html.permalink"  select="'stable'" />
-
 <!-- ######### -->
 <!-- Variables -->
 <!-- ######### -->
@@ -636,24 +618,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </xsl:when>
         <xsl:otherwise>
             <xsl:message terminate='yes'>MBX:ERROR: 'html.navigation.style' must be 'full' or 'compact', not '<xsl:value-of select="$html.navigation.style" />.'  Quitting...</xsl:message>
-        </xsl:otherwise>
-    </xsl:choose>
-</xsl:variable>
-
-<!-- Permalink display options -->
-<xsl:variable name="permalink">
-    <xsl:choose>
-        <xsl:when test="$html.permalink='none'">
-            <xsl:text>none</xsl:text>
-        </xsl:when>
-        <xsl:when test="$html.permalink='all'">
-            <xsl:text>all</xsl:text>
-        </xsl:when>
-        <xsl:when test="$html.permalink='stable'">
-            <xsl:text>stable</xsl:text>
-        </xsl:when>
-        <xsl:otherwise>
-            <xsl:message terminate='yes'>MBX:ERROR: 'html.permalink' must be 'none', 'stable' or 'all', not '<xsl:value-of select="$html.permalink" />.'  Quitting...</xsl:message>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:variable>
@@ -996,7 +960,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </xsl:attribute>
         <xsl:apply-templates select="." mode="header-content" />
     </xsl:element>
-    <xsl:apply-templates select="." mode="permalink" />
 </xsl:template>
 
 <!-- Add an author's names, if present   -->
@@ -1077,41 +1040,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <span class="title">
         <xsl:apply-templates select="." mode="title-full" />
     </span>
-</xsl:template>
-
-<!-- Permalinks on section headings are configurable              -->
-<!-- "stable" implies there is an xml:id on the element. However, -->
-<!-- the filename will change with different chunking levels      -->
-<xsl:template match="*" mode="permalink">
-    <xsl:variable name="has-permalink">
-        <xsl:choose>
-            <xsl:when test="$permalink='none'">
-                <xsl:value-of select="false()" />
-            </xsl:when>
-            <xsl:when test="$permalink='all'">
-                <xsl:value-of select="true()" />
-            </xsl:when>
-            <!-- now in case of $permalink='stable' due to input sanitation -->
-            <xsl:when test="not(@xml:id)">
-                <xsl:value-of select="false()" />
-            </xsl:when>
-            <!-- now just need xml:id for the page URL, or not      -->
-            <!-- NOTE: the element and the enclosure might be equal -->
-            <!--       but double 'true' is not a problem           -->
-            <xsl:otherwise>
-                <xsl:apply-templates select="." mode="has-id-on-enclosure" />
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:variable>
-    <xsl:if test="$has-permalink='true'">
-        <xsl:variable name="url">
-            <xsl:apply-templates select="." mode="url" />
-        </xsl:variable>
-        <!-- pilchrow only  -->
-        <a href="{$url}" class="permalink">
-            <xsl:text>&#xb6;</xsl:text>
-        </a>
-    </xsl:if>
 </xsl:template>
 
 <!-- Recursively finds enclosing structural node -->
@@ -3392,13 +3320,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 </xsl:template>
 
 <!-- And its CSS class -->
-<xsl:template match="figure|listing|table" mode="body-css-class">
+<xsl:template match="figure|listing" mode="body-css-class">
     <xsl:value-of select="local-name()"/>
     <xsl:text> figure-like</xsl:text>
 </xsl:template>
 <!-- a table of data will use this class when -->
 <!-- the title is placed above the tabular    -->
-<xsl:template match="list" mode="body-css-class">
+<xsl:template match="table|list" mode="body-css-class">
     <xsl:value-of select="local-name()"/>
     <xsl:text> table-like</xsl:text>
 </xsl:template>
@@ -3428,13 +3356,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <xsl:variable name="b-subcaptioned" select="parent::sidebyside/parent::figure or parent::sidebyside/parent::sbsgroup/parent::figure"/>
     <xsl:choose>
         <!-- caption at the bottom, always        -->
-        <!-- table might end up on top, electably -->
-        <xsl:when test="self::figure or self::table or self::listing">
+        <xsl:when test="self::figure|self::listing">
             <xsl:apply-templates select="*">
                 <xsl:with-param name="b-original" select="$b-original" />
             </xsl:apply-templates>
             <xsl:apply-templates select="." mode="figure-caption">
                 <xsl:with-param name="b-original" select="$b-original"/>
+            </xsl:apply-templates>
+        </xsl:when>
+        <!-- table only contains a tabular, if not subcaptioned -->
+        <!-- title is displayed before data/tabular             -->
+        <xsl:when test="self::table">
+            <xsl:if test="not($b-subcaptioned)">
+                <xsl:apply-templates select="." mode="figure-caption">
+                    <xsl:with-param name="b-original" select="$b-original"/>
+                </xsl:apply-templates>
+            </xsl:if>
+            <xsl:apply-templates select="tabular">
+                <xsl:with-param name="b-original" select="$b-original" />
             </xsl:apply-templates>
         </xsl:when>
         <!-- "title" at the top, subcaption at the bottom -->
@@ -5003,6 +4942,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </xsl:apply-templates>
         </xsl:element>
         <!-- collect elements which can have footnotes within -->
+        <!-- footnotes in captions of figures and listings,   -->
+        <!-- but not in titles of tables or lists             -->
         <xsl:apply-templates select="self::figure|self::listing" mode="pop-footnote-text">
             <xsl:with-param name="b-original" select="$b-original"/>
         </xsl:apply-templates>
@@ -5601,13 +5542,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <xsl:apply-templates select="." mode="format-code" />
     </xsl:variable>
     <xsl:choose>
+        <xsl:when test="$mbx-format-code = '0'">decimal</xsl:when>
         <xsl:when test="$mbx-format-code = '1'">decimal</xsl:when>
         <xsl:when test="$mbx-format-code = 'a'">lower-alpha</xsl:when>
         <xsl:when test="$mbx-format-code = 'A'">upper-alpha</xsl:when>
         <xsl:when test="$mbx-format-code = 'i'">lower-roman</xsl:when>
         <xsl:when test="$mbx-format-code = 'I'">upper-roman</xsl:when>
         <xsl:otherwise>
-            <xsl:message>MBX:BUG: bad MBX ordered list label format code in HTML conversion</xsl:message>
+            <xsl:message>MBX:BUG: bad ordered list label format code in HTML conversion</xsl:message>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
@@ -5622,7 +5564,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <xsl:when test="$mbx-format-code = 'square'">square</xsl:when>
         <xsl:when test="$mbx-format-code = 'none'">no-marker</xsl:when>
         <xsl:otherwise>
-            <xsl:message>MBX:BUG: bad MBX unordered list label format code in HTML conversion</xsl:message>
+            <xsl:message>MBX:BUG: bad unordered list label format code in HTML conversion</xsl:message>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
@@ -5633,10 +5575,20 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Tunnel duplication flag to list items -->
 <xsl:template match="ol|ul">
     <xsl:param name="b-original" select="true()" />
+    <!-- need to switch on 0-1 for ol Arabic -->
+    <!-- no harm if called on "ul"           -->
+    <xsl:variable name="mbx-format-code">
+        <xsl:apply-templates select="." mode="format-code" />
+    </xsl:variable>
     <xsl:element name="{local-name(.)}">
         <xsl:apply-templates select="." mode="insert-paragraph-id" >
             <xsl:with-param name="b-original" select="$b-original" />
         </xsl:apply-templates>
+        <xsl:if test="$mbx-format-code = '0'">
+            <xsl:attribute name="start">
+                <xsl:text>0</xsl:text>
+            </xsl:attribute>
+        </xsl:if>
         <xsl:attribute name="class">
             <xsl:apply-templates select="." mode="html-list-class" />
             <xsl:if test="@cols">
@@ -5842,7 +5794,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </xsl:apply-templates>
         </xsl:attribute>
         <!-- fallback to SVG -->
-        <xsl:element name="img">
+        <xsl:element name="embed">
             <!-- source file attribute for img element, the SVG image -->
             <xsl:attribute name="src">
                 <xsl:value-of select="$svg-filename" />
@@ -6357,7 +6309,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </title>
                 <meta name="Keywords" content="Authored in PreTeXt" />
                 <!-- http://webdesignerwall.com/tutorials/responsive-design-in-3-steps -->
-                <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <!-- ########################################## -->
                 <!-- A variety of libraries were loaded here    -->
                 <!-- Only purpose of this page is YouTube video -->
@@ -7334,23 +7286,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <xsl:value-of select="$content" />
         </xsl:when>
         <!-- 2nd exceptional case, xref in mrow of display math  -->
-        <!-- Requires https://pretextbook.org/js/lib/mathjaxknowl.js -->
-        <!-- loaded as a MathJax extension for knowls to render  -->
+        <!--   with Javascript (pure HTML) we can make knowls    -->
+        <!--   without Javascript (EPUB) we use plain text       -->
         <xsl:when test="parent::mrow">
-            <!-- MathJax expects similar constructions, variation is here -->
-            <xsl:choose>
-                <xsl:when test="$knowl='true'">
-                    <xsl:text>\knowl{</xsl:text>
-                    <xsl:apply-templates select="$target" mode="xref-knowl-filename" />
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:text>\href{</xsl:text>
-                    <xsl:apply-templates select="$target" mode="url" />
-                </xsl:otherwise>
-            </xsl:choose>
-            <xsl:text>}{</xsl:text>
-            <xsl:value-of select="$content" />
-            <xsl:text>}</xsl:text>
+            <xsl:apply-templates select="." mode="xref-link-display-math">
+                <xsl:with-param name="target" select="$target"/>
+                <xsl:with-param name="content" select="$content"/>
+            </xsl:apply-templates>
         </xsl:when>
         <!-- usual case, always an "a" element (anchor) -->
         <xsl:otherwise>
@@ -7387,6 +7329,34 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </xsl:element>
         </xsl:otherwise>
     </xsl:choose>
+</xsl:template>
+
+<!-- For pure HTML we can make a true knowl or traditional link -->
+<!-- when an "xref" is authored inside of a display math "mrow" -->
+<!-- Requires https://pretextbook.org/js/lib/mathjaxknowl.js    -->
+<!-- loaded as a MathJax extension for knowls to render         -->
+<xsl:template match="*" mode="xref-link-display-math">
+    <xsl:param name="target"/>
+    <xsl:param name="content"/>
+
+    <!-- this could be passed as a parameter, but -->
+    <!-- we have $target anyway, so can recompute -->
+    <xsl:variable name="knowl">
+        <xsl:apply-templates select="$target" mode="xref-as-knowl"/>
+    </xsl:variable>
+    <xsl:choose>
+        <xsl:when test="$knowl='true'">
+            <xsl:text>\knowl{</xsl:text>
+            <xsl:apply-templates select="$target" mode="xref-knowl-filename"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:text>\href{</xsl:text>
+            <xsl:apply-templates select="$target" mode="url"/>
+        </xsl:otherwise>
+    </xsl:choose>
+    <xsl:text>}{</xsl:text>
+    <xsl:value-of select="$content"/>
+    <xsl:text>}</xsl:text>
 </xsl:template>
 
 <!-- A URL is needed various places, such as                     -->
@@ -9454,6 +9424,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </xsl:when>
         <xsl:otherwise>
             <!-- dynamic, iframe -->
+            <xsl:if test="$b-webwork-inline-randomize">
+                <xsl:apply-templates select="." mode="webwork-randomize-buttons"/>
+            </xsl:if>
             <xsl:apply-templates select="." mode="webwork-iframe">
                 <xsl:with-param name="b-has-hint"     select="$b-has-inline-hint"/>
                 <xsl:with-param name="b-has-solution" select="$b-has-inline-solution"/>
@@ -9487,12 +9460,20 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </xsl:variable>
     <!-- build the iframe -->
     <!-- mimicking Mike Gage's blog post -->
-    <iframe width="100%" src="{$the-url}" base64="1" uri="1"/>
+    <iframe name="{@ww-id}" width="{$design-width}" src="{$the-url}" data-seed="{static/@seed}"/>
     <script>
         <xsl:text>iFrameResize({log:true,inPageLinks:true,resizeFrom:'child',checkOrigin:["</xsl:text>
         <xsl:value-of select="$webwork-server" />
         <xsl:text>"]})</xsl:text>
     </script>
+</xsl:template>
+
+<!-- Buttons for randomizing the seed of a live WeBWorK problem      -->
+<xsl:template match="webwork-reps" mode="webwork-randomize-buttons">
+    <div class="WW-randomize-buttons">
+        <button class="WW-randomize" type="button" onclick="WWiframeReseed('{@ww-id}')">Randomize</button>
+        <button class="WW-randomize" type="button" onclick="WWiframeReseed('{@ww-id}',{static/@seed})">Reset</button>
+    </div>
 </xsl:template>
 
 <!-- In WeBWorK problems, a p whose only child is a fillin blank     -->
@@ -9556,7 +9537,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </title>
             <meta name="Keywords" content="Authored in PreTeXt" />
             <!-- http://webdesignerwall.com/tutorials/responsive-design-in-3-steps -->
-            <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <!-- favicon -->
             <xsl:call-template name="favicon"/>
             <!-- jquery used by sage, webwork, knowls -->
@@ -9679,7 +9660,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <html lang="{$document-language}"> <!-- dir="rtl" here -->
         <head>
             <meta name="Keywords" content="Authored in PreTeXt" />
-            <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
             <!-- jquery used by sage, webwork, knowls -->
             <xsl:call-template name="sagecell-code" />
@@ -10483,9 +10464,16 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <xsl:apply-templates select="." mode="url"/>
                </xsl:variable>
                <!-- text of anchor's class, active if a match, otherwise plain -->
-               <!-- Based on node-set union size, "part" is for styling        -->
+               <!-- Based on node-set union size; "frontmatter", "backmatter", -->
+               <!-- "part" are for styling                                     -->
                <xsl:variable name="class">
                     <xsl:text>link</xsl:text>
+                    <xsl:if test="self::frontmatter">
+                        <xsl:text> frontmatter</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="self::backmatter">
+                        <xsl:text> backmatter</xsl:text>
+                    </xsl:if>
                     <xsl:if test="self::part">
                         <xsl:text> part</xsl:text>
                     </xsl:if>

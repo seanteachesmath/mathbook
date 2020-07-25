@@ -251,13 +251,13 @@
             <!-- fragment names, and their elements, from schema source
             dash-character:       nbsp, ndash, mdash
             xml-character:        ampersand, less, greater
-            latex-character:      hash, dollar, percent, tilde, underscore, 
+            latex-character:      hash, dollar, percent, tilde, underscore,
                                   circumflex, backslash, lbrace, rbrace
             delimiter-character:  lsq, rsq, rq, lq
             exotic-character:     ellipsis, asterisk, backtick, slash, midpoint,
-                                  swungdash, permille, pilcrow, section-mark, 
+                                  swungdash, permille, pilcrow, section-mark,
                                   copyright, registered, trademark
-            generator:            today, timeofday, tex, latex, pretext, webwork, 
+            generator:            today, timeofday, tex, latex, pretext, webwork,
                                   eg, ie, circa, etc
             arithmetic-character: minus, solidus, times, obelus, plusminus
             siunit:               (deferred to its own section)
@@ -556,14 +556,14 @@
                     <p>For simple arithmetic expressions in text, this symbol may be used to indicate a tolerance or a choice of two values, one the negative of the other.</p>
                 </paragraphs>
 
-                <!-- 
+                <!--
                 http://gcp.fcaglp.unlp.edu.ar/_media/integrantes:psantamaria:latex:textcomp.pdf
                 + regular
                 - negative
                 - subtract \textminus
                 <times/>  \texttimes
                 <solidus/> \textfractionsolidus
-                <division/> F7 \textdiv 
+                <division/> F7 \textdiv
                 <plusminus/> b1 \textpm
                 -->
             </subsubsection>
@@ -1295,6 +1295,8 @@
             <p>In these situations, author a list item, <tag>li</tag>, within an <tag>ol</tag> or <tag>ul</tag>, by using <em>only</em> the necessary <tag>m</tag> element.  Do not use an intervening <tag>p</tag>, and do not include any adjacent text.  Whitespace is OK.  Then <pretext/> will add <latex/>'s <c>\displaystyle</c> command to improve the visual appearance of the mathematics, and so you do not need to.</p>
 
             <p>If you prefer to not have this behavior, insert an intervening <tag>p</tag>, and output will be identical, but without the <c>\displaystyle</c>.</p>
+
+            <p>Note that <em>any</em> text, other than whitespace, outside the <tag>m</tag> tag will disable this feature, <em>including punctuation</em>. However, according to the Chicago Manual of Style, 14e, 6.127, <q>Items carry no closing punctuation unless they consist of complete sentences.</q> So that comma at the end of your equation probably doesn't belong there anyway.</p>
         </subsection>
 
         <subsection>
@@ -1480,7 +1482,7 @@
                         </p>
                     </li>
                 </ol>
-                Within the same paragraph, we transition to an unordered, two-column, list of some germs: 
+                Within the same paragraph, we transition to an unordered, two-column, list of some germs:
                 <ul cols="2">
                     <li>
                         <p>Bacteria
@@ -1742,9 +1744,9 @@
                 <title>(*) Asymptote</title>
 
                 <p>Two temporary notes:<ol>
-                    <li>The <c>mbx</c> script will run the Asymptote executable with the <c>-norpc</c> switch.  So <q>rotatable</q> 3D images rendered by the proprietary viewer, Adobe Acrobat, are not created.</li>
+                    <li>The <c>pretext</c> script will run the Asymptote executable with the <c>-norpc</c> switch.  So <q>rotatable</q> 3D images rendered by the proprietary viewer, Adobe Acrobat, are not created.</li>
 
-                    <li>The <c>mbx</c> script can request the Asymptote executable to create <init>SVG</init> images supplying the <c>-svg</c> switch.  These may be unsuitable, especially for 3D images.  An alternative is to produce <init>PDF</init> images and use a utility like <c>pdf2svg</c> to convert to <init>SVG</init>.</li>
+                    <li>The <c>pretext</c> script can request the Asymptote executable to create <init>SVG</init> images supplying the <c>-svg</c> switch.  These may be unsuitable, especially for 3D images.  An alternative is to produce <init>PDF</init> images and use a utility like <c>pdf2svg</c> to convert to <init>SVG</init>.</li>
                 </ol></p>
             </subsubsection>
         </subsection>
@@ -1784,7 +1786,7 @@
 
             <p>As an instructor, you might want to recycle images from a text for a classroom presentation, a project handout, or an examination question.  As an author, you can elect to make images files available through links in the HTML version, and it is easy and flexible to produce those links automatically.</p>
 
-            <p>First, it is your responsibility to manufacture the files.  For making different formats, the <c>mbx</c> script can sometimes help (<xref ref="mbx-script" />).  The Image Magick <c>convert</c> command is a quick way to make raster images in different formats, while the <c>pdf2svg</c> executable is good for converting vector graphics <init>PDF</init>s into <init>SVG</init>s.  Also, to make this easy to specify, different versions of the same image must have identical paths and names, other than the suffixes.  Finally, the case and spelling of the suffix in your <init>MBX</init> source must match the filename (<eg /> <c>jpg</c> versus <c>JPEG</c>).  OK, those are the ground rules.</p>
+            <p>First, it is your responsibility to manufacture the files.  For making different formats, the <c>pretext</c> script can sometimes help (<xref ref="pretext-script" />).  The Image Magick <c>convert</c> command is a quick way to make raster images in different formats, while the <c>pdf2svg</c> executable is good for converting vector graphics <init>PDF</init>s into <init>SVG</init>s.  Also, to make this easy to specify, different versions of the same image must have identical paths and names, other than the suffixes.  Finally, the case and spelling of the suffix in your <pretext/> source must match the filename (<eg /> <c>jpg</c> versus <c>JPEG</c>).  OK, those are the ground rules.</p>
 
             <p>For links for a single image, add the <attr>archive</attr> attribute to the <tag>image</tag> element, such as<cd>
                 <cline>&lt;image  ...  archive="pdf svg"&gt;</cline>
@@ -2161,7 +2163,7 @@
                 and you should use it, but it should not be the entire content of a heading
                 since it is not an idea by itself.  But it may be a subheading. For example,
                 suppose you have a paragraph on <q>highland sheep.</q>
-                Then <em>both</em> of the following should appear in your index, 
+                Then <em>both</em> of the following should appear in your index,
                 since a reader might consult both locations.
               </p>
               <pre>
@@ -2350,7 +2352,7 @@
                 <video xml:id="mozart-piano-sonata" youtube="1Yv_AINhVn4" width="80%" preview="images/mozart-piano.jpg" />
             </figure>
 
-            <p>The <c>mbx</c> script (<xref ref="mbx-script" />) may be used to download the provided preview images for YouTube videos (only).  Filenames will be formed from the <attr>xml:id</attr> of the <tag>video</tag> element.  These will be used in static versions of output, such as print.  Once custom preview images are implemented for author-hosted video, their static representation will improve.</p>
+            <p>The <c>pretext</c> script (<xref ref="pretext-script" />) may be used to download the provided preview images for YouTube videos (only).  Filenames will be formed from the <attr>xml:id</attr> of the <tag>video</tag> element.  These will be used in static versions of output, such as print.  Once custom preview images are implemented for author-hosted video, their static representation will improve.</p>
 
             <p>Additionally, a YouTube <term>playlist</term> can be included in one of two ways. You may set the <attr>youtube</attr> attribute to be a space-separated list of several video IDs (an <q>itemized</q> playlist). Alternatively, you may set the <attr>youtubeplaylist</attr> attribute to a YouTube playlist ID (a <q>named</q> playlist). At present, a named playlist will not get a thumbnail image from Youtube, and either the <q>generic</q> thumbnail will be used or you can supply your own <attr>preview</attr>.</p>
 
@@ -2492,6 +2494,11 @@
             </li>
 
             <li>
+                <title>3D Images</title>
+                <p>Asymptote is a language for describing 2D and 3D images, which we support as much as possible.  The 3D images produced are rotatable for exploration via a mouse or finger.  For those with motor limitations, the images may also be manipulated with keyboard controls.  (Many assistive technologies rely on, or emulate, keyboards.)</p>
+            </li>
+
+            <li>
                 <title>Skip to Main Content</title>
                 <p>Repeatedly pressing the <c>Tab</c> key will move a reader from one location to the next in a web document.  Since your Table of Contents in the left sidebar is a series of many links, a reader will need to tab through <em>all</em> of these to eventually reach the interesting content on a page.</p>
 
@@ -2521,7 +2528,9 @@
 
             <li>
                 <title>Image Formats</title>
-                <p>University offices that provide services for students with disabilities are often interested in the images themselves from a text, as standalone files.  For example, they might be able to manufacture tactile versions.  You could use the <c>mbx</c> script to produce a variety of different formats and bundle these up in a single archive file for distribution at your book's website.  Or you can make each image available through adjacent links placed automatically.  We call these <q>image archives.</q>  See <xref ref="topic-images-archive" />.</p>
+                <p>University offices that provide services for students with disabilities are often interested in the images themselves from a text, as standalone files.  For example, they might be able to manufacture tactile versions.  You could use the <c>pretext</c> script to produce a variety of different formats and bundle these up in a single archive file for distribution at your book's website.  Or you can make each image available through adjacent links placed automatically.  We call these <q>image archives.</q>  See <xref ref="topic-images-archive" />.</p>
+
+                <p>Futhermore, as described above, a 3D image authored with Asymptote code can be superior for those with motor disabilities.  So this functionality begins with an author's choice to employ Asymptote.</p>
             </li>
 
             <li>
@@ -2586,64 +2595,19 @@ Similar to articles, your content should be organized into several
           <li>
 And within each section, a <c>slide</c> represents a full screen of information.
 Within a slide, you may author <pretext/> content as usual, such as paragraphs
-(<c>p</c>), lists (<c>ul</c>), and so on. The <c>@slide-step="true"</c> attribute
-is supported on several elements to allow stepping through slides
-(e.g. it inserts a Beamer <c>\pause</c>).
+(<c>p</c>), lists (<c>ul</c>), and so on.
+          </li>
+          <li>
+Several elements support setting the <attr>pause</attr> attribute to the
+value <c>yes</c> to allow stepping through
+parts of a slide (e.g. it inserts a Beamer <c>\pause</c>).
           </li>
         </ul>
         <p>
-Following is a somewhat minimal working example.
+A minimal working example may be found in the
+<url href="https://github.com/rbeezer/mathbook/blob/dev/examples/sample-slideshow/sample-slideshow.xml">
+  Examples folder of the PreTeXt repo on GitHub
+</url><fn><c>examples/sample-slideshow/sample-slideshow.xml</c></fn>.
         </p>
-      <pre>
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;pretext&gt;
-  &lt;slideshow&gt;
-    &lt;title&gt;Hello World!&lt;/title&gt;
-    &lt;subtitle&gt;Sample PreTeXt slides&lt;/subtitle&gt;
-    &lt;frontmatter&gt;
-      &lt;titlepage&gt;
-        &lt;author&gt;
-          &lt;personname&gt;Your Name&lt;/personname&gt;
-          &lt;affiliation&gt;Your School&lt;/affiliation&gt;
-          &lt;logo&gt;&lt;image source="path/to/your/image.png"/&gt;&lt;/logo&gt;
-        &lt;/author&gt;
-        &lt;event&gt;PreTeXt Workshop 20XX&lt;/event&gt;
-        &lt;date&gt;Month 20XX&lt;/date&gt;
-      &lt;/titlepage&gt;
-      &lt;abstract&gt;
-        &lt;p&gt;Your wonderful abstract.&lt;/p&gt;
-      &lt;/abstract&gt;
-    &lt;/frontmatter&gt;
-    &lt;section&gt;
-      &lt;title&gt;Title of Section&lt;/title&gt;
-      &lt;slide&gt;
-        &lt;title&gt;PDX &lt;m&gt;\iff&lt;/m&gt; PTX&lt;/title&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;p&gt;One item&lt;/p&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;p&gt;Another item&lt;/p&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;p&gt;
-            A really long item which is really far too long to be an
-            item in a talk. Points should really be only a single line
-            unless they are really important.
-          &lt;/p&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/slide&gt;
-      &lt;slide&gt;
-        &lt;title&gt;A second slide here&lt;/title&gt;
-        &lt;p&gt;
-          Words and stuff
-        &lt;/p&gt;
-        &lt;p&gt;
-          &lt;ul slide-step="true"&gt;
-            &lt;li&gt;&lt;p&gt;First thing&lt;/p&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;p&gt;Second thing&lt;/p&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;p&gt;Third thing&lt;/p&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/p&gt;
-      &lt;/slide&gt;
-    &lt;/section&gt;
-  &lt;/slideshow&gt;
-&lt;/pretext&gt;
-      </pre>
     </section>
 </chapter>

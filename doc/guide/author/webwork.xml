@@ -138,11 +138,9 @@
         <![CDATA[
         <exercise>
           <webwork>
-            <setup>
-              <pg-code>
-                Context("ImplicitPlane");
-              </pg-code>
-            </setup>
+            <pg-code>
+              Context("ImplicitPlane");
+            </pg-code>
             <statement>
               <p>The answer is <m>x+y=1</m>.</p>
               <p><var name="'x+y=1'" width="8" /></p>
@@ -162,7 +160,7 @@
       <p>
         To have randomization in problems
         or otherwise take advantage of the algorithmic programming capabilities of Perl and <webwork/>'s PG language
-        requires using a <tag>setup</tag> tag.
+        requires using a <tag>pg-code</tag> tag.
         Having at least a little familiarity with coding problems in <webwork/> is necessary,
         although for simpler problems you could get away with mimicking the sample article in <c>mathbook/examples/webwork/</c>.
         A <tag>statement</tag>, <em>optional</em> <tag>hint</tag>, and <em>optional</em> <tag>solution</tag> follow.
@@ -171,8 +169,8 @@
         <![CDATA[
         <webwork>
 
-          <setup>
-          </setup>
+          <pg-code>
+          </pg-code>
 
           <statement>
           </statement>
@@ -187,12 +185,11 @@
         ]]>
       </pre>
       <p>
-        The <tag>setup</tag> contains a <tag>pg-code</tag>.
         If you are familiar with code for <webwork/> PG problems, the <tag>pg-code</tag> contains lines of PG code
         that would appear in the <q>setup</q> portion of the problem.
         Typically, this is the code that follows <c>TEXT(beginproblem());</c> and precedes the first <c>BEGIN_TEXT</c> or <c>BEGIN_PGML</c>.
         If your code needs any special <webwork/> macro libraries,
-        you may load them in a <tag>pg-macros</tag> tag prior to <tag>setup</tag>,
+        you may load them in a <tag>pg-macros</tag> tag prior to <tag>pg-code</tag>,
         with each such <c>.pl</c> file's name inside a <tag>macro-file</tag> tag.
         However many of the most common macro libraries will be loaded automatically
         based on the content and attributes you use in the rest of your problem.
@@ -203,14 +200,12 @@
       <pre>
         <![CDATA[
         <webwork>
-          <setup>
-            <pg-code>
-              Context("LimitedNumeric");
-              $a = Compute(random(1, 9, 1));
-              $b = Compute(random(1, 9, 1));
-              $c = $a + $b;
-            </pg-code>
-          </setup>
+          <pg-code>
+            Context("LimitedNumeric");
+            $a = Compute(random(1, 9, 1));
+            $b = Compute(random(1, 9, 1));
+            $c = $a + $b;
+          </pg-code>
 
           <statement>
             <p>Compute <m><var name="$a"/> + <var name="$b"/></m>.</p>
@@ -263,6 +258,25 @@
         a <url href="http://webwork.maa.org/wiki/Problem_Authoring_Videos">set of videos at <c>webwork.maa.org/wiki/Problem_Authoring_Videos</c></url>.
         Not all of this is relevant to authoring within <pretext/>,
         but there are parts that will be helpful for constructing the Perl code necessary for randomized problems.
+      </p>
+    </subsection>
+
+    <subsection>
+      <title><webwork/> in an <tag>exercisegroup</tag></title>
+      <p>
+        An <tag>exercisegroup</tag> is a collection of exercises with common instructions that are put into an <tag>introduction</tag>.
+        If you put <webwork/> exercises in an exercisegroup,
+        then when the exercises are exported to <c>.pg</c> problem files for use as online homework from a <webwork/> server
+        it makes sense that the instructions from the <tag>exercisegroup</tag>'s <tag>introduction</tag> should be included in the <c>.pg</c> file.
+        And so they are included there. Note that they are <em>not</em> included when you are building <acro>HTML</acro> or <latex/> output
+        for your proeject. (Rather, the <tag>exercisegroup</tag>'s <tag>introduction</tag> appears in its normal place.)
+      </p>
+      <p>
+        You should be aware of this when you write the <tag>exercisegroup</tag>'s <tag>introduction</tag>.
+        It impacts the specific language you should use. For example, if you write <q>Differentiate the following functions.</q>
+        or <q>Differentiate each of the functions below.</q>, then you have language that doesn't fit the individual problem
+        when it is used for homework on a <webwork/> server. Instead you might write <q>Differentiate the function</q>.
+        It makes sense as common instructions for the <tag>exercisegroup</tag> as well as the instructions for an individual exercise.
       </p>
     </subsection>
 

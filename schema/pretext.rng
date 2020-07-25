@@ -1632,6 +1632,7 @@
         <ref name="MetaDataCaption"/>
         <choice>
           <ref name="Image"/>
+          <ref name="Tabular"/>
           <ref name="SideBySide"/>
           <ref name="SideBySideGroup"/>
           <ref name="Video"/>
@@ -2331,7 +2332,9 @@
         <ref name="WWMacros"/>
       </optional>
       <optional>
-        <ref name="WWSetup"/>
+        <element name="pg-code">
+          <text/>
+        </element>
       </optional>
       <choice>
         <group>
@@ -2379,15 +2382,6 @@
           <text/>
         </element>
       </oneOrMore>
-    </element>
-  </define>
-  <define name="WWSetup">
-    <element name="setup">
-      <optional>
-        <element name="pg-code">
-          <text/>
-        </element>
-      </optional>
     </element>
   </define>
   <define name="WWVariable">
